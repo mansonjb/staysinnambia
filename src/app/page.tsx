@@ -13,6 +13,14 @@ import {
   selfDriveRoutes,
 } from "@/lib/data";
 
+const CHIP_TONES = [
+  "bg-rust/10 text-rust",
+  "bg-olive/10 text-olive",
+  "bg-sand-dark/20 text-sand-dark",
+];
+
+const BADGE_TONES = ["bg-rust text-ivory", "bg-olive text-ivory", "bg-sand-dark text-charcoal"];
+
 const STATS = [
   { value: "9", label: "Regions covered" },
   { value: "40+", label: "Lodges & camps" },
@@ -172,7 +180,9 @@ export default function Home() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                   />
-                  <span className="absolute left-3 top-3 rounded-full bg-rust px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-ivory shadow-sm">
+                  <span
+                    className={`absolute left-3 top-3 rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] shadow-sm ${BADGE_TONES[i % BADGE_TONES.length]}`}
+                  >
                     {String(i + 1).padStart(2, "0")} &middot; {region.name}
                   </span>
                   <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-ivory/90 px-2.5 py-1 text-[11px] font-semibold text-charcoal/70 shadow-sm">
@@ -186,9 +196,15 @@ export default function Home() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-charcoal/60">
                     {region.description}
                   </p>
-                  <div className="mt-4 flex items-center gap-1.5 text-[13px] text-charcoal/60">
-                    <MetaIcon name="users" className="h-4 w-4 text-rust" />
-                    Best for {region.bestFor}
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {region.bestFor.split(", ").map((tag, ti) => (
+                      <span
+                        key={tag}
+                        className={`rounded-full px-2.5 py-1 text-[11px] font-medium ${CHIP_TONES[ti % CHIP_TONES.length]}`}
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                   <div className="mt-5 flex items-center justify-end border-t border-charcoal/10 pt-4">
                     <CardCTA label="View Stays" />
@@ -228,7 +244,9 @@ export default function Home() {
                     <span className="absolute left-3 top-3 rounded-full bg-rust px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-ivory shadow-sm">
                       {lodge.region}
                     </span>
-                    <span className="absolute right-3 top-3 rounded-full bg-olive px-3 py-1 text-[11px] font-semibold text-ivory shadow-sm">
+                    <span
+                      className={`absolute right-3 top-3 rounded-full px-3 py-1 text-[11px] font-semibold shadow-sm ${BADGE_TONES[(i + 1) % BADGE_TONES.length]}`}
+                    >
                       {lodge.highlights[0]}
                     </span>
                     <SaveButton className="absolute bottom-3 right-3" />
@@ -241,15 +259,19 @@ export default function Home() {
                       {lodge.description}
                     </p>
 
-                    <div className="mt-4 grid grid-cols-1 gap-2 text-[13px] text-charcoal/60 sm:grid-cols-2">
-                      <span className="flex items-center gap-1.5">
-                        <MetaIcon name="pin" className="h-4 w-4 text-rust" />
-                        {lodge.region}
-                      </span>
-                      <span className="flex items-center gap-1.5">
-                        <MetaIcon name="users" className="h-4 w-4 text-rust" />
-                        {lodge.bestFor}
-                      </span>
+                    <div className="mt-4 flex items-center gap-1.5 text-[13px] text-charcoal/60">
+                      <MetaIcon name="pin" className="h-4 w-4 text-rust" />
+                      {lodge.region}
+                    </div>
+                    <div className="mt-2 flex flex-wrap gap-1.5">
+                      {lodge.bestFor.split(", ").map((tag, ti) => (
+                        <span
+                          key={tag}
+                          className={`rounded-full px-2.5 py-1 text-[11px] font-medium ${CHIP_TONES[ti % CHIP_TONES.length]}`}
+                        >
+                          {tag}
+                        </span>
+                      ))}
                     </div>
 
                     <ul className="mt-4 space-y-1.5 border-t border-charcoal/10 pt-4">
