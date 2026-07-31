@@ -26,65 +26,68 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex min-h-[600px] items-center overflow-hidden bg-charcoal pb-24 pt-24 sm:min-h-[680px] sm:pb-32 sm:pt-28">
-        <Image
-          src={HERO_IMAGE}
-          alt="Aerial view of the red dune belt in the Namib Desert"
-          fill
-          preload
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/50" />
-
-        <div className="relative mx-auto w-full max-w-[1400px] px-6 sm:px-10">
-          <span className="inline-flex items-center gap-2 rounded-full bg-rust px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-ivory shadow-lg">
-            <LogoMark className="h-4 w-4" />
-            Namibia Stays
-          </span>
-
-          <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-ivory sm:text-6xl">
-            Find your perfect stay in{" "}
-            <span className="bg-gradient-to-r from-sand via-sand-dark to-rust bg-clip-text text-transparent">
-              Namibia
+      <section className="bg-ivory pb-8 pt-14 sm:pt-20">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-10 px-6 sm:px-10 lg:grid-cols-2 lg:gap-14">
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-rust">
+              <LogoMark className="h-4 w-4" />
+              Namibia Stays
             </span>
-            .
-          </h1>
-          <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ivory/85">
-            Independent recommendations for lodges, safari camps and unforgettable places to
-            stay, across nine of the country&apos;s most extraordinary regions.
-          </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Link
-              href="/where-to-stay/namibia"
-              className="rounded-full bg-rust px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-ivory shadow-lg transition-colors hover:bg-rust-dark"
-            >
-              Explore Namibia
-            </Link>
-            <Link
-              href="/where-to-stay/namibia"
-              className="rounded-full border border-ivory/50 px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-ivory transition-colors hover:border-ivory hover:bg-ivory/10"
-            >
-              Where to Stay
-            </Link>
+            <h1 className="mt-6 max-w-xl text-4xl font-bold leading-[1.05] tracking-tight text-charcoal sm:text-6xl">
+              Find your perfect stay in{" "}
+              <span className="bg-gradient-to-r from-rust via-sand-dark to-olive bg-clip-text text-transparent">
+                Namibia
+              </span>
+              .
+            </h1>
+            <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
+              Independent recommendations for lodges, safari camps and unforgettable places to
+              stay, across nine of the country&apos;s most extraordinary regions.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/where-to-stay/namibia"
+                className="rounded-full bg-rust px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-ivory shadow-lg transition-colors hover:bg-rust-dark"
+              >
+                Explore Namibia
+              </Link>
+              <Link
+                href="/where-to-stay/namibia"
+                className="rounded-full border border-charcoal/20 px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal transition-colors hover:border-charcoal/40"
+              >
+                Where to Stay
+              </Link>
+            </div>
+
+            <div className="mt-10 flex max-w-md gap-8 border-t border-charcoal/10 pt-6">
+              {STATS.map((stat) => (
+                <div key={stat.label}>
+                  <p className="text-2xl font-bold text-charcoal sm:text-3xl">{stat.value}</p>
+                  <p className="mt-1 text-[11px] uppercase tracking-[0.1em] text-charcoal/50">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="mt-10 flex max-w-md gap-8 border-t border-ivory/20 pt-6">
-            {STATS.map((stat) => (
-              <div key={stat.label}>
-                <p className="text-2xl font-bold text-ivory sm:text-3xl">{stat.value}</p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.1em] text-ivory/70">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-xl lg:aspect-[5/4]">
+            <Image
+              src={HERO_IMAGE}
+              alt="Aerial view of the red dune belt in the Namib Desert"
+              fill
+              preload
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
 
       {/* Planner bar */}
-      <section className="relative z-10 mx-auto -mt-12 max-w-4xl px-6 sm:-mt-16 sm:px-10">
+      <section className="relative z-10 mx-auto mt-8 max-w-4xl px-6 sm:mt-10 sm:px-10">
         <div className="flex flex-col gap-3 rounded-2xl border-2 border-rust/10 bg-white p-4 shadow-2xl sm:flex-row sm:items-center sm:p-5">
           <label className="flex-1 px-3 py-2 text-left">
             <span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-rust">
