@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Instrument_Serif, Newsreader } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -48,6 +49,19 @@ export default function RootLayout({
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <Script id="stay22-letmeallez" strategy="afterInteractive">
+          {`
+            (function (s, t, a, y, twenty, two) {
+              s.Stay22 = s.Stay22 || {};
+              s.Stay22.params = { lmaID: '6a6d1d818b07e110fe9e5539' };
+              twenty = t.createElement(a);
+              two = t.getElementsByTagName(a)[0];
+              twenty.async = 1;
+              twenty.src = y;
+              two.parentNode.insertBefore(twenty, two);
+            })(window, document, 'script', 'https://scripts.stay22.com/letmeallez.js');
+          `}
+        </Script>
       </body>
     </html>
   );
