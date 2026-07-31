@@ -41,7 +41,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${instrumentSerif.variable} ${newsreader.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-ivory text-charcoal">
+      <body className="min-h-full flex flex-col bg-white text-charcoal">
         <noscript>
           <style>{`.reveal { opacity: 1 !important; }`}</style>
         </noscript>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CardArrow } from "@/components/card-arrow";
+import { CardArrow, CardCTA, SaveButton } from "@/components/card-arrow";
 import { IconBadge } from "@/components/icon-badge";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-ivory pb-8 pt-14 sm:pt-20">
+      <section className="bg-white pb-8 pt-14 sm:pt-20">
         <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-10 px-6 sm:px-10 lg:grid-cols-2 lg:gap-14">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-rust">
@@ -59,6 +59,20 @@ export default function Home() {
               >
                 Where to Stay
               </Link>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+              {["No fake reviews", "Direct to the lodge or partner site", "Updated for 2026"].map(
+                (label) => (
+                  <span
+                    key={label}
+                    className="inline-flex items-center gap-1.5 text-[13px] font-medium text-olive"
+                  >
+                    <MetaIcon name="check" className="h-4 w-4" />
+                    {label}
+                  </span>
+                )
+              )}
             </div>
 
             <div className="mt-10 flex max-w-md gap-8 border-t border-charcoal/10 pt-6">
@@ -122,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* Manifesto strip */}
-      <section className="bg-ivory pb-16 pt-16 sm:pb-20 sm:pt-20">
+      <section className="bg-white pb-16 pt-16 sm:pb-20 sm:pt-20">
         <Reveal className="mx-auto max-w-3xl px-6 text-center sm:px-10">
           <p className="font-serif text-xl italic leading-relaxed text-charcoal sm:text-2xl">
             This isn&apos;t a booking engine. It&apos;s the resource we wished existed before
@@ -165,6 +179,7 @@ export default function Home() {
                     <MetaIcon name="clock" className="h-3.5 w-3.5" />
                     {region.recommendedStay}
                   </span>
+                  <SaveButton className="absolute bottom-3 right-3" />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-serif text-2xl italic text-charcoal">{region.name}</h3>
@@ -176,7 +191,7 @@ export default function Home() {
                     Best for {region.bestFor}
                   </div>
                   <div className="mt-5 flex items-center justify-end border-t border-charcoal/10 pt-4">
-                    <CardArrow />
+                    <CardCTA label="View Stays" />
                   </div>
                 </div>
               </Link>
@@ -216,6 +231,7 @@ export default function Home() {
                     <span className="absolute right-3 top-3 rounded-full bg-olive px-3 py-1 text-[11px] font-semibold text-ivory shadow-sm">
                       {lodge.highlights[0]}
                     </span>
+                    <SaveButton className="absolute bottom-3 right-3" />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <h3 className="font-serif text-2xl italic text-charcoal">
@@ -249,7 +265,7 @@ export default function Home() {
                     </ul>
 
                     <div className="mt-5 flex justify-end">
-                      <CardArrow />
+                      <CardCTA label="View Lodge" />
                     </div>
                   </div>
                 </div>

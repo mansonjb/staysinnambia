@@ -24,7 +24,7 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="relative z-50 border-b border-charcoal/10 bg-ivory">
+      <header className="relative z-50 border-b border-charcoal/10 bg-white">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 sm:px-10">
           <Link
             href="/"
@@ -76,7 +76,7 @@ export function SiteHeader() {
       </header>
 
       <div
-        className={`fixed inset-x-0 bottom-0 top-[65px] z-40 flex flex-col bg-ivory px-6 pt-10 transition-transform duration-300 ease-out md:hidden ${
+        className={`fixed inset-x-0 bottom-0 top-[65px] z-40 flex flex-col bg-white px-6 pt-10 transition-transform duration-300 ease-out md:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

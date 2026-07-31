@@ -12,7 +12,7 @@
   --color-charcoal: #2b2722;
   --color-black: #17140f;
 
-  --background: var(--color-ivory);
+  --background: #ffffff;
   --foreground: var(--color-charcoal);
 }
 
