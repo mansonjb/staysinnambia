@@ -19,25 +19,38 @@ const STATS = [
   { value: "100%", label: "Independent" },
 ];
 
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1505598872760-6090aa9ed603?q=80&w=2400&auto=format&fit=crop";
+
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-ivory pb-6 pt-14 sm:pt-20">
-        <div className="mx-auto w-full max-w-[1400px] px-6 sm:px-10">
-          <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
+      <section className="relative flex min-h-[600px] items-center overflow-hidden bg-charcoal pb-24 pt-24 sm:min-h-[680px] sm:pb-32 sm:pt-28">
+        <Image
+          src={HERO_IMAGE}
+          alt="Aerial view of the red dune belt in the Namib Desert"
+          fill
+          preload
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/50" />
+
+        <div className="relative mx-auto w-full max-w-[1400px] px-6 sm:px-10">
+          <span className="inline-flex items-center gap-2 rounded-full bg-rust px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-ivory shadow-lg">
             <LogoMark className="h-4 w-4" />
             Namibia Stays
           </span>
 
-          <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-charcoal sm:text-6xl">
+          <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-ivory sm:text-6xl">
             Find your perfect stay in{" "}
-            <span className="bg-gradient-to-r from-rust to-rust-dark bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sand via-sand-dark to-rust bg-clip-text text-transparent">
               Namibia
             </span>
             .
           </h1>
-          <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
+          <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ivory/85">
             Independent recommendations for lodges, safari camps and unforgettable places to
             stay, across nine of the country&apos;s most extraordinary regions.
           </p>
@@ -45,23 +58,23 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
               href="/where-to-stay/namibia"
-              className="rounded-full bg-rust px-7 py-3 text-[13px] font-medium uppercase tracking-[0.1em] text-ivory transition-colors hover:bg-rust-dark"
+              className="rounded-full bg-rust px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-ivory shadow-lg transition-colors hover:bg-rust-dark"
             >
               Explore Namibia
             </Link>
             <Link
               href="/where-to-stay/namibia"
-              className="rounded-full border border-charcoal/20 px-7 py-3 text-[13px] font-medium uppercase tracking-[0.1em] text-charcoal transition-colors hover:border-charcoal/40"
+              className="rounded-full border border-ivory/50 px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-ivory transition-colors hover:border-ivory hover:bg-ivory/10"
             >
               Where to Stay
             </Link>
           </div>
 
-          <div className="mt-10 flex max-w-md gap-8 border-t border-charcoal/10 pt-6">
+          <div className="mt-10 flex max-w-md gap-8 border-t border-ivory/20 pt-6">
             {STATS.map((stat) => (
               <div key={stat.label}>
-                <p className="text-2xl font-bold text-charcoal sm:text-3xl">{stat.value}</p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.1em] text-charcoal/50">
+                <p className="text-2xl font-bold text-ivory sm:text-3xl">{stat.value}</p>
+                <p className="mt-1 text-[11px] uppercase tracking-[0.1em] text-ivory/70">
                   {stat.label}
                 </p>
               </div>
@@ -71,25 +84,25 @@ export default function Home() {
       </section>
 
       {/* Planner bar */}
-      <section className="relative z-10 mx-auto mt-6 max-w-4xl px-6 sm:mt-10 sm:px-10">
-        <div className="flex flex-col gap-3 rounded-2xl border border-black/5 bg-white p-3 shadow-xl sm:flex-row sm:items-center">
+      <section className="relative z-10 mx-auto -mt-12 max-w-4xl px-6 sm:-mt-16 sm:px-10">
+        <div className="flex flex-col gap-3 rounded-2xl border-2 border-rust/10 bg-white p-4 shadow-2xl sm:flex-row sm:items-center sm:p-5">
           <label className="flex-1 px-3 py-2 text-left">
-            <span className="block text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-rust">
               Region
             </span>
-            <select className="mt-0.5 w-full bg-transparent text-[15px] font-medium text-charcoal outline-none">
+            <select className="mt-0.5 w-full bg-transparent text-[17px] font-semibold text-charcoal outline-none">
               <option>Anywhere in Namibia</option>
               {regions.map((r) => (
                 <option key={r.slug}>{r.name}</option>
               ))}
             </select>
           </label>
-          <span className="hidden h-10 w-px bg-charcoal/10 sm:block" />
+          <span className="hidden h-12 w-px bg-charcoal/10 sm:block" />
           <label className="flex-1 px-3 py-2 text-left">
-            <span className="block text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-rust">
               Stay type
             </span>
-            <select className="mt-0.5 w-full bg-transparent text-[15px] font-medium text-charcoal outline-none">
+            <select className="mt-0.5 w-full bg-transparent text-[17px] font-semibold text-charcoal outline-none">
               <option>Any stay type</option>
               {experiences.map((e) => (
                 <option key={e.title}>{e.title}</option>
@@ -98,9 +111,9 @@ export default function Home() {
           </label>
           <Link
             href="/where-to-stay/namibia"
-            className="rounded-xl bg-rust px-6 py-3.5 text-center text-[13px] font-medium uppercase tracking-[0.1em] text-ivory transition-colors hover:bg-rust-dark"
+            className="rounded-xl bg-rust px-8 py-4 text-center text-[14px] font-bold uppercase tracking-[0.1em] text-ivory shadow-lg transition-colors hover:bg-rust-dark"
           >
-            Explore
+            Search
           </Link>
         </div>
       </section>
