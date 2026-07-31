@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CardArrow } from "@/components/card-arrow";
 import { IconBadge } from "@/components/icon-badge";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import {
   experiences,
@@ -141,8 +142,12 @@ export default function Home() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                   />
-                  <span className="absolute left-3 top-3 rounded-full bg-ivory/90 px-2.5 py-1 text-[11px] font-semibold text-charcoal/70 shadow-sm">
-                    {String(i + 1).padStart(2, "0")}
+                  <span className="absolute left-3 top-3 rounded-full bg-rust px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-ivory shadow-sm">
+                    {String(i + 1).padStart(2, "0")} &middot; {region.name}
+                  </span>
+                  <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-ivory/90 px-2.5 py-1 text-[11px] font-semibold text-charcoal/70 shadow-sm">
+                    <MetaIcon name="clock" className="h-3.5 w-3.5" />
+                    {region.recommendedStay}
                   </span>
                 </div>
                 <div className="flex flex-1 flex-col p-5">
@@ -150,13 +155,11 @@ export default function Home() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-charcoal/60">
                     {region.description}
                   </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="rounded-full bg-sand/30 px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-charcoal/60">
-                      {region.recommendedStay}
-                    </span>
+                  <div className="mt-4 flex items-center gap-1.5 text-[13px] text-charcoal/60">
+                    <MetaIcon name="users" className="h-4 w-4 text-rust" />
+                    Best for {region.bestFor}
                   </div>
-                  <div className="mt-5 flex items-center justify-between border-t border-charcoal/10 pt-4">
-                    <span className="text-[13px] text-charcoal/50">Best for {region.bestFor}</span>
+                  <div className="mt-5 flex items-center justify-end border-t border-charcoal/10 pt-4">
                     <CardArrow />
                   </div>
                 </div>
@@ -183,7 +186,7 @@ export default function Home() {
             {featuredLodges.map((lodge, i) => (
               <Reveal key={lodge.name} delay={(i % 2) * 80}>
                 <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg">
-                  <div className="relative aspect-[16/10] w-full overflow-hidden">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={lodge.image}
                       alt={lodge.alt}
@@ -191,31 +194,45 @@ export default function Home() {
                       sizes="(max-width: 640px) 100vw, 50vw"
                       className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     />
+                    <span className="absolute left-3 top-3 rounded-full bg-rust px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-ivory shadow-sm">
+                      {lodge.region}
+                    </span>
+                    <span className="absolute right-3 top-3 rounded-full bg-olive px-3 py-1 text-[11px] font-semibold text-ivory shadow-sm">
+                      {lodge.highlights[0]}
+                    </span>
                   </div>
                   <div className="flex flex-1 flex-col p-6">
-                    <p className="text-[11px] uppercase tracking-[0.2em] text-rust">
-                      {lodge.region}
-                    </p>
-                    <h3 className="mt-3 font-serif text-2xl italic text-charcoal">
+                    <h3 className="font-serif text-2xl italic text-charcoal">
                       {lodge.name}
                     </h3>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/60">
+                    <p className="mt-3 text-sm leading-relaxed text-charcoal/60">
                       {lodge.description}
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {lodge.highlights.map((h) => (
-                        <span
-                          key={h}
-                          className="rounded-full bg-sand/30 px-3 py-1 text-[11px] text-charcoal/60"
-                        >
-                          {h}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="mt-5 flex items-center justify-between border-t border-charcoal/10 pt-4">
-                      <span className="text-[13px] text-charcoal/50">
-                        Best for {lodge.bestFor}
+
+                    <div className="mt-4 grid grid-cols-1 gap-2 text-[13px] text-charcoal/60 sm:grid-cols-2">
+                      <span className="flex items-center gap-1.5">
+                        <MetaIcon name="pin" className="h-4 w-4 text-rust" />
+                        {lodge.region}
                       </span>
+                      <span className="flex items-center gap-1.5">
+                        <MetaIcon name="users" className="h-4 w-4 text-rust" />
+                        {lodge.bestFor}
+                      </span>
+                    </div>
+
+                    <ul className="mt-4 space-y-1.5 border-t border-charcoal/10 pt-4">
+                      {lodge.highlights.map((h) => (
+                        <li
+                          key={h}
+                          className="flex items-center gap-2 text-[13px] text-charcoal/70"
+                        >
+                          <MetaIcon name="check" className="h-3.5 w-3.5 shrink-0 text-olive" />
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <div className="mt-5 flex justify-end">
                       <CardArrow />
                     </div>
                   </div>
