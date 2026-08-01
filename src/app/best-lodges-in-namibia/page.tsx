@@ -36,7 +36,7 @@ export default function BestLodgesPage() {
           {lodges.map((lodge, i) => (
             <Reveal key={lodge.slug} delay={(i % 3) * 60}>
               <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg">
-                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <Link href={`/lodges/${lodge.slug}`} className="relative aspect-[4/3] block w-full overflow-hidden">
                   <Image
                     src={lodge.image}
                     alt={lodge.alt}
@@ -48,9 +48,13 @@ export default function BestLodgesPage() {
                     {lodge.region}
                   </span>
                   <SaveButton className="absolute bottom-3 right-3" />
-                </div>
+                </Link>
                 <div className="flex flex-1 flex-col p-5">
-                  <h2 className="font-serif text-2xl italic text-charcoal">{lodge.name}</h2>
+                  <h2 className="font-serif text-2xl italic text-charcoal">
+                    <Link href={`/lodges/${lodge.slug}`} className="hover:text-rust">
+                      {lodge.name}
+                    </Link>
+                  </h2>
                   {lodge.operator && (
                     <p className="mt-1 text-[12px] uppercase tracking-[0.08em] text-charcoal/40">
                       {lodge.operator}
@@ -77,7 +81,9 @@ export default function BestLodgesPage() {
                     >
                       More in {lodge.region}
                     </Link>
-                    <CardCTA label="View Lodge" />
+                    <Link href={`/lodges/${lodge.slug}`}>
+                      <CardCTA label="View Lodge" />
+                    </Link>
                   </div>
                 </div>
               </div>

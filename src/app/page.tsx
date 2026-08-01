@@ -232,7 +232,10 @@ export default function Home() {
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {featuredLodges.map((lodge, i) => (
               <Reveal key={lodge.name} delay={(i % 2) * 80}>
-                <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg">
+                <Link
+                  href={`/lodges/${lodge.slug}`}
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg"
+                >
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={lodge.image}
@@ -290,7 +293,7 @@ export default function Home() {
                       <CardCTA label="View Lodge" />
                     </div>
                   </div>
-                </div>
+                </Link>
               </Reveal>
             ))}
           </div>

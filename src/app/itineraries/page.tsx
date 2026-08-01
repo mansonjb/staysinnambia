@@ -32,7 +32,10 @@ export default function ItinerariesPage() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {selfDriveRoutes.map((route, i) => (
             <Reveal key={route.days} delay={i * 60}>
-              <div className="flex h-full flex-col rounded-2xl border border-black/5 bg-white p-8 shadow-sm">
+              <Link
+                href={`/itineraries/${route.slug}`}
+                className="group flex h-full flex-col rounded-2xl border border-black/5 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg"
+              >
                 <span className="text-6xl font-bold text-sand-dark">{route.days}</span>
                 <p className="mt-1 text-[12px] uppercase tracking-[0.2em] text-charcoal/40">
                   days &mdash; {route.title}
@@ -46,7 +49,10 @@ export default function ItinerariesPage() {
                   </p>
                   <p className="mt-2 text-[14px] text-charcoal/70">{route.stops}</p>
                 </div>
-              </div>
+                <span className="mt-4 text-[13px] font-medium text-rust opacity-0 transition-opacity group-hover:opacity-100">
+                  See day-by-day &rarr;
+                </span>
+              </Link>
             </Reveal>
           ))}
         </div>

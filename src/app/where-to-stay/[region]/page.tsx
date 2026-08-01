@@ -149,7 +149,10 @@ export default async function RegionPage({
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {regionLodges.map((lodge, i) => (
                 <Reveal key={lodge.slug} delay={i * 60}>
-                  <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg">
+                  <Link
+                    href={`/lodges/${lodge.slug}`}
+                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg"
+                  >
                     <div className="relative aspect-[4/3] w-full overflow-hidden">
                       <Image
                         src={lodge.image}
@@ -185,7 +188,7 @@ export default async function RegionPage({
                         <CardCTA label="View Lodge" />
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </Reveal>
               ))}
             </div>

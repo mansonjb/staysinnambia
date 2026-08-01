@@ -347,6 +347,7 @@ export type Lodge = {
   highlights: string[];
   bestFor: string;
   operator?: string;
+  categories: ("luxury" | "safari" | "desert" | "family")[];
   image: string;
   alt: string;
 };
@@ -362,6 +363,7 @@ export const lodges: Lodge[] = [
     highlights: ["Waterhole-facing rooms", "Private-reserve night drives", "Off-road tracking permitted"],
     bestFor: "First-time safari couples, wildlife photographers",
     operator: "Ongava Reserve",
+    categories: ["safari"],
     image:
       "https://images.unsplash.com/photo-1711721013738-146212eb5fae?q=80&w=1600&auto=format&fit=crop",
     alt: "A giraffe grazing near a waterhole lodge on the edge of Etosha",
@@ -376,6 +378,7 @@ export const lodges: Lodge[] = [
     highlights: ["Tents facing a waterhole", "Private reserve, night drives allowed", "Sister camps nearby"],
     bestFor: "Photographers, couples wanting more flexibility than the park allows",
     operator: "Onguma Private Game Reserve",
+    categories: ["safari"],
     image:
       "https://images.unsplash.com/photo-1643749678251-76783e5f1777?q=80&w=1600&auto=format&fit=crop",
     alt: "Elephant on the open plains near Etosha, close to Onguma Private Game Reserve",
@@ -389,6 +392,7 @@ export const lodges: Lodge[] = [
       "A chalet-style lodge near Etosha's eastern Von Lindequist Gate, positioned as an easy, traditional base for exploring the park.",
     highlights: ["Close to the eastern park gate", "Thatch-and-timber public areas", "Sister property nearby"],
     bestFor: "Families, travellers wanting proximity over remoteness",
+    categories: ["safari", "family"],
     image:
       "https://images.unsplash.com/photo-1688999988308-ede80a12eb89?q=80&w=1600&auto=format&fit=crop",
     alt: "A lodge building set against a rocky hillside near Etosha",
@@ -403,6 +407,7 @@ export const lodges: Lodge[] = [
     highlights: ["Rooftop star-bed sleep-outs", "Private plunge pools", "Private reserve gate into the park"],
     bestFor: "Couples, honeymooners, stargazers",
     operator: "Wilderness Safaris",
+    categories: ["luxury", "desert"],
     image:
       "https://images.unsplash.com/photo-1711721013732-3eff3c6d0a3a?q=80&w=1600&auto=format&fit=crop",
     alt: "A tented desert lodge suite set against the Namib dune belt",
@@ -417,6 +422,7 @@ export const lodges: Lodge[] = [
     highlights: ["International Dark Sky Reserve", "Glass-fronted rooms", "In-house astronomy program"],
     bestFor: "Astronomy enthusiasts, luxury travellers",
     operator: "&Beyond",
+    categories: ["luxury", "desert"],
     image:
       "https://images.unsplash.com/photo-1652599720885-abf363ed2992?q=80&w=1600&auto=format&fit=crop",
     alt: "A towering red sand dune in the Namib Desert near Sossusvlei",
@@ -431,6 +437,7 @@ export const lodges: Lodge[] = [
     highlights: ["Private gate into Namib-Naukluft Park", "Same reserve as Little Kulala", "Dune-facing chalets"],
     bestFor: "Families, first-timers wanting dune access without ultra-luxury pricing",
     operator: "Wilderness Safaris",
+    categories: ["desert", "family"],
     image:
       "https://images.unsplash.com/photo-1711721013732-3eff3c6d0a3a?q=80&w=1600&auto=format&fit=crop",
     alt: "A tented desert lodge suite set against the Namib dune belt",
@@ -445,6 +452,7 @@ export const lodges: Lodge[] = [
     highlights: ["Pioneering community-conservancy model", "Desert-adapted elephant tracking", "Run with the local conservancy"],
     bestFor: "Conservation-minded travellers, wildlife trackers",
     operator: "Wilderness Safaris",
+    categories: ["safari", "desert"],
     image:
       "https://images.unsplash.com/photo-1772289935377-c5a8ceb51e6d?q=80&w=1600&auto=format&fit=crop",
     alt: "Rocky desert landscape of Damaraland at sunset",
@@ -458,6 +466,7 @@ export const lodges: Lodge[] = [
       "Believed to be Namibia's first fully community-owned lodge, built in 2005 with the local ≠Khoadi //Hoas community, set along a ridge with valley views from every room.",
     highlights: ["Fully community-owned", "Ridge-top views from every room", "Rhino tracking access"],
     bestFor: "Travellers prioritising community tourism, photographers",
+    categories: ["safari"],
     image:
       "https://images.unsplash.com/photo-1688999988308-ede80a12eb89?q=80&w=1600&auto=format&fit=crop",
     alt: "A lodge built into a rocky hillside ridge in Damaraland",
@@ -472,6 +481,7 @@ export const lodges: Lodge[] = [
     highlights: ["Elevated hilltop position", "Conservancy partnership", "Close to Twyfelfontein rock art"],
     bestFor: "Couples combining culture and landscape",
     operator: "Wilderness Safaris",
+    categories: ["desert"],
     image:
       "https://images.unsplash.com/photo-1772289935377-c5a8ceb51e6d?q=80&w=1600&auto=format&fit=crop",
     alt: "Rocky desert landscape of Damaraland at sunset",
@@ -486,6 +496,7 @@ export const lodges: Lodge[] = [
     highlights: ["Genuinely on the coast", "Shipwreck-inspired architecture", "Remote dune and coastal excursions"],
     bestFor: "Remote-adventure travellers, design-minded guests",
     operator: "Natural Selection",
+    categories: ["luxury", "desert"],
     image:
       "https://images.unsplash.com/photo-1667506609659-599fb1f59f94?q=80&w=1600&auto=format&fit=crop",
     alt: "A shipwreck washed up on the sand of the Skeleton Coast, Namibia",
@@ -500,6 +511,7 @@ export const lodges: Lodge[] = [
     highlights: ["Fly-in access only", "Desert-adapted wildlife focus", "Optional coastline and seal-colony excursion"],
     bestFor: "Serious wildlife photographers, remote-adventure travellers",
     operator: "Wilderness Safaris",
+    categories: ["luxury", "safari"],
     image:
       "https://images.unsplash.com/photo-1711721013732-3eff3c6d0a3a?q=80&w=1600&auto=format&fit=crop",
     alt: "A tented camp in a remote desert setting",
@@ -514,6 +526,7 @@ export const lodges: Lodge[] = [
     highlights: ["Central downtown location", "Contemporary design", "Breakfast, water, parking and Wi-Fi included"],
     bestFor: "Couples, design-conscious travellers, city-break stopovers",
     operator: "Gondwana Collection",
+    categories: ["luxury"],
     image:
       "https://images.unsplash.com/photo-1593870893332-a5f39aaa2541?q=80&w=1600&auto=format&fit=crop",
     alt: "The red and white lighthouse in Swakopmund, Namibia",
@@ -527,6 +540,7 @@ export const lodges: Lodge[] = [
       "Namibia's oldest hotel, established in 1905 in the historic centre of Swakopmund, with 49 rooms and preserved period architecture.",
     highlights: ["Namibia's oldest hotel (1905)", "Historic-centre location", "Preserved colonial-era façade"],
     bestFor: "History-minded travellers, classic-hotel loyalists",
+    categories: [],
     image:
       "https://images.unsplash.com/photo-1576599875928-56b40063f3cb?q=80&w=1600&auto=format&fit=crop",
     alt: "A white and yellow colonial-era building in Swakopmund",
@@ -540,6 +554,7 @@ export const lodges: Lodge[] = [
       "A seven-suite boutique hotel in Windhoek, each suite themed on a different Namibian region, with a private plunge pool and full bar and restaurant.",
     highlights: ["Only seven suites", "Each suite themed on a Namibian region", "Private plunge pool"],
     bestFor: "Couples, a luxury bookend before or after a safari circuit",
+    categories: ["luxury"],
     image:
       "https://images.unsplash.com/photo-1586100810957-e4a1fed8c645?q=80&w=1600&auto=format&fit=crop",
     alt: "The Christuskirche, a landmark church in Windhoek, Namibia",
@@ -553,6 +568,7 @@ export const lodges: Lodge[] = [
       "A small, owner-run guesthouse with five bedrooms in the Klein Windhoek suburb, five minutes from the city centre.",
     highlights: ["Owner-operated, personal service", "Self-catering kitchen option", "Small pool and patio"],
     bestFor: "Budget-conscious travellers, solo travellers wanting a personal touch",
+    categories: ["family"],
     image:
       "https://images.unsplash.com/photo-1586100810957-e4a1fed8c645?q=80&w=1600&auto=format&fit=crop",
     alt: "The Christuskirche, a landmark church in Windhoek, Namibia",
@@ -567,6 +583,7 @@ export const lodges: Lodge[] = [
     highlights: ["Chalets built into granite boulders", "Base for the Fish River Canyon Trail", "Gondwana Canyon Park setting"],
     bestFor: "Hikers, travellers wanting rustic-but-comfortable desert lodging",
     operator: "Gondwana Collection",
+    categories: ["desert", "family"],
     image:
       "https://images.unsplash.com/photo-1693921148867-3e469f9f1d4f?q=80&w=1600&auto=format&fit=crop",
     alt: "A covered veranda with table and chairs at a lodge near Fish River Canyon",
@@ -580,6 +597,7 @@ export const lodges: Lodge[] = [
       "A small 10-tent lodge on Lupala Island in the Kwando-Linyanti river system, on the edge of Nkasa Rupara National Park, built around sustainable, community-linked tourism.",
     highlights: ["Only 10 tents", "River-channel setting", "Community-linked, sustainability-focused"],
     bestFor: "Birders, travellers wanting Namibia's wetter, wildlife-rich northeast",
+    categories: ["safari"],
     image:
       "https://images.unsplash.com/photo-1598338332181-c7a78afa1198?q=80&w=1600&auto=format&fit=crop",
     alt: "Silhouetted trees along a river at sunset in the Caprivi Strip",
@@ -593,6 +611,7 @@ export const lodges: Lodge[] = [
       "A 15-chalet lodge on the northern edge of the Spitzkoppe massif, connected by elevated walkways designed to minimise disturbance to the ground below.",
     highlights: ["Elevated boardwalk design", "Private chalets with viewing decks", "Granite-boulder setting"],
     bestFor: "Travellers wanting comfort near Spitzkoppe without full camping",
+    categories: ["desert"],
     image:
       "https://images.unsplash.com/photo-1719575366943-76d16957fa90?q=80&w=1600&auto=format&fit=crop",
     alt: "Granite peaks of Spitzkoppe rising from the Namibian desert plains",
@@ -610,39 +629,93 @@ export function getLodgesForRegion(regionSlug: string) {
   return lodges.filter((l) => l.regionSlug === regionSlug);
 }
 
+export function getLodge(slug: string) {
+  return lodges.find((l) => l.slug === slug);
+}
+
+export function getLodgesByCategory(category: "luxury" | "safari" | "desert" | "family") {
+  return lodges.filter((l) => l.categories.includes(category));
+}
+
 export type RoutePlan = {
   days: number;
+  slug: string;
   title: string;
   description: string;
   stops: string;
+  dayByDay: { label: string; text: string }[];
 };
 
 export const selfDriveRoutes: RoutePlan[] = [
   {
     days: 7,
+    slug: "7-days",
     title: "One week",
     description: "A tight loop for a first taste — the dunes, the coast, and one wildlife stop.",
     stops: "Windhoek · Sossusvlei · Swakopmund",
+    dayByDay: [
+      { label: "Day 1", text: "Land in Windhoek, collect your rental car, overnight in the capital." },
+      { label: "Days 2–3", text: "Drive to Sossusvlei (~5 hours). Two nights for sunrise at the dunes and Deadvlei." },
+      { label: "Days 4–5", text: "Drive to Swakopmund (~4–5 hours via Solitaire). Two nights for a coastal reset and one adventure activity." },
+      { label: "Days 6–7", text: "Return to Windhoek (~4 hours) with time to spare, or fly out of Walvis Bay if your schedule allows." },
+    ],
   },
   {
     days: 10,
+    slug: "10-days",
     title: "Ten days",
     description: "The classic Namibian circuit, unhurried, with two nights in each key region.",
     stops: "Windhoek · Sossusvlei · Swakopmund · Damaraland · Etosha",
+    dayByDay: [
+      { label: "Day 1", text: "Land in Windhoek, collect your rental car, overnight in the capital." },
+      { label: "Days 2–3", text: "Sossusvlei — two nights for the dunes and Deadvlei." },
+      { label: "Days 4–5", text: "Swakopmund — two nights on the coast." },
+      { label: "Days 6–7", text: "Damaraland — two nights for Twyfelfontein and desert-adapted elephant." },
+      { label: "Days 8–9", text: "Etosha — two nights of game drives and waterhole viewing." },
+      { label: "Day 10", text: "Drive back to Windhoek (~4.5 hours) for your departure flight." },
+    ],
   },
   {
     days: 14,
+    slug: "14-days",
     title: "Two weeks",
     description: "Room to add Fish River Canyon or Spitzkoppe without rushing the driving days.",
     stops: "Windhoek · Fish River Canyon · Sossusvlei · Swakopmund · Damaraland · Etosha",
+    dayByDay: [
+      { label: "Day 1", text: "Land in Windhoek, collect your rental car, overnight in the capital." },
+      { label: "Days 2–3", text: "Fish River Canyon — a southern detour for the rim viewpoints." },
+      { label: "Days 4–5", text: "Sossusvlei — two nights for the dunes and Deadvlei." },
+      { label: "Day 6", text: "Spitzkoppe — one night for sunset, stargazing and sunrise on the granite domes." },
+      { label: "Days 7–8", text: "Swakopmund — two nights on the coast." },
+      { label: "Days 9–10", text: "Damaraland — two nights for Twyfelfontein and desert-adapted elephant." },
+      { label: "Days 11–13", text: "Etosha — three nights to properly cover both sides of the park." },
+      { label: "Day 14", text: "Drive back to Windhoek (~4.5 hours) for your departure flight." },
+    ],
   },
   {
     days: 21,
+    slug: "21-days",
     title: "Three weeks",
     description: "The full country, including the Caprivi Strip and a wildlife-rich finish.",
     stops: "Windhoek · South · Namib · Coast · Damaraland · Etosha · Caprivi",
+    dayByDay: [
+      { label: "Day 1", text: "Land in Windhoek, collect your rental car, overnight in the capital." },
+      { label: "Days 2–3", text: "Fish River Canyon — a southern detour for the rim viewpoints." },
+      { label: "Days 4–5", text: "Sossusvlei — two nights for the dunes and Deadvlei." },
+      { label: "Day 6", text: "Spitzkoppe — one night for sunset and stargazing." },
+      { label: "Days 7–8", text: "Swakopmund — two nights on the coast." },
+      { label: "Days 9–10", text: "Skeleton Coast — two nights, fly-in or a short self-drive detour from Damaraland." },
+      { label: "Days 11–12", text: "Damaraland — two nights for Twyfelfontein and desert-adapted elephant." },
+      { label: "Days 13–15", text: "Etosha — three nights to properly cover the park." },
+      { label: "Days 16–18", text: "Fly or make the long drive to the Caprivi Strip — three nights of rivers and birding." },
+      { label: "Days 19–21", text: "Return to Windhoek (by air or road) for your departure flight." },
+    ],
   },
 ];
+
+export function getRoute(slug: string) {
+  return selfDriveRoutes.find((r) => r.slug === slug);
+}
 
 export type Experience = {
   title: string;
