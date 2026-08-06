@@ -1,32 +1,43 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CardArrow } from "@/components/card-arrow";
+import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { Reveal } from "@/components/reveal";
 import { getRegion } from "@/lib/data";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+
+const TITLE = "Best Safari Areas in Namibia";
+const DESCRIPTION = "Etosha, Damaraland and Caprivi compared: which Namibian safari region actually fits your trip.";
 
 export const metadata: Metadata = {
-  title: "Best Safari Areas in Namibia",
-  description: "Etosha, Damaraland and Caprivi compared — which Namibian safari region actually fits your trip.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/best-safari-areas", languages: { en: "/best-safari-areas", de: "/de/best-safari-areas", nl: "/nl/best-safari-areas" } },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
 };
 
 const COMPARISON = [
   {
     slug: "etosha",
     style: "Classic waterhole safari",
-    wildlife: "Reliable — elephant, lion, rhino, large herds",
+    wildlife: "Reliable: elephant, lion, black rhino, large herds concentrated around floodlit waterholes",
     pace: "Structured game drives from a fixed base",
   },
   {
     slug: "damaraland",
     style: "Tracking, on foot or by vehicle",
-    wildlife: "Desert-adapted elephant and rhino — never guaranteed, more rewarding when found",
+    wildlife: "Desert-adapted elephant and, with a specialist guide out of Palmwag, tracked black rhino, never guaranteed, more rewarding when found",
     pace: "Slower, guided, conservancy-based",
   },
   {
     slug: "caprivi",
     style: "River and floodplain wildlife",
-    wildlife: "Hippo, crocodile, strong birding — a different ecosystem entirely",
+    wildlife: "Hippo, crocodile, strong birding: a different ecosystem entirely",
     pace: "Boat-based excursions alongside game drives",
   },
 ];
@@ -34,6 +45,13 @@ const COMPARISON = [
 export default function SafariAreasPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Guides", url: `${SITE_URL}/guides` },
+          { name: "Best Safari Areas in Namibia", url: `${SITE_URL}/best-safari-areas` },
+        ])}
+      />
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
         <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
           <LogoMark className="h-4 w-4" />
@@ -43,8 +61,14 @@ export default function SafariAreasPage() {
           Best safari areas in Namibia
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          "Safari" means something different in each of these three regions. None is strictly
-          better — they suit different priorities.
+          "Safari" means something different in each of these three regions. See our{" "}
+          <Link
+            href="/namibia-wildlife-guide"
+            className="font-semibold text-rust hover:text-rust-dark"
+          >
+            wildlife guide
+          </Link>{" "}
+          for what to expect from each. None is strictly better: they suit different priorities.
         </p>
       </section>
 

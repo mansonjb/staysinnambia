@@ -2,20 +2,40 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CardCTA } from "@/components/card-arrow";
+import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { regions } from "@/lib/data";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+
+const TITLE = "Where to Stay in Namibia";
+const DESCRIPTION =
+  "An independent, region-by-region guide to where to stay in Namibia: from Etosha's waterhole lodges to the dunes of Sossusvlei.";
 
 export const metadata: Metadata = {
-  title: "Where to Stay in Namibia",
-  description:
-    "An independent, region-by-region guide to where to stay in Namibia — from Etosha's waterhole lodges to the dunes of Sossusvlei.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/where-to-stay/namibia",
+    languages: { en: "/where-to-stay/namibia", de: "/de/where-to-stay/namibia", nl: "/nl/where-to-stay/namibia" },
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
 };
 
 export default function WhereToStayHub() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Where to Stay", url: `${SITE_URL}/where-to-stay/namibia` },
+        ])}
+      />
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
         <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
           <LogoMark className="h-4 w-4" />

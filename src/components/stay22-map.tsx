@@ -4,14 +4,16 @@ export function Stay22Map({
   lat,
   lng,
   label,
+  zoom = 9,
   className = "",
 }: {
   lat: number;
   lng: number;
   label: string;
+  zoom?: number;
   className?: string;
 }) {
-  const src = `https://www.stay22.com/embed/gm?aid=${STAY22_AID}&lat=${lat}&lng=${lng}&zoom=9`;
+  const src = `https://www.stay22.com/embed/gm?aid=${STAY22_AID}&lat=${lat}&lng=${lng}&zoom=${zoom}`;
 
   return (
     <div className={`overflow-hidden rounded-2xl border border-black/5 shadow-sm ${className}`}>

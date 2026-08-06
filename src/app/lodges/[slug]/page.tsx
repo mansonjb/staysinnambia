@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CardCTA } from "@/components/card-arrow";
+import { AvailabilityBadge, CardCTA } from "@/components/card-arrow";
+import { breadcrumbJsonLd, JsonLd, lodgingBusinessJsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { Stay22Map } from "@/components/stay22-map";
 import { getLodge, getLodgesForRegion, getRegion, lodges } from "@/lib/data";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return lodges.map((l) => ({ slug: l.slug }));
@@ -22,9 +24,20 @@ export async function generateMetadata({
   const lodge = getLodge(slug);
   if (!lodge) return {};
 
+  const title = `${lodge.name}, ${lodge.region}`;
+
   return {
-    title: lodge.name,
+    title,
     description: lodge.description,
+    alternates: {
+      canonical: `/lodges/${lodge.slug}`,
+      languages: { en: `/lodges/${lodge.slug}`, de: `/de/lodges/${lodge.slug}`, nl: `/nl/lodges/${lodge.slug}` },
+    },
+    openGraph: {
+      title,
+      description: lodge.description,
+      images: [{ url: lodge.image, width: 1600, height: 900 }],
+    },
   };
 }
 
@@ -42,6 +55,24 @@ export default async function LodgePage({
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Lodges", url: `${SITE_URL}/best-lodges-in-namibia` },
+          { name: lodge.name, url: `${SITE_URL}/lodges/${lodge.slug}` },
+        ])}
+      />
+      <JsonLd
+        data={lodgingBusinessJsonLd({
+          name: lodge.name,
+          description: lodge.description,
+          url: `${SITE_URL}/lodges/${lodge.slug}`,
+          image: lodge.image,
+          regionName: lodge.region,
+          lat: region?.lat,
+          lng: region?.lng,
+        })}
+      />
       <nav className="mx-auto max-w-[1400px] px-6 pt-6 text-[13px] text-charcoal/50 sm:px-10">
         <Link href="/" className="hover:text-rust">
           Home
@@ -88,12 +119,17 @@ export default async function LodgePage({
             </div>
 
             {region && (
-              <Link
-                href={`/where-to-stay/${region.slug}`}
-                className="mt-8 inline-block rounded-full bg-rust px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-ivory transition-colors hover:bg-rust-dark"
-              >
-                More stays in {region.name}
-              </Link>
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <Link
+                  href={`/where-to-stay/${region.slug}`}
+                  className="inline-block rounded-full bg-rust px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-ivory transition-colors hover:bg-rust-dark"
+                >
+                  More stays in {region.name}
+                </Link>
+                <a href="#availability">
+                  <AvailabilityBadge />
+                </a>
+              </div>
             )}
           </div>
 
@@ -111,13 +147,13 @@ export default async function LodgePage({
       </section>
 
       {region && (
-        <section className="mx-auto max-w-[1400px] px-6 py-16 sm:px-10">
+        <section id="availability" className="mx-auto max-w-[1400px] px-6 py-16 sm:px-10">
           <Reveal>
             <h2 className="text-2xl font-bold text-charcoal">
               Map of stays near {lodge.name}
             </h2>
             <p className="mt-2 max-w-lg text-sm leading-relaxed text-charcoal/60">
-              Real, bookable stays around {region.name} — powered by our booking partner Stay22.
+              Real, bookable stays around {region.name}, powered by our booking partner Stay22.
             </p>
             <Stay22Map lat={region.lat} lng={region.lng} label={lodge.name} className="mt-6" />
           </Reveal>
@@ -153,7 +189,8 @@ export default async function LodgePage({
                       <p className="mt-2 flex-1 text-sm leading-relaxed text-charcoal/60">
                         {l.description}
                       </p>
-                      <div className="mt-4 flex justify-end">
+                      <div className="mt-4 flex items-center justify-between">
+                        <AvailabilityBadge />
                         <CardCTA label="View Lodge" />
                       </div>
                     </div>

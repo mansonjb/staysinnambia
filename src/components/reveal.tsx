@@ -36,7 +36,7 @@ export function Reveal({
 
     // Safety net: guarantee the content becomes visible even if the
     // IntersectionObserver never fires (e.g. backgrounded tab, some
-    // crawlers) — this is a content site, so it must never stay hidden.
+    // crawlers). This is a content site, so it must never stay hidden.
     const fallback = window.setTimeout(reveal, 1500);
 
     return () => {

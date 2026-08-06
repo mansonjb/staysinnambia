@@ -1,18 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { Reveal } from "@/components/reveal";
 import { selfDriveRoutes } from "@/lib/data";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+
+const TITLE = "Namibia Itineraries";
+const DESCRIPTION =
+  "Self-drive Namibia itineraries from one to three weeks: how many days you need and which regions to combine.";
 
 export const metadata: Metadata = {
-  title: "Namibia Itineraries",
-  description:
-    "Self-drive Namibia itineraries from one to three weeks — how many days you need and which regions to combine.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/itineraries", languages: { en: "/itineraries", de: "/de/itineraries", nl: "/nl/itineraries" } },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
 };
 
 export default function ItinerariesPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Itineraries", url: `${SITE_URL}/itineraries` },
+        ])}
+      />
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
         <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
           <LogoMark className="h-4 w-4" />
@@ -22,7 +39,7 @@ export default function ItinerariesPage() {
           Build your Namibia itinerary
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          Namibia is a self-drive country — distances are long and roads are mostly gravel, so
+          Namibia is a self-drive country: distances are long and roads are mostly gravel, so
           the number of days you have should decide your route, not the other way round. Start
           with how much time you&apos;ve got.
         </p>
@@ -38,7 +55,7 @@ export default function ItinerariesPage() {
               >
                 <span className="text-6xl font-bold text-sand-dark">{route.days}</span>
                 <p className="mt-1 text-[12px] uppercase tracking-[0.2em] text-charcoal/40">
-                  days &mdash; {route.title}
+                  days: {route.title}
                 </p>
                 <p className="mt-4 text-[15px] leading-relaxed text-charcoal/70">
                   {route.description}
@@ -60,7 +77,7 @@ export default function ItinerariesPage() {
         <Reveal className="mt-10 rounded-2xl border border-black/5 bg-sand/20 p-8">
           <h2 className="text-lg font-bold text-charcoal">A rule of thumb for pacing</h2>
           <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/70">
-            Namibia&apos;s gravel roads are slower than they look on a map — budget 60–80km/h
+            Namibia&apos;s gravel roads are slower than they look on a map: budget 60–80km/h
             average, not highway speeds. As a guide: never drive more than 4–5 hours in a single
             day, and give every region at least two nights so one full day isn&apos;t lost to
             arriving and leaving.

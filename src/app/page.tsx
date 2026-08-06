@@ -1,10 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CardArrow, CardCTA, SaveButton } from "@/components/card-arrow";
+import { AvailabilityBadge, CardArrow, CardCTA, SaveButton } from "@/components/card-arrow";
 import { IconBadge } from "@/components/icon-badge";
+import { faqJsonLd, JsonLd, websiteJsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
+import { Stay22Map } from "@/components/stay22-map";
 import {
   experiences,
   featuredLodges,
@@ -12,6 +15,47 @@ import {
   regions,
   selfDriveRoutes,
 } from "@/lib/data";
+import { DEFAULT_OG_IMAGE, SITE_NAME } from "@/lib/site";
+
+const TITLE = "Namibia Stays: Extraordinary places to stay across Namibia";
+const DESCRIPTION =
+  "Independent guides to Namibia's lodges, camps and hotels: where to stay in Etosha, Sossusvlei, Damaraland, the Skeleton Coast and beyond.";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/", languages: { en: "/", de: "/de", nl: "/nl" } },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/",
+    siteName: SITE_NAME,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
+};
+
+const HOME_FAQS = [
+  {
+    q: "How many days do you need in Namibia?",
+    a: "Ten to fourteen days covers the classic loop (Etosha, Sossusvlei, Swakopmund and a Damaraland or Fish River Canyon detour) without rushing. A week is workable if you pick two or three regions rather than the full circuit; three weeks lets you add the Skeleton Coast or Caprivi. See our itineraries by length for a day-by-day breakdown.",
+  },
+  {
+    q: "What's the best time to visit Namibia?",
+    a: "May to October, the dry season, gives the most reliable wildlife viewing as animals concentrate around waterholes. November to April is greener with dramatic skies and better birding, but wildlife spreads out and some roads can be affected by rain. See our full best-time-to-visit guide for the month-by-month trade-offs.",
+  },
+  {
+    q: "Do I need a visa for Namibia?",
+    a: "It depends on nationality: some countries are visa-exempt, and most others are eligible for a Visa on Arrival, which since April 2025 must be applied for online before you fly rather than issued at the border. See our visa requirements guide for the current process and fees.",
+  },
+  {
+    q: "Is Namibia safe to visit?",
+    a: "Yes, by regional standards it's one of the safer countries in Southern Africa: the real risks are road safety on self-drive routes and ordinary city-level petty crime, not violent crime targeting travellers. See our safety and health guide, including where malaria is and isn't a concern.",
+  },
+  {
+    q: "Do I need a 4x4 to self-drive Namibia?",
+    a: "Not for the classic route: Etosha, Sossusvlei, Swakopmund and the main gravel network are manageable in a well-equipped 2x4. A 4x4 earns its keep in Damaraland, Kaokoland, and anywhere off the graded C-roads. See our self-drive guide for road types and rental advice.",
+  },
+];
 
 const CHIP_TONES = [
   "bg-rust/10 text-rust",
@@ -33,14 +77,21 @@ const HERO_IMAGE =
 export default function Home() {
   return (
     <>
+      <JsonLd data={websiteJsonLd()} />
+      <JsonLd data={faqJsonLd(HOME_FAQS)} />
       {/* Hero */}
       <section className="bg-white pb-8 pt-14 sm:pt-20">
         <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-10 px-6 sm:px-10 lg:grid-cols-2 lg:gap-14">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-rust">
-              <LogoMark className="h-4 w-4" />
-              Namibia Stays
-            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-rust">
+                <LogoMark className="h-4 w-4" />
+                Namibia Stays
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-olive/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-olive">
+                Lonely Planet Best in Travel 2026
+              </span>
+            </div>
 
             <h1 className="mt-6 max-w-xl text-4xl font-bold leading-[1.05] tracking-tight text-charcoal sm:text-6xl">
               Find your perfect stay in{" "}
@@ -51,7 +102,9 @@ export default function Home() {
             </h1>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
               Independent recommendations for lodges, safari camps and unforgettable places to
-              stay, across nine of the country&apos;s most extraordinary regions.
+              stay, across nine of the country&apos;s most extraordinary regions, named one of
+              Lonely Planet&apos;s top places to visit in 2026, for its desert-adapted elephants
+              and conservation-led tourism.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -148,8 +201,44 @@ export default function Home() {
         <Reveal className="mx-auto max-w-3xl px-6 text-center sm:px-10">
           <p className="font-serif text-xl italic leading-relaxed text-charcoal sm:text-2xl">
             This isn&apos;t a booking engine. It&apos;s the resource we wished existed before
-            our own first trip to Namibia — where to stay, when to go, and how many nights
+            our own first trip to Namibia: where to stay, when to go, and how many nights
             each region actually deserves.
+          </p>
+        </Reveal>
+      </section>
+
+      {/* Editorial intro */}
+      <section className="mx-auto max-w-[1400px] px-6 pb-16 sm:px-10 sm:pb-20">
+        <Reveal className="mx-auto grid max-w-4xl grid-cols-1 gap-6 text-[15px] leading-relaxed text-charcoal/70 sm:grid-cols-2">
+          <p>
+            Namibia doesn&apos;t reward a single home base: it rewards moving. Most trips work
+            as a loop out of Windhoek through two, three or four regions, and{" "}
+            <Link href="/best-time-to-visit-namibia" className="font-medium text-rust hover:text-rust-dark">
+              when you go
+            </Link>{" "}
+            changes which regions are worth the drive. We built this site region by region so you
+            can see exactly{" "}
+            <Link href="/where-to-stay/namibia" className="font-medium text-rust hover:text-rust-dark">
+              where to stay
+            </Link>{" "}
+            and how many nights each one actually earns, rather than a single list of hotels with
+            no sense of the country&apos;s geography.
+          </p>
+          <p>
+            Most of Namibia is genuinely drivable (see our{" "}
+            <Link href="/namibia-self-drive-guide" className="font-medium text-rust hover:text-rust-dark">
+              self-drive guide
+            </Link>{" "}
+            for road types and rental advice) and every recommendation here is chosen on
+            setting and service alone, never on commission rate. Start with an{" "}
+            <Link href="/itineraries" className="font-medium text-rust hover:text-rust-dark">
+              itinerary by length
+            </Link>{" "}
+            if you know your dates, or browse by{" "}
+            <Link href="/where-to-stay/namibia" className="font-medium text-rust hover:text-rust-dark">
+              region
+            </Link>{" "}
+            if you&apos;re still working out the route.
           </p>
         </Reveal>
       </section>
@@ -213,6 +302,38 @@ export default function Home() {
               </Link>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Namibia at a glance */}
+      <section className="bg-sand/20 py-16 sm:py-20">
+        <div className="mx-auto max-w-[1400px] px-6 sm:px-10">
+          <Reveal>
+            <SectionEyebrow label="Namibia at a Glance" />
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
+              Every region, one map
+            </h2>
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-charcoal/60">
+              Every pin is a real, bookable stay, powered by our booking partner Stay22. Zoom out
+              from Windhoek to see the whole country, or jump straight to a region below.
+            </p>
+          </Reveal>
+
+          <Reveal className="mt-8">
+            <Stay22Map lat={-22.5609} lng={17.0658} label="Namibia" zoom={9} />
+          </Reveal>
+
+          <Reveal className="mt-8 flex flex-wrap gap-2">
+            {regions.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/where-to-stay/${r.slug}`}
+                className="rounded-full bg-white px-4 py-2 text-[13px] font-medium text-charcoal/70 shadow-sm transition-colors hover:text-rust"
+              >
+                {r.name}
+              </Link>
+            ))}
+          </Reveal>
         </div>
       </section>
 
@@ -289,7 +410,8 @@ export default function Home() {
                       ))}
                     </ul>
 
-                    <div className="mt-5 flex justify-end">
+                    <div className="mt-5 flex items-center justify-between">
+                      <AvailabilityBadge />
                       <CardCTA label="View Lodge" />
                     </div>
                   </div>
@@ -312,10 +434,13 @@ export default function Home() {
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {selfDriveRoutes.map((route, i) => (
             <Reveal key={route.days} delay={i * 60}>
-              <div className="group flex h-full flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
+              <Link
+                href={`/itineraries/${route.slug}`}
+                className="group flex h-full flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg"
+              >
                 <span className="text-5xl font-bold text-sand-dark">{route.days}</span>
                 <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-charcoal/40">
-                  days &mdash; {route.title}
+                  days: {route.title}
                 </p>
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-charcoal/60">
                   {route.description}
@@ -324,7 +449,7 @@ export default function Home() {
                 <div className="mt-5 flex justify-end border-t border-charcoal/10 pt-4">
                   <CardArrow />
                 </div>
-              </div>
+              </Link>
             </Reveal>
           ))}
         </div>
@@ -343,7 +468,10 @@ export default function Home() {
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {experiences.map((exp, i) => (
               <Reveal key={exp.title} delay={(i % 4) * 60}>
-                <div className="group flex h-full flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
+                <Link
+                  href={exp.href}
+                  className="group flex h-full flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg"
+                >
                   <IconBadge icon={exp.icon} tone={i % 2 === 0 ? "rust" : "olive"} />
                   <h3 className="mt-4 text-xl font-bold text-charcoal">{exp.title}</h3>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/60">
@@ -352,7 +480,7 @@ export default function Home() {
                   <div className="mt-5 flex justify-end border-t border-charcoal/10 pt-4">
                     <CardArrow />
                   </div>
-                </div>
+                </Link>
               </Reveal>
             ))}
           </div>
@@ -378,6 +506,28 @@ export default function Home() {
                 <span className="font-serif text-xl italic text-charcoal">{guide.title}</span>
                 <CardArrow />
               </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Homepage FAQ */}
+      <section className="mx-auto max-w-[1400px] px-6 py-16 sm:px-10 sm:py-20">
+        <Reveal>
+          <SectionEyebrow label="Planning Namibia" />
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
+            Quick questions, straight answers
+          </h2>
+        </Reveal>
+        <div className="mt-10 grid grid-cols-1 gap-4">
+          {HOME_FAQS.map((faq, i) => (
+            <Reveal
+              key={faq.q}
+              delay={i * 60}
+              className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm"
+            >
+              <h3 className="font-semibold text-charcoal">{faq.q}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-charcoal/60">{faq.a}</p>
             </Reveal>
           ))}
         </div>

@@ -1,0 +1,199 @@
+[
+  {
+    "slug": "ongava-lodge",
+    "name": "Ongava Lodge",
+    "region": "Etosha",
+    "status": "downloaded",
+    "matchedName": "Ongava Lodge",
+    "matchedAddress": "| Andersson Gate Etosha, C38, Ombika, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Ongava%20Lodge&query_place_id=ChIJRxlnzv4LjRsRxybgOH2MqQY",
+    "localPath": "/images/lodges/ongava-lodge.jpg"
+  },
+  {
+    "slug": "onguma-tented-camp",
+    "name": "Onguma Tented Camp",
+    "region": "Etosha",
+    "status": "downloaded",
+    "matchedName": "Onguma Tented Camp",
+    "matchedAddress": "Eastern Entrance Gate Near Von Lindequist Gate Etosha National Park Namibia, Onguma Nature Reserve, Tsumeb, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Onguma%20Tented%20Camp&query_place_id=ChIJf9ZIb69j7RsRfvDhqzsnF5g",
+    "localPath": "/images/lodges/onguma-tented-camp.jpg"
+  },
+  {
+    "slug": "mushara-lodge",
+    "name": "Mushara Lodge",
+    "region": "Etosha",
+    "status": "downloaded",
+    "matchedName": "Mushara Lodge",
+    "matchedAddress": "8 kilometers from the Lindequist Gate of the Etosha Nationalpark, Tsumeb, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Mushara%20Lodge&query_place_id=ChIJbW7l1SaD8hsRzenKzqgcOvQ",
+    "localPath": "/images/lodges/mushara-lodge.jpg"
+  },
+  {
+    "slug": "little-kulala",
+    "name": "Little Kulala",
+    "region": "Sossusvlei",
+    "status": "downloaded",
+    "matchedName": "Little Kulala",
+    "matchedAddress": "Sesriem, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Little%20Kulala&query_place_id=ChIJdRpA3LlichwRZ5fcTNh5L38",
+    "localPath": "/images/lodges/little-kulala.jpg"
+  },
+  {
+    "slug": "sossusvlei-desert-lodge",
+    "name": "Sossusvlei Desert Lodge",
+    "region": "Sossusvlei",
+    "status": "downloaded",
+    "matchedName": "andBeyond Sossusvlei Desert Lodge",
+    "matchedAddress": "Sossusvlei, Namib-Naukluft Park, Namibia, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=andBeyond%20Sossusvlei%20Desert%20Lodge&query_place_id=ChIJX20E5xeCchwRnmrzELeIHiQ",
+    "localPath": "/images/lodges/sossusvlei-desert-lodge.jpg"
+  },
+  {
+    "slug": "kulala-desert-lodge",
+    "name": "Kulala Desert Lodge",
+    "region": "Sossusvlei",
+    "status": "downloaded",
+    "matchedName": "Wilderness Kulala Desert Lodge",
+    "matchedAddress": "5F7Q9PP3+29 Sossusvlei, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Wilderness%20Kulala%20Desert%20Lodge&query_place_id=ChIJwdLSekJjchwR8WSuagcMXMo",
+    "localPath": "/images/lodges/kulala-desert-lodge.jpg"
+  },
+  {
+    "slug": "damaraland-camp",
+    "name": "Damaraland Camp",
+    "region": "Damaraland",
+    "status": "downloaded",
+    "matchedName": "Damaraland Wilderness Camp",
+    "matchedAddress": "Torra Conservancy, Damaraland, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Damaraland%20Wilderness%20Camp&query_place_id=ChIJsV_hehkzjxsRoXbX8if6KbY",
+    "localPath": "/images/lodges/damaraland-camp.jpg"
+  },
+  {
+    "slug": "grootberg-lodge",
+    "name": "Grootberg Lodge",
+    "region": "Damaraland",
+    "status": "downloaded",
+    "matchedName": "Grootberg Lodge",
+    "matchedAddress": "C40, Palmwag, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Grootberg%20Lodge&query_place_id=ChIJR0iJynAGjxsRCxtuqlJoQD8",
+    "localPath": "/images/lodges/grootberg-lodge.jpg"
+  },
+  {
+    "slug": "doro-nawas-camp",
+    "name": "Doro Nawas Camp",
+    "region": "Damaraland",
+    "status": "downloaded",
+    "matchedName": "Wilderness Doro Nawas",
+    "matchedAddress": "H822+5X, De Riet, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Wilderness%20Doro%20Nawas&query_place_id=ChIJu8vxNwDVjhsRJrGJCwsIo_U",
+    "localPath": "/images/lodges/doro-nawas-camp.jpg"
+  },
+  {
+    "slug": "shipwreck-lodge",
+    "name": "Shipwreck Lodge",
+    "region": "Skeleton Coast",
+    "status": "downloaded",
+    "matchedName": "Shipwreck Lodge",
+    "matchedAddress": "Skeleton Coast Park, Mowe Bay, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Shipwreck%20Lodge&query_place_id=ChIJLV_hAONAmxsRO5aHAqmIc54",
+    "localPath": "/images/lodges/shipwreck-lodge.jpg"
+  },
+  {
+    "slug": "hoanib-skeleton-coast-camp",
+    "name": "Hoanib Skeleton Coast Camp",
+    "region": "Skeleton Coast",
+    "status": "downloaded",
+    "matchedName": "Hoanib Skeleton Coast Camp",
+    "matchedAddress": "5FGMJ5J2+M2, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Hoanib%20Skeleton%20Coast%20Camp&query_place_id=ChIJiSX0wbM4hRsRI9xwCSGScmc",
+    "localPath": "/images/lodges/hoanib-skeleton-coast-camp.jpg"
+  },
+  {
+    "slug": "the-delight-swakopmund",
+    "name": "The Delight Swakopmund",
+    "region": "Swakopmund",
+    "status": "downloaded",
+    "matchedName": "The Delight Hotel Swakopmund, Gondwana Collection Namibia",
+    "matchedAddress": "Theo-Ben Gurirab Ave, Swakopmund, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=The%20Delight%20Hotel%20Swakopmund%2C%20Gondwana%20Collection%20Namibia&query_place_id=ChIJEa_N9PpYdhwRl-sUjjuP2Wk",
+    "localPath": "/images/lodges/the-delight-swakopmund.jpg"
+  },
+  {
+    "slug": "hansa-hotel",
+    "name": "Hansa Hotel",
+    "region": "Swakopmund",
+    "status": "downloaded",
+    "matchedName": "Hansa Hotel Swakopmund",
+    "matchedAddress": "3 Hendrik Witbooi, Swakopmund, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Hansa%20Hotel%20Swakopmund&query_place_id=ChIJoSZv5vpYdhwRBKULgG2S5aw",
+    "localPath": "/images/lodges/hansa-hotel.jpg"
+  },
+  {
+    "slug": "the-olive-exclusive",
+    "name": "The Olive Exclusive",
+    "region": "Windhoek",
+    "status": "downloaded",
+    "matchedName": "The Olive Exclusive All-Suite Hotel",
+    "matchedAddress": "22 Promenaden Rd, Windhoek, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=The%20Olive%20Exclusive%20All-Suite%20Hotel&query_place_id=ChIJO2qblFkbCxwRKLjmqE5-tmM",
+    "localPath": "/images/lodges/the-olive-exclusive.jpg"
+  },
+  {
+    "slug": "villa-violet",
+    "name": "Villa Violet",
+    "region": "Windhoek",
+    "status": "downloaded",
+    "matchedName": "Villa Violet",
+    "matchedAddress": "48 Ziegler Street, Windhoek, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Villa%20Violet&query_place_id=ChIJI1kJblIbCxwRZ28DqRwwBcQ",
+    "localPath": "/images/lodges/villa-violet.jpg"
+  },
+  {
+    "slug": "canyon-lodge",
+    "name": "Canyon Lodge",
+    "region": "Fish River Canyon",
+    "status": "downloaded",
+    "matchedName": "Canyon Lodge, Gondwana Collection Namibia",
+    "matchedAddress": "20 KM East of the Fish River Canyon, Fish River Canyon, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Canyon%20Lodge%2C%20Gondwana%20Collection%20Namibia&query_place_id=ChIJneKJLzwaPhwRXi7TC-h-BB0",
+    "localPath": "/images/lodges/canyon-lodge.jpg"
+  },
+  {
+    "slug": "nkasa-lupala-tented-lodge",
+    "name": "Nkasa Lupala Tented Lodge",
+    "region": "Caprivi Strip",
+    "status": "downloaded",
+    "matchedName": "Nkasa Lupala tented lodge",
+    "matchedAddress": "Sangwali, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Nkasa%20Lupala%20tented%20lodge&query_place_id=ChIJZ2oMTTNvVxkRip_LW15so8Y",
+    "localPath": "/images/lodges/nkasa-lupala-tented-lodge.jpg"
+  },
+  {
+    "slug": "spitzkoppen-lodge",
+    "name": "Spitzkoppen Lodge",
+    "region": "Spitzkoppe",
+    "status": "downloaded",
+    "matchedName": "Spitzkoppen Lodge",
+    "matchedAddress": "Spitzkoppe Road D1918 Spitzkoppe, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Spitzkoppen%20Lodge&query_place_id=ChIJOfWoXtUFihsRWUB1OOan5Rs",
+    "localPath": "/images/lodges/spitzkoppen-lodge.jpg"
+  },
+  {
+    "slug": "thitaka-river-lodge",
+    "name": "Thitaka River Lodge",
+    "region": "Caprivi Strip",
+    "status": "no-photo",
+    "matchedName": "Thitaka River Lodge"
+  },
+  {
+    "slug": "luna-namib-collection",
+    "name": "Luna Namib Collection",
+    "region": "Sossusvlei",
+    "status": "downloaded",
+    "matchedName": "Luna Namib Collection, Gondwana Collection Namibia",
+    "matchedAddress": "C27, Sesriem, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Luna%20Namib%20Collection%2C%20Gondwana%20Collection%20Namibia&query_place_id=ChIJeyCfXQBvbRwRMczQH0ecmVg",
+    "localPath": "/images/lodges/luna-namib-collection.jpg"
+  }
+]

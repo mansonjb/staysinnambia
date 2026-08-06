@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,13 +24,34 @@ const newsreader = Newsreader({
   style: ["normal", "italic"],
 });
 
+const DEFAULT_TITLE = "Namibia Stays | Extraordinary places to stay across Namibia";
+const DEFAULT_DESCRIPTION =
+  "Independent guides to Namibia's lodges, camps and hotels, covering where to stay in Etosha, Sossusvlei, Damaraland, the Skeleton Coast and beyond.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Namibia Stays — Extraordinary places to stay across Namibia",
-    template: "%s — Namibia Stays",
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "Independent guides to Namibia's lodges, camps and hotels — where to stay in Etosha, Sossusvlei, Damaraland, the Skeleton Coast and beyond.",
+  description: DEFAULT_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    url: SITE_URL,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function RootLayout({
@@ -40,6 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${instrumentSerif.variable} ${newsreader.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-charcoal">

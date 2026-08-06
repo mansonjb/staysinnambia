@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CardCTA, SaveButton } from "@/components/card-arrow";
+import { AvailabilityBadge, CardCTA, SaveButton } from "@/components/card-arrow";
+import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { Stay22Map } from "@/components/stay22-map";
-import { getLodgesForRegion, getRegion, popularGuides, regions } from "@/lib/data";
+import { getLodgesForRegion, getRegion, popularGuides, regions, type Region } from "@/lib/data";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return regions.map((r) => ({ region: r.slug }));
@@ -24,7 +26,16 @@ export async function generateMetadata({
 
   return {
     title: `Where to Stay in ${region.name}`,
-    description: region.quickAnswer,
+    description: region.description,
+    alternates: {
+      canonical: `/where-to-stay/${region.slug}`,
+      languages: { en: `/where-to-stay/${region.slug}`, de: `/de/where-to-stay/${region.slug}`, nl: `/nl/where-to-stay/${region.slug}` },
+    },
+    openGraph: {
+      title: `Where to Stay in ${region.name}`,
+      description: region.description,
+      images: [{ url: region.image, width: 1600, height: 900 }],
+    },
   };
 }
 
@@ -38,10 +49,30 @@ export default async function RegionPage({
   if (!region) notFound();
 
   const regionLodges = getLodgesForRegion(region.slug);
-  const otherRegions = regions.filter((r) => r.slug !== region.slug).slice(0, 3);
+
+  const nearbyMatches = region.nearby.map((entry) => ({
+    text: entry,
+    region: regions.find(
+      (r) => r.slug !== region.slug && entry.toLowerCase().startsWith(r.name.toLowerCase())
+    ),
+  }));
+  const pairedRegions = nearbyMatches.map((n) => n.region).filter((r): r is Region => Boolean(r));
+  const landmarks = nearbyMatches.filter((n) => !n.region).map((n) => n.text);
+  const otherRegions =
+    pairedRegions.length > 0
+      ? pairedRegions
+      : regions.filter((r) => r.slug !== region.slug).slice(0, 3);
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Where to Stay", url: `${SITE_URL}/where-to-stay/namibia` },
+          { name: region.name, url: `${SITE_URL}/where-to-stay/${region.slug}` },
+        ])}
+      />
+      <JsonLd data={faqJsonLd(region.faqs)} />
       <nav className="mx-auto max-w-[1400px] px-6 pt-6 text-[13px] text-charcoal/50 sm:px-10">
         <Link href="/" className="hover:text-rust">
           Home
@@ -68,6 +99,17 @@ export default async function RegionPage({
             <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-charcoal/70">
               {region.quickAnswer}
             </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {region.knownFor.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full bg-sand/30 px-3 py-1 text-[12px] font-medium text-charcoal/70"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-6 border-t border-charcoal/10 pt-6">
               <div>
@@ -133,6 +175,45 @@ export default async function RegionPage({
         </Reveal>
       </section>
 
+      {/* How many days */}
+      <section className="mx-auto max-w-[1400px] px-6 py-12 sm:px-10">
+        <Reveal>
+          <h2 className="text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
+            How many days in {region.name}?
+          </h2>
+          <p className="mt-3 max-w-lg text-sm leading-relaxed text-charcoal/60">
+            Pick the length that matches your trip: each one is a real trade-off, not a list of
+            boxes to tick.
+          </p>
+        </Reveal>
+        <div
+          className={`mt-10 grid grid-cols-1 gap-6 ${
+            region.dayPlans.length > 1 ? "sm:grid-cols-2" : "sm:max-w-xl"
+          }`}
+        >
+          {region.dayPlans.map((plan, i) => (
+            <Reveal
+              key={plan.nights}
+              delay={i * 80}
+              className="flex h-full flex-col rounded-2xl border border-black/5 bg-white p-7 shadow-sm"
+            >
+              <div className="flex items-baseline gap-3">
+                <span className="font-serif text-5xl italic text-rust">{plan.nights}</span>
+                <span className="text-[13px] uppercase tracking-[0.14em] text-charcoal/40">
+                  {plan.nights === 1 ? "night" : "nights"}
+                </span>
+              </div>
+              <p className="mt-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-olive">
+                {plan.verdict}
+              </p>
+              <p className="mt-4 flex-1 text-[14px] leading-relaxed text-charcoal/70">
+                {plan.text}
+              </p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       {/* Best lodges */}
       {regionLodges.length > 0 && (
         <section className="bg-sand/20 py-16 sm:py-20">
@@ -184,7 +265,8 @@ export default async function RegionPage({
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-4 flex justify-end border-t border-charcoal/10 pt-4">
+                      <div className="mt-4 flex items-center justify-between border-t border-charcoal/10 pt-4">
+                        <AvailabilityBadge />
                         <CardCTA label="View Lodge" />
                       </div>
                     </div>
@@ -203,7 +285,7 @@ export default async function RegionPage({
             Map of stays near {region.name}
           </h2>
           <p className="mt-3 max-w-lg text-sm leading-relaxed text-charcoal/60">
-            Every pin is a real, bookable stay — powered by our booking partner Stay22.
+            Every pin is a real, bookable stay, powered by our booking partner Stay22.
           </p>
           <Stay22Map lat={region.lat} lng={region.lng} label={region.name} className="mt-8" />
         </Reveal>
@@ -243,6 +325,21 @@ export default async function RegionPage({
               </Reveal>
             ))}
           </div>
+          {landmarks.length > 0 && (
+            <Reveal className="mt-8 flex flex-wrap items-center gap-2">
+              <span className="text-[13px] font-semibold text-charcoal/50">
+                Also worth combining with:
+              </span>
+              {landmarks.map((l) => (
+                <span
+                  key={l}
+                  className="rounded-full bg-white px-3 py-1.5 text-[12px] font-medium text-charcoal/70 shadow-sm"
+                >
+                  {l}
+                </span>
+              ))}
+            </Reveal>
+          )}
         </div>
       </section>
 

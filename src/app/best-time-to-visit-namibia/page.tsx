@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+
+const TITLE = "Best Time to Visit Namibia";
+const DESCRIPTION =
+  "When to visit Namibia: the honest trade-offs between the dry season, the green season, and the shoulder months in between.";
 
 export const metadata: Metadata = {
-  title: "Best Time to Visit Namibia",
-  description:
-    "When to visit Namibia: the honest trade-offs between the dry season, the green season, and the shoulder months in between.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/best-time-to-visit-namibia", languages: { en: "/best-time-to-visit-namibia", de: "/de/best-time-to-visit-namibia", nl: "/nl/best-time-to-visit-namibia" } },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
 };
 
 const SEASONS = [
@@ -14,7 +26,7 @@ const SEASONS = [
     name: "Dry season",
     months: "May – October",
     summary:
-      "The classic safari window. Vegetation thins out and animals concentrate around waterholes, making game viewing at its most reliable — especially in Etosha.",
+      "The classic safari window, and Namibia's clearest, driest air of the year. Vegetation thins out and animals concentrate around waterholes, making game viewing at its most reliable, especially in Etosha.",
     tradeoffs: [
       "Best wildlife viewing of the year, particularly July–October",
       "Cool, dry days and cold desert nights (pack layers)",
@@ -25,7 +37,7 @@ const SEASONS = [
     name: "Green season",
     months: "November – April",
     summary:
-      "Namibia turns lush and green after the rains, with dramatic skies and strong birding — but wildlife spreads out away from waterholes, making sightings less concentrated.",
+      "Namibia turns lush and green after the rains, with dramatic skies and strong birding, but wildlife spreads out away from waterholes, making sightings less concentrated.",
     tradeoffs: [
       "Best birding of the year, with migratory species present",
       "Landscapes and photography light are at their most dramatic",
@@ -48,6 +60,13 @@ const SEASONS = [
 export default function BestTimePage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Guides", url: `${SITE_URL}/guides` },
+          { name: "Best Time to Visit Namibia", url: `${SITE_URL}/best-time-to-visit-namibia` },
+        ])}
+      />
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
         <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
           <LogoMark className="h-4 w-4" />
@@ -57,9 +76,21 @@ export default function BestTimePage() {
           Best time to visit Namibia
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          There&apos;s no single best month — it depends on whether you&apos;re prioritising
-          wildlife, photography, or avoiding crowds. Here&apos;s the honest trade-off for each
-          part of the year.
+          There&apos;s no single best month: it depends on whether you&apos;re prioritising{" "}
+          <Link
+            href="/namibia-wildlife-guide"
+            className="font-semibold text-rust hover:text-rust-dark"
+          >
+            wildlife
+          </Link>
+          ,{" "}
+          <Link
+            href="/namibia-stargazing-photography"
+            className="font-semibold text-rust hover:text-rust-dark"
+          >
+            photography
+          </Link>
+          , or avoiding crowds. Here&apos;s the honest trade-off for each part of the year.
         </p>
       </section>
 

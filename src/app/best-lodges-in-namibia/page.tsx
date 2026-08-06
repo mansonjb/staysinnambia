@@ -1,21 +1,41 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CardCTA, SaveButton } from "@/components/card-arrow";
+import { AvailabilityBadge, CardCTA, SaveButton } from "@/components/card-arrow";
+import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { lodges } from "@/lib/data";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+
+const TITLE = "Best Lodges in Namibia";
+const DESCRIPTION =
+  "The best lodges and camps across Namibia, chosen region by region: no prices, no fake reviews, just real, named stays worth knowing about.";
 
 export const metadata: Metadata = {
-  title: "Best Lodges in Namibia",
-  description:
-    "The best lodges and camps across Namibia, chosen region by region — no prices, no fake reviews, just real, named stays worth knowing about.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/best-lodges-in-namibia",
+    languages: { en: "/best-lodges-in-namibia", de: "/de/best-lodges-in-namibia", nl: "/nl/best-lodges-in-namibia" },
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
 };
 
 export default function BestLodgesPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Lodges", url: `${SITE_URL}/best-lodges-in-namibia` },
+        ])}
+      />
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
         <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
           <LogoMark className="h-4 w-4" />
@@ -26,8 +46,15 @@ export default function BestLodgesPage() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           No prices. No fake reviews. Every lodge below is a real, named, currently operating
-          property, chosen for its setting, its guiding, or the way it&apos;s run — not for who
-          pays us the most.
+          property, chosen for its setting, its guiding, or the way it&apos;s run, not for who
+          pays us the most. For actual budget figures, see our{" "}
+          <Link
+            href="/namibia-trip-cost"
+            className="text-rust underline underline-offset-2 hover:text-rust-dark"
+          >
+            Namibia trip cost guide
+          </Link>
+          .
         </p>
       </section>
 
@@ -74,7 +101,10 @@ export default function BestLodgesPage() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-5 flex items-center justify-between">
+                  <div className="mt-4 flex justify-start border-t border-charcoal/10 pt-4">
+                    <AvailabilityBadge />
+                  </div>
+                  <div className="mt-4 flex items-center justify-between">
                     <Link
                       href={`/where-to-stay/${lodge.regionSlug}`}
                       className="text-[13px] font-medium text-charcoal/50 hover:text-rust"

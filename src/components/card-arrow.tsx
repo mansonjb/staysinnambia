@@ -23,6 +23,27 @@ export function CardCTA({ label, className = "" }: { label: string; className?: 
   );
 }
 
+export function AvailabilityBadge({
+  className = "",
+  label = "Check availability",
+}: {
+  className?: string;
+  label?: string;
+}) {
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 rounded-full bg-olive/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.06em] text-olive ${className}`}
+    >
+      <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2">
+        <rect x="3.5" y="5" width="17" height="15" rx="2.5" />
+        <path d="M3.5 9.5h17M8 3v3M16 3v3" strokeLinecap="round" />
+        <path d="M8.5 14l2 2 4.5-4.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+      {label}
+    </span>
+  );
+}
+
 export function SaveButton({ className = "" }: { className?: string }) {
   return (
     <span

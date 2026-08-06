@@ -1,33 +1,63 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CardArrow } from "@/components/card-arrow";
+import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+
+const TITLE = "Luxury Namibia";
+const DESCRIPTION = "What a luxury Namibia trip actually looks like: fly-in circuits, private guiding, and the top-tier lodges worth the splurge.";
 
 export const metadata: Metadata = {
-  title: "Luxury Namibia",
-  description: "What a luxury Namibia trip actually looks like — fly-in circuits, private guiding, and the top-tier lodges worth the splurge.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/luxury-namibia", languages: { en: "/luxury-namibia", de: "/de/luxury-namibia", nl: "/nl/luxury-namibia" } },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
 };
 
 const POINTS = [
   {
     title: "Fly-in over self-drive",
-    text: "The top lodges (Hoanib Skeleton Coast Camp, Sossusvlei Desert Lodge) are often reached by light aircraft rather than road, cutting a 6-hour drive to a 45-minute flight.",
+    text: (
+      <>
+        The top lodges (Hoanib Skeleton Coast Camp, Sossusvlei Desert Lodge) are often reached by
+        light aircraft rather than road, cutting what our{" "}
+        <Link
+          href="/namibia-self-drive-guide"
+          className="text-rust underline underline-offset-2 hover:text-rust-dark"
+        >
+          self-drive guide
+        </Link>{" "}
+        would clock as a 6-hour drive down to a 45-minute flight.
+      </>
+    ),
   },
   {
     title: "Private reserves, not just private rooms",
-    text: "Luxury in Namibia usually means access — a private conservancy gate, off-road tracking rights, or night drives that aren't permitted inside the national parks themselves.",
+    text: "Luxury in Namibia usually means access: a private conservancy gate, off-road tracking rights, or night drives that aren't permitted inside the national parks themselves.",
   },
   {
     title: "Fewer, better nights",
-    text: "A luxury itinerary is often shorter than a budget self-drive — three or four camps over 8–10 days, each earning two full nights rather than a quick stopover.",
+    text: "A luxury itinerary is often shorter than a budget self-drive: three or four camps over 8–10 days, each earning two full nights rather than a quick stopover.",
   },
 ];
 
 export default function LuxuryPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Guides", url: `${SITE_URL}/guides` },
+          { name: "Luxury Namibia", url: `${SITE_URL}/luxury-namibia` },
+        ])}
+      />
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
         <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
           <LogoMark className="h-4 w-4" />

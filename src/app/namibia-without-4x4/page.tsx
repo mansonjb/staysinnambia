@@ -1,20 +1,31 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+
+const TITLE = "Namibia Without a 4x4";
+const DESCRIPTION =
+  "You don't need a 4x4 for most of a Namibia self-drive trip: here's what's fine in a normal sedan and where it genuinely matters.";
 
 export const metadata: Metadata = {
-  title: "Namibia Without a 4x4",
-  description:
-    "You don't need a 4x4 for most of a Namibia self-drive trip — here's what's fine in a normal sedan and where it genuinely matters.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/namibia-without-4x4", languages: { en: "/namibia-without-4x4", de: "/de/namibia-without-4x4", nl: "/nl/namibia-without-4x4" } },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+  },
 };
 
 const CAN_2WD = [
-  "Windhoek to Sossusvlei (Sesriem) — tar and well-graded gravel",
-  "Windhoek to Swakopmund via the B1/B2 — fully tarred",
-  "Swakopmund to Damaraland's main lodges — graded gravel, fine in the dry season",
-  "Windhoek to Etosha's southern and eastern gates — tar most of the way",
+  "Windhoek to Sossusvlei (Sesriem): tar and well-graded gravel",
+  "Windhoek to Swakopmund via the B1/B2: fully tarred",
+  "Swakopmund to Damaraland's main lodges: graded gravel, fine in the dry season",
+  "Windhoek to Etosha's southern and eastern gates: tar most of the way",
 ];
 
 const NEED_4X4 = [
@@ -27,6 +38,13 @@ const NEED_4X4 = [
 export default function Without4x4Page() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: SITE_URL },
+          { name: "Guides", url: `${SITE_URL}/guides` },
+          { name: "Namibia Without a 4x4", url: `${SITE_URL}/namibia-without-4x4` },
+        ])}
+      />
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
         <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
           <LogoMark className="h-4 w-4" />
@@ -38,8 +56,15 @@ export default function Without4x4Page() {
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           A common misconception: most of a classic Namibia circuit is drivable in a normal
           sedan or crossover. The country&apos;s main gravel roads (the &quot;C&quot; and
-          &quot;D&quot; roads) are well-graded and maintained. A 4x4 genuinely matters for a
-          smaller set of specific stretches.
+          &quot;D&quot; roads, broken down in more detail in our{" "}
+          <Link
+            href="/namibia-self-drive-guide"
+            className="font-semibold text-rust hover:text-rust-dark"
+          >
+            self-drive guide
+          </Link>
+          ) are well-graded and maintained. A 4x4 genuinely matters for a smaller set of specific
+          stretches.
         </p>
       </section>
 

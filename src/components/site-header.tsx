@@ -1,18 +1,54 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { LogoMark } from "@/components/logo-mark";
+import { localeFromPathname, withLocale } from "@/lib/i18n";
 
-const NAV_LINKS = [
-  { label: "Regions", href: "/regions" },
+const NAV_LINKS_EN = [
   { label: "Where to Stay", href: "/where-to-stay/namibia" },
   { label: "Lodges", href: "/best-lodges-in-namibia" },
   { label: "Itineraries", href: "/itineraries" },
   { label: "Guides", href: "/guides" },
 ];
 
+const NAV_LINKS_DE = [
+  { label: "Unterkünfte", href: "/where-to-stay/namibia" },
+  { label: "Lodges", href: "/best-lodges-in-namibia" },
+  { label: "Reiserouten", href: "/itineraries" },
+  { label: "Ratgeber", href: "/guides" },
+];
+
+const NAV_LINKS_NL = [
+  { label: "Verblijven", href: "/where-to-stay/namibia" },
+  { label: "Lodges", href: "/best-lodges-in-namibia" },
+  { label: "Reisroutes", href: "/itineraries" },
+  { label: "Gidsen", href: "/guides" },
+];
+
+const NAV_LINKS: Record<string, typeof NAV_LINKS_EN> = {
+  en: NAV_LINKS_EN,
+  de: NAV_LINKS_DE,
+  nl: NAV_LINKS_NL,
+};
+
+const CTA_LABEL: Record<string, string> = {
+  en: "Where to Stay",
+  de: "Unterkünfte finden",
+  nl: "Vind een verblijf",
+};
+
 export function SiteHeader() {
+  const pathname = usePathname();
+  const locale = localeFromPathname(pathname ?? "/");
+  const navLinks = NAV_LINKS[locale].map((l) => ({
+    label: l.label,
+    href: withLocale(l.href, locale),
+  }));
+  const homeHref = withLocale("/", locale);
+  const ctaLabel = CTA_LABEL[locale];
+  const ctaHref = withLocale("/where-to-stay/namibia", locale);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -27,7 +63,7 @@ export function SiteHeader() {
       <header className="relative z-50 border-b border-charcoal/10 bg-white">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 sm:px-10">
           <Link
-            href="/"
+            href={homeHref}
             className="flex items-center gap-2.5 font-serif text-2xl italic tracking-tight text-charcoal"
             onClick={() => setMenuOpen(false)}
           >
@@ -36,7 +72,7 @@ export function SiteHeader() {
           </Link>
 
           <nav className="hidden items-center gap-8 text-[13px] uppercase tracking-[0.14em] text-charcoal/70 md:flex">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -48,10 +84,10 @@ export function SiteHeader() {
           </nav>
 
           <Link
-            href="/where-to-stay/namibia"
+            href={ctaHref}
             className="hidden rounded-full bg-rust px-6 py-2.5 text-[13px] font-medium uppercase tracking-[0.1em] text-ivory transition-colors hover:bg-rust-dark sm:inline-block"
           >
-            Where to Stay
+            {ctaLabel}
           </Link>
 
           <button
@@ -81,7 +117,7 @@ export function SiteHeader() {
         }`}
       >
         <nav className="flex flex-col gap-1">
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -93,11 +129,11 @@ export function SiteHeader() {
           ))}
         </nav>
         <Link
-          href="/where-to-stay/namibia"
+          href={ctaHref}
           onClick={() => setMenuOpen(false)}
           className="mt-10 inline-block self-start rounded-full bg-rust px-6 py-3 text-[13px] uppercase tracking-[0.1em] text-ivory"
         >
-          Where to Stay
+          {ctaLabel}
         </Link>
       </div>
     </>
