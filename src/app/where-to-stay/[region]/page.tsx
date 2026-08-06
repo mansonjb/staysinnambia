@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AvailabilityBadge, CardCTA, SaveButton } from "@/components/card-arrow";
+import { AvailabilityBadge, CardCTA, PriceTierBadge, SaveButton } from "@/components/card-arrow";
 import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
@@ -266,7 +266,10 @@ export default async function RegionPage({
                         ))}
                       </ul>
                       <div className="mt-4 flex items-center justify-between border-t border-charcoal/10 pt-4">
-                        <AvailabilityBadge />
+                        <div className="flex items-center gap-2">
+                          <AvailabilityBadge />
+                          <PriceTierBadge tier={lodge.priceTier} />
+                        </div>
                         <CardCTA label="View Lodge" />
                       </div>
                     </div>

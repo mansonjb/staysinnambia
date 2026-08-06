@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AvailabilityBadge, CardCTA } from "@/components/card-arrow";
+import { AvailabilityBadge, CardCTA, PriceTierBadge } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd, lodgingBusinessJsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
@@ -129,6 +129,7 @@ export default async function LodgePage({
                 <a href="#availability">
                   <AvailabilityBadge />
                 </a>
+                <PriceTierBadge tier={lodge.priceTier} />
               </div>
             )}
           </div>
@@ -190,7 +191,10 @@ export default async function LodgePage({
                         {l.description}
                       </p>
                       <div className="mt-4 flex items-center justify-between">
-                        <AvailabilityBadge />
+                        <div className="flex items-center gap-2">
+                          <AvailabilityBadge />
+                          <PriceTierBadge tier={l.priceTier} />
+                        </div>
                         <CardCTA label="View Lodge" />
                       </div>
                     </div>

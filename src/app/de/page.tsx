@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { AvailabilityBadge, CardArrow, CardCTA, SaveButton } from "@/components/card-arrow";
+import { AvailabilityBadge, CardArrow, CardCTA, PriceTierBadge, SaveButton } from "@/components/card-arrow";
 import { faqJsonLd, JsonLd, websiteJsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
@@ -357,7 +357,10 @@ export default function HomeDe() {
                     </ul>
 
                     <div className="mt-5 flex items-center justify-between">
-                      <AvailabilityBadge label="Verfügbarkeit prüfen" />
+                      <div className="flex items-center gap-2">
+                        <AvailabilityBadge label="Verfügbarkeit prüfen" />
+                        <PriceTierBadge tier={lodge.priceTier} />
+                      </div>
                       <CardCTA label="Lodge ansehen" />
                     </div>
                   </div>
@@ -382,18 +385,32 @@ export default function HomeDe() {
             <Reveal key={route.days} delay={i * 60}>
               <Link
                 href={`/de/itineraries/${route.slug}`}
-                className="group flex h-full flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg"
               >
-                <span className="text-5xl font-bold text-sand-dark">{route.days}</span>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-charcoal/40">
-                  Tage: {route.title}
-                </p>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-charcoal/60">
-                  {route.description}
-                </p>
-                <p className="mt-4 text-[13px] text-charcoal/50">{route.stops}</p>
-                <div className="mt-5 flex justify-end border-t border-charcoal/10 pt-4">
-                  <CardArrow />
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <Image
+                    src={route.image}
+                    alt={route.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-3 left-4 text-3xl font-bold text-ivory">
+                    {route.days}
+                  </span>
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-charcoal/40">
+                    Tage: {route.title}
+                  </p>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/60">
+                    {route.description}
+                  </p>
+                  <p className="mt-4 text-[13px] text-charcoal/50">{route.stops}</p>
+                  <div className="mt-5 flex justify-end border-t border-charcoal/10 pt-4">
+                    <CardArrow />
+                  </div>
                 </div>
               </Link>
             </Reveal>

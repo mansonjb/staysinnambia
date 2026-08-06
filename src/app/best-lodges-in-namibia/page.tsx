@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { AvailabilityBadge, CardCTA, SaveButton } from "@/components/card-arrow";
+import { AvailabilityBadge, CardCTA, PriceTierBadge, SaveButton } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
@@ -101,8 +101,9 @@ export default function BestLodgesPage() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-4 flex justify-start border-t border-charcoal/10 pt-4">
+                  <div className="mt-4 flex items-center justify-between border-t border-charcoal/10 pt-4">
                     <AvailabilityBadge />
+                    <PriceTierBadge tier={lodge.priceTier} />
                   </div>
                   <div className="mt-4 flex items-center justify-between">
                     <Link

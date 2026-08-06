@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AvailabilityBadge, CardCTA, SaveButton } from "@/components/card-arrow";
+import { AvailabilityBadge, CardCTA, PriceTierBadge, SaveButton } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
@@ -113,7 +113,10 @@ export function LodgeCategoryPage({
                     ))}
                   </ul>
                   <div className="mt-4 flex items-center justify-between border-t border-charcoal/10 pt-4">
-                    <AvailabilityBadge label={t.availability} />
+                    <div className="flex items-center gap-2">
+                      <AvailabilityBadge label={t.availability} />
+                      <PriceTierBadge tier={lodge.priceTier} />
+                    </div>
                     <CardCTA label={t.viewLodge} />
                   </div>
                 </div>

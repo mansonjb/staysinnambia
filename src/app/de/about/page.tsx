@@ -65,7 +65,10 @@ export default function AboutPageDe() {
               denen wir selbst nicht übernachtet haben, nicht unabhängig verifizieren, deshalb
               veröffentlichen wir keine von beiden. Wo Echtzeit-Verfügbarkeit und -Preise
               existieren, verlinken wir zu unserem Buchungspartner Stay22, statt eine Zahl auf
-              dieser Seite zu zeigen, die beim Lesen bereits veraltet sein könnte.
+              dieser Seite zu zeigen, die beim Lesen bereits veraltet sein könnte. Die
+              €&ndash;€€€€-Markierungen auf den Lodge-Karten zeigen eine allgemeine Preiskategorie
+              basierend auf der Positionierung des Betreibers, keinen aktuellen Tarif: Den
+              tatsächlichen Preis erfahren Sie bei der Lodge oder bei Stay22.
             </p>
           </Reveal>
           <Reveal delay={120} className="rounded-2xl border border-black/5 bg-white p-7 shadow-sm">

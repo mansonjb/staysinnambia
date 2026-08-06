@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
@@ -51,30 +52,44 @@ export default function ItinerariesPage() {
             <Reveal key={route.days} delay={i * 60}>
               <Link
                 href={`/itineraries/${route.slug}`}
-                className="group flex h-full flex-col rounded-2xl border border-black/5 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-lg"
               >
-                <span className="text-6xl font-bold text-sand-dark">{route.days}</span>
-                <p className="mt-1 text-[12px] uppercase tracking-[0.2em] text-charcoal/40">
-                  days: {route.title}
-                </p>
-                <p className="mt-4 text-[15px] leading-relaxed text-charcoal/70">
-                  {route.description}
-                </p>
-                <div className="mt-6 border-t border-charcoal/10 pt-4">
-                  <p className="text-[12px] uppercase tracking-[0.08em] text-charcoal/40">
-                    Suggested route
-                  </p>
-                  <p className="mt-2 text-[14px] text-charcoal/70">{route.stops}</p>
+                <div className="relative aspect-[16/7] w-full overflow-hidden">
+                  <Image
+                    src={route.image}
+                    alt={route.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-4 left-6 text-5xl font-bold text-ivory">
+                    {route.days}
+                  </span>
+                  <span className="absolute bottom-5 left-[4.5rem] text-[12px] uppercase tracking-[0.2em] text-ivory/80">
+                    days: {route.title}
+                  </span>
                 </div>
-                <span className="mt-4 text-[13px] font-medium text-rust opacity-0 transition-opacity group-hover:opacity-100">
-                  See day-by-day &rarr;
-                </span>
+                <div className="flex flex-1 flex-col p-8">
+                  <p className="text-[15px] leading-relaxed text-charcoal/70">
+                    {route.description}
+                  </p>
+                  <div className="mt-6 border-t border-charcoal/10 pt-4">
+                    <p className="text-[12px] uppercase tracking-[0.08em] text-charcoal/40">
+                      Suggested route
+                    </p>
+                    <p className="mt-2 text-[14px] text-charcoal/70">{route.stops}</p>
+                  </div>
+                  <span className="mt-4 text-[13px] font-medium text-rust opacity-0 transition-opacity group-hover:opacity-100">
+                    See day-by-day &rarr;
+                  </span>
+                </div>
               </Link>
             </Reveal>
           ))}
         </div>
 
-        <Reveal className="mt-10 rounded-2xl border border-black/5 bg-sand/20 p-8">
+        <Reveal className="mt-10 rounded-2xl border border-black/5 border-l-4 border-l-rust bg-sand/20 p-8">
           <h2 className="text-lg font-bold text-charcoal">A rule of thumb for pacing</h2>
           <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/70">
             Namibia&apos;s gravel roads are slower than they look on a map: budget 60–80km/h

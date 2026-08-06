@@ -64,7 +64,10 @@ export default function AboutPageNl() {
               we zelf niet hebben overnacht niet onafhankelijk verifiëren, dus publiceren we geen
               van beide. Waar realtime beschikbaarheid en prijzen bestaan, linken we door naar
               onze boekingspartner Stay22, in plaats van een getal op deze site te tonen dat al
-              achterhaald kan zijn tegen de tijd dat u het leest.
+              achterhaald kan zijn tegen de tijd dat u het leest. De €&ndash;€€€€-markeringen op de
+              lodgekaarten tonen een algemene prijscategorie op basis van hoe de exploitant de
+              accommodatie positioneert, geen actueel tarief: vraag de lodge of Stay22 naar de
+              werkelijke prijs.
             </p>
           </Reveal>
           <Reveal delay={120} className="rounded-2xl border border-black/5 bg-white p-7 shadow-sm">

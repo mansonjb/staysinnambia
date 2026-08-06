@@ -64,6 +64,9 @@ export default function AboutPage() {
               properties we haven&apos;t stayed at ourselves, so we don&apos;t publish either. Where
               real-time availability and pricing exist, we link out to our booking partner, Stay22,
               rather than showing a number on this site that could be wrong by the time you read it.
+              The €&ndash;€€€€ tags you&apos;ll see on lodge cards are a general price tier based on
+              how the operator positions the property, not a live rate: check with the lodge or
+              Stay22 for what it actually costs to book.
             </p>
           </Reveal>
           <Reveal delay={120} className="rounded-2xl border border-black/5 bg-white p-7 shadow-sm">

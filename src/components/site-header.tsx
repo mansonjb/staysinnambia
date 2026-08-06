@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { LogoMark } from "@/components/logo-mark";
-import { localeFromPathname, withLocale } from "@/lib/i18n";
+import { basePathFromPathname, localeFromPathname, LOCALE_LABELS, LOCALES, withLocale } from "@/lib/i18n";
 
 const NAV_LINKS_EN = [
   { label: "Where to Stay", href: "/where-to-stay/namibia" },
@@ -39,9 +39,39 @@ const CTA_LABEL: Record<string, string> = {
   nl: "Vind een verblijf",
 };
 
+function LanguageSwitcher({
+  pathname,
+  className = "",
+  onNavigate,
+}: {
+  pathname: string;
+  className?: string;
+  onNavigate?: () => void;
+}) {
+  const locale = localeFromPathname(pathname);
+  const basePath = basePathFromPathname(pathname);
+
+  return (
+    <div className={`flex items-center gap-1 text-[12px] font-semibold tracking-[0.06em] ${className}`}>
+      {LOCALES.map((l, i) => (
+        <span key={l} className="flex items-center">
+          {i > 0 && <span className="mx-1 text-charcoal/20">/</span>}
+          <Link
+            href={withLocale(basePath, l)}
+            onClick={onNavigate}
+            className={l === locale ? "text-rust" : "text-charcoal/50 transition-colors hover:text-charcoal"}
+          >
+            {LOCALE_LABELS[l]}
+          </Link>
+        </span>
+      ))}
+    </div>
+  );
+}
+
 export function SiteHeader() {
-  const pathname = usePathname();
-  const locale = localeFromPathname(pathname ?? "/");
+  const pathname = usePathname() ?? "/";
+  const locale = localeFromPathname(pathname);
   const navLinks = NAV_LINKS[locale].map((l) => ({
     label: l.label,
     href: withLocale(l.href, locale),
@@ -83,12 +113,15 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <Link
-            href={ctaHref}
-            className="hidden rounded-full bg-rust px-6 py-2.5 text-[13px] font-medium uppercase tracking-[0.1em] text-ivory transition-colors hover:bg-rust-dark sm:inline-block"
-          >
-            {ctaLabel}
-          </Link>
+          <div className="hidden items-center gap-5 md:flex">
+            <LanguageSwitcher pathname={pathname} />
+            <Link
+              href={ctaHref}
+              className="rounded-full bg-rust px-6 py-2.5 text-[13px] font-medium uppercase tracking-[0.1em] text-ivory transition-colors hover:bg-rust-dark"
+            >
+              {ctaLabel}
+            </Link>
+          </div>
 
           <button
             type="button"
@@ -135,6 +168,7 @@ export function SiteHeader() {
         >
           {ctaLabel}
         </Link>
+        <LanguageSwitcher pathname={pathname} className="mt-8 text-[14px]" onNavigate={() => setMenuOpen(false)} />
       </div>
     </>
   );

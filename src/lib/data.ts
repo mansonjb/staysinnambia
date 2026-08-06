@@ -592,6 +592,14 @@ export type Lodge = {
   categories: LodgeCategory[];
   image: string;
   alt: string;
+  /**
+   * Indicative price tier (1 = most accessible, 4 = ultra-luxury), not a live rate.
+   * Judged from operator positioning and published property style (private
+   * pools/sleep-outs vs. community-run vs. boutique hotel), never a verified
+   * per-night figure, this site doesn't have real-time pricing for these
+   * named properties (see /about).
+   */
+  priceTier: 1 | 2 | 3 | 4;
 };
 
 export const lodges: Lodge[] = [
@@ -608,6 +616,7 @@ export const lodges: Lodge[] = [
     categories: ["safari", "romantic"],
     image: "/images/lodges/ongava-lodge.jpg",
     alt: "Thatched chalet built into a rocky outcrop at Ongava Lodge, Etosha",
+    priceTier: 4,
   },
   {
     slug: "onguma-tented-camp",
@@ -622,6 +631,7 @@ export const lodges: Lodge[] = [
     categories: ["safari", "romantic", "glamping"],
     image: "/images/lodges/onguma-tented-camp.jpg",
     alt: "A tented suite at dusk under a large tree at Onguma Tented Camp, Etosha",
+    priceTier: 3,
   },
   {
     slug: "mushara-lodge",
@@ -635,6 +645,7 @@ export const lodges: Lodge[] = [
     categories: ["safari", "family"],
     image: "/images/lodges/mushara-lodge.jpg",
     alt: "Thatched lounge and terrace at Mushara Lodge, Etosha, lit at dusk",
+    priceTier: 3,
   },
   {
     slug: "little-kulala",
@@ -649,6 +660,7 @@ export const lodges: Lodge[] = [
     categories: ["luxury", "desert", "romantic", "glamping"],
     image: "/images/lodges/little-kulala.jpg",
     alt: "A shaded deck overlooking the Namib plains at Little Kulala, Sossusvlei",
+    priceTier: 4,
   },
   {
     slug: "sossusvlei-desert-lodge",
@@ -663,6 +675,7 @@ export const lodges: Lodge[] = [
     categories: ["luxury", "desert"],
     image: "/images/lodges/sossusvlei-desert-lodge.jpg",
     alt: "Glass-fronted rooms of Sossusvlei Desert Lodge lit red at night under a starry sky",
+    priceTier: 4,
   },
   {
     slug: "kulala-desert-lodge",
@@ -677,6 +690,7 @@ export const lodges: Lodge[] = [
     categories: ["desert", "family"],
     image: "/images/lodges/kulala-desert-lodge.jpg",
     alt: "Thatched chalets on red desert terrain at Kulala Desert Lodge, Sossusvlei",
+    priceTier: 3,
   },
   {
     slug: "damaraland-camp",
@@ -691,6 +705,7 @@ export const lodges: Lodge[] = [
     categories: ["safari", "desert", "glamping"],
     image: "/images/lodges/damaraland-camp.jpg",
     alt: "Thatched chalets set among red rock hills at Damaraland Camp",
+    priceTier: 3,
   },
   {
     slug: "grootberg-lodge",
@@ -704,6 +719,7 @@ export const lodges: Lodge[] = [
     categories: ["safari"],
     image: "/images/lodges/grootberg-lodge.jpg",
     alt: "View over the valley from a room at Grootberg Lodge, Damaraland",
+    priceTier: 2,
   },
   {
     slug: "doro-nawas-camp",
@@ -718,6 +734,7 @@ export const lodges: Lodge[] = [
     categories: ["desert", "romantic", "glamping"],
     image: "/images/lodges/doro-nawas-camp.jpg",
     alt: "A shaded veranda overlooking the plains at Doro Nawas Camp, Damaraland",
+    priceTier: 3,
   },
   {
     slug: "shipwreck-lodge",
@@ -732,6 +749,7 @@ export const lodges: Lodge[] = [
     categories: ["luxury", "desert", "remote"],
     image: "/images/lodges/shipwreck-lodge.jpg",
     alt: "The shipwreck-shaped chalets of Shipwreck Lodge on the dunes at dusk",
+    priceTier: 4,
   },
   {
     slug: "hoanib-skeleton-coast-camp",
@@ -746,6 +764,7 @@ export const lodges: Lodge[] = [
     categories: ["luxury", "safari", "remote", "glamping"],
     image: "/images/lodges/hoanib-skeleton-coast-camp.jpg",
     alt: "A tented suite lit at dusk at Hoanib Skeleton Coast Camp",
+    priceTier: 4,
   },
   {
     slug: "the-delight-swakopmund",
@@ -760,6 +779,7 @@ export const lodges: Lodge[] = [
     categories: ["luxury", "romantic"],
     image: "/images/lodges/the-delight-swakopmund.jpg",
     alt: "The contemporary facade of The Delight Swakopmund on the seafront",
+    priceTier: 2,
   },
   {
     slug: "hansa-hotel",
@@ -773,6 +793,7 @@ export const lodges: Lodge[] = [
     categories: [],
     image: "/images/lodges/hansa-hotel.jpg",
     alt: "The historic entrance of the Hansa Hotel, Swakopmund, lit at dusk",
+    priceTier: 2,
   },
   {
     slug: "the-olive-exclusive",
@@ -786,6 +807,7 @@ export const lodges: Lodge[] = [
     categories: ["luxury", "romantic"],
     image: "/images/lodges/the-olive-exclusive.jpg",
     alt: "Suites overlooking Windhoek at dusk from The Olive Exclusive",
+    priceTier: 4,
   },
   {
     slug: "villa-violet",
@@ -799,6 +821,7 @@ export const lodges: Lodge[] = [
     categories: ["family"],
     image: "/images/lodges/villa-violet.jpg",
     alt: "The pool and garden terrace at Villa Violet, Windhoek",
+    priceTier: 1,
   },
   {
     slug: "canyon-lodge",
@@ -813,6 +836,7 @@ export const lodges: Lodge[] = [
     categories: ["desert", "family", "remote"],
     image: "/images/lodges/canyon-lodge.jpg",
     alt: "A guest room built among granite boulders at Canyon Lodge, Fish River Canyon",
+    priceTier: 2,
   },
   {
     slug: "nkasa-lupala-tented-lodge",
@@ -826,6 +850,7 @@ export const lodges: Lodge[] = [
     categories: ["safari", "remote", "glamping"],
     image: "/images/lodges/nkasa-lupala-tented-lodge.jpg",
     alt: "A dining deck overlooking the floodplain at Nkasa Lupala Tented Lodge",
+    priceTier: 2,
   },
   {
     slug: "spitzkoppen-lodge",
@@ -839,6 +864,7 @@ export const lodges: Lodge[] = [
     categories: ["desert"],
     image: "/images/lodges/spitzkoppen-lodge.jpg",
     alt: "Elevated chalets among the granite domes of Spitzkoppen Lodge at dusk",
+    priceTier: 2,
   },
   {
     slug: "thitaka-river-lodge",
@@ -854,6 +880,7 @@ export const lodges: Lodge[] = [
     image:
       "https://images.unsplash.com/photo-1740447342649-8b68b10b42d0?q=80&w=1600&auto=format&fit=crop",
     alt: "A river winding through dense green riverine forest, typical of the Zambezi region's wetlands",
+    priceTier: 3,
   },
   {
     slug: "luna-namib-collection",
@@ -868,6 +895,7 @@ export const lodges: Lodge[] = [
     categories: ["luxury", "desert", "romantic"],
     image: "/images/lodges/luna-namib-collection.jpg",
     alt: "A private deck and plunge pool at sunrise at Luna Namib Collection, Sossusvlei",
+    priceTier: 3,
   },
 ];
 
@@ -899,6 +927,8 @@ export type RoutePlan = {
   vehicle: string;
   pace: string;
   bestFor: string;
+  image: string;
+  alt: string;
   dayByDay: { label: string; text: string; regionSlug?: string }[];
   faqs: { q: string; a: string }[];
 };
@@ -910,6 +940,9 @@ export const selfDriveRoutes: RoutePlan[] = [
     title: "One week",
     description: "A tight loop for a first taste: the dunes, the coast, and one wildlife stop.",
     stops: "Windhoek · Sossusvlei · Swakopmund",
+    image:
+      "https://images.unsplash.com/photo-1652599720885-abf363ed2992?q=80&w=1600&auto=format&fit=crop",
+    alt: "A towering red sand dune in the Namib Desert near Sossusvlei",
     vehicle:
       "A standard 2x4 rental covers this entire route. Sossusvlei's final 5km sand track is shuttle-only anyway, and the roads to Sesriem and Swakopmund are tarred or well-graded gravel throughout.",
     pace: "Tight: one full day at each stop, most of it built around that stop's single headline activity.",
@@ -961,6 +994,9 @@ export const selfDriveRoutes: RoutePlan[] = [
     title: "Ten days",
     description: "The classic Namibian circuit, unhurried, with two nights in each key region.",
     stops: "Windhoek · Sossusvlei · Swakopmund · Damaraland · Etosha",
+    image:
+      "https://images.unsplash.com/photo-1643749678251-76783e5f1777?q=80&w=1600&auto=format&fit=crop",
+    alt: "Elephant standing on the dry, dusty plains of Etosha National Park",
     vehicle:
       "A high-clearance 2x4 is workable, but a 4x4 earns its keep once you're on Damaraland's gravel D-roads, worth the upgrade for this route specifically.",
     pace: "Two nights per stop: the standard, comfortable Namibia rhythm, with a driving day built into each transfer rather than squeezed around it.",
@@ -1022,6 +1058,9 @@ export const selfDriveRoutes: RoutePlan[] = [
     title: "Two weeks",
     description: "Room to add Fish River Canyon and Spitzkoppe without rushing the driving days.",
     stops: "Windhoek · Fish River Canyon · Sossusvlei · Spitzkoppe · Swakopmund · Damaraland · Etosha",
+    image:
+      "https://images.unsplash.com/photo-1687504692250-fa84b3c78507?q=80&w=1600&auto=format&fit=crop",
+    alt: "An elevated view over Fish River Canyon in southern Namibia",
     vehicle:
       "4x4 recommended for the full loop: this route covers Damaraland's gravel D-roads and the long southern detour to Fish River Canyon, both more comfortable with higher clearance.",
     pace: "Comfortable, with real slack: most stops get two or more nights and there's room to adjust if weather, fatigue or a missed sunrise calls for it.",
@@ -1093,6 +1132,9 @@ export const selfDriveRoutes: RoutePlan[] = [
     title: "Three weeks",
     description: "The full country, including the Skeleton Coast, Caprivi Strip and a wildlife-rich finish.",
     stops: "Windhoek · Fish River Canyon · Sossusvlei · Spitzkoppe · Swakopmund · Skeleton Coast · Damaraland · Etosha · Caprivi",
+    image:
+      "https://images.unsplash.com/photo-1667506609659-599fb1f59f94?q=80&w=1600&auto=format&fit=crop",
+    alt: "A shipwreck washed up on the sand of the Skeleton Coast, Namibia",
     vehicle:
       "4x4 for the self-drive legs: Damaraland and the Fish River Canyon detour both call for it. Budget for at least one internal flight too: the Skeleton Coast's standout northern lodges and the Caprivi Strip are both normally reached by air from this point in the loop, not by road.",
     pace: "The full country, unrushed: this is the itinerary for travellers with three weeks who want to see all of it, not just the classic loop.",

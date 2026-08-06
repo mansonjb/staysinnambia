@@ -44,6 +44,26 @@ export function AvailabilityBadge({
   );
 }
 
+export function PriceTierBadge({
+  tier,
+  title = "Indicative price tier, not a live rate",
+  className = "",
+}: {
+  tier: 1 | 2 | 3 | 4;
+  title?: string;
+  className?: string;
+}) {
+  return (
+    <span
+      title={title}
+      className={`inline-flex items-center rounded-full bg-sand/40 px-3 py-1.5 text-[11px] font-bold tracking-[0.04em] text-charcoal/70 ${className}`}
+    >
+      <span className="text-charcoal">{"€".repeat(tier)}</span>
+      <span className="text-charcoal/30">{"€".repeat(4 - tier)}</span>
+    </span>
+  );
+}
+
 export function SaveButton({ className = "" }: { className?: string }) {
   return (
     <span

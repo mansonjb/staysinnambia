@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
@@ -6,7 +7,7 @@ import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { getRegionNl, getRouteNl, selfDriveRoutesNl } from "@/lib/data.nl";
-import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return selfDriveRoutesNl.map((r) => ({ days: r.slug }));
@@ -35,7 +36,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${route.days}-daagse Namibië-reisroute`,
       description: route.description,
-      images: [{ url: DEFAULT_OG_IMAGE, width: 1600, height: 900 }],
+      images: [{ url: route.image, width: 1600, height: 900 }],
     },
   };
 }
@@ -72,43 +73,62 @@ export default async function ItineraryDetailPageNl({
         <span className="text-charcoal">{route.days} dagen</span>
       </nav>
 
+      {/* Hero */}
       <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-6 sm:px-10">
-        <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
-          <LogoMark className="h-4 w-4" />
-          {route.title}
-        </span>
-        <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-charcoal sm:text-5xl">
-          {route.days}-daagse Namibië-reisroute
-        </h1>
-        <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          {route.description}
-        </p>
-        <div className="mt-5 flex flex-wrap gap-2">
-          {route.stops.split(" · ").map((stop) => (
-            <span
-              key={stop}
-              className="rounded-full bg-sand/30 px-3 py-1 text-[12px] font-medium text-charcoal/70"
-            >
-              {stop}
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full bg-rust/10 px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-rust">
+              <LogoMark className="h-4 w-4" />
+              {route.title}
             </span>
-          ))}
+            <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-charcoal sm:text-5xl">
+              {route.days}-daagse Namibië-reisroute
+            </h1>
+            <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-charcoal/70">
+              {route.description}
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {route.stops.split(" · ").map((stop) => (
+                <span
+                  key={stop}
+                  className="rounded-full bg-sand/30 px-3 py-1 text-[12px] font-medium text-charcoal/70"
+                >
+                  {stop}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-xl">
+            <Image
+              src={route.image}
+              alt={route.alt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              preload
+            />
+            <span className="absolute left-4 top-4 rounded-full bg-charcoal/80 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-ivory shadow-sm">
+              {route.days} dagen
+            </span>
+          </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-[1400px] px-6 py-10 sm:px-10">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-          <Reveal className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <Reveal className="rounded-2xl border border-black/5 border-t-4 border-t-rust bg-white p-6 shadow-sm">
             <p className="flex items-center gap-1.5 text-[12px] uppercase tracking-[0.1em] text-charcoal/40">
               <MetaIcon name="clock" className="h-4 w-4" />
               Tempo
             </p>
             <p className="mt-2 text-[14px] leading-relaxed text-charcoal/70">{route.pace}</p>
           </Reveal>
-          <Reveal delay={60} className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <Reveal delay={60} className="rounded-2xl border border-black/5 border-t-4 border-t-olive bg-white p-6 shadow-sm">
             <p className="text-[12px] uppercase tracking-[0.1em] text-charcoal/40">Voertuig</p>
             <p className="mt-2 text-[14px] leading-relaxed text-charcoal/70">{route.vehicle}</p>
           </Reveal>
-          <Reveal delay={120} className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <Reveal delay={120} className="rounded-2xl border border-black/5 border-t-4 border-t-sand-dark bg-white p-6 shadow-sm">
             <p className="flex items-center gap-1.5 text-[12px] uppercase tracking-[0.1em] text-charcoal/40">
               <MetaIcon name="users" className="h-4 w-4" />
               Het beste voor
@@ -118,29 +138,54 @@ export default async function ItineraryDetailPageNl({
         </div>
       </section>
 
+      {/* Day-by-day timeline */}
       <section className="mx-auto max-w-[1400px] px-6 py-12 sm:px-10">
-        <div className="mx-auto max-w-3xl">
+        <Reveal>
+          <h2 className="text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
+            Dag voor dag
+          </h2>
+        </Reveal>
+        <div className="relative mx-auto mt-10 max-w-3xl">
+          <div className="absolute bottom-0 left-[13px] top-2 hidden w-px bg-charcoal/10 sm:block" />
           {route.dayByDay.map((d, i) => {
             const region = d.regionSlug ? getRegionNl(d.regionSlug) : undefined;
             return (
               <Reveal
                 key={d.label}
                 delay={i * 50}
-                className="flex flex-col gap-3 border-b border-charcoal/10 py-6 last:border-b-0 sm:flex-row sm:gap-6"
+                className="relative flex flex-col gap-3 border-b border-charcoal/10 py-6 last:border-b-0 sm:flex-row sm:gap-6"
               >
-                <span className="w-28 shrink-0 text-[13px] font-bold uppercase tracking-[0.08em] text-rust">
-                  {d.label}
-                </span>
-                <div className="flex-1">
-                  <p className="text-[15px] leading-relaxed text-charcoal/70">{d.text}</p>
+                <div className="flex shrink-0 items-center gap-3 sm:w-28 sm:flex-col sm:items-start sm:gap-2">
+                  <span className="relative z-10 hidden h-7 w-7 shrink-0 items-center justify-center rounded-full bg-rust text-[11px] font-bold text-ivory sm:flex">
+                    {i + 1}
+                  </span>
+                  <span className="text-[13px] font-bold uppercase tracking-[0.08em] text-rust">
+                    {d.label}
+                  </span>
+                </div>
+                <div className="flex flex-1 items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm">
                   {region && (
-                    <Link
-                      href={`/nl/where-to-stay/${region.slug}`}
-                      className="mt-2 inline-block text-[13px] font-semibold text-rust hover:text-rust-dark"
-                    >
-                      Bekijk verblijven in {region.name} →
-                    </Link>
+                    <div className="relative hidden h-16 w-16 shrink-0 overflow-hidden rounded-xl sm:block">
+                      <Image
+                        src={region.image}
+                        alt={region.alt}
+                        fill
+                        sizes="64px"
+                        className="object-cover"
+                      />
+                    </div>
                   )}
+                  <div className="flex-1">
+                    <p className="text-[15px] leading-relaxed text-charcoal/70">{d.text}</p>
+                    {region && (
+                      <Link
+                        href={`/nl/where-to-stay/${region.slug}`}
+                        className="mt-2 inline-block text-[13px] font-semibold text-rust hover:text-rust-dark"
+                      >
+                        Bekijk verblijven in {region.name} →
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </Reveal>
             );
