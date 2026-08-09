@@ -30,9 +30,9 @@ const POINTS = [
     title: "L'avion plutôt que la voiture",
     text: (
       <>
-        Les meilleurs lodges (Hoanib Skeleton Coast Camp, Sossusvlei Desert Lodge) se rejoignent
-        souvent en petit avion plutôt que par la route, ce qui réduit à 45 minutes de vol un
-        trajet que notre{" "}
+        Les camps en fly-in de la Palmwag Concession et les lodges de la NamibRand Nature Reserve
+        se rejoignent souvent en petit avion plutôt que par la route, ce qui réduit à 45 minutes
+        de vol un trajet que notre{" "}
         <Link
           href="/fr/namibia-self-drive-guide"
           className="text-rust underline underline-offset-2 hover:text-rust-dark"

@@ -31,7 +31,7 @@ const SIGHTINGS = [
     region: "Damaraland",
     href: "/where-to-stay/damaraland",
     animals:
-      "Home to the desert-adapted elephant, a population that has recovered from fewer than 30 individuals in the 1980s to roughly 600–700 today, almost entirely through Namibia's community conservancy model. These elephants range across territories of up to 700km and can go five days without drinking, adaptations found almost nowhere else on Earth. The Torra Conservancy around Damaraland Camp, in the Huab River valley, is the most consistent base for tracking them. Further north, the Palmwag Concession holds the world's largest free-roaming population of black rhino, around 200 animals monitored daily by Save the Rhino Trust rangers; seeing them means a full-day guided tracking excursion on foot with a licensed guide, not a self-drive stop.",
+      "Home to the desert-adapted elephant, a population that has recovered from fewer than 30 individuals in the 1980s to roughly 600–700 today, almost entirely through Namibia's community conservancy model. These elephants range across territories of up to 700km and can go five days without drinking, adaptations found almost nowhere else on Earth. The Torra Conservancy, in the Huab River valley, is the most consistent base for tracking them. Further north, the Palmwag Concession holds the world's largest free-roaming population of black rhino, around 200 animals monitored daily by Save the Rhino Trust rangers; seeing them means a full-day guided tracking excursion on foot with a licensed guide, not a self-drive stop.",
   },
   {
     region: "Skeleton Coast",
@@ -91,7 +91,7 @@ const FAQS = [
   },
   {
     q: "Can you see wildlife on a self-drive trip, or do you need a guide?",
-    a: "Etosha is genuinely excellent for self-drive game viewing: waterholes are accessible by ordinary rental car and wildlife concentrates there predictably, especially in the May–October dry season. Desert-adapted elephant tracking around Damaraland Camp and black rhino tracking in the Palmwag Concession both require a specialist, licensed guide; they aren't roadside sightings.",
+    a: "Etosha is genuinely excellent for self-drive game viewing: waterholes are accessible by ordinary rental car and wildlife concentrates there predictably, especially in the May–October dry season. Desert-adapted elephant tracking in Damaraland's Torra Conservancy and black rhino tracking in the Palmwag Concession both require a specialist, licensed guide; they aren't roadside sightings.",
   },
   {
     q: "Where can I see cheetah in Namibia?",

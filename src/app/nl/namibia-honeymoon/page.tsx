@@ -50,8 +50,8 @@ export default function HoneymoonPageNl() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           De ruimte en de stilte van Namibië maken het land tot een oprecht romantische
-          bestemming: privé plunge pools en overnachtingen op een sterrenbed op het dak zijn
-          standaard bij lodges als Little Kulala, en de dichtstbijzijnde andere gasten bevinden
+          bestemming: de heldere woestijnluchten van het Namib-Naukluft-gebied maken sterren
+          kijken bijna een nachtelijk ritueel, en de dichtstbijzijnde andere gasten bevinden
           zich vaak op flinke afstand. Deze vier lodges zijn waar we een huwelijksreis het eerst
           naartoe zouden sturen; voor de volledige shortlist, zie onze{" "}
           <Link

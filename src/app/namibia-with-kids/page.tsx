@@ -88,9 +88,9 @@ export default function KidsPage() {
           <h2 className="text-2xl font-bold text-charcoal">Lodges that work well for families</h2>
           <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
             Mushara Lodge sits close to Etosha&apos;s eastern gate with family-friendly suites and
-            a sister property nearby if you need more space. Kulala Desert Lodge shares its private
-            reserve with Little Kulala at a more accessible price tier, so kids still get a private
-            gate into Namib-Naukluft Park. Villa Violet is a small, owner-run Windhoek guesthouse
+            a sister property nearby if you need more space. Desert Quiver Camp sits right at the
+            Sesriem gate with self-catering chalets and kids-stay-free pricing, an easy, affordable
+            base for a family dune day. Villa Violet is a small, owner-run Windhoek guesthouse
             with a self-catering option, a low-key bookend before or after the circuit. Canyon
             Lodge, near Fish River Canyon, is rustic-but-comfortable and a good base if hiking or
             the south is part of your route.

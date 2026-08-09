@@ -32,7 +32,7 @@ const CAN_2WD = [
 const NEED_4X4 = [
   "The final ~5km of soft sand from the Sossusvlei 2x4 car park to the dunes and Deadvlei themselves, now shuttle-only for all vehicles regardless of drivetrain (see below).",
   "Spreetshoogte Pass, the steepest pass in Namibia (gradients as steep as roughly 1:4.5), on the alternate scenic route into Sossusvlei: 4x4-only, and caravans and trailers are barred outright. Take the gentler Remhoogte Pass instead if you're in a 2WD.",
-  "Most of the Skeleton Coast north of Torra Bay, plus the standout northern lodges (Hoanib Skeleton Coast Camp, Shipwreck Lodge), which are normally reached by light aircraft rather than any road at all.",
+  "Most of the Skeleton Coast north of Torra Bay, plus standout northern lodges like Shipwreck Lodge, which are normally reached by light aircraft rather than any road at all.",
   "Remote Kaokoveld tracks north of Damaraland, including the routes toward Serra Cafema and the Hartmann Valley.",
   "Damaraland and Kaokoland's D-roads generally: graded but rougher and more remote than the C-roads, and genuinely rain-affected in the wet season (roughly November to April), when even usually-fine gravel routes can deteriorate fast.",
 ];

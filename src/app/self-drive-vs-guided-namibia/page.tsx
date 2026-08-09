@@ -35,7 +35,7 @@ const FACTORS = [
   {
     axis: "Wildlife spotting",
     selfDrive:
-      "Genuinely good in Etosha, where floodlit waterholes at Okaukuejo and Halali concentrate game predictably, especially rhino and elephant after dark in the dry season. Weaker in areas requiring tracking skill, like desert-adapted elephant around Damaraland Camp or black rhino in the Palmwag Concession, which require a specialist licensed guide regardless of how you travel.",
+      "Genuinely good in Etosha, where floodlit waterholes at Okaukuejo and Halali concentrate game predictably, especially rhino and elephant after dark in the dry season. Weaker in areas requiring tracking skill, like desert-adapted elephant in Damaraland's Torra Conservancy or black rhino in the Palmwag Concession, which require a specialist licensed guide regardless of how you travel.",
     guided: "A trained guide's eye for tracks, sounds and animal behaviour meaningfully increases sightings, especially outside Etosha's easier waterhole-based viewing, and it's the only way to do rhino tracking in Palmwag or reliably find wild dog in Bwabwata.",
   },
   {

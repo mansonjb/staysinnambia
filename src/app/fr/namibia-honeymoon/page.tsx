@@ -50,9 +50,9 @@ export default function HoneymoonPageFr() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           L'espace et le silence de la Namibie en font une destination sincèrement romantique :
-          piscines à débordement privées et nuits sous les étoiles sur un lit installé sur le
-          toit sont la norme dans des lodges comme Little Kulala, et les autres voyageurs les
-          plus proches se trouvent souvent à bonne distance. Voici les quatre lodges vers
+          le ciel désertique très pur de la région du Namib-Naukluft fait de l'observation des
+          étoiles un rituel presque quotidien, et les autres voyageurs les plus proches se
+          trouvent souvent à bonne distance. Voici les quatre lodges vers
           lesquels nous orienterions une lune de miel en priorité ; pour la liste complète,
           consultez notre{" "}
           <Link

@@ -49,9 +49,9 @@ export default function HoneymoonPageDe() {
           Flitterwochen in Namibia
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          Namibias Weite und Stille machen das Land zu einem wirklich romantischen Reiseziel:
-          private Plunge Pools und Sternenbetten auf dem Dach gehören in Lodges wie Little Kulala
-          zum Standard, und die nächsten anderen Gäste sind oft wirklich weit entfernt. Diese vier
+          Namibias Weite und Stille machen das Land zu einem wirklich romantischen Reiseziel: die
+          klaren Wüstenhimmel des Namib-Naukluft-Gebiets machen Sternenbeobachtung fast zu einem
+          nächtlichen Ritual, und die nächsten anderen Gäste sind oft wirklich weit entfernt. Diese vier
           Unterkünfte würden wir für Flitterwochen zuerst empfehlen; die vollständige Auswahl
           finden Sie in unserem{" "}
           <Link

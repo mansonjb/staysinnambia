@@ -552,34 +552,6 @@ export const lodgeTranslationsFr: Record<string, LodgeTranslation> = {
     bestFor: "Familles, voyageurs privilégiant la proximité à l'isolement",
     alt: "Salon et terrasse en chaume à Mushara Lodge, Etosha, éclairés au crépuscule",
   },
-  "little-kulala": {
-    description:
-      "Le camp phare de Wilderness Safaris parmi les dunes, sur la réserve privée de Kulala Wilderness Reserve, à environ 45 minutes de Sossusvlei.",
-    highlights: ["Nuits en plein air sur le toit", "Piscines privées", "Porte privée de la réserve donnant sur le parc"],
-    bestFor: "Couples, jeunes mariés, passionnés d'étoiles",
-    alt: "Une terrasse ombragée avec vue sur les plaines du Namib à Little Kulala, Sossusvlei",
-  },
-  "sossusvlei-desert-lodge": {
-    description:
-      "Un lodge design sur une réserve privée, désignée réserve internationale de ciel étoilé, connu pour ses chambres aux façades vitrées offrant une vue ininterrompue sur le désert.",
-    highlights: ["Réserve internationale de ciel étoilé", "Chambres à façade vitrée", "Programme d'astronomie sur place"],
-    bestFor: "Passionnés d'astronomie, voyageurs de luxe",
-    alt: "Chambres à façade vitrée de Sossusvlei Desert Lodge éclairées en rouge la nuit sous un ciel étoilé",
-  },
-  "kulala-desert-lodge": {
-    description:
-      "Des chalets en chaume face aux dunes rouges, sur la même réserve privée que Little Kulala, à un tarif plus accessible.",
-    highlights: ["Porte privée donnant sur le parc du Namib-Naukluft", "Même réserve que Little Kulala", "Chalets face aux dunes"],
-    bestFor: "Familles, primo-voyageurs voulant l'accès aux dunes sans le tarif ultra-luxe",
-    alt: "Chalets en chaume sur un terrain désertique rouge à Kulala Desert Lodge, Sossusvlei",
-  },
-  "damaraland-camp": {
-    description:
-      "L'une des premières coentreprises de conservancy communautaire de Namibie, dans la vallée de la rivière Huab, considérée comme un modèle pour le tourisme géré par les communautés dans le pays.",
-    highlights: ["Modèle pionnier de conservancy communautaire", "Tracking d'éléphants adaptés au désert", "Géré avec la conservancy locale"],
-    bestFor: "Voyageurs sensibles à la conservation, traqueurs de faune",
-    alt: "Chalets en chaume au milieu de collines rocheuses rouges à Damaraland Camp",
-  },
   "grootberg-lodge": {
     description:
       "Considéré comme le premier lodge namibien entièrement détenu par une communauté, construit avec la communauté ≠Khoadi //Hoas sur une crête offrant une vue sur la vallée depuis chaque chambre.",
@@ -587,26 +559,12 @@ export const lodgeTranslationsFr: Record<string, LodgeTranslation> = {
     bestFor: "Voyageurs privilégiant le tourisme communautaire, photographes",
     alt: "Vue sur la vallée depuis une chambre à Grootberg Lodge, Damaraland",
   },
-  "doro-nawas-camp": {
-    description:
-      "Un camp sur une colline rocheuse surélevée dans la conservancy de Doro !Nawas, géré avec la communauté locale, avec un accès facile à l'art rupestre de Twyfelfontein.",
-    highlights: ["Position surélevée sur une colline", "Partenariat avec la conservancy", "Proche de l'art rupestre de Twyfelfontein"],
-    bestFor: "Couples combinant culture et paysage",
-    alt: "Une véranda ombragée surplombant les plaines à Doro Nawas Camp, Damaraland",
-  },
   "shipwreck-lodge": {
     description:
       "Le seul lodge réellement situé sur la Côte des Squelettes elle-même, avec des chalets en forme d'épave dispersés parmi les dunes, à deux heures au nord de Möwe Bay.",
     highlights: ["Réellement situé sur la côte", "Architecture inspirée des épaves", "Excursions reculées dans les dunes et sur le littoral"],
     bestFor: "Voyageurs en quête d'aventure isolée, amateurs de design",
     alt: "Les chalets en forme d'épave de Shipwreck Lodge parmi les dunes au crépuscule",
-  },
-  "hoanib-skeleton-coast-camp": {
-    description:
-      "Un camp accessible uniquement par avion, composé de sept tentes et d'une unité familiale, utilisé comme base pour observer les éléphants adaptés au désert, les lions et une faune rare.",
-    highlights: ["Accès uniquement en avion", "Focus sur la faune adaptée au désert", "Excursion optionnelle vers le littoral et une colonie d'otaries"],
-    bestFor: "Photographes animaliers sérieux, voyageurs en quête d'aventure isolée",
-    alt: "Une suite sous tente éclairée au crépuscule à Hoanib Skeleton Coast Camp",
   },
   "the-delight-swakopmund": {
     description:
@@ -656,20 +614,6 @@ export const lodgeTranslationsFr: Record<string, LodgeTranslation> = {
     highlights: ["Conception en passerelles surélevées", "Chalets privés avec terrasse panoramique", "Situé parmi les blocs de granit"],
     bestFor: "Voyageurs voulant du confort près de Spitzkoppe sans camper complètement",
     alt: "Des chalets surélevés parmi les dômes de granit de Spitzkoppen Lodge au crépuscule",
-  },
-  "thitaka-river-lodge": {
-    description:
-      "Un camp de tentes de luxe ouvrant en 2026 sur la rivière Kwando, dans le parc national de Bwabwata, première propriété namibienne de Newmark, situé près d'un corridor important pour les éléphants.",
-    highlights: ["Safaris en véhicule et sorties fluviales deux fois par jour", "Situé sur un corridor à éléphants", "Villas et tentes avec piscines privées"],
-    bestFor: "Voyageurs voulant la faune fluviale de la région du Zambèze avec un luxe tout compris",
-    alt: "Une rivière serpentant à travers une forêt riveraine dense et verte, typique des zones humides de la région du Zambèze",
-  },
-  "luna-namib-collection": {
-    description:
-      "Un refuge ultra-luxueux de trois unités seulement, ouvrant en 2026, à 70 km au sud de Sesriem, avec des villas indépendantes, piscines privées et télescopes en chambre pour l'observation des étoiles.",
-    highlights: ["Seulement trois unités indépendantes", "Piscines privées et télescopes", "Concierge dédié par unité"],
-    bestFor: "Couples et petites familles en quête du plus haut niveau d'intimité dans le désert",
-    alt: "Une terrasse privée avec piscine au lever du soleil à Luna Namib Collection, Sossusvlei",
   },
 };
 

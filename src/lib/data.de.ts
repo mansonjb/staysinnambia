@@ -552,34 +552,6 @@ export const lodgeTranslationsDe: Record<string, LodgeTranslation> = {
     bestFor: "Familien, Reisende, die Nähe der Abgeschiedenheit vorziehen",
     alt: "Reetgedeckte Lounge und Terrasse in der Abenddämmerung, Mushara Lodge, Etosha",
   },
-  "little-kulala": {
-    description:
-      "Das Flaggschiff-Dünencamp von Wilderness Safaris im privaten Kulala Wilderness Reserve, rund 45 Minuten von Sossusvlei selbst entfernt.",
-    highlights: ["Sternenbetten auf dem Dach", "Private Plunge Pools", "Eigenes Reservatstor in den Park"],
-    bestFor: "Paare, Flitterwöchner, Sternengucker",
-    alt: "Eine schattige Terrasse mit Blick auf die Namib-Ebene, Little Kulala, Sossusvlei",
-  },
-  "sossusvlei-desert-lodge": {
-    description:
-      "Eine Design-Lodge auf einem privaten Reservat, ausgewiesen als International Dark Sky Reserve, bekannt für Zimmer mit Glasfront und uneingeschränktem Blick in die Wüste.",
-    highlights: ["International Dark Sky Reserve", "Zimmer mit Glasfront", "Hauseigenes Astronomieprogramm"],
-    bestFor: "Astronomie-Enthusiasten, Luxusreisende",
-    alt: "Zimmer mit Glasfront der Sossusvlei Desert Lodge, nachts rot beleuchtet unter einem Sternenhimmel",
-  },
-  "kulala-desert-lodge": {
-    description:
-      "Reetgedeckte Chalets mit Blick auf die roten Dünen im selben privaten Reservat wie Little Kulala, in einer zugänglicheren Preisklasse.",
-    highlights: ["Eigenes Tor in den Namib-Naukluft-Park", "Gleiches Reservat wie Little Kulala", "Chalets mit Blick auf die Dünen"],
-    bestFor: "Familien, Erstbesucher, die Dünenzugang ohne Ultra-Luxuspreise wünschen",
-    alt: "Reetgedeckte Chalets auf rotem Wüstenboden, Kulala Desert Lodge, Sossusvlei",
-  },
-  "damaraland-camp": {
-    description:
-      "Eines der frühesten Gemeinschafts-Conservancy-Joint-Ventures Namibias, im Huab River Valley, gilt als Vorbild für gemeinschaftlich geführten Tourismus im Land.",
-    highlights: ["Wegweisendes Gemeinschafts-Conservancy-Modell", "Tracking wüstenangepasster Elefanten", "Geführt gemeinsam mit der örtlichen Conservancy"],
-    bestFor: "Naturschutzbewusste Reisende, Wildlife-Tracker",
-    alt: "Reetgedeckte Chalets zwischen roten Felshügeln, Damaraland Camp",
-  },
   "grootberg-lodge": {
     description:
       "Gilt als Namibias erste vollständig gemeinschaftseigene Lodge, gebaut mit der ≠Khoadi //Hoas-Gemeinschaft auf einem Grat mit Talblick aus jedem Zimmer.",
@@ -587,26 +559,12 @@ export const lodgeTranslationsDe: Record<string, LodgeTranslation> = {
     bestFor: "Reisende mit Fokus auf Gemeinschaftstourismus, Fotografen",
     alt: "Blick ins Tal von einem Zimmer der Grootberg Lodge, Damaraland",
   },
-  "doro-nawas-camp": {
-    description:
-      "Ein Camp auf einem erhöhten Felshügel in der Doro !Nawas Conservancy, gemeinsam mit der örtlichen Gemeinschaft geführt, mit kurzem Weg zu den Felsgravuren von Twyfelfontein.",
-    highlights: ["Erhöhte Lage auf dem Hügel", "Partnerschaft mit der Conservancy", "Nahe den Felsgravuren von Twyfelfontein"],
-    bestFor: "Paare, die Kultur und Landschaft verbinden möchten",
-    alt: "Eine schattige Veranda mit Blick auf die Ebene, Doro Nawas Camp, Damaraland",
-  },
   "shipwreck-lodge": {
     description:
       "Die einzige Lodge, die tatsächlich direkt an der Skeleton Coast liegt, mit schiffswrackförmigen Chalets, verstreut zwischen den Dünen, zwei Stunden nördlich von Möwe Bay.",
     highlights: ["Wirklich direkt an der Küste", "Von Schiffswracks inspirierte Architektur", "Ausflüge in abgelegene Dünen- und Küstengebiete"],
     bestFor: "Abenteuerlustige Reisende in abgelegener Lage, designaffine Gäste",
     alt: "Die schiffswrackförmigen Chalets der Shipwreck Lodge in den Dünen bei Abenddämmerung",
-  },
-  "hoanib-skeleton-coast-camp": {
-    description:
-      "Ein nur per Kleinflugzeug erreichbares Camp mit sieben Zelten und einer Familieneinheit, das als Basis für die Beobachtung wüstenangepasster Elefanten, Löwen und seltener Tierarten dient.",
-    highlights: ["Nur per Kleinflugzeug erreichbar", "Fokus auf wüstenangepasste Tierwelt", "Optionaler Ausflug an die Küste zur Robbenkolonie"],
-    bestFor: "Ambitionierte Wildlife-Fotografen, Abenteuerreisende in abgelegener Lage",
-    alt: "Eine Zeltsuite bei Abenddämmerung, Hoanib Skeleton Coast Camp",
   },
   "the-delight-swakopmund": {
     description:
@@ -656,20 +614,6 @@ export const lodgeTranslationsDe: Record<string, LodgeTranslation> = {
     highlights: ["Erhöhte Steganlage", "Private Chalets mit Aussichtsdeck", "Lage zwischen Granitfelsen"],
     bestFor: "Reisende, die Komfort nahe Spitzkoppe ohne komplettes Camping wünschen",
     alt: "Erhöhte Chalets zwischen den Granitkuppen der Spitzkoppen Lodge bei Abenddämmerung",
-  },
-  "thitaka-river-lodge": {
-    description:
-      "Ein 2026 eröffnendes Luxus-Zeltcamp am Kwando River im Bwabwata-Nationalpark, Newmarks erste Unterkunft in Namibia, nahe einem wichtigen Elefantenkorridor gelegen.",
-    highlights: ["Zweimal täglich Pirschfahrten und Bootsausflüge auf dem Fluss", "Lage am Elefantenkorridor", "Villen und Zelte mit privatem Pool"],
-    bestFor: "Reisende, die die Flusstierwelt der Zambezi-Region mit Vollpension-Luxus erleben möchten",
-    alt: "Ein Fluss schlängelt sich durch dichten grünen Auwald, typisch für die Feuchtgebiete der Zambezi-Region",
-  },
-  "luna-namib-collection": {
-    description:
-      "Ein 2026 eröffnendes Ultra-Luxus-Refugium mit nur drei Einheiten, 70 km südlich von Sesriem, mit freistehenden Villen, privaten Plunge Pools und Teleskopen im Zimmer zur Sternenbeobachtung.",
-    highlights: ["Nur drei freistehende Einheiten", "Private Plunge Pools und Teleskope", "Eigener Concierge pro Einheit"],
-    bestFor: "Paare und kleine Familien, die höchste Privatsphäre in der Wüste suchen",
-    alt: "Eine private Terrasse mit Plunge Pool bei Sonnenaufgang, Luna Namib Collection, Sossusvlei",
   },
 };
 

@@ -30,8 +30,8 @@ const POINTS = [
     title: "Fly-in in plaats van zelf rijden",
     text: (
       <>
-        De topklasse lodges (Hoanib Skeleton Coast Camp, Sossusvlei Desert Lodge) worden vaak per
-        kleine chartervlucht bereikt in plaats van over de weg, waardoor een rit die onze{" "}
+        Fly-in kampen in het Palmwag Concession-gebied en lodges op de NamibRand Nature Reserve
+        worden vaak per kleine chartervlucht bereikt in plaats van over de weg, waardoor een rit die onze{" "}
         <Link
           href="/nl/namibia-self-drive-guide"
           className="text-rust underline underline-offset-2 hover:text-rust-dark"

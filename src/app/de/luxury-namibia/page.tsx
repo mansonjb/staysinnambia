@@ -30,8 +30,8 @@ const POINTS = [
     title: "Fly-in statt Selbstfahrer",
     text: (
       <>
-        Die besten Lodges (Hoanib Skeleton Coast Camp, Sossusvlei Desert Lodge) werden oft mit
-        dem Kleinflugzeug statt über die Straße erreicht, wodurch eine Fahrt, die laut unserem{" "}
+        Fly-in-Camps im Palmwag-Concession-Gebiet und Lodges auf der NamibRand Nature Reserve
+        werden oft mit dem Kleinflugzeug statt über die Straße erreicht, wodurch eine Fahrt, die laut unserem{" "}
         <Link
           href="/de/namibia-self-drive-guide"
           className="text-rust underline underline-offset-2 hover:text-rust-dark"

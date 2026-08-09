@@ -26,11 +26,11 @@ const POINTS = [
     title: "Fly-in over self-drive",
     text: (
       <>
-        The top lodges are often reached by light aircraft rather than road. Hoanib Skeleton
-        Coast Camp, eight tented villas in the Palmwag Concession built around desert lion and
-        elephant tracking, is fly-in only. Sossusvlei Desert Lodge, &Beyond&apos;s flagship on
-        the NamibRand Nature Reserve, is around 45 minutes by air rather than the roughly 5-hour
-        drive our{" "}
+        The top lodges are often reached by light aircraft rather than road. Fly-in camps in the
+        Palmwag Concession and the Hoanib Valley are built specifically around desert lion,
+        elephant and rhino tracking, and are normally reached only by charter flight. Lodges on
+        the NamibRand Nature Reserve near Sossusvlei are typically around 45 minutes by air rather
+        than the roughly 5-hour drive our{" "}
         <Link
           href="/namibia-self-drive-guide"
           className="text-rust underline underline-offset-2 hover:text-rust-dark"
@@ -53,7 +53,7 @@ const POINTS = [
   },
   {
     title: "What the extra spend actually buys",
-    text: "At the top tier, each unit typically comes with its own guide and often a dedicated chef, rather than a shared game-drive vehicle and a set menu. Sossusvlei Desert Lodge and Little Kulala both sit inside the Namib-Naukluft area's International Dark Sky Reserve (Gold Tier since 2012), so stargazing is a scheduled activity, from an in-room skylight, a private rooftop star-bed, or an on-site observatory, not just a clear night you happen to notice. A private hot-air balloon sunrise over the dunes (Namib Sky Balloon Safaris, roughly N$9,900/US$550 per person, ending in a champagne breakfast) is the kind of one-off splurge that's easy to add to a luxury itinerary and hard to justify on a budget one.",
+    text: "At the top tier, each unit typically comes with its own guide and often a dedicated chef, rather than a shared game-drive vehicle and a set menu. The whole Namib-Naukluft area around Sossusvlei is an International Dark Sky Reserve (Gold Tier since 2012), so stargazing is a scheduled activity at many of its lodges, from an in-room skylight to an open-air sleep-out platform, not just a clear night you happen to notice. A private hot-air balloon sunrise over the dunes (Namib Sky Balloon Safaris, roughly N$9,900/US$550 per person, ending in a champagne breakfast) is the kind of one-off splurge that's easy to add to a luxury itinerary and hard to justify on a budget one.",
   },
 ];
 
