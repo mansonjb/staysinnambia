@@ -30,21 +30,28 @@ const COMPARISON = [
     slug: "etosha",
     style: "Klassieke safari bij waterpoelen",
     wildlife:
-      "Betrouwbaar: olifant, leeuw, zwarte neushoorn, grote kuddes geconcentreerd rond verlichte waterpoelen",
-    pace: "Gestructureerde gamedrives vanuit een vaste basis",
+      "De betrouwbaarste van de drie. Naar schatting 2.000+ olifanten, enkele honderden leeuwen verdeeld over zo'n twee dozijn troepen, en een van Afrika's belangrijkste populaties zwarte neushoorns concentreren zich rond verlichte waterpoelen, vooral naarmate het droge seizoen vordert.",
+    pace: "Gestructureerde gamedrives vanuit een vaste basis, of uitzicht op een verlichte waterpoel zonder het kamp te verlaten",
+    bestMonths:
+      "Juli tot oktober, wanneer de seizoensgebonden plassen zijn opgedroogd en dieren zich verzamelen bij de permanente waterpoelen; verwacht drukte bij de populairste in het hoogseizoen",
   },
   {
     slug: "damaraland",
     style: "Tracking, te voet of per voertuig",
     wildlife:
-      "Aan de woestijn aangepaste olifanten en, met een gespecialiseerde gids vanuit Palmwag, opgespoorde zwarte neushoorns, nooit gegarandeerd, maar des te lonender wanneer gevonden",
-    pace: "Langzamer, begeleid, gebaseerd op conservancies",
+      "Een compleet andere ervaring: aan de woestijn aangepaste olifanten die tot 700 km ver trekken en dagenlang zonder water kunnen, en, met een gespecialiseerde gids vanuit de Palmwag Concession, een van de grootste nog vrij rondtrekkende populaties zwarte neushoorns ter wereld, te voet opgespoord. Hier is niets gegarandeerd zoals bij de waterpoelen van Etosha; een waarneming voelt juist daarom waardevoller, omdat hij niet in scène is gezet.",
+    pace: "Langzamer, begeleid, gebaseerd op conservancies, vaak te voet",
+    bestMonths:
+      "Mei tot oktober (droog seizoen); na regen verspreiden de dieren zich veel verder, waardoor de slagingskans van tracking buiten deze periode daalt",
   },
   {
     slug: "caprivi",
     style: "Wildlife bij rivier en overstromingsvlakte",
-    wildlife: "Nijlpaard, krokodil, sterke vogelspotting: een compleet ander ecosysteem",
+    wildlife:
+      "Nijlpaarden en krokodillen in het Kwando-Linyanti-riviersysteem, grote kuddes olifanten en buffels die door Bwabwata National Park trekken, en bijna 450 geregistreerde vogelsoorten: een oprecht ander ecosysteem dan de woestijnroute verder naar het zuiden, geen mindere versie ervan.",
     pace: "Boottochten naast gamedrives",
+    bestMonths:
+      "April tot september, wanneer het droge seizoen de dieren concentreert langs de rivieren en overstromingsvlaktes en de rijomstandigheden op hun best zijn",
   },
 ];
 
@@ -67,7 +74,11 @@ export default function SafariAreasPageNl() {
           Beste safari-gebieden in Namibië
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          &quot;Safari&quot; betekent in elk van deze drie regio&apos;s iets anders. Bekijk onze{" "}
+          &quot;Safari&quot; betekent in elk van deze drie regio&apos;s iets anders: Etosha draait
+          om dichtheid en betrouwbaarheid, Damaraland om de specifieke sensatie van het opsporen
+          van aan de woestijn aangepaste diersoorten die nergens omheind zijn, en de Caprivi Strip
+          voelt bijna als een ander land, een rivier- en overstromingsvlakte-ecosysteem dat
+          vrijwel niets deelt met de woestijnroute verder naar het zuiden. Bekijk onze{" "}
           <Link
             href="/nl/namibia-wildlife-guide"
             className="font-semibold text-rust hover:text-rust-dark"
@@ -107,6 +118,12 @@ export default function SafariAreasPageNl() {
                       </dt>
                       <dd className="mt-1 text-[14px] text-charcoal/70">{c.pace}</dd>
                     </div>
+                    <div>
+                      <dt className="text-[11px] uppercase tracking-[0.08em] text-charcoal/40">
+                        Beste maanden
+                      </dt>
+                      <dd className="mt-1 text-[14px] text-charcoal/70">{c.bestMonths}</dd>
+                    </div>
                   </dl>
                   <Link
                     href={`/nl/where-to-stay/${region.slug}`}
@@ -120,6 +137,21 @@ export default function SafariAreasPageNl() {
             );
           })}
         </div>
+
+        <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <p className="text-[14px] leading-relaxed text-charcoal/70">
+            <span className="font-semibold text-charcoal">Onze aanbeveling:</span> als u er maar
+            één kunt kiezen, is Etosha de veiligere keuze voor een eerste safari, vooral tussen
+            augustus en oktober, wanneer de activiteit bij de waterpoelen piekt. Damaraland
+            verdient zijn plek op een langere reis als de regio die geduld beloont met iets wat
+            Etosha niet kan bieden: vrij rondtrekkende, aan de woestijn aangepaste dieren zonder
+            een hek in zicht. De Caprivi Strip is alleen de moeite van het toevoegen waard als u
+            doorreist naar de Okavango Delta of Chobe in Botswana, of specifiek op zoek bent naar
+            vogels en wildlife bij het water: als op zichzelf staande stop op een korte,
+            Namibië-only reis is de rit van zo&apos;n 12 uur (de meeste mensen vliegen liever naar
+            Katima Mulilo) lastig te rechtvaardigen.
+          </p>
+        </Reveal>
       </section>
     </>
   );

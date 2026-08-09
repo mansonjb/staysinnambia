@@ -43,16 +43,21 @@ const POPULAR_GUIDES_NL = [
 const SAFETY_POINTS = [
   {
     title: "Petite délinquance",
-    text: "Concentrée dans les zones urbaines (surtout Windhoek et Swakopmund) et soumise aux règles habituelles de toute ville : ne pas exhiber d'objets de valeur, utiliser le coffre-fort de l'hôtel, prendre un taxi la nuit plutôt que de marcher. En dehors des villes, sur les itinéraires en lodge ou en autotour, ce n'est pas un sujet de préoccupation.",
+    text: "Concentrée à Windhoek et, dans une moindre mesure, à Walvis Bay, surtout après la tombée de la nuit : le Département d'État américain et le FCDO britannique signalent tous deux le vol à la tire, l'arrachage de sacs et les vols par bris de vitre sur des voitures garées et inoccupées comme les incidents les plus courants touchant les visiteurs. Les deux classent la Namibie dans leur niveau équivalent à « faites preuve d'une vigilance accrue », le même niveau que la majeure partie de l'Europe de l'Ouest, pas un niveau de risque sérieux. Des vols à main armée ou des invasions de domicile isolés se produisent, mais dans des zones résidentielles et d'affaires, pas sur les itinéraires touristiques. Utilisez le coffre-fort de l'hôtel, ne laissez pas de sacs visibles dans une voiture garée, et prenez un taxi plutôt que de marcher la nuit dans les centres-villes. En dehors des villes, sur les itinéraires en lodge ou en autotour, ce n'est quasiment jamais un sujet de préoccupation.",
   },
   {
     title: "Sécurité routière",
     text: (
       <>
-        Le risque réel le plus important pour la plupart des visiteurs. Les longues distances, les
-        pistes en gravier et la faune qui traverse les routes au crépuscule et la nuit font des
-        accidents de la route l'incident grave le plus fréquent chez les voyageurs, bien plus que
-        la délinquance. Consultez notre{" "}
+        Le risque réel le plus important pour la plupart des visiteurs, et de loin. La Namibie
+        compte environ 12 000 km de pistes en gravier, et la consigne du FCDO comme des loueurs
+        locaux est de ne pas dépasser 60 à 80 km/h sur le gravier, quelle que soit la limite
+        affichée : l&apos;incident grave le plus fréquent chez les voyageurs en autotour est le
+        tonneau d&apos;un véhicule seul, pris dans un virage à tôle ondulée ou sableux à trop
+        grande vitesse, pas une collision avec un autre véhicule. Ajoutez à cela de longs tronçons
+        sans services, la fatigue et les animaux qui traversent au crépuscule et à l&apos;aube, et
+        le schéma est clair : ralentissez, évitez de conduire la nuit en dehors des villes, et
+        emportez une roue de secours et de l&apos;eau en plus. Consultez notre{" "}
         <Link
           href="/fr/namibia-self-drive-guide"
           className="font-medium text-rust hover:text-rust-dark"
@@ -65,7 +70,7 @@ const SAFETY_POINTS = [
   },
   {
     title: "Voyage en solo et voyageuses seules",
-    text: "Largement décrit comme agréable par les voyageurs en solo, y compris les femmes seules, surtout sur des itinéraires organisés et en lodge. Les précautions habituelles s'appliquent en ville après la tombée de la nuit, comme partout ailleurs.",
+    text: "Largement décrit comme agréable par les voyageurs en solo, y compris les femmes seules, surtout sur des itinéraires organisés et en lodge. La criminalité violente visant les touristes est assez rare pour que les autorités américaines et britanniques la traitent comme l'exception, pas la règle. Les précautions habituelles s'appliquent à Windhoek et à Walvis Bay après la tombée de la nuit, comme partout ailleurs.",
   },
   {
     title: "Rencontres avec la faune",
@@ -75,7 +80,11 @@ const SAFETY_POINTS = [
         véhicule dans les zones à gibier sauf indication contraire, ne jamais s'approcher des
         animaux près des points d'eau à proximité des lodges, et suivre les recommandations du
         personnel du camp concernant les déplacements à pied après la tombée de la nuit, là où
-        éléphants ou hyènes sont connus pour passer. Consultez notre{" "}
+        éléphants ou hyènes sont connus pour passer. Un point précis à connaître : les colonies
+        d&apos;otaries à fourrure du Cap de Namibie, dont celle de Cape Cross, ont enregistré des
+        cas de rage documentés, donc gardez vos distances et traitez toute morsure ou griffure,
+        même mineure, comme une urgence nécessitant une prise en charge médicale immédiate, quel
+        que soit votre statut vaccinal. Consultez notre{" "}
         <Link
           href="/fr/namibia-wildlife-guide"
           className="font-medium text-rust hover:text-rust-dark"
@@ -86,24 +95,32 @@ const SAFETY_POINTS = [
       </>
     ),
   },
+  {
+    title: "Soins médicaux et évacuation",
+    text: "Les lodges du Namib, du Kaokoland ou de la région du Zambèze peuvent se trouver à plusieurs heures de route, voire à un vol en petit avion, de l'hôpital le plus proche capable de traiter un traumatisme : ce n'est pas un détail à négliger dans la préparation du voyage. Medical Rescue Africa (MRA) est le prestataire namibien d'évacuation aéromédicale et d'ambulances, et de nombreux lodges et opérateurs travaillent déjà avec eux, mais c'est votre assurance voyage qui prend en charge la facture. Si vous avez déjà une adhésion AMREF Flying Doctors d'un voyage en Afrique de l'Est, sachez qu'elle ne couvre pas la Namibie, le Botswana ni l'Afrique du Sud : vérifiez que votre police inclut explicitement une évacuation médicale valable en Afrique australe avant de partir.",
+  },
 ];
 
 const FAQS = [
   {
     q: "La Namibie est-elle sûre à visiter ?",
-    a: "Oui, selon les standards régionaux, la Namibie est considérée comme l'un des pays les plus sûrs d'Afrique australe pour les touristes. Ses risques réels sont la sécurité routière (longues distances, gravier, faune sur les routes la nuit) et la petite délinquance urbaine ordinaire, pas la criminalité violente visant les voyageurs.",
+    a: "Oui. Le Département d'État américain et le FCDO britannique classent tous deux la Namibie dans leur niveau équivalent à « faites preuve d'une vigilance accrue », le même niveau que la majeure partie de l'Europe de l'Ouest, pas un niveau de risque sérieux. Ses risques réels sont la sécurité routière (longues distances, gravier, tonneaux de véhicules seuls, faune sur les routes au crépuscule) et la petite délinquance urbaine ordinaire à Windhoek et à Walvis Bay, pas la criminalité violente visant les voyageurs.",
   },
   {
     q: "Faut-il prendre un traitement antipaludéen pour la Namibie ?",
-    a: "Cela dépend d'où vous allez et à quelle période. Le risque de paludisme en Namibie se concentre dans le nord (les zones nord d'Etosha, la région du Zambèze (Caprivi)) et il est maximal pendant la saison des pluies (environ novembre à avril). Le centre et le sud de la Namibie, dont Sossusvlei, Swakopmund et Windhoek, présentent un risque faible ou nul toute l'année. Consultez un médecin du voyage avec votre itinéraire et vos dates précises. Ceci est une information générale, pas un avis médical.",
+    a: "Cela dépend d'où vous allez et à quelle période. Le CDC recense le Kavango East, le Kavango West, le Kunene, l'Ohangwena, l'Omaheke, l'Omusati, l'Oshana, l'Oshikoto, l'Otjozondjupa et le Zambèze comme régions à risque, soit globalement le tiers nord du pays, y compris le nord d'Etosha et la région du Zambèze (Caprivi), et le risque est maximal pendant la saison des pluies (environ novembre à avril). Il n'y a aucune transmission du paludisme à Windhoek, et le risque est faible à Sossusvlei, Swakopmund et dans la majeure partie du centre et du sud de la Namibie toute l'année. La Namibie a aussi connu une forte hausse des cas début 2026, concentrée dans les régions du Zambèze et du Kavango, donc vérifiez la situation actuelle auprès d'un médecin du voyage en fonction de votre itinéraire et de vos dates précises. Ceci est une information générale, pas un avis médical.",
   },
   {
     q: "La Namibie est-elle sûre pour les femmes voyageant seules ?",
-    a: "Généralement décrite comme agréable, en particulier pour les séjours en lodge ou les autotours organisés. Les précautions urbaines habituelles s'appliquent à Windhoek et Swakopmund après la tombée de la nuit, comme dans toute ville.",
+    a: "Généralement décrite comme agréable, en particulier pour les séjours en lodge ou les autotours organisés ; les mêmes avis de sécurité qui signalent la petite délinquance en Namibie ne relèvent aucun risque accru spécifique pour les femmes voyageant seules. Les précautions urbaines habituelles s'appliquent à Windhoek et à Walvis Bay après la tombée de la nuit, comme dans toute ville.",
   },
   {
     q: "Quels vaccins faut-il faire pour la Namibie ?",
-    a: "Il n'existe pas de liste universelle : les exigences dépendent de votre pays d'origine, de votre itinéraire et de vos antécédents médicaux personnels. Un certificat de vaccination contre la fièvre jaune peut être exigé en cas d'arrivée depuis un pays où le risque de transmission existe. Renseignez-vous bien avant le départ auprès d'un centre de médecine des voyages.",
+    a: "Il n'existe pas de liste universelle, mais les recommandations standards du CDC pour la Namibie incluent l'hépatite A, l'hépatite B et la typhoïde pour la plupart des voyageurs, en plus des vaccins de routine (ROR, polio, etc.). La vaccination préventive contre la rage mérite d'être envisagée si vous prévoyez du vélo, de la spéléologie ou un contact avec des animaux, et elle est d'autant plus pertinente compte tenu des cas de rage documentés dans les colonies d'otaries à fourrure du Cap de Namibie. La vaccination contre la fièvre jaune n'est pas exigée pour un vol direct depuis l'Europe ou l'Amérique du Nord, mais une preuve de vaccination peut être demandée si vous arrivez d'un pays à risque de fièvre jaune. Renseignez-vous auprès d'un centre de médecine des voyages quatre à six semaines avant le départ : votre itinéraire et vos antécédents médicaux personnels peuvent changer la réponse. Ceci est une information générale, pas un avis médical.",
+  },
+  {
+    q: "Faut-il une assurance évacuation médicale ?",
+    a: "Prenez-la au sérieux, vu l'éloignement de certains lodges. La Namibie a son propre prestataire d'évacuation aéromédicale, Medical Rescue Africa (MRA), avec lequel de nombreux lodges et opérateurs travaillent déjà, mais il vous faut malgré tout une assurance voyage qui couvre explicitement l'évacuation médicale en Namibie. Si vous combinez ce voyage avec l'Afrique de l'Est et disposez déjà d'une adhésion AMREF Flying Doctors, sachez qu'elle ne s'étend pas à la Namibie, au Botswana ni à l'Afrique du Sud. Vérifiez votre couverture avant de partir, pas après.",
   },
 ];
 
@@ -156,9 +173,11 @@ export default function SafetyHealthPageFr() {
           <h2 className="text-xl font-bold text-charcoal">Paludisme : la réalité région par région</h2>
           <ul className="mt-5 space-y-3">
             {[
-              "Risque plus élevé : le nord d'Etosha, la région du Zambèze (Caprivi), surtout pendant la saison des pluies (nov.-avr.)",
-              "Risque faible ou nul : Windhoek, Swakopmund, Sossusvlei, Fish River Canyon, la majeure partie du centre et du sud de la Namibie",
-              "Le besoin de prophylaxie dépend de votre itinéraire et de vos dates : c'est à un médecin du voyage de le confirmer, pas à un guide général",
+              "Régions à risque plus élevé signalées par le CDC et l'OMS : Kavango East, Kavango West, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa et Zambezi, soit globalement la bande nord du pays, y compris le nord d'Etosha et la région du Zambèze (Caprivi)",
+              "Aucune transmission du paludisme à Windhoek, et un risque faible ou rare à Sossusvlei, Fish River Canyon, la Skeleton Coast et dans la majeure partie du centre et du sud de la Namibie",
+              "Le risque est le plus élevé pendant la saison des pluies (nov.-avr.) ; les tronçons le long des fleuves Kunene, Zambèze et Okavango présentent un certain risque toute l'année",
+              "Le ministère namibien de la Santé a enregistré une forte hausse des cas début 2026, concentrée dans le Zambèze, le Kavango East et le Kavango West, ce qui a déclenché une réponse appuyée par l'OMS : si votre itinéraire traverse ces régions, considérez la prophylaxie comme non négociable, pas optionnelle",
+              "Le choix de la prophylaxie (le plus souvent atovaquone-proguanil, doxycycline ou méfloquine) dépend de votre itinéraire, de vos dates et de vos antécédents médicaux : c'est à un médecin du voyage de le confirmer, pas à un guide général",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-[14px] text-charcoal/70">
                 <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />

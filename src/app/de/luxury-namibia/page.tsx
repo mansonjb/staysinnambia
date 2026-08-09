@@ -30,25 +30,34 @@ const POINTS = [
     title: "Fly-in statt Selbstfahrer",
     text: (
       <>
-        Fly-in-Camps im Palmwag-Concession-Gebiet und Lodges auf der NamibRand Nature Reserve
-        werden oft mit dem Kleinflugzeug statt über die Straße erreicht, wodurch eine Fahrt, die laut unserem{" "}
+        Die besten Lodges erreicht man oft eher mit dem Kleinflugzeug als über die Straße. Fly-in-Camps
+        in der Palmwag Concession und im Hoanib Valley sind gezielt auf das Tracking von Wüstenlöwen,
+        Elefanten und Nashörnern ausgerichtet und normalerweise nur per Charterflug erreichbar. Lodges
+        im NamibRand Nature Reserve bei Sossusvlei liegen typischerweise rund 45 Flugminuten entfernt,
+        statt der etwa 5-stündigen Fahrt, die unser{" "}
         <Link
           href="/de/namibia-self-drive-guide"
           className="text-rust underline underline-offset-2 hover:text-rust-dark"
         >
           Selbstfahrer-Guide
         </Link>{" "}
-        sechs Stunden dauern würde, zu einem 45-minütigen Flug wird.
+        für dieselbe Schotterstrecke veranschlagt. Am anderen Ende des Spektrums liegt Serra Cafema
+        allein am Kunene-Fluss im Hartmann Valley und ist nur per Kleinflugzeug zur eigenen Landepiste
+        erreichbar: die wohl abgelegenste Lodge des Landes.
       </>
     ),
   },
   {
     title: "Private Reservate, nicht nur private Zimmer",
-    text: "Luxus in Namibia bedeutet meist Zugang: ein privates Tor zum Conservancy, Offroad-Tracking-Rechte oder Nachtfahrten, die innerhalb der Nationalparks selbst nicht erlaubt sind.",
+    text: "Luxus in Namibia bedeutet meist Zugang, nicht Fadenzahl. Die Ongava Reserve, direkt am Anderson Gate von Etosha gelegen, erlaubt Nachtfahrten und Offroad-Tracking, die im Nationalpark selbst nicht gestattet sind. In Damaraland beherbergt die Palmwag Concession eine der größten frei lebenden Spitzmaulnashorn-Populationen der Erde und ist einer der wenigen Orte Afrikas, an denen man sie zu Fuß mit einem Spezialisten-Guide statt vom Fahrzeug aus verfolgen kann.",
   },
   {
     title: "Weniger, dafür bessere Nächte",
-    text: "Eine Luxus-Reiseroute ist oft kürzer als eine Budget-Selbstfahrer-Tour: drei oder vier Camps über 8–10 Tage, mit jeweils zwei vollen Nächten statt eines kurzen Zwischenstopps.",
+    text: "Eine Luxus-Reiseroute ist oft kürzer als eine Budget-Selbstfahrer-Tour: drei oder vier Camps über 8-10 Tage, mit jeweils zwei vollen Nächten statt eines kurzen Zwischenstopps. Shipwreck Lodge an der Skeleton Coast erhielt einen Michelin Key in der ersten Global Michelin Keys Selection (2025) des Guides, ein guter Anhaltspunkt dafür, was „den Flug wert“ auf diesem Niveau bedeutet.",
+  },
+  {
+    title: "Was der Aufpreis tatsächlich bringt",
+    text: "Auf oberster Ebene bekommt jede Unterkunft meist ihren eigenen Guide und oft auch einen eigenen Koch, statt eines geteilten Game-Drive-Fahrzeugs und einer festen Speisekarte. Das gesamte Namib-Naukluft-Gebiet rund um Sossusvlei ist ein International Dark Sky Reserve (Gold-Status seit 2012), weshalb Sternenbeobachtung in vielen Lodges der Region fest zum Programm gehört, vom Dachfenster im Zimmer bis zur offenen Schlafplattform unter freiem Himmel, und nicht bloß eine klare Nacht ist, die man zufällig bemerkt. Eine private Heißluftballonfahrt bei Sonnenaufgang über den Dünen (Namib Sky Balloon Safaris, rund N$9.900/US$550 pro Person, mit anschließendem Champagnerfrühstück) ist genau die Art von einmaligem Luxus, die sich leicht in eine Luxusreiseroute einbauen lässt, bei einer Budgetreise aber schwer zu rechtfertigen ist.",
   },
 ];
 
@@ -73,7 +82,8 @@ export default function LuxuryPageDe() {
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Eine Luxusreise durch Namibia sieht weniger nach Fünf-Sterne-Hotel aus als nach
           vollständigem, privatem Zugang zur Landschaft. Hier erfahren Sie, was sich tatsächlich
-          ändert, wenn Sie mehr ausgeben.
+          ändert, wenn Sie mehr ausgeben: durch welche Tore Sie fahren dürfen, in wessen Fahrzeug
+          Sie sitzen, und wie viele andere Gäste sich überhaupt in Ihrer Nähe aufhalten.
         </p>
       </section>
 

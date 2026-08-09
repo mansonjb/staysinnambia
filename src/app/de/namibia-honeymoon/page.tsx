@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AvailabilityBadge, CardCTA } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { getLodgeDe } from "@/lib/data.de";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
@@ -28,6 +29,13 @@ export const metadata: Metadata = {
 
 const HONEYMOON_SLUGS = ["little-kulala", "sossusvlei-desert-lodge", "doro-nawas-camp", "the-olive-exclusive"];
 
+const ROMANTIC_ADD_ONS = [
+  "Ein privates Dünendinner: Die meisten Lodges rund um Sossusvlei decken für eine Nacht Ihres Aufenthalts einen privaten Tisch, auf der Terrasse oder direkt im Sand. Buchen Sie es bei der Zimmerreservierung, nicht erst bei der Ankunft, da Aufbau und Personal eigens eingeplant werden müssen.",
+  "Die offenen Turmzimmer von Le Mirage Resort & Spa: Das burgähnliche Anwesen hat Zimmer, die zum Schlafen unter freiem Himmel gebaut sind, und die klaren, unverschmutzten Himmel des Namib-Naukluft-Gebiets machen fast jede Nacht dafür geeignet, fragen Sie also nach der Nacht mit der klarsten Wettervorhersage Ihres Aufenthalts.",
+  "Eine Heißluftballonfahrt bei Sonnenaufgang über den Dünen: Namib Sky Balloon Safaris startet an den meisten Morgen von Sesriem aus, wetterabhängig, und endet mit einem Champagnerfrühstück in der Wüste. Der Ausflug dauert von Tür zu Tür rund 3,5 Stunden und sollte wegen begrenzter Plätze frühzeitig gebucht werden.",
+  "Paar-Spa und Wellness: Le Mirage betreibt vor Ort ein Full-Service-Spa (das Mystique Spa), doch die Behandlungsangebote in Namibias Wüstenlodges sind meist kleiner als in einem Resort-Spa. Fragen Sie konkret nach, was tatsächlich angeboten wird, statt eine vollständige Behandlungsliste vorauszusetzen.",
+];
+
 export default function HoneymoonPageDe() {
   const lodges = HONEYMOON_SLUGS.map((slug) => getLodgeDe(slug)).filter(Boolean);
 
@@ -50,10 +58,15 @@ export default function HoneymoonPageDe() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Namibias Weite und Stille machen das Land zu einem wirklich romantischen Reiseziel: die
-          klaren Wüstenhimmel des Namib-Naukluft-Gebiets machen Sternenbeobachtung fast zu einem
-          nächtlichen Ritual, und die nächsten anderen Gäste sind oft wirklich weit entfernt. Diese vier
-          Unterkünfte würden wir für Flitterwochen zuerst empfehlen; die vollständige Auswahl
-          finden Sie in unserem{" "}
+          klaren Wüstenhimmel und die geringe Lichtverschmutzung des Namib-Naukluft-Gebiets machen
+          Sternenbeobachtung fast zu einem nächtlichen Ritual statt einem Glücksfall, und die
+          nächsten anderen Gäste sind oft wirklich weit entfernt. Diese vier Unterkünfte würden wir
+          für Flitterwochen zuerst empfehlen: Le Mirage Resort &amp; Spa und Sossusvlei Lodge für
+          die Dünen, Camp Kipwe als Basis zwischen Felsblöcken nahe Twyfelfontein, wenn Sie die
+          Landschaft Damaralands wollen, ohne auf Romantik zu verzichten, und The Olive Exclusive,
+          ein Boutique-Hotel mit nur sieben Suiten in Windhoek und eigenem Plunge-Pool pro Suite,
+          als Auftakt- oder Abschlussnacht vor oder nach der Safari-Route statt als Zwischenstopp.
+          Die vollständige Auswahl finden Sie in unserem{" "}
           <Link
             href="/de/best-romantic-stays"
             className="text-rust underline underline-offset-2 hover:text-rust-dark"
@@ -98,6 +111,29 @@ export default function HoneymoonPageDe() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 pb-12 sm:px-10">
+        <Reveal>
+          <h2 className="text-2xl font-bold text-charcoal">Extras, die sich vorab zu buchen lohnen</h2>
+        </Reveal>
+        <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <ul className="space-y-3">
+            {ROMANTIC_ADD_ONS.map((n) => (
+              <li key={n} className="flex items-start gap-2 text-[14px] text-charcoal/70">
+                <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                {n}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 border-t border-charcoal/10 pt-5 text-[14px] leading-relaxed text-charcoal/70">
+            <span className="font-semibold text-charcoal">Zum Reisetempo:</span> Flitterwochen
+            funktionieren besser kürzer als eine Erstbesuch-Route. Zwei Lodges mit je drei bis vier
+            Nächten, statt der fünf Stopps und zehn Tage, die Erstbesucher oft planen, reichen aus,
+            um wirklich zur Ruhe zu kommen, und lassen noch Raum für ein privates Dinner oder eine
+            Ballonfahrt, ohne dass sich die Reise wie eine Checkliste anfühlt.
+          </p>
+        </Reveal>
       </section>
     </>
   );

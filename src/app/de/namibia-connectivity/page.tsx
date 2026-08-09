@@ -43,34 +43,38 @@ const COVERAGE = [
   },
   {
     area: "Etosha (Camps und Hauptstraßen)",
-    signal: "Lückenhaft, aber vorhanden: Die meisten Camps haben WLAN an der Rezeption, selbst wo der Mobilfunkempfang schwach ist.",
+    signal: "Lückenhaft, aber vorhanden: Die meisten Camps (Okaukuejo, Halali, Namutoni) haben WLAN an der Rezeption, selbst dort, wo der Mobilfunkempfang auf den umliegenden Schotterpisten schwach oder gar nicht vorhanden ist.",
   },
   {
     area: "Sossusvlei, Damaraland, Spitzkoppe",
-    signal: "Schwach bis nicht vorhanden über weite Strecken. Laden Sie Offline-Karten herunter, bevor Sie die Küste verlassen.",
+    signal: "Schwach bis nicht vorhanden über weite Strecken, besonders abseits der C-Straßen. Laden Sie Offline-Karten herunter, bevor Sie die Küste verlassen, nicht erst auf der D-Straße nach Damaraland.",
   },
   {
-    area: "Skeleton Coast, abgelegenes Kaokoland",
-    signal: "Rechnen Sie mit gar keinem Empfang für ganze Tage: Das ist normal, kein Netzfehler.",
+    area: "Skeleton Coast, abgelegenes Kaokoland (inkl. Opuwo-Abstecher)",
+    signal: "Rechnen Sie über ganze Tage hinweg mit gar keinem MTC- oder TN-Mobile-Empfang: Das ist normal, kein Netzfehler, und gilt auch für eSIMs, die über dieselben Masten laufen.",
   },
 ];
 
 const FAQS = [
   {
     q: "Welches Netz ist für Touristen in Namibia am besten?",
-    a: "MTC ist Namibias dominierendes Netz und hat generell die breiteste Abdeckung entlang der wichtigsten Touristenrouten und Städte; Telecom Namibia (über TN Mobile) ist die Alternative. Keines von beiden hat nennenswerte Abdeckung in den entlegensten Wüsten- und Küstenabschnitten: Das ist eine Frage des Geländes, keine Netzwahl, die Sie beheben können.",
+    a: "MTC ist Namibias dominierendes Mobilfunknetz und hat auf den wichtigsten Touristenrouten und in den Städten in der Regel die beste Abdeckung; Telecom Namibia (über TN Mobile) ist die Alternative. Keines der beiden Netze bietet nennenswerten Empfang in den entlegensten Wüsten- und Küstenabschnitten, darunter die Skeleton Coast, die tiefe Namib und der Großteil Kaokolands: Das liegt am Gelände und an der fehlenden Infrastruktur, nicht an der Wahl des Anbieters, und lässt sich auch durch einen Netzwechsel nicht beheben.",
+  },
+  {
+    q: "Was kostet eine MTC-Touristen-SIM-Karte?",
+    a: "MTC verkauft zwei touristenspezifische Pakete, beide direkt am Flughafenkiosk erhältlich: ein Leisure-Paket für N$349 mit 14 Tagen Laufzeit und 10,1 GB Datenvolumen plus etwas internationalem Anruf- und SMS-Guthaben, sowie ein Premium-Paket für N$659 mit 30 Tagen Laufzeit, 20,1 GB Datenvolumen und mehr Gesprächsguthaben. Eine einfache Prepaid-SIM mit separatem Datenpaket ist meist günstiger, wenn Sie selbst aufladen möchten, aber die Touristenpakete ersparen Ihnen den Aufwand am ersten Tag.",
   },
   {
     q: "Kann ich am Flughafen eine SIM-Karte kaufen?",
-    a: "Ja, MTC hat einen Kiosk im Ankunftsbereich des Hosea Kutako International Airport, und das ist der einfachste Weg, vor Fahrtbeginn online zu sein. Bringen Sie Ihren Reisepass mit; die lokale SIM-Registrierung erfordert in der Regel einen Ausweis.",
+    a: "Ja, MTC hat einen Kiosk im Ankunftsbereich des Hosea Kutako International Airport, und das ist der einfachste Weg, um noch vor Fahrtbeginn online zu sein. Bringen Sie Ihren Reisepass mit; die lokale SIM-Registrierung erfordert in der Regel einen Ausweis, und die Touristenpakete werden direkt vor Ort eingerichtet.",
   },
   {
-    q: "Funktioniert eSIM gut in Namibia?",
-    a: "Ja, im Allgemeinen: Internationale eSIM-Anbieter leiten über dieselben MTC- oder Telecom-Namibia-Netze wie eine physische SIM-Karte, die Abdeckung ist also identisch. Der Vorteil ist, dass Sie den physischen Kartentausch oder Flughafenstopp überspringen; prüfen Sie vor der Abreise die Namibia-Abdeckungskarte Ihres konkreten Anbieters, bevor Sie sich in abgelegenen Regionen darauf verlassen.",
+    q: "Funktioniert eSIM gut in Namibia, und ist sie günstiger als eine lokale SIM-Karte?",
+    a: "Sie funktioniert, ist aber selten günstiger. Internationale eSIM-Anbieter leiten über dieselben MTC- oder Telecom-Namibia-Masten wie eine physische SIM-Karte, die Abdeckung ist also identisch, und Tarife starten meist bei rund 9,50 US-Dollar für eine Woche Datenvolumen. Der Haken liegt beim Preis pro Gigabyte: eSIM-Datenvolumen kostet häufig das Zwei- bis Dreifache eines MTC-Prepaid-Pakets für dieselbe Menge. Bezahlt wird hier für Komfort, schon bei der Landung online zu sein statt am Flughafenkiosk anzustehen, nicht für ein besseres Netz.",
   },
   {
     q: "Habe ich auf der gesamten Selbstfahrer-Route Empfang?",
-    a: "Nein, und Sie sollten nicht damit planen. Sossusvlei, Damaraland und die Skeleton Coast haben alle lange Abschnitte ganz ohne Empfang. Laden Sie Offline-Google-Maps für Ihre Route herunter, speichern Sie Ihre Lodge-Buchungen als PDF, und behandeln Sie Konnektivität als eine Sache von Städten und Camps, nicht als etwas zwischen den Stopps.",
+    a: "Nein, und Sie sollten nicht damit planen. Sossusvlei, Damaraland, Spitzkoppe, die Skeleton Coast und das abgelegene Kaokoland haben alle lange Abschnitte, teils ganze Fahrtage, ganz ohne Empfang auf beiden Netzen. Laden Sie Offline-Google-Maps für Ihre Route herunter, speichern Sie Ihre Lodge-Buchungen als PDF, und behandeln Sie Konnektivität als eine Sache von Städten und Camps, nicht als etwas zwischen den Stopps.",
   },
 ];
 
@@ -117,7 +121,7 @@ export default function ConnectivityPageDe() {
           <h2 className="text-xl font-bold text-charcoal">Bevor Sie die Küste verlassen</h2>
           <ul className="mt-5 space-y-3">
             {[
-              "Kaufen Sie eine MTC-SIM-Karte am Flughafen, oder bestätigen Sie, dass Ihr eSIM-Anbieter Namibia konkret abdeckt",
+              "Kaufen Sie eine MTC-SIM-Karte am Kiosk im Flughafen Hosea Kutako (N$349 für 14 Tage / 10,1 GB, oder N$659 für 30 Tage / 20,1 GB), oder bestätigen Sie vorab, dass Ihr eSIM-Anbieter Namibia konkret abdeckt, bevor Sie sich für Daten darauf statt auf eine physische SIM verlassen",
               (
                 <>
                   Laden Sie Offline-Karten für Ihre gesamte Selbstfahrer-Route im Voraus herunter.

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
 
@@ -47,19 +48,42 @@ const TIERS = [
         >
           Zelf rijden
         </Link>{" "}
-        met een compacte 2x4, guesthouses en campings, deels zelf koken.
+        in een compacte 2x4 (ongeveer N$900-1.400/dag voor een Corolla Cross, Polo Sedan of
+        Hyundai Creta-klasse auto), een mix van NWR- en particuliere campings (≈N$150-500 per
+        persoon) met om de paar dagen een nacht in een guesthouse in de stad ($58-112 voor twee in
+        Swakopmund of Windhoek), en de meeste avonden zelf koken met boodschappen van de
+        supermarkt.
       </>
     ),
   },
   {
     name: "Middenklasse",
     range: "≈ € 325 / dag",
-    desc: "Zelf rijden of kleinschalige groepsreis, 3-sterrenlodges en guesthouses, de meeste maaltijden inbegrepen.",
+    desc: "Zelf rijden in een goed uitgeruste 2x4 of instap-4x4, of een kleinschalige groepsreis, met verblijf in 3-sterrenlodges en guesthouses (doorgaans $120-250/nacht voor twee), meestal met ontbijt en vaak diner inbegrepen.",
   },
   {
     name: "Luxe",
     range: "€ 700+ / dag",
-    desc: "Fly-in of begeleide safari, designlodges, volpension met activiteiten inbegrepen.",
+    desc: "Fly-in of begeleide safari met een privégids, designlodges zoals die in de Namib en Kunene, volpension van $350-700+ per persoon per nacht met gamedrives, panoramavluchten of begeleide wandelingen inbegrepen.",
+  },
+];
+
+const COST_LEVERS = [
+  {
+    title: "Autohuur",
+    text: "Een eenvoudige 2x4 kost ongeveer N$900-1.400/dag. Een volledig uitgeruste 4x4 safariauto met daktent en kampeeruitrusting van een verhuurder zoals Bushlore ligt eerder rond N$2.500-4.000/dag, afhankelijk van het seizoen, vóór korting op het eigen risico. Zie onze zelfrijgids voor wat dat eigen risico precies dekt.",
+  },
+  {
+    title: "Brandstof",
+    text: "Pompprijzen bewegen mee met wijzigingen in overheidsheffingen; begin augustus 2026 lagen ze rond N$24,48/liter voor benzine 95 en N$26,26/liter voor diesel aan de kust, met doorgaans iets hogere prijzen landinwaarts door transportkosten. Een tweeweekse zelfrijroute verbruikt al snel N$4.000-6.000 aan brandstof voor één voertuig.",
+  },
+  {
+    title: "Toegangskosten parken",
+    text: "Internationale bezoekers betalen N$280 per persoon per dag bij Etosha en Namib-Naukluft (gelijk verdeeld over een toegangsprijs en een natuurbehoudsheffing), plus een aparte voertuigkosten van N$50/dag voor een normale auto. Kinderen tot en met 8 jaar zijn gratis; oudere kinderen en SADC-burgers betalen verlaagde tarieven. Er wordt per blok van 24 uur gefactureerd, dus plan uw poortbezoeken zo dat u niet betaalt voor een dag die u nauwelijks gebruikt.",
+  },
+  {
+    title: "De visumkosten van $90",
+    text: "De meeste nationaliteiten betalen dit nu online vooraf in plaats van bij aankomst. Het is een vast bedrag ongeacht de reisduur of het niveau, dus het weegt proportioneel zwaarder mee bij een korte reis.",
   },
 ];
 
@@ -78,11 +102,19 @@ const FAQS = [
   },
   {
     q: "Wat is de grootste kostenfactor bij een Namibië-reis?",
-    a: "Veruit het accommodatieniveau: het verschil tussen een guesthouse en een fly-in luxelodge is vaak 5 tot 10 keer zoveel per nacht. Voertuigtype (2x4 vs. 4x4 huurauto) en begeleid versus zelf rijden zijn de volgende grootste factoren.",
+    a: "Veruit het accommodatieniveau: het verschil tussen een guesthouse en een fly-in luxelodge is vaak 5 tot 10 keer zoveel per nacht. Voertuigtype (2x4 vs. 4x4 huurauto) en begeleid versus zelf rijden zijn de volgende grootste factoren, want een volledig uitgeruste 4x4 safariauto kan 2 tot 3 keer zoveel kosten als een eenvoudige 2x4.",
   },
   {
     q: "Hoeveel bedragen de toegangskosten voor Namibië's nationale parken?",
-    a: "Deze stegen sterk op 1 april 2026, de eerste verhoging sinds 2021. Internationale bezoekers betalen nu N$280 per persoon per dag (tegenover voorheen N$150) bij grote parken zoals Etosha en Namib-Naukluft, plus een voertuigkosten van N$620 voor twee personen, met goedkopere tarieven voor SADC-burgers en Namibiërs. Houd hier expliciet rekening mee bij een zelfrijreis langs meerdere parken: het loopt sneller op dan de oudere, lagere bedragen die op sommige verouderde gidsen nog worden genoemd.",
+    a: "Deze stegen fors op 1 april 2026, de eerste verhoging sinds 2021, een sprong van 86% ten opzichte van het vorige tarief. Internationale bezoekers betalen nu N$280 per persoon per dag (gelijk verdeeld over een toegangsprijs van N$140 en een natuurbehoudsheffing van N$140) bij grote parken zoals Etosha en Namib-Naukluft, tegenover voorheen N$150, plus een aparte voertuigkosten van N$50/dag voor een normale auto (2-10 zitplaatsen). SADC-burgers betalen N$180 per persoon per dag, Namibiërs N$60, en kinderen tot en met 8 jaar zijn gratis. Kosten worden per blok van 24 uur gefactureerd en zijn niet-restitueerbaar, dus houd hier expliciet rekening mee bij een zelfrijreis langs meerdere parken.",
+  },
+  {
+    q: "Hoeveel kost brandstof voor een zelfrijreis door Namibië?",
+    a: "Begin augustus 2026 lagen de pompprijzen rond N$24,48/liter voor benzine 95 en N$26,26/liter voor diesel aan de kust (Walvis Bay), met een kleine transportopslag landinwaarts. Brandstofprijzen bewegen enkele keren per jaar mee met wijzigingen in overheidsheffingen, dus beschouw dit als een momentopname en geen vast bedrag. Een typische route van twee tot drie weken langs Etosha, Damaraland, Sossusvlei en de kust verbruikt ongeveer N$4.000-6.000 aan brandstof voor één voertuig.",
+  },
+  {
+    q: "Hoeveel kost een huurauto in Namibië?",
+    a: "Een eenvoudige 2x4 met redelijke bodemvrijheid (Toyota Corolla Cross, VW Polo Sedan, Hyundai Creta-klasse) kost bij lokale verhuurders ongeveer N$900-1.400/dag. Een volledig uitgeruste 4x4 met daktent en kampeeruitrusting van een specialist zoals Bushlore of Asco Car Hire ligt eerder rond N$2.500-4.000/dag in laag- tot hoogseizoen, en dat is nog vóór een verzekering met verlaagd eigen risico, die doorgaans €8-25/dag extra kost, afhankelijk van hoeveel u het standaard eigen risico van N$20.000-40.000 wilt verlagen.",
   },
 ];
 
@@ -137,6 +169,33 @@ export default function TripCostPageNl() {
           Alleen schattingen, per persoon per dag. Werkelijke kosten variëren met seizoen,
           groepsgrootte en route. Exclusief internationale vluchten.
         </p>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 py-10 sm:px-10">
+        <Reveal>
+          <h2 className="text-2xl font-bold text-charcoal">Wat het bedrag écht bepaalt</h2>
+          <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/70">
+            Achter de drie niveaus hierboven doen vier posten het meeste werk. Krijg deze goed in
+            beeld bij het budgetteren en de schatting per dag stopt met gokken te zijn.
+          </p>
+        </Reveal>
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {COST_LEVERS.map((c, i) => (
+            <Reveal
+              key={c.title}
+              delay={i * 60}
+              className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm"
+            >
+              <div className="flex items-start gap-3">
+                <MetaIcon name="check" className="mt-1 h-4 w-4 shrink-0 text-olive" />
+                <div>
+                  <h3 className="text-[14px] font-bold text-charcoal">{c.title}</h3>
+                  <p className="mt-2 text-[14px] leading-relaxed text-charcoal/70">{c.text}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-[1400px] px-6 py-16 sm:px-10">

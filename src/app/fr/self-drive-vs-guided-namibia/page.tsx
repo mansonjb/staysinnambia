@@ -43,9 +43,9 @@ const FACTORS = [
   {
     axis: "Coût",
     selfDrive:
-      "Nettement moins cher : vous ne payez pas de guide privé ni de véhicule, de loin le poste de dépense le plus important d'un voyage accompagné. Consultez notre analyse complète des coûts pour de vrais chiffres au jour le jour.",
+      "Environ 225-250 €/personne/jour en budget serré, environ 325 €/jour en milieu de gamme : la seule location d'un 4x4 coûte environ 1 500-2 200 N$/jour (environ 75-110 €) avant carburant et franchise d'assurance, plus les droits d'entrée des parcs de 280 N$/personne/jour et 620 N$/véhicule, payables directement à la porte. Voir notre analyse complète des coûts pour le détail par gamme de prix.",
     guided:
-      "Plus cher dans l'ensemble, mais inclut souvent les repas, les droits d'entrée des parcs et les activités, qui seraient sinon des coûts séparés en autotour.",
+      "Un guide privé et un véhicule coûtent généralement 700-1 100 €+ par personne et par jour pour un itinéraire entièrement sur mesure, même si les circuits en petit groupe à dates fixes peuvent être moins chers. Cela inclut généralement les repas, les droits d'entrée des parcs et les activités, des postes séparés en autotour, donc l'écart affiché exagère un peu la différence réelle.",
   },
   {
     axis: "Liberté et rythme",
@@ -57,9 +57,9 @@ const FACTORS = [
   {
     axis: "Observation de la faune",
     selfDrive:
-      "Vraiment efficace à Etosha, où les points d'eau concentrent la faune de façon prévisible. Moins performant dans les zones qui demandent des compétences de pistage, comme les éléphants ou rhinocéros adaptés au désert au Damaraland.",
+      "Vraiment efficace à Etosha, où les points d'eau éclairés d'Okaukuejo et de Halali concentrent la faune de façon prévisible, en particulier le rhinocéros et l'éléphant après la tombée de la nuit en saison sèche. Moins performant dans les zones qui demandent des compétences de pistage, comme l'éléphant adapté au désert dans la Torra Conservancy au Damaraland ou le rhinocéros noir dans la concession de Palmwag, qui nécessitent un guide agréé spécialisé quel que soit votre mode de voyage.",
     guided:
-      "L'œil exercé d'un guide pour les traces, les sons et le comportement animal augmente nettement les observations, surtout en dehors du cadre plus facile des points d'eau d'Etosha.",
+      "L'œil exercé d'un guide pour les traces, les sons et le comportement animal augmente nettement les observations, surtout en dehors du cadre plus facile des points d'eau d'Etosha, et c'est le seul moyen de faire du tracking de rhinocéros à Palmwag ou de trouver de façon fiable le lycaon à Bwabwata.",
   },
   {
     axis: "Risque et confort",
@@ -71,7 +71,7 @@ const FACTORS = [
   {
     axis: "Profil idéal pour un premier voyage",
     selfDrive:
-      "Les conducteurs confiants, à l'aise sur les pistes en gravier et pour s'orienter seuls, qui veulent fixer leur propre rythme et disposent d'un budget plus serré.",
+      "Les conducteurs confiants, à l'aise sur les pistes en gravier et pour s'orienter seuls, qui veulent fixer leur propre rythme et disposent d'un budget plus serré. Le réseau de routes « C » bitumées et nivelées de la Namibie rend cette option vraiment plus accessible que dans la plupart des pays de safari.",
     guided:
       "Les voyageurs qui privilégient les observations de faune et l'absence de logistique plutôt que le coût et la flexibilité, ou toute personne peu à l'aise pour conduire sur des pistes inconnues.",
   },
@@ -80,19 +80,19 @@ const FACTORS = [
 const FAQS = [
   {
     q: "Autotour ou safari accompagné : quel est le meilleur choix pour un premier voyage en Namibie ?",
-    a: "Aucun des deux n'est objectivement meilleur : tout dépend de ce que vous privilégiez. L'autotour convient aux conducteurs confiants qui veulent maîtriser le rythme et le coût ; le safari accompagné convient aux voyageurs qui veulent les meilleures observations de faune possibles sans logistique à gérer. Beaucoup de primo-visiteurs optent pour une formule hybride : autotour entre les régions, game drives accompagnés à l'intérieur des parcs.",
+    a: "Aucun des deux n'est objectivement meilleur : tout dépend de ce que vous privilégiez. L'autotour convient aux conducteurs confiants qui veulent maîtriser le rythme et le coût, pour environ 225-325 €/personne/jour ; le safari accompagné convient aux voyageurs qui veulent les meilleures observations de faune possibles sans logistique à gérer, généralement 700-1 100 €+ par personne et par jour. Notre recommandation pour la plupart des primo-visiteurs : faites la boucle classique Etosha-Sossusvlei-Swakopmund en autotour, où le réseau routier et l'observation aux points d'eau rendent les choses faciles, et n'ajoutez une composante accompagnée que là où les compétences de pistage changent réellement la donne, à savoir le Damaraland et Palmwag.",
   },
   {
     q: "Peut-on combiner autotour et safari accompagné ?",
-    a: "Oui, et c'est un compromis courant et judicieux : faites l'autotour pour les transferts entre régions, puis réservez des game drives accompagnés une fois installé dans un lodge, en particulier dans des zones comme le Damaraland où les compétences de pistage améliorent vraiment les observations.",
+    a: "Oui, et c'est un compromis courant et judicieux : faites l'autotour pour les transferts entre régions, puis réservez des game drives accompagnés une fois installé dans un lodge, en particulier dans des zones comme le Damaraland et la concession de Palmwag, où le tracking de l'éléphant adapté au désert et du rhinocéros noir nécessite vraiment un guide spécialisé, quel que soit votre niveau de confiance au volant.",
   },
   {
     q: "Combien coûte un safari accompagné de plus qu'un autotour ?",
-    a: "L'écart est important : un guide privé et un véhicule constituent généralement le poste de dépense le plus élevé du budget d'un voyage en Namibie. Consultez notre analyse complète des coûts pour les chiffres exacts, par gamme de prix.",
+    a: "L'écart est important, mais moins que les chiffres bruts ne le suggèrent une fois qu'on tient compte de ce qui est inclus : un guide privé et un véhicule seuls coûtent généralement 700-1 100 €+ par personne et par jour, contre environ 225-325 €/personne/jour en autotour, mais les voyages accompagnés incluent généralement les repas, les droits d'entrée des parcs et les activités, des coûts séparés en autotour. Consultez notre analyse complète des coûts pour les chiffres exacts, par gamme de prix.",
   },
   {
     q: "Faut-il de l'expérience de conduite tout-terrain pour faire l'autotour en Namibie ?",
-    a: "Pas pour l'itinéraire classique : Etosha, Sossusvlei et Swakopmund sont accessibles à quiconque est à l'aise sur les pistes en gravier, sans compétence sérieuse en tout-terrain. Cela devient plus important au Damaraland et au Kaokoland, où un 4x4 et une certaine assurance sur le gravier comptent davantage.",
+    a: "Pas pour l'itinéraire classique : Etosha, Sossusvlei et Swakopmund sont accessibles à quiconque est à l'aise sur les pistes en gravier, sans compétence sérieuse en tout-terrain. Cela devient plus important au Damaraland et au Kaokoland, où un 4x4 et une certaine assurance sur le gravier comptent davantage, et où la location d'un 4x4 coûte elle-même environ 1 500-2 200 N$/jour avant carburant.",
   },
 ];
 

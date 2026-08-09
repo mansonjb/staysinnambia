@@ -38,15 +38,21 @@ const POPULAR_GUIDES_DE = [
 const EXTENSIONS = [
   {
     place: "Victoriafälle (Sambia/Simbabwe)",
-    text: "Die häufigste Namibia-Ergänzung. Meist wird geflogen, nicht gefahren: die meisten Reisenden fliegen ab Windhoek oder ab Katima Mulilo im Caprivi-Streifen, statt die Strecke selbst zu fahren. Mindestens 2 Nächte lohnen sich, um sowohl die sambische als auch die simbabwische Seite der Fälle zu sehen.",
+    text: "Die häufigste Namibia-Ergänzung, meist wird geflogen statt gefahren. Ein Direktflug von Windhoek zum Flughafen Victoria Falls (VFA) dauert etwas über eine Stunde in der Luft, wobei die realistische Tür-zu-Tür-Zeit mit einer Verbindung eher bei einem halben Tag liegt. Selbstfahren ist möglich, aber lang: Es sind rund 1.228 km und volle 12 Stunden Fahrzeit von Windhoek nach Katima Mulilo am östlichen Ende der Sambesi-Region (die meisten Selbstfahrer teilen das auf 2 Tage mit Übernachtung in Rundu), danach folgen ein weiterer Grenzübertritt und die Fahrt zu den Fällen selbst. Vor Ort sollten Sie mindestens 2 Nächte einplanen, um sowohl die sambische als auch die simbabwische Seite richtig zu sehen, zwei wirklich unterschiedliche Ausblicke auf dieselben Fälle.",
     time: "mind. +3–4 Tage",
   },
   {
     place: "Chobe-Nationalpark & Okavango-Delta (Botswana)",
     text: (
       <>
-        Eine natürliche Verbindung von unserer Caprivi-Streifen-Region aus, die direkt an Chobe
-        grenzt. Sehen Sie unseren{" "}
+        Eine natürliche Verbindung von unserer Sambesi-Region (früher Caprivi-Streifen) aus, die
+        direkt über den Grenzposten Ngoma Bridge (täglich 07:00 bis 18:00 geöffnet) an Chobe
+        grenzt, etwa 55 km von Kasane und rund 70 km von Katima Mulilo auf namibischer Seite
+        entfernt. Für das Okavango-Delta und Maun überqueren die meisten Selbstfahrer stattdessen
+        weiter westlich den Grenzposten Mohembo (geöffnet 06:00 bis 18:00) südlich von Divundu und
+        fahren dann weitere rund 580 km durch den Okavango Panhandle nach Maun, teils auf Schotter,
+        der in der Trockenzeit mit einer Limousine gut zu bewältigen ist, nach starkem Regen aber
+        weich werden kann. Sehen Sie unseren{" "}
         <Link href="/de/namibia-vs-botswana" className="font-semibold text-rust hover:text-rust-dark">
           Namibia-vs-Botswana-Vergleich
         </Link>{" "}
@@ -58,7 +64,7 @@ const EXTENSIONS = [
   },
   {
     place: "Kapstadt & die Garden Route (Südafrika)",
-    text: "Meist wird sie angehängt statt mitten in die Reise eingebaut: viele Reisende fliegen vor oder nach ihrer Namibia-Rundreise nach Kapstadt, und behandeln sie eher als eigenständigen Städteaufenthalt statt als Erweiterung der Selbstfahrer-Route selbst.",
+    text: "Meist wird sie angehängt statt mitten in die Reise eingebaut: viele Reisende fliegen vor oder nach ihrer Namibia-Rundreise nach Kapstadt und behandeln sie eher als eigenständigen Städteaufenthalt statt als Erweiterung der Selbstfahrer-Route selbst. Logistisch ist es eine einfache Ergänzung: Ein Direktflug von Windhoek nach Kapstadt dauert etwas über 2 Stunden, mit mehreren Flügen täglich auf dieser Strecke.",
     time: "+3–5 Tage",
   },
 ];
@@ -66,19 +72,19 @@ const EXTENSIONS = [
 const FAQS = [
   {
     q: "Kann ich von Namibia zu den Victoriafällen fahren?",
-    a: "Technisch ja, über den Caprivi-Streifen nach Sambia oder Botswana, aber es ist eine lange, mehrtägige Fahrt, die die meisten Reisenden zugunsten eines Inlandsflugs ab Windhoek oder Katima Mulilo überspringen. Fliegen ist für diese spezielle Erweiterung die praktische Standardlösung.",
+    a: "Technisch ja, über die Sambesi-Region (den früheren Caprivi-Streifen) nach Sambia oder Botswana, aber es ist eine wirklich lange, mehrtägige Fahrt, die die meisten Reisenden zugunsten eines Inlandsflugs ab Windhoek oder Katima Mulilo überspringen. Als Anhaltspunkt: Allein Windhoek nach Katima Mulilo sind rund 1.228 km und 12 Stunden Fahrzeit, meist aufgeteilt auf 2 Tage mit Übernachtung in Rundu, und das noch vor dem Grenzübertritt. Fliegen ist für diese spezielle Erweiterung die praktische Standardlösung, außer Sie fahren ohnehin schon durch die Sambesi-Region als Teil Ihrer Namibia-Route.",
   },
   {
     q: "Brauche ich für diese Erweiterungen ein separates Visum?",
-    a: "Ja, in jedem Fall: Sambia, Simbabwe, Botswana und Südafrika haben jeweils eigene Einreisebestimmungen, getrennt von denen Namibias (das selbst am 1. April 2025 zu einer verpflichtenden Online-Beantragung des Visa on Arrival gewechselt ist). Prüfen Sie die Anforderungen für Ihre jeweilige Nationalität und jedes Land rechtzeitig vor der Flugbuchung, zusätzlich zu unserem eigenen Ratgeber zu den Namibia-Visabestimmungen.",
+    a: "Ja, in jedem Fall: Sambia, Simbabwe, Botswana und Südafrika haben jeweils eigene Einreisebestimmungen, getrennt von denen Namibias (das selbst am 1. April 2025 zu einer verpflichtenden Online-Beantragung des Visa on Arrival gewechselt ist und seither seine Liste berechtigter Nationalitäten weiter aktualisiert hat). Wenn Ihre Erweiterung sowohl Sambia als auch Simbabwe umfasst, ist das gemeinsame KAZA-UniVisa (etwa 50 US-Dollar, 30 Tage gültig für beide Länder innerhalb eines 12-Monats-Zeitraums) meist die einfachste Option und deckt auch Tagesausflüge nach Botswana über den Grenzposten Kazungula ab, wobei eine Übernachtung in Botswana eine eigene, separate Einreisegenehmigung dieses Landes erfordert. Prüfen Sie die Anforderungen für Ihre jeweilige Nationalität und jedes Land rechtzeitig vor der Flugbuchung, zusätzlich zu unserem eigenen Ratgeber zu den Namibia-Visabestimmungen.",
   },
   {
     q: "Wie viele zusätzliche Tage sollte ich für eine Victoriafälle-Erweiterung einplanen?",
-    a: "Mindestens 3–4 Tage insgesamt, einschließlich der Reise: das deckt einen Flug pro Strecke plus 2 Nächte ab, um die Fälle richtig von der sambischen und der simbabwischen Seite aus zu sehen, was tatsächlich unterschiedliche Erlebnisse sind.",
+    a: "Mindestens 3 bis 4 Tage insgesamt, einschließlich der Reise: Das deckt einen Flug pro Strecke ab (etwas über eine Stunde in der Luft von Windhoek zum Flughafen Victoria Falls, Tür-zu-Tür mit Verbindung entsprechend länger) plus 2 Nächte, um die Fälle richtig von der sambischen und der simbabwischen Seite aus zu sehen, zwei wirklich unterschiedliche Erlebnisse, die den zusätzlichen Grenzübertritt wert sind.",
   },
   {
     q: "Ist es besser, nach Botswana zu erweitern oder direkt zu den Victoriafällen zu fliegen?",
-    a: "Das hängt davon ab, wovon Sie mehr möchten. Botswana erweitert das Safari-Erlebnis mit dichterer Tierbeobachtung; die Victoriafälle sind ein eigenständiges Wahrzeichen mit wenig Überschneidung zu dem, was Sie in Namibia bereits gesehen haben. Viele längere Reisen von 3 Wochen oder mehr machen beides.",
+    a: "Das hängt davon ab, wovon Sie mehr möchten. Botswana erweitert das Safari-Erlebnis mit dichterer Tierbeobachtung, besonders rund um den Chobe-Nationalpark, erreichbar von Namibias Sambesi-Region über den Grenzposten Ngoma Bridge; die Victoriafälle sind ein eigenständiges Wahrzeichen mit wenig Überschneidung zu dem, was Sie in Namibia bereits gesehen haben. Viele längere Reisen von 3 Wochen oder mehr machen beides, mit der Überquerung nach Chobe auf dem Landweg und einem Weiterflug zu den Fällen.",
   },
 ];
 
@@ -104,6 +110,16 @@ export default function TripExtensionsPageDe() {
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Namibia grenzt an einige der größten Höhepunkte des südlichen Afrikas. Hier ist, wie
           Reisende sie tatsächlich hinzufügen, und was jede davon wirklich an Zeit kostet.
+        </p>
+        <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+          <span className="font-semibold text-charcoal">Unsere Empfehlung:</span> Wenn Ihre Route
+          bereits in der Sambesi-Region endet, kostet eine kurze Fly-in-Erweiterung zu den
+          Victoriafällen oder ein Tagesausflug nach Chobe über die Ngoma-Grenze verhältnismäßig
+          wenig zusätzliche Reisezeit für eine wirklich andere Landschaft. Verläuft Ihre
+          Namibia-Rundreise dagegen komplett im Süden und in der Mitte des Landes (Sossusvlei,
+          Etosha, die Küste), ist Kapstadt an einem der beiden Enden der Reise die logistisch
+          reibungslosere Option, da Sie dafür nicht quer durchs Land zu einer Grenze
+          zurückfahren müssen.
         </p>
       </section>
 

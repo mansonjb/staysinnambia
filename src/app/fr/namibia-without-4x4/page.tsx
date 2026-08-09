@@ -25,17 +25,19 @@ export const metadata: Metadata = {
 };
 
 const CAN_2WD = [
-  "Windhoek à Sossusvlei (Sesriem) : bitume et piste en gravier bien entretenue",
-  "Windhoek à Swakopmund via la B1/B2 : entièrement bitumé",
-  "Swakopmund aux principaux lodges du Damaraland : piste en gravier entretenue, sans souci en saison sèche",
-  "Windhoek aux portes sud et est d'Etosha : bitume sur la majeure partie du trajet",
+  "Windhoek à Sossusvlei (Sesriem) via la B1 et le col de Remhoogte (C24, puis D1275/C19) : bitume jusqu'à Rehoboth, puis piste en gravier bien nivelée sur le reste du trajet. C'est l'itinéraire que la plupart des loueurs recommandent aux conducteurs en 2WD.",
+  "Windhoek à Swakopmund via la B1/B2 : entièrement bitumé, aucune piste en gravier.",
+  "Uis à Twyfelfontein au Damaraland (C35 vers D2612) : une piste en gravier très fréquentée, généralement en bon état, que les berlines classiques gèrent sans problème par temps sec, même si le dernier tronçon de la D2612 devient plus sableux que le reste.",
+  "Windhoek à la porte sud d'Etosha (Anderson) près d'Okaukuejo : bitume sur la majeure partie du trajet, et les routes à l'intérieur du parc lui-même sont nivelées et adaptées à un 2WD classique en saison sèche.",
+  "La descente vers les points de vue du Fish River Canyon près de Hobas, dans le sud : bitume et piste entretenue, aucun 4x4 nécessaire pour les points de vue eux-mêmes.",
 ];
 
 const NEED_4X4 = [
-  "Les derniers 5 km environ de sable meuble entre le parking 2x4 de Sossusvlei et les dunes elles-mêmes",
-  "La majeure partie de la Skeleton Coast au nord de Torra Bay",
-  "Les pistes isolées du Kaokoveld, au nord du Damaraland",
-  "Certaines pistes plus accidentées de réserves communautaires menant à des campings villageois, hors des grands axes de gravier",
+  "Les derniers 5 km environ de sable meuble entre le parking 2x4 de Sossusvlei et les dunes et Deadvlei eux-mêmes, désormais accessibles uniquement par navette pour tous les véhicules, quel que soit le mode de transmission (voir ci-dessous).",
+  "Le col de Spreetshoogte, le plus raide de Namibie (des pentes atteignant environ 1:4,5), sur l'itinéraire panoramique alternatif vers Sossusvlei : réservé aux 4x4, caravanes et remorques totalement interdites. Prenez plutôt le col de Remhoogte, plus doux, si vous êtes en 2WD.",
+  "La majeure partie de la Skeleton Coast au nord de Torra Bay, ainsi que des lodges phares du nord comme Shipwreck Lodge, normalement accessibles uniquement par avion léger et pas du tout par la route.",
+  "Les pistes isolées du Kaokoveld, au nord du Damaraland, notamment les itinéraires vers Serra Cafema et la vallée de Hartmann.",
+  "Les routes « D » du Damaraland et du Kaokoland en général : nivelées mais plus accidentées et plus isolées que les routes « C », et réellement affectées par les pluies en saison humide (environ novembre à avril), période où même des pistes en gravier habituellement en bon état peuvent se dégrader rapidement.",
 ];
 
 export default function Without4x4PageFr() {
@@ -58,17 +60,18 @@ export default function Without4x4PageFr() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Une idée reçue fréquente : la majeure partie d'un circuit classique en Namibie se
-          conduit sans problème avec une berline ou un crossover ordinaire. Les principales
-          pistes en gravier du pays (les routes &quot;C&quot; et &quot;D&quot;, détaillées dans
-          notre{" "}
+          conduit sans problème avec une berline ou un crossover ordinaire. Les routes «&nbsp;C&nbsp;»
+          namibiennes, le principal réseau de pistes en gravier du pays (détaillé dans notre{" "}
           <Link
             href="/fr/namibia-self-drive-guide"
             className="font-semibold text-rust hover:text-rust-dark"
           >
             guide de la conduite en autonomie
           </Link>
-          ) sont bien entretenues et praticables. Un 4x4 n'est réellement nécessaire que pour un
-          nombre limité de tronçons bien précis.
+          ), sont larges, bien nivelées et suffisamment entretenues pour que la plupart des
+          loueurs les autorisent en 2WD à une vitesse raisonnable. Les routes «&nbsp;D&nbsp;»,
+          plus accidentées, sont une autre histoire, et un 4x4 devient réellement nécessaire pour
+          un ensemble plus restreint et précis de tronçons, pas pour l&apos;ensemble du voyage.
         </p>
       </section>
 
@@ -101,9 +104,15 @@ export default function Without4x4PageFr() {
         <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
           <p className="text-[14px] leading-relaxed text-charcoal/70">
             <span className="font-semibold text-charcoal">Une solution intermédiaire :</span> à
-            Sossusvlei, la navette du parc se charge elle-même du dernier tronçon de sable
-            meuble, ce qui permet de garer un véhicule 2WD sur le parking public tout en
-            atteignant les dunes, sans louer un 4x4 pour l'ensemble du voyage.
+            Sossusvlei, un service officiel de navette/excursion couvre le dernier tronçon de
+            sable meuble jusqu&apos;aux dunes et à Deadvlei, ce qui permet de garer un véhicule
+            2WD au parking public tout en les atteignant sans louer un 4x4 pour l&apos;ensemble du
+            voyage. Depuis 2026, ce n&apos;est plus optionnel, même pour les conducteurs en 4x4 :
+            les véhicules privés sont désormais interdits sur ces derniers 5 km environ, et les
+            indications officielles du parc évoquent environ 260 N$ par adulte et 130 N$ par
+            enfant de moins de 12 ans, même si le point de prise en charge et les tarifs ont
+            changé plus d&apos;une fois ces dernières années. Confirmez donc l&apos;organisation
+            actuelle à Sesriem ou auprès de votre lodge avant de partir.
           </p>
         </Reveal>
 

@@ -26,10 +26,11 @@ export const metadata: Metadata = {
 };
 
 const NOTES = [
-  "Beaucoup de lodges safari imposent un âge minimum (souvent 6 à 8 ans) pour les sorties en véhicule : vérifiez ce point avant de réserver, pas à l'arrivée.",
-  "Le risque de paludisme se concentre dans le nord (Etosha et la bande de Caprivi) et culmine pendant la saison des pluies (à peu près de novembre à avril) ; le reste du pays présente un risque globalement faible, mais confirmez les recommandations actuelles auprès d'un centre de vaccination voyage.",
-  "Les journées de route en autonomie sont longues : prévoyez des pauses et gardez chaque trajet sous les 4 à 5 heures avec de jeunes enfants.",
-  "Dans les campements d'Etosha équipés de points d'eau éclairés la nuit, les enfants peuvent observer les animaux en toute sécurité depuis le lodge, sans avoir besoin d'un safari en véhicule.",
+  "L'âge minimum varie selon les lodges, il n'existe pas de règle nationale unique : le Mushara Bush Camp, près de la porte est d'Etosha, accepte les enfants de tout âge sur les sorties guidées, tandis que de nombreux autres camps fixent un plancher autour de 6-8 ans (parfois jusqu'à 12 ans) pour les véhicules de game drive partagés. Confirmez la politique d'âge exacte directement auprès du lodge réservé, car elle peut varier entre propriétés sœurs.",
+  "Le risque de paludisme est réel mais concentré, pas uniforme. Il est présent toute l'année le long des rivières Kunene, Zambèze et Okavango (donc la bande de Caprivi et l'extrême nord-ouest), et de façon saisonnière, environ de novembre à juin, à Etosha et dans les autres régions du nord de la Namibie. La majeure partie du circuit classique Sossusvlei-Swakopmund-Damaraland, plus au sud et à l'ouest, présente un risque faible à nul. Confirmez les recommandations actuelles et spécifiques à chaque région auprès d'un centre de vaccination voyage avant de décider des antipaludiques.",
+  "Les journées de route en autonomie sont longues : prévoyez des pauses et gardez chaque trajet sous les 4 à 5 heures avec de jeunes enfants. Les portes d'Etosha se trouvent à environ 4h30 de Windhoek, et les tronçons de piste du Damaraland peuvent prendre 3 à 4 heures chacun : considérez-les comme des journées de route à part entière plutôt que de les caser entre deux activités.",
+  "Les camps d'Etosha équipés de points d'eau éclairés la nuit, à l'intérieur du parc à Okaukuejo et Halali, ou sur les réserves privées qui le bordent (Ongava, Onguma), permettent aux enfants d'observer éléphants, rhinocéros et lions venir boire après la tombée de la nuit, en toute sécurité depuis le lodge, sans safari en véhicule.",
+  "Les balades guidées et les visites culturelles (gravures rupestres de Twyfelfontein, visite d'un village himba plus au nord) conviennent généralement à une tranche d'âge plus large qu'un long game drive cahoteux. Demandez au lodge, au moment de la réservation et non une fois sur place, quelles activités sont réalistes pour l'âge précis de vos enfants.",
 ];
 
 export default function KidsPageFr() {
@@ -88,6 +89,17 @@ export default function KidsPageFr() {
       <section className="mx-auto max-w-[1400px] px-6 py-8 sm:px-10">
         <Reveal>
           <h2 className="text-2xl font-bold text-charcoal">Des lodges adaptés aux familles</h2>
+          <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+            Mushara Lodge se trouve près de la porte est d&apos;Etosha, avec des suites adaptées
+            aux familles et une propriété sœur à proximité si vous avez besoin de plus
+            d&apos;espace. Desert Quiver Camp se trouve juste à la porte de Sesriem, avec des
+            chalets en autonomie et une tarification enfants gratuits, une base facile et
+            abordable pour une journée en famille dans les dunes. Villa Violet est une petite
+            guesthouse à Windhoek tenue par ses propriétaires, avec une option en autonomie, une
+            étape discrète avant ou après le circuit. Canyon Lodge, près du Fish River Canyon, est
+            rustique mais confortable, une bonne base si la randonnée ou le sud fait partie de
+            votre itinéraire.
+          </p>
         </Reveal>
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {familyLodges.map((lodge, i) => (

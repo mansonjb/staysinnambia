@@ -43,19 +43,19 @@ const POPULAR_GUIDES_NL = [
 const PRINCIPLES = [
   {
     title: "Vraag toestemming voordat u fotografeert",
-    text: "Vraag altijd rechtstreeks toestemming aan iemand voordat u hem of haar fotografeert, ook op plekken waar fotograferen in het algemeen is toegestaan. Een knikje van een gids is niet hetzelfde als toestemming van de persoon in beeld.",
+    text: "Vraag altijd rechtstreeks toestemming aan iemand voordat u hem of haar fotografeert, ook op plekken waar fotograferen in het algemeen is toegestaan. Een knikje van een gids is niet hetzelfde als toestemming van de persoon in beeld, en toestemming via een tussenpersoon is geen vervanging voor een eigen ja van die persoon.",
   },
   {
-    title: "Reken op betaling, en betaal waar mogelijk rechtstreeks",
-    text: "Een vergoeding of de aankoop van handwerk is normaal en gepast bij een bezoek: dit is iemands huis en tijd, geen gratis fotomoment. Vraag uw gids hoe de betaling rechtstreeks bij de gemeenschap terechtkomt, in plaats van ervan uit te gaan dat een lodgevergoeding dit al dekt.",
+    title: "Neem voorraden mee, geen contant geld",
+    text: "Contant geld is bijna nutteloos op dagen reizen van de dichtstbijzijnde winkel en maakt geen deel uit van hoe de Himba van oudsher handelen, dus het is een slechte manier om een gemeenschap te compenseren voor haar tijd. De sterkere norm, gevolgd door gemeenschapsgeleide gidsen in Opuwo, is om vóór het bezoek samen met uw gids langs een supermarkt te gaan en de basisproducten te kopen die de gids uitkiest: maïsmeel, suiker, kookolie, thee of koffie. Reken op ongeveer N$500 aan voedsel voor twee bezoekers, meer voor een grotere groep, en laat uw gids de juiste hoeveelheid bepalen in plaats van te beknibbelen.",
   },
   {
     title: "Ken het verschil tussen een 'levend museum' en een echt dorp",
-    text: "Sommige stops zijn geënsceneerde demonstraties die speciaal voor het toerisme zijn opgezet, los van de plek waar mensen daadwerkelijk dagelijks leven. Geen van beide is op zichzelf verkeerd, maar u moet weten welke van de twee u bezoekt en wat dat betekent voor hoe authentiek de ontmoeting is.",
+    text: "Sommige stops zijn geënsceneerde demonstraties die speciaal voor het toerisme zijn opgezet, los van de plek waar mensen daadwerkelijk dagelijks leven. Geen van beide is op zichzelf verkeerd, en een levend museum kan nog steeds een legitieme, aan de gemeenschap toebehorende inkomstenbron zijn, maar u moet weten welke van de twee u bezoekt en dit rechtstreeks aan uw gids vragen in plaats van het aan te nemen.",
   },
   {
     title: "Volg de grenzen die de gemeenschap zelf stelt aan wat wordt gedeeld",
-    text: "Heilige vuren, bepaalde rituelen en specifieke delen van een woonerf zijn mogelijk niet bedoeld voor bezoekers, ongeacht wat elders wordt aangeboden. Een respectvol bezoek volgt de grenzen van de gemeenschap, niet die van het reisschema.",
+    text: "Heilige vuren, bepaalde rituelen en specifieke delen van een woonerf zijn mogelijk niet bedoeld voor bezoekers, ongeacht wat elders wordt aangeboden. Een respectvol bezoek volgt de grenzen van de gemeenschap, niet die van het reisschema, en een goede gids vertelt u vooraf wat verboden terrein is, in plaats van dit ter plekke te improviseren.",
   },
 ];
 
@@ -66,15 +66,19 @@ const FAQS = [
   },
   {
     q: "Is het oké om als toerist een Himba-dorp te bezoeken?",
-    a: "Dat kan, mits het respectvol gebeurt en via de juiste weg: een gids met een echte band met de gemeenschap, geïnformeerde toestemming voor elke foto, en een eerlijke betaling die bij de mensen terechtkomt die u bezoekt, niet alleen bij een tussenpersoon. Het loont om eerlijk tegen uzelf te zijn over de vraag of een bepaalde stop een oprechte culturele uitwisseling is of een geënsceneerd fotomoment, en daarnaar te kiezen.",
+    a: "Dat kan, mits het respectvol gebeurt en via de juiste weg: een gids met een echte band met de gemeenschap, geïnformeerde toestemming voor elke foto, en een compensatie die de mensen die u bezoekt bereikt in een vorm die zij daadwerkelijk willen, wat in de praktijk meestal betekent: samen met uw gids gekochte voedselvoorraden in plaats van contant geld. Het loont om eerlijk tegen uzelf te zijn over de vraag of een bepaalde stop een oprechte culturele uitwisseling is of een geënsceneerd fotomoment, en daarnaar te kiezen.",
   },
   {
     q: "Wat is het verschil tussen een 'levend museum' en een bezoek aan een echt Himba-woonerf?",
     a: "Een levend museum is een demonstratie die speciaal is opgezet om bezoekers het traditionele leven van de Himba te tonen, vaak los van de plek waar diezelfde gemeenschap daadwerkelijk dagelijks leeft. Het kan nog steeds een legitieme, door de gemeenschap gerunde inkomstenbron zijn, maar het is een andere ervaring dan een organisch bezoek aan een actief woonerf, en aanbieders moeten vooraf duidelijk maken welke van de twee u boekt.",
   },
   {
-    q: "Waar in Namibië kan ik Himba-gemeenschappen bezoeken?",
-    a: "Vooral in en rond Kaokoland en de bredere Kunene-regio, in het noordwesten van Namibië, bereikbaar als uitbreiding vanuit Damaraland voor reizigers met extra dagen en, meestal, een 4x4. Het is een echte omweg, geen stop op het klassieke reisparcours, dus het vraagt om bewuste planning in plaats van er even tussendoor te worden gepropt.",
+    q: "Waar in Namibië kan ik Himba-gemeenschappen bezoeken, en via wie moet ik boeken?",
+    a: "Vooral in en rond Kaokoland en de bredere Kunene-regio, in het noordwesten van Namibië, bereikbaar als uitbreiding vanuit Damaraland voor reizigers met extra dagen en, meestal, een 4x4. Het stadje Opuwo is de praktische uitvalsbasis: hier zijn gidsdiensten gevestigd zoals het Kaoko Information Centre, gerund door Himba-mensen voor de Himba, waar een gids u vóór het bezoek zelf meeneemt om lokaal voorraden in te kopen. Het is een echte omweg, geen stop op het klassieke reisparcours, dus het vraagt om bewuste planning in plaats van er even tussendoor te worden gepropt.",
+  },
+  {
+    q: "Wat moet ik meenemen of kopen voor een bezoek aan een Himba-gemeenschap?",
+    a: "Praktische voedselvoorraden in plaats van contant geld of westerse prullaria: maïsmeel, suiker, kookolie, thee of koffie zijn de artikelen waar gemeenschappen zelf om vragen, aangezien ze semi-nomadisch zijn en deze goederen niet altijd makkelijk aan te vullen zijn. De norm bij gemeenschapsgeleide gidsen is om dit samen vlak vóór het bezoek in te kopen bij een supermarkt in Opuwo, zodat de gemeenschap precies ziet wat er wordt meegebracht en de gids een eerlijke hoeveelheid kan inschatten voor de groepsgrootte.",
   },
 ];
 
@@ -124,19 +128,25 @@ export default function HimbaCulturePageNl() {
         </div>
 
         <Reveal className="mt-8 rounded-2xl border border-black/5 bg-sand/20 p-8">
-          <p className="text-[14px] leading-relaxed text-charcoal/70">
+          <h2 className="text-xl font-bold text-charcoal">Onze aanbeveling</h2>
+          <p className="mt-3 text-[14px] leading-relaxed text-charcoal/70">
             Niets hiervan is een reden om Kaokoland of de Kunene-regio te vermijden: het is een
             reden om te kiezen voor exploitanten en gidsen met echte, blijvende relaties met
             specifieke gemeenschappen, in plaats van een generieke stop die aan een reisschema is
-            toegevoegd. De meeste bezoeken worden georganiseerd als uitbreiding op{" "}
+            toegevoegd. In de praktijk betekent dit dat u zich in of via Opuwo vestigt en
+            gebruikmaakt van een door Himba gerunde gidsdienst zoals het Kaoko Information Centre,
+            in plaats van een dorpsbezoek te boeken als anonieme toevoeging via een kustbalie. De
+            meeste bezoeken worden georganiseerd als uitbreiding op{" "}
             <Link
               href="/nl/where-to-stay/damaraland"
               className="font-semibold text-rust hover:text-rust-dark"
             >
               verblijven in Damaraland
             </Link>
-            , dus vraag uw gids rechtstreeks hoe de betaling bij de gemeenschap terechtkomt en wat
-            het bezoek daadwerkelijk inhoudt voordat u boekt.
+            , met minstens een dag extra rijden heen en terug, grotendeels over grind. Vraag uw
+            gids rechtstreeks wat het bezoek inhoudt, of u samen vooraf voorraden gaat inkopen, en
+            hoe toestemming voor fotografie op de dag zelf werkt, vóórdat u boekt, niet pas
+            wanneer u al bij het woonerf staat.
           </p>
         </Reveal>
       </section>

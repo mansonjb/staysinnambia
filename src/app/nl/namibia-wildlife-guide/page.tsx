@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
 
@@ -40,29 +41,33 @@ const SIGHTINGS = [
     region: "Etosha",
     href: "/nl/where-to-stay/etosha",
     animals:
-      "Leeuw, olifant, giraffe, zebra, springbok, zwartneusimpala, en een van Afrika's beste kansen op zwarte neushoorn, geconcentreerd rond verlichte waterpoelen.",
+      "Leeuw, olifant, giraffe, zebra, springbok, en de zwartneusimpala, een ondersoort die nergens anders voorkomt dan in Etosha en het noordwestelijke Kaokoland. De verlichte waterpoelen bij Okaukuejo en Halali bieden de betrouwbaarste zwarte-neushoornwaarnemingen van het land: neushoorns komen doorgaans tussen 19.00 en 23.00 uur opdagen gedurende het droge seizoen (ruwweg mei-oktober), vaak dezelfde avond samen met olifant en leeuw bij de waterpoel. Voor cheeta zijn de open vlaktes ten westen van Okaukuejo en de Okondeka-waterpoel een betere kans dan de oostelijke pannen.",
   },
   {
     region: "Damaraland",
     href: "/nl/where-to-stay/damaraland",
     animals:
-      "Woestijnaangepaste olifant en, met een gespecialiseerde gids vanuit Palmwag, opgespoorde zwarte neushoorn, dieren die zich hebben aangepast aan bijna waterloos terrein dat vrijwel nergens anders op aarde voorkomt.",
+      "Thuisbasis van de woestijnaangepaste olifant, een populatie die zich heeft hersteld van minder dan 30 dieren in de jaren tachtig tot ruwweg 600-700 vandaag, vrijwel volledig dankzij Namibië's model van gemeenschapsreservaten. Deze olifanten trekken door territoria tot wel 700 km en kunnen vijf dagen zonder drinken, aanpassingen die vrijwel nergens anders op aarde voorkomen. De Torra Conservancy, in de Huab-riviervallei, is de meest betrouwbare uitvalsbasis om ze te volgen. Verderop naar het noorden herbergt de Palmwag Concession de grootste vrij rondzwervende populatie zwarte neushoorn ter wereld, ongeveer 200 dieren die dagelijks worden gemonitord door rangers van Save the Rhino Trust; ze zien betekent een volledige dag begeleid tracken te voet met een erkende gids, geen zelfrijstop.",
   },
   {
     region: "Skeleton Coast",
     href: "/nl/where-to-stay/skeleton-coast",
     animals:
-      "Kolonies Kaapse pelsrobben, bruine hyena, en, voor de kust, Heaviside's dolfijn, een kleine dolfijnsoort die alleen langs de Namibische en Zuid-Afrikaanse kust voorkomt.",
+      "Kolonies Kaapse pelsrobben (Cape Cross alleen al telt ruim 100.000 dieren op het hoogtepunt van het seizoen), bruine hyena die de vloedlijn afspeurt naar aas, en, voor de kust, Heaviside's dolfijn, een kleine dolfijnsoort die alleen langs de Namibische en Zuid-Afrikaanse kust voorkomt. Dit is eerder landschap-en-zeeleven-terrein dan een stop voor groot wild.",
   },
   {
     region: "Caprivi (Zambezi)",
     href: "/nl/where-to-stay/caprivi",
     animals: (
       <>
-        Namibië&apos;s meest waterrijke wildlife: nijlpaard, krokodil, olifant langs de
-        rivieroevers, en de beste vogelspotting van het land, heel anders dan de soorten uit de
-        droge gebieden elders. Het is bovendien de regio van Namibië met het hoogste
-        malariarisico: bekijk onze{" "}
+        Namibië&apos;s meest waterrijke wildlife, geconcentreerd in Bwabwata National Park langs
+        de overstromingsvlaktes van de Kwando en de Zambezi: nijlpaard, krokodil, aanzienlijke
+        olifanten- en buffelkuddes, sabel- en bastergemsbokantilope, en een van Namibië&apos;s
+        laatste overgebleven wilde-hondenpopulaties, gevolgd door het Kwando Carnivore Project.
+        Het is ook de beste vogelspotregio van het land en de enige plek waar een echte
+        Big Five-waarneming, buffel inbegrepen, realistisch is, een volledig ander ecosysteem
+        dan de soorten uit de droge gebieden elders. Het is bovendien de regio van Namibië met het
+        hoogste malariarisico: bekijk onze{" "}
         <Link
           href="/nl/namibia-safety-and-health"
           className="font-medium text-rust hover:text-rust-dark"
@@ -77,26 +82,41 @@ const SIGHTINGS = [
     region: "Sossusvlei",
     href: "/nl/where-to-stay/sossusvlei",
     animals:
-      "Oryx (gemsbok) die zich aftekent op de duinruggen is de bepalende waarneming; verder springbok en, minder voorspelbaar, de schuwe bruine hyena.",
+      "Oryx (gemsbok) die zich aftekent op de duinruggen is de bepalende waarneming, en de meest recente wildtelling van het aangrenzende NamibRand Nature Reserve telde ruwweg 3.200 oryx en 12.400 springbok over de 172.000 hectare. Bruine hyena, zwartrugjakhals en luipaard komen voor maar zijn werkelijk schuw; NamibRand voert ook een actief herintroductieprogramma voor karakal en cheeta, dus beide zijn een bonuswaarneming, geen verwachting.",
   },
+];
+
+const TIMING = [
+  "Zonsopgang (ruwweg 05.30-08.00 uur): roofdieren zijn het meest actief, het beste venster voor leeuw-, cheeta- en luipaardbewegingen voordat de hitte toeslaat.",
+  "Middag: wildlife concentreert zich bij waterpoelen in plaats van rond te trekken, vooral in het droge seizoen van mei tot oktober. Parkeren bij Okaukuejo, Halali of Olifantsrus en wachten werkt beter dan rondrijden op zoek naar waarnemingen.",
+  "Schemering tot de eerste uren van het donker, bij verlichte kampwaterpoelen: zwarte-neushoorn- en olifantactiviteit piekt, doorgaans tussen 19.00 en 23.00 uur in het droge seizoen.",
+  "Nat seizoen (november-april): wildlife verspreidt zich wijd naarmate tijdelijke pannen vollopen, waardoor waarnemingen minder voorspelbaar worden, maar de vogelspotting, pasgeboren dieren en groene landschappen aanzienlijk verbeteren.",
 ];
 
 const FAQS = [
   {
     q: "Heeft Namibië de Big Five?",
-    a: "Niet overal, en niet de klassieke versie inclusief buffel die de meeste safarimarketing suggereert. Etosha heeft betrouwbaar leeuw, olifant, zwarte neushoorn en luipaard; buffel maakt geen deel uit van Etosha's ecosysteem. Caprivi/Zambezi is de regio met een echte kans op alle vijf, buffel inbegrepen.",
+    a: "Niet overal, en niet de klassieke versie inclusief buffel die de meeste safarimarketing suggereert. Etosha heeft betrouwbaar leeuw, olifant, zwarte neushoorn en luipaard; buffel maakt geen deel uit van Etosha's ecosysteem. Bwabwata National Park in de Caprivi (Zambezi)-regio is de enige plek met een echte kans op alle vijf, buffel inbegrepen, naast sabel- en bastergemsbokantilope en een van de laatste wilde-hondenroedels van het land.",
   },
   {
     q: "Wat maakt Namibië's wildlife anders dan die van Kenia of Tanzania?",
-    a: "Namibië's kenmerkende wildlife is woestijnaangepast: olifanten en zwarte neushoorns die overleven op een fractie van het water dat hun soortgenoten in de savanne nodig hebben, te vinden in Damaraland en het Kaokoland, nergens anders op het continent. Het is een andere, kalere vorm van wildlife-ontmoeting dan de dichte kuddes van Oost-Afrika.",
+    a: "Namibië's kenmerkende wildlife is woestijnaangepast: olifanten en zwarte neushoorns die overleven op een fractie van het water dat hun soortgenoten in de savanne nodig hebben. Damaraland's populatie woestijnolifanten is gestegen van minder dan 30 dieren in de jaren tachtig naar ruwweg 600-700 vandaag, en de Palmwag Concession herbergt de grootste vrij rondzwervende populatie woestijnaangepaste zwarte neushoorn ter wereld, ongeveer 200 dieren. Het is een andere, kalere vorm van wildlife-ontmoeting dan de dichte kuddes van Oost-Afrika, gebouwd rond schaarse waarnemingen in plaats van volume.",
   },
   {
     q: "Waar is de beste plek om zwarte neushoorns te zien in Namibië?",
-    a: "Etosha voor een kans via zelf rijden of lodge-gamedrives, en de Palmwag-concessie in Damaraland voor begeleid rhino-tracken te voet, een van de weinige plekken in Afrika waar dit op verantwoorde wijze wordt aangeboden, in samenwerking met gemeenschapsreservaten.",
+    a: "De verlichte waterpoelen van Etosha bij Okaukuejo en Halali voor de betrouwbaarste kans, waarbij neushoorns doorgaans tussen 19.00 en 23.00 uur opdagen in het droge seizoen; en de Palmwag Concession in Damaraland voor begeleid rhino-tracken te voet met door Save the Rhino Trust gemonitorde dieren, een van de weinige plekken in Afrika waar dit op verantwoorde wijze wordt aangeboden, in samenwerking met gemeenschapsreservaten.",
   },
   {
     q: "Kunt u wildlife zien tijdens een zelfrijreis, of heeft u een gids nodig?",
-    a: "Etosha is werkelijk uitstekend voor wildlife spotten tijdens zelf rijden: waterpoelen zijn bereikbaar met een gewone huurauto en wildlife concentreert zich daar voorspelbaar. Woestijnaangepaste olifant- en neushoorntracking in Damaraland vereist een gespecialiseerde gids.",
+    a: "Etosha is werkelijk uitstekend voor wildlife spotten tijdens zelf rijden: waterpoelen zijn bereikbaar met een gewone huurauto en wildlife concentreert zich daar voorspelbaar, vooral in het droge seizoen van mei tot oktober. Het tracken van woestijnaangepaste olifanten in de Torra Conservancy in Damaraland en zwarte-neushoorntracking in de Palmwag Concession vereisen beide een gespecialiseerde, erkende gids; het zijn geen waarnemingen langs de weg.",
+  },
+  {
+    q: "Waar kan ik cheeta zien in Namibië?",
+    a: "Namibië herbergt de grootste vrij rondzwervende cheetapopulatie ter wereld, geschat op ongeveer 1.500 dieren, en Otjiwarongo, bij de Waterberg, wordt vaak de cheeta-hoofdstad van de wereld genoemd. Het onderzoekscentrum van het Cheetah Conservation Fund daar is de meest betrouwbare waarneming, samen met de AfriCat Foundation bij Okonjima. In Etosha zijn de open vlaktes ten westen van Okaukuejo en de Okondeka-waterpoel uw beste kans tijdens een gamedrive, al blijven cheetawaarnemingen overal opportunistisch en niet gegarandeerd.",
+  },
+  {
+    q: "Wat is de beste tijd van het jaar voor wildlife spotten in Namibië?",
+    a: "Het droge seizoen, ruwweg mei tot oktober, wanneer schaars water dieren dwingt zich te concentreren bij waterpoelen en waarnemingen veel voorspelbaarder worden, vooral in Etosha. Het natte seizoen (november-april) verspreidt wildlife wijder en waarnemingen worden lastiger te voorspellen, maar het is het betere venster voor vogelspotting, pasgeboren dieren en groene landschappen.",
   },
 ];
 
@@ -146,6 +166,20 @@ export default function WildlifeGuidePageNl() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 py-10 sm:px-10">
+        <Reveal className="rounded-2xl border border-black/5 bg-sand/20 p-8">
+          <h2 className="text-xl font-bold text-charcoal">Beste tijdstip van de dag, per soort</h2>
+          <ul className="mt-5 space-y-3">
+            {TIMING.map((item) => (
+              <li key={item} className="flex items-start gap-2 text-[14px] text-charcoal/70">
+                <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-[1400px] px-6 py-16 sm:px-10">

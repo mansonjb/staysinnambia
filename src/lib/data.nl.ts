@@ -615,6 +615,62 @@ export const lodgeTranslationsNl: Record<string, LodgeTranslation> = {
     bestFor: "Reizigers die comfort willen bij Spitzkoppe zonder volledig te kamperen",
     alt: "Verhoogde chalets tussen de granietkoepels van Spitzkoppen Lodge bij schemering",
   },
+  "little-kulala": {
+    description:
+      "Een woestijnresort in kasteelstijl aan de D826, zo'n 20 km van de Sesriem-poort, met drie kamercategorieën waaronder open torenkamers om onder de sterren te slapen.",
+    highlights: ["Open torenkamers om onder de sterren te slapen", "Volledig uitgeruste Mystique Spa", "Zwembad en restaurant op het terrein"],
+    bestFor: "Stellen die resortcomfort willen dicht bij Sossusvlei",
+    alt: "Kasteelachtige torenarchitectuur bij Le Mirage Resort & Spa, Sossusvlei",
+  },
+  "sossusvlei-desert-lodge": {
+    description:
+      "Een lodge met 45 kamers direct bij de parkpoort van Sesriem, met een verlicht drinkplaats-terras en de kortste rit naar Sossusvlei van alle lodges in de omgeving.",
+    highlights: ["Ligt direct bij de parkpoort van Sesriem", "Uitzicht op een verlichte drinkplaats vanaf het terras", "Sundowner-dek en biertuin"],
+    bestFor: "Reizigers die de kortste rit naar Sossusvlei willen met resortcomfort",
+    alt: "Het terras en zwembad bij de poort van Sossusvlei Lodge, Sesriem",
+  },
+  "kulala-desert-lodge": {
+    description:
+      "Een self-catering kamp met 24 chalets op een privéreservaat grenzend aan de Sesriem-poort, ongeveer 5 km van de toegang tot Sossusvlei en Deadvlei, met chalets met kitchenette en een zwembad met uitzicht op Elim Dune.",
+    highlights: ["5 km van de parkpoort van Sesriem", "Self-catering chalets met kitchenette", "Zwembad met uitzicht op Elim Dune"],
+    bestFor: "Gezinnen die een betaalbare, comfortabele uitvalsbasis willen vlak bij de poort van Sossusvlei",
+    alt: "Rieten self-catering chalets op rood woestijnterrein bij Desert Quiver Camp, Sossusvlei",
+  },
+  "luna-namib-collection": {
+    description:
+      "Een lodge en camping op zo'n 30 tot 45 minuten rijden van de Sesriem-poort, bekend om het sterrenkijkterras, het hele jaar geopende zwembad en de keuken.",
+    highlights: ["Hooggewaardeerd terras om te sterrenkijken", "Sterke reputatie voor eten en service", "Het hele jaar door geopend zwembad"],
+    bestFor: "Reizigers die goede waarde willen bij Sossusvlei zonder ultraluxe prijzen",
+    alt: "Het sterrenkijkterras en zwembad bij Little Sossus Lodge, Sossusvlei",
+  },
+  "damaraland-camp": {
+    description:
+      "Een kamp gebouwd tussen massieve rode granietrotsen, tussen de rivierbeddingen van de Ugab en de Huab, ongeveer 15 km ten noorden van Twyfelfontein, met kamers op verhoogde platforms.",
+    highlights: ["Kamers gebouwd tussen reusachtige granietrotsen", "Sundowner-bar op een rotsuitsprong", "Ritten naar aan de woestijn aangepaste olifanten en excursies naar de rotskunst van Twyfelfontein"],
+    bestFor: "Woestijnsafari en glamping in een dramatisch rotslandschap",
+    alt: "Rieten kamers tussen reusachtige rode granietrotsen bij Mowani Mountain Camp",
+  },
+  "doro-nawas-camp": {
+    description:
+      "Iglo-vormige stenen bungalows gebouwd in spleten tussen gestapelde granietrotsen nabij Twyfelfontein, met natuurritten voor aan de woestijn aangepaste olifanten en rotskunst.",
+    highlights: ["Bungalows rechtstreeks gebouwd in rotsformaties", "Gebogen stenen architectuur", "Natuurritten voor olifanten en de rotskunst van Twyfelfontein"],
+    bestFor: "Stellen die een afgelegen verblijf tussen de rotsen zoeken nabij Twyfelfontein",
+    alt: "Stenen bungalows gebouwd tussen granietrotsen bij Camp Kipwe, Damaraland",
+  },
+  "hoanib-skeleton-coast-camp": {
+    description:
+      "Een kamp met zes tenten in de Hoanib-vallei nabij Sesfontein, gerund als samenwerking met de lokale gemeenschap en de Giraffe Conservation Foundation. Het ligt landinwaarts in de bredere Skeleton Coast-regio, niet aan de kustlijn zelf.",
+    highlights: ["Begeleide giraffe-onderzoeksdagen met de residente onderzoekers", "Tracking van aan de woestijn aangepaste olifanten, giraffen en neushoorns", "Off-grid tentluxe, gerund samen met de lokale gemeenschap"],
+    bestFor: "Fly-in woestijnsafari met een insteek op natuurbehoud en onderzoek",
+    alt: "Een tentsuite bij schemering in de Hoanib-vallei bij Hoanib Valley Camp",
+  },
+  "thitaka-river-lodge": {
+    description:
+      "Een lodge met 24 kamers aan de oever van de Kwando-rivier, grenzend aan Bwabwata National Park, gerund door Gondwana Collection, met riviertochten bij zonsopgang en zonsondergang.",
+    highlights: ["Riviertochten voor nijlpaarden, krokodillen en meer dan 400 vogelsoorten", "Begeleide gamedrives in Bwabwata National Park", "Zusterlodge Namushasha River Villa voor een luxueuzere optie"],
+    bestFor: "Riviersafari's en gamedrives langs de olifantencorridor in Bwabwata National Park",
+    alt: "De Kwando-rivier bij schemering naast Namushasha River Lodge, Caprivi",
+  },
 };
 
 type RouteTranslation = Partial<

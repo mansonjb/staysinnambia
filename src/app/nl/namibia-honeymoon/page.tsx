@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AvailabilityBadge, CardCTA } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { getLodgeNl } from "@/lib/data.nl";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
@@ -28,6 +29,13 @@ export const metadata: Metadata = {
 
 const HONEYMOON_SLUGS = ["little-kulala", "sossusvlei-desert-lodge", "doro-nawas-camp", "the-olive-exclusive"];
 
+const ROMANTIC_ADD_ONS = [
+  "Een privédiner bij de duinen: de meeste lodges rond Sossusvlei dekken op verzoek voor één avond een privétafel, op het terras of op het zand. Vraag dit aan bij het boeken van de kamer, niet pas bij aankomst, want het vergt voorbereidingstijd en een specifieke personeelsplanning.",
+  "De open torenkamers van Le Mirage Resort & Spa: het kasteelachtige verblijf heeft kamers die zijn gebouwd om onder de open hemel te slapen, en de heldere, onvervuilde luchten van het Namib-Naukluft-gebied maken bijna elke avond er geschikt voor, dus vraag naar de avond met de helderste voorspelling tijdens uw verblijf.",
+  "Een luchtballonvaart bij zonsopgang boven de duinen: Namib Sky Balloon Safaris vliegt de meeste ochtenden vanuit Sesriem, weersafhankelijk, en eindigt met een champagneontbijt in de woestijn. Het is een uitstapje van ongeveer 3,5 uur van deur tot deur, de moeite waard om ruim van tevoren te boeken, want de plekken zijn beperkt.",
+  "Spa en wellness voor stellen: Le Mirage heeft een volledig uitgeruste spa op het terrein (de Mystique Spa), maar de behandelmenu's bij Namibische woestijnlodges zijn nog altijd kleiner dan bij een resortspa. Controleer wat er daadwerkelijk wordt aangeboden in plaats van een volledige behandelingslijst aan te nemen.",
+];
+
 export default function HoneymoonPageNl() {
   const lodges = HONEYMOON_SLUGS.map((slug) => getLodgeNl(slug)).filter(Boolean);
 
@@ -50,10 +58,16 @@ export default function HoneymoonPageNl() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           De ruimte en de stilte van Namibië maken het land tot een oprecht romantische
-          bestemming: de heldere woestijnluchten van het Namib-Naukluft-gebied maken sterren
-          kijken bijna een nachtelijk ritueel, en de dichtstbijzijnde andere gasten bevinden
-          zich vaak op flinke afstand. Deze vier lodges zijn waar we een huwelijksreis het eerst
-          naartoe zouden sturen; voor de volledige shortlist, zie onze{" "}
+          bestemming: de heldere woestijnluchten en lage lichtvervuiling van het
+          Namib-Naukluft-gebied maken sterrenkijken bijna een nachtelijk ritueel in plaats van
+          een gelukstreffer, en de dichtstbijzijnde andere gasten bevinden zich vaak op flinke
+          afstand. Deze vier zijn waar we een huwelijksreis het eerst naartoe zouden sturen: Le
+          Mirage Resort &amp; Spa en Sossusvlei Lodge voor de duinen, Camp Kipwe als uitvalsbasis
+          tussen de rotsblokken nabij Twyfelfontein als u het landschap van Damaraland wilt zonder
+          romantiek in te leveren, en The Olive Exclusive, een boetiekhotel in Windhoek met
+          slechts zeven suites en een privé-plonsbad per suite, als een afsluitende of openende
+          nacht rond de safarironde in plaats van een stop erop. Voor de volledige shortlist, zie
+          onze{" "}
           <Link
             href="/nl/best-romantic-stays"
             className="text-rust underline underline-offset-2 hover:text-rust-dark"
@@ -98,6 +112,30 @@ export default function HoneymoonPageNl() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 pb-12 sm:px-10">
+        <Reveal>
+          <h2 className="text-2xl font-bold text-charcoal">Extra&apos;s die het waard zijn om vooraf te boeken</h2>
+        </Reveal>
+        <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <ul className="space-y-3">
+            {ROMANTIC_ADD_ONS.map((n) => (
+              <li key={n} className="flex items-start gap-2 text-[14px] text-charcoal/70">
+                <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                {n}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 border-t border-charcoal/10 pt-5 text-[14px] leading-relaxed text-charcoal/70">
+            <span className="font-semibold text-charcoal">Over het tempo:</span> een huwelijksreis
+            werkt beter als hij korter is dan een reis voor eerste bezoekers. Twee lodges van elk
+            drie tot vier nachten, in plaats van de vijf-stops-in-tien-dagen-route die beginnende
+            reizigers vaak samenstellen, geeft genoeg tijd om écht te vertragen, en laat ruimte
+            over om een privédiner of een ballonvlucht toe te voegen zonder dat de reis aanvoelt
+            als een afvinklijstje.
+          </p>
+        </Reveal>
       </section>
     </>
   );

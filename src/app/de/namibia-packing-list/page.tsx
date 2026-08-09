@@ -38,11 +38,14 @@ const POPULAR_GUIDES_DE = [
 
 const malariaItem = (
   <>
-    Malaria-Prophylaxe, wenn Ihre Route den Norden (Etosha, Caprivi) in der Regenzeit einschließt:
-    siehe unseren{" "}
+    Malaria-Prophylaxe (Doxycyclin oder Atovaquon-Proguanil/Malarone sind die beiden am häufigsten
+    verschriebenen Optionen), wenn Ihre Route durch Malaria-Risikogebiete führt: Kavango, Kunene,
+    Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa und Zambezi, mit dem höchsten
+    Risiko in der Regenzeit. Die regionale Aufschlüsselung finden Sie in unserem{" "}
     <Link href="/de/namibia-safety-and-health" className="font-semibold text-rust hover:text-rust-dark">
       Sicherheits- und Gesundheitsguide
     </Link>
+    , und stimmen Sie das konkrete Medikament mit einem Reisemediziner ab
   </>
 );
 
@@ -52,8 +55,10 @@ const CATEGORIES = [
     items: [
       "Schichten: Wüstentage können über 35°C erreichen, während die Temperatur nachts unter 10°C fällt, im Winter (Jun–Aug) mancherorts nahe dem Gefrierpunkt",
       "Neutral gefärbte Kleidung für Pirschfahrten (kein grelles Weiß oder Schwarz, das zeigt Staub und speichert Hitze)",
-      "Ein richtiger Hut und eine Sonnenbrille: Die Sonne ist unerbittlich, auch in der grünen Jahreszeit",
+      "Ein richtiger breitkrempiger Hut und eine polarisierte Sonnenbrille: Die Sonne ist unerbittlich, auch in der grünen Jahreszeit",
       "Eine warme Jacke oder ein Fleece für frühmorgendliche Pirschfahrten und Wüstennächte, auch im Sommer",
+      "Ein Buff oder Schlauchschal: das nützlichste Kleidungsstück überhaupt an Schotterstraßen-Tagen, gleichzeitig Staubmaske, Sonnenschutz und Wärme in der Morgendämmerung",
+      "Schnelltrocknende Hosen und geschlossene Schuhe statt Sandalen abseits des Asphalts: Schotter, Dornen und loser Sand machen offenem Schuhwerk zu schaffen",
     ],
   },
   {
@@ -69,9 +74,17 @@ const CATEGORIES = [
     title: "Selbstfahrer-Spezifisches",
     items: [
       "Eine physische, gedruckte oder offline heruntergeladene Karte: siehe unseren Verbindungsguide dazu, warum Sie sich nicht auf Empfang verlassen können",
-      "Ein einfaches Werkzeugset und ein Reifenreparaturset, falls im Mietwagen nicht schon enthalten",
-      "Bargeld (namibische Dollar oder südafrikanische Rand) für Tankstellen und Parkeintritte in Gebieten, in denen Karten nicht funktionieren",
-      "Staubdichte Taschen für Kameraausrüstung und Elektronik an Tagen auf Schotterstraßen",
+      "Ein einfaches Werkzeugset und ein Reifenreparaturset, falls im Mietwagen nicht schon enthalten, denn Reifen- und Windschutzscheibenschäden auf Schotterstraßen sind der häufigste Grund für Mietwagen-Schadensfälle",
+      "Bargeld (namibische Dollar oder südafrikanische Rand) für Tankstellen und die Park-Eintrittsgebühren von N$280 pro Person und Tag in Etosha und im Namib-Naukluft-Nationalpark, wo Kartenzahlung oft unzuverlässig ist",
+      "Staubdichte Taschen oder Dry Bags für Kameraausrüstung und Elektronik an Tagen auf Schotterstraßen: Namibias feiner Staub setzt sich in Reißverschlüssen, Anschlüssen und Objektivfassungen fest",
+    ],
+  },
+  {
+    title: "Elektronik & Strom",
+    items: [
+      "Eine Stirnlampe mit Ersatzbatterien: Viele abgelegene Lodges und Wüstencamps laufen nur zu festen Stunden mit Generator- oder Solarstrom statt rund um die Uhr am Netz, und schalten den Strom nachts ab",
+      "Ein Universal-Reiseadapter für Namibias Steckdosentypen D und M (220V), plus eine Powerbank: Ladezeiten in abgelegenen Camps sind begrenzt und werden geteilt",
+      "Ein Smartphone mit offline nutzbaren, vorab heruntergeladenen Karten, plus eine Papierkarte als Backup: Mobilfunkempfang fällt außerhalb der Städte über weite Strecken komplett aus",
     ],
   },
   {
@@ -87,11 +100,11 @@ const CATEGORIES = [
 const FAQS = [
   {
     q: "Wie viel Wasser sollte ich bei einer Selbstfahrer-Reise durch Namibia mitführen?",
-    a: "Planen Sie mindestens 2 bis 5 Liter pro Person für jede abgelegene Etappe ein, mehr in den heißesten Monaten. Das ist keine reine Komfortmaßnahme: Tankstellen und Services liegen wirklich weit auseinander, und Wasser mitzuführen ist Standardrat für den Pannenfall, keine Übertreibung.",
+    a: "Planen Sie mindestens 2 bis 5 Liter pro Person für jede abgelegene Etappe ein, mehr in den heißesten Monaten. Das ist keine reine Komfortmaßnahme: Tankstellen und Services liegen wirklich weit auseinander, auf Strecken wie der Skeleton Coast, in Kaokoland oder auf dem Weg zum Fish River Canyon manchmal über 250 km, und Wasser mitzuführen ist Standardrat für den Pannenfall, keine Übertreibung.",
   },
   {
     q: "Brauche ich warme Kleidung für ein Wüstenland?",
-    a: "Ja, und das überrascht viele Erstbesucher. Namibias Wüstenregionen können tagsüber über 35°C erreichen und nachts auf unter 10°C fallen, und im Winter (Juni–August) nähern sich die Nächte an Orten wie Sossusvlei dem Gefrierpunkt. Schichten sind unverzichtbar, keine Option.",
+    a: "Ja, und das überrascht viele Erstbesucher. Namibias Wüstenregionen können tagsüber über 35°C erreichen und nachts auf unter 10°C fallen, und im Winter (Juni–August) nähern sich die Nächte an Orten wie Sossusvlei dem Gefrierpunkt. Schichten sind unverzichtbar, keine Option, und ein Buff oder Schlauchschal deckt mit einem einzigen Kleidungsstück sowohl den Staub als auch die morgendliche Kälte ab.",
   },
   {
     q: "Welche Farben sollte ich bei Pirschfahrten tragen?",
@@ -99,7 +112,11 @@ const FAQS = [
   },
   {
     q: "Ist Malaria-Medikation für meine Packliste notwendig?",
-    a: "Das hängt von Ihrer konkreten Route und Reisezeit ab: Das Malariarisiko in Namibia konzentriert sich auf den Norden (Etosha, Caprivi) und ist in der Regenzeit (etwa November bis April) am höchsten. Die regionale Aufschlüsselung finden Sie in unserem Sicherheits- und Gesundheitsguide, und lassen Sie sich in jedem Fall von einem Reisemediziner bestätigen, statt es anzunehmen.",
+    a: "Das hängt von Ihrer konkreten Route und Reisezeit ab: Die aktuellen CDC-Empfehlungen weisen für die namibischen Regionen Kavango, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa und Zambezi ein Malariarisiko aus, am höchsten in der Regenzeit (etwa November bis April). Doxycyclin und Atovaquon-Proguanil (Malarone) sind die beiden am häufigsten empfohlenen Prophylaxe-Optionen. Die regionale Aufschlüsselung finden Sie in unserem Sicherheits- und Gesundheitsguide, und stimmen Sie das konkrete Medikament samt Dosierung mit einem Reisemediziner ab, statt es einfach anzunehmen.",
+  },
+  {
+    q: "Welchen Steckdosenadapter brauche ich für Namibia?",
+    a: "Namibia verwendet die Steckertypen D und M mit 220V/50Hz, dieselben großen runden Dreipolstecker wie Südafrika. Ein Universal-Reiseadapter deckt beide ab. Die meisten Handy-, Kamera- und Laptop-Ladegeräte sind ohnehin für zwei Spannungsbereiche ausgelegt (Aufdruck \"100-240V\" auf dem Netzteil suchen), sodass Sie nur einen Steckeradapter brauchen, keinen Spannungswandler.",
   },
 ];
 

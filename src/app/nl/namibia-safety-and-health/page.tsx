@@ -43,15 +43,21 @@ const POPULAR_GUIDES_NL = [
 const SAFETY_POINTS = [
   {
     title: "Kleine criminaliteit",
-    text: "Concentreert zich in stedelijke gebieden (vooral Windhoek en Swakopmund) en volgt de normale stadsregels: geen waardevolle spullen zichtbaar laten liggen, gebruik de kluis van het hotel, neem 's avonds een taxi in plaats van te lopen. Buiten de steden, op lodge- en selfdrive-routes, speelt het geen rol.",
+    text: "Concentreert zich in Windhoek en, in mindere mate, Walvis Bay, meestal na het invallen van de duisternis: zowel het Amerikaanse ministerie van Buitenlandse Zaken als het Britse FCDO noemen zakkenrollerij, tasjesroof en inbraken in onbeheerde geparkeerde auto's als de meest voorkomende incidenten voor bezoekers. Beide beoordelen Namibië op het niveau van 'extra voorzichtigheid betrachten,' hetzelfde niveau als een groot deel van West-Europa, geen ernstige risicoclassificatie. Geïsoleerde gewapende overvallen en woninginbraken komen voor, maar in woon- en zakenwijken, niet op toeristenroutes. Gebruik de kluis van het hotel, laat geen tassen zichtbaar liggen in geparkeerde auto's, en neem 's avonds een taxi in plaats van te lopen in het centrum. Buiten de steden, op lodge- en selfdrive-routes, speelt het vrijwel geen rol.",
   },
   {
     title: "Verkeersveiligheid",
     text: (
       <>
-        Het grotere reële risico voor de meeste bezoekers. Lange afstanden, grindwegen en wildlife
-        dat bij schemer en 's nachts de weg oversteekt, maken verkeersongevallen het meest
-        voorkomende ernstige incident voor reizigers, niet criminaliteit. Bekijk onze{" "}
+        Het echte risico voor de meeste bezoekers, en niet een beetje. Namibië heeft ongeveer
+        12.000 km grindweg, en het standaardadvies van zowel het FCDO als lokale operators is om
+        op grind onder de 60&ndash;80 km/u te blijven, ongeacht de aangegeven limiet: het meest
+        voorkomende ernstige incident voor selfdrive-toeristen is een enkelvoudig ongeval waarbij
+        de auto over de kop slaat na een te snel genomen bocht op golfplaatweg of los zand, niet
+        een botsing met een andere auto. Tel daarbij lange trajecten zonder voorzieningen,
+        vermoeidheid en dieren die bij schemer en zonsopgang oversteken, en het patroon is
+        duidelijk: rijd langzamer, vermijd rijden na het invallen van de duisternis buiten de
+        steden, en neem een reserveband en extra water mee. Bekijk onze{" "}
         <Link
           href="/nl/namibia-self-drive-guide"
           className="font-medium text-rust hover:text-rust-dark"
@@ -64,7 +70,7 @@ const SAFETY_POINTS = [
   },
   {
     title: "Alleen reizen en alleenreizende vrouwen",
-    text: "Door solo reizigers, waaronder alleenreizende vrouwen, veelvuldig als prettig beschreven, vooral op georganiseerde routes en bij lodges. In stedelijke gebieden gelden na het invallen van de duisternis de gebruikelijke voorzorgsmaatregelen, zoals overal.",
+    text: "Door solo reizigers, waaronder alleenreizende vrouwen, veelvuldig als prettig beschreven, vooral op georganiseerde routes en bij lodges. Gewelddadige criminaliteit gericht op toeristen komt zo zelden voor dat zowel de Amerikaanse als de Britse reisadviezen het als uitzondering behandelen, niet als patroon. In Windhoek en Walvis Bay gelden na het invallen van de duisternis de gebruikelijke voorzorgsmaatregelen, zoals overal.",
   },
   {
     title: "Ontmoetingen met wildlife",
@@ -73,7 +79,11 @@ const SAFETY_POINTS = [
         Reëel, maar goed te beheersen met instructies van gidsen: blijf in wildgebieden in het
         voertuig tenzij anders aangegeven, nader nooit dieren bij waterpoelen dichtbij lodges, en
         volg de aanwijzingen van het kamppersoneel over lopen na het invallen van de duisternis op
-        plekken waar bekend is dat olifanten of hyena's passeren. Bekijk onze{" "}
+        plekken waar bekend is dat olifanten of hyena's passeren. Eén specifiek punt om te weten:
+        bij Namibiës kolonies Kaapse pelsrobben, waaronder Cape Cross, zijn gedocumenteerde
+        gevallen van hondsdolheid vastgesteld in de robbenpopulatie, dus houd afstand en behandel
+        elke beet of krab, hoe klein ook, als een noodgeval dat onmiddellijke medische zorg
+        vereist, ongeacht eerdere vaccinatie. Bekijk onze{" "}
         <Link
           href="/nl/namibia-wildlife-guide"
           className="font-medium text-rust hover:text-rust-dark"
@@ -84,24 +94,32 @@ const SAFETY_POINTS = [
       </>
     ),
   },
+  {
+    title: "Medische zorg & evacuatie",
+    text: "Lodges in de Namib, Kaokoland of de Zambeziregio kunnen uren rijden, of een vlucht met een klein vliegtuig, verwijderd zijn van het dichtstbijzijnde ziekenhuis dat traumazorg biedt, dus dit is geen optionele planning. Medical Rescue Africa (MRA) is Namibiës eigen aeromedische evacuatie- en ambulancedienst, en veel lodges en operators werken al met hen samen, maar uw reisverzekering is nog altijd wat de rekening betaalt. Heeft u al een AMREF Flying Doctors-lidmaatschap van een Oost-Afrikareis, weet dan dat dit niet geldt voor Namibië, Botswana of Zuid-Afrika: controleer of uw polis expliciet medische evacuatie dekt die geldig is in zuidelijk Afrika, voordat u vertrekt.",
+  },
 ];
 
 const FAQS = [
   {
     q: "Is Namibië veilig om te bezoeken?",
-    a: "Ja, naar regionale maatstaven geldt Namibië als een van de veiligere landen in zuidelijk Afrika voor toeristen. De reële risico's zijn verkeersveiligheid (lange afstanden, grind, wildlife op de weg 's nachts) en gewone stedelijke kleine criminaliteit, niet gewelddadige criminaliteit gericht op reizigers.",
+    a: "Ja. Zowel het Amerikaanse ministerie van Buitenlandse Zaken als het Britse FCDO beoordelen Namibië op het niveau 'extra voorzichtigheid betrachten,' hetzelfde niveau als een groot deel van West-Europa, geen ernstige risicoclassificatie. De reële risico's zijn verkeersveiligheid (lange afstanden, grind, enkelvoudige ongevallen en wildlife op de weg bij schemer) en gewone stedelijke kleine criminaliteit in Windhoek en Walvis Bay, niet gewelddadige criminaliteit gericht op reizigers.",
   },
   {
     q: "Heb ik malariatabletten nodig voor Namibië?",
-    a: "Dat hangt af van waar u naartoe gaat en wanneer. Het malariarisico in Namibië concentreert zich in het noorden (de noordelijke gebieden van Etosha, de Zambezi-regio (Caprivi)) en is het hoogst in het regenseizoen (ruwweg november tot april). Centraal- en Zuid-Namibië, waaronder Sossusvlei, Swakopmund en Windhoek, hebben het hele jaar door een laag of geen risico. Bespreek uw specifieke reisroute en reisdata met een reisarts. Dit is algemene informatie, geen medisch advies.",
+    a: "Dat hangt af van waar u naartoe gaat en wanneer. De CDC noemt Kavango-Oost, Kavango-West, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa en Zambezi als malariaregio's, grofweg het noordelijke derde deel van het land inclusief noordelijk Etosha en de Zambeziregio (Caprivi), en het risico is het hoogst in het regenseizoen (ruwweg november tot april). Er is geen malariaoverdracht in Windhoek, en het risico is het hele jaar door laag in Sossusvlei, Swakopmund en het grootste deel van Centraal- en Zuid-Namibië. Namibië zag begin 2026 ook een scherpe stijging van het aantal gevallen, geconcentreerd in de Zambezi- en Kavango-regio's, dus controleer de actuele situatie bij een reisarts in combinatie met uw specifieke reisroute en data. Dit is algemene informatie, geen medisch advies.",
   },
   {
     q: "Is Namibië veilig voor alleenreizende vrouwen?",
-    a: "Wordt vaak als prettig beschreven, vooral bij lodge-gebaseerde of georganiseerde selfdrive-reizen. In Windhoek en Swakopmund gelden na het invallen van de duisternis de gebruikelijke stedelijke voorzorgsmaatregelen, net als in elke stad.",
+    a: "Wordt vaak als prettig beschreven, vooral bij lodge-gebaseerde of georganiseerde selfdrive-reizen. In Windhoek en Walvis Bay gelden na het invallen van de duisternis de gebruikelijke stedelijke voorzorgsmaatregelen, net als in elke stad.",
   },
   {
     q: "Welke vaccinaties heb ik nodig voor Namibië?",
-    a: "Er is geen universele lijst: de vereisten hangen af van uw thuisland, reisroute en persoonlijke medische voorgeschiedenis. Een gelekoortsverklaring kan vereist zijn als u aankomt vanuit een land met overdrachtsrisico. Informeer ruim voor vertrek bij een reisgeneeskundige kliniek.",
+    a: "Er is geen universele lijst, maar de vaste aanbevelingen van de CDC voor Namibië zijn hepatitis A, hepatitis B en tyfus voor de meeste reizigers, bovenop de reguliere vaccinaties (BMR, polio, enzovoort). Een preventieve rabiësvaccinatie is de moeite van het bespreken waard als u gaat fietsen, grotten bezoeken of met dieren werkt, en is extra relevant gezien de gedocumenteerde gevallen van hondsdolheid in Namibiës kolonies Kaapse pelsrobben. Een gelekoortsvaccinatie is niet vereist bij directe reizen vanuit Europa of Noord-Amerika, maar een vaccinatiebewijs kan wel worden gevraagd als u aankomt vanuit een land met gelekoortsrisico. Informeer vier tot zes weken voor vertrek bij een reisgeneeskundige kliniek: uw reisroute en persoonlijke medische voorgeschiedenis kunnen het antwoord veranderen. Dit is algemene informatie, geen medisch advies.",
+  },
+  {
+    q: "Hoe zit het met een medische evacuatieverzekering?",
+    a: "Neem dit serieus, gezien hoe afgelegen sommige lodges zijn. Namibië heeft zijn eigen aeromedische evacuatiedienst, Medical Rescue Africa (MRA), waar veel lodges en operators al mee samenwerken, maar u heeft nog altijd een reisverzekering nodig die medische evacuatie binnen Namibië expliciet dekt. Combineert u deze reis met Oost-Afrika en heeft u al een AMREF Flying Doctors-lidmaatschap, weet dan dat dit niet geldt voor Namibië, Botswana of Zuid-Afrika. Controleer uw dekking vóór vertrek, niet erna.",
   },
 ];
 
@@ -153,9 +171,11 @@ export default function SafetyHealthPageNl() {
           <h2 className="text-xl font-bold text-charcoal">Malaria: de realiteit per regio</h2>
           <ul className="mt-5 space-y-3">
             {[
-              "Hoger risico: noordelijk Etosha, de Zambezi-regio (Caprivi), vooral in het regenseizoen (nov–apr)",
-              "Laag/geen risico: Windhoek, Swakopmund, Sossusvlei, Fish River Canyon, het grootste deel van Centraal- en Zuid-Namibië",
-              "De behoefte aan profylaxe hangt af van uw reisroute en reisdata: dit moet een reisarts bevestigen, geen algemene gids",
+              "Door de CDC en WHO aangewezen regio's met verhoogd risico: Kavango-Oost, Kavango-West, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa en Zambezi, dat wil zeggen de noordelijke strook van het land inclusief noordelijk Etosha en de Zambezi-uitloper (Caprivi)",
+              "Geen malariaoverdracht in Windhoek, en een laag of zeldzaam risico in Sossusvlei, Fish River Canyon, de Skeleton Coast en het grootste deel van Centraal- en Zuid-Namibië",
+              "Het risico is het hoogst in het regenseizoen (nov–apr); trajecten langs de Kunene-, Zambezi- en Okavango-rivieren houden het hele jaar door een zeker risico",
+              "Namibiës ministerie van Volksgezondheid registreerde begin 2026 een scherpe stijging van het aantal gevallen, geconcentreerd in Zambezi, Kavango-Oost en Kavango-West, wat leidde tot een door de WHO ondersteunde respons: als uw route deze regio's aandoet, behandel profylaxe dan als niet-onderhandelbaar, niet als optioneel",
+              "De keuze van profylaxe (meestal atovaquon-proguanil, doxycycline of mefloquine) hangt af van uw reisroute, data en medische voorgeschiedenis: dit moet een reisarts bevestigen, geen algemene gids",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-[14px] text-charcoal/70">
                 <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />

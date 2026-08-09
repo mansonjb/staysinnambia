@@ -40,21 +40,21 @@ const COMPARISON = [
   {
     axis: "Selbstfahren",
     namibia:
-      "Wirklich gut zugänglich: Ein gutes Straßennetz, klare Beschilderung und ein etablierter Mietwagenmarkt machen Namibia zu einem der am leichtesten selbst zu befahrenden Länder Afrikas.",
+      "Wirklich gut zugänglich: Ein gutes Straßennetz, klare Beschilderung und ein etablierter Mietwagenmarkt machen Namibia zu einem der am leichtesten selbst zu befahrenden Länder Afrikas. Nationalparks wie Etosha und Namib-Naukluft stellen Permits direkt am Tor aus, eine vorherige Camp-Buchung ist für den reinen Zutritt nicht nötig.",
     botswana:
-      "Deutlich eingeschränkter: Die meisten der besten Wildgebiete (Okavango-Delta, Chobe, Moremi) sind Tiefsand-Geländeterrain, das per Charterflug oder ernsthafter Geländefahrt erreicht wird, und viele Camps sind nur per Flugzeug erreichbar.",
+      "Deutlich eingeschränkter: Für die Selbstfahrer-Einfahrt ins Moremi Game Reserve verlangt die Naturschutzbehörde DWNP eine bestätigte Campingplatz-Buchung, bevor man durchs Tor gelassen wird, und im Reservat gibt es nur eine Handvoll öffentlicher Campingplätze (Xakanaxa, Third Bridge, Moremi, Okuti), die in der Hauptsaison oft Monate im Voraus ausgebucht sind. Dazu kommen tiefe Kalahari-Sandpisten, die echte 4x4-Erfahrung und Geländeuntersetzung erfordern, und ein großer Teil des Okavango-Deltas selbst ist nur per Kleinflugzeug erreichbar, weshalb die meisten Botswana-Besucher mit einem Veranstalter einfliegen, statt selbst zu fahren.",
   },
   {
     axis: "Wilddichte",
     namibia:
-      "Ausgezeichnet, aber weiter verteilt: Etoshas Wasserlöcher konzentrieren Wild gut, aber Sichtungen anderswo (Damaraland, Kaokoland) sind wilder und weniger garantiert.",
+      "Ausgezeichnet, aber weiter verteilt: Etoshas beleuchtete Wasserlöcher konzentrieren Wild besonders gut, vor allem in der Trockenzeit (etwa Juni bis Oktober), aber Sichtungen in Damaraland oder Kaokoland sind wilder und weniger garantiert.",
     botswana:
-      "Dichter, klassischeres Safari-Erlebnis bei der Tierbeobachtung: Das Delta und Chobe sind bekannt für durchgehend nahe, häufige Sichtungen, einschließlich verlässlicher Büffel- und Raubtieraktivität.",
+      "Dichter, klassischeres Safari-Erlebnis bei der Tierbeobachtung: Das Okavango-Delta und Chobe, Heimat einer der größten Elefantenpopulationen Afrikas, sind bekannt für durchgehend nahe, häufige Sichtungen, einschließlich verlässlicher Büffel- und Raubtieraktivität.",
   },
   {
     axis: "Landschaft",
     namibia:
-      "Für viele Erstbesucher die Hauptattraktion: hoch aufragende rote Dünen, wüstenangepasste Tierwelt, eine schroffe Atlantikküste, so nirgendwo sonst auf dem Kontinent zu finden.",
+      "Für viele Erstbesucher die Hauptattraktion: hoch aufragende rote Dünen bei Sossusvlei (einige der höchsten der Welt, über 300 Meter), wüstenangepasste Tierwelt, eine schroffe Atlantikküste, so nirgendwo sonst auf dem Kontinent zu finden.",
     botswana:
       "Wasserbasiert und grün: Die Kanäle und Flussauen des Okavango-Deltas sind die genaue Gegenlandschaft zu Namibias Wüsten, mit Vogelbeobachtung und Wassertieren (Nilpferd, Elefant, Krokodil) als Kernerlebnis.",
   },
@@ -72,14 +72,28 @@ const COMPARISON = [
       </>
     ),
     botswana:
-      "Liegt durchweg höher: Botswanas High-Value-Low-Volume-Tourismusmodell bedeutet insgesamt weniger Camps und weniger Budget-Optionen, wobei Fly-in-Camps eher die Norm als die Ausnahme sind.",
+      "Liegt durchweg höher: Etablierte Lodges kosten meist 600 bis 1.500+ US-Dollar pro Person und Nacht, exklusive Fly-in-Camps im Okavango-Delta in der Hochsaison oft 1.500 bis 4.000+ US-Dollar, manche über 7.000 US-Dollar. Botswanas High-Value-Low-Volume-Tourismusmodell begrenzt bewusst die Anzahl der Camps, weshalb es kaum die Gästehaus-und-Mietwagen-Budgetklasse gibt, die Namibia bietet.",
+  },
+  {
+    axis: "Parkgebühren",
+    namibia:
+      "Namibia Wildlife Resorts berechnet internationalen Besuchern N$280 pro Tag (etwa 17,50 US-Dollar) in Premium-Parks wie Etosha, Namib-Naukluft und der Skeleton Coast, zuzüglich einer separaten Fahrzeuggebühr, gültig seit April 2026.",
+    botswana:
+      "DWNP berechnet internationalen Besuchern BWP 270 pro Tag (etwa 20 US-Dollar) in Chobe und Moremi sowie BWP 500 pro Tag im Central Kalahari, Makgadikgadi und Nxai Pan, zuzüglich separater Fahrzeuggebühren, ebenfalls seit April 2026 aktualisiert. Die täglichen Parkgebühren sind in beiden Ländern tatsächlich ähnlich hoch, der eigentliche Kostenunterschied entsteht bei Camps und Flügen, nicht an den Parktoren.",
+  },
+  {
+    axis: "Visum & Einreise",
+    namibia:
+      "Für die meisten Nationalitäten ist ein Visum erforderlich, wobei viele es bei Einreise erhalten oder vorab online beantragen können; die Standardgebühr für das Touristenvisum liegt 2026 bei etwa 30 US-Dollar und gilt für Aufenthalte von bis zu 90 Tagen.",
+    botswana:
+      "Auf dem Papier offener: Die meisten Besucher aus Nordamerika, Europa, dem Commonwealth und der SADC-Region (einschließlich Namibia) reisen visumsfrei zu touristischen Zwecken ein, typischerweise für Aufenthalte von bis zu 90 Tagen innerhalb von 12 Monaten.",
   },
 ];
 
 const FAQS = [
   {
     q: "Sollte ich für meine erste Afrika-Safari Namibia oder Botswana besuchen?",
-    a: "Wenn Sie selbst fahren, Ihr eigenes Tempo bestimmen und Landschaft sowie wüstenangepasste Tierwelt priorisieren möchten, ist Namibia die einfachere und in der Regel günstigere erste Reise. Wenn klassische, dichte Tierbeobachtung Priorität hat und das Budget Fly-in-Camps zulässt, liefert Botswana das zuverlässiger.",
+    a: "Wenn Sie selbst fahren, Ihr eigenes Tempo bestimmen und Landschaft sowie wüstenangepasste Tierwelt priorisieren möchten, ist Namibia die einfachere und in der Regel günstigere erste Reise: Straßennetz, Beschilderung und Mietwagenmarkt sind darauf ausgelegt, und Parkpermits werden direkt am Tor ausgestellt. Wenn klassische, dichte Tierbeobachtung Priorität hat und das Budget 600+ US-Dollar pro Person und Nacht in Fly-in-Camps zulässt, liefert Botswana das zuverlässiger, vor allem im Okavango-Delta und in Chobe.",
   },
   {
     q: "Kann ich Namibia und Botswana in einer Reise kombinieren?",
@@ -87,11 +101,15 @@ const FAQS = [
   },
   {
     q: "Ist Botswana teurer als Namibia?",
-    a: "Im Allgemeinen ja. Botswanas Tourismusmodell begrenzt bewusst die Anzahl der Camps, um die Gebiete unüberlaufen zu halten, was die Preise durchweg hochhält. Es gibt deutlich weniger eine echte Budgetklasse, als Namibia sie über Selbstfahrer-Reisen und Gästehäuser bietet.",
+    a: "Deutlich, ja. Botswanas High-Value-Low-Volume-Tourismuspolitik begrenzt bewusst die Anzahl der Camps, um die Gebiete unüberlaufen zu halten: Etablierte Lodges kosten meist 600 bis 1.500+ US-Dollar pro Person und Nacht, die exklusivsten Fly-in-Camps im Okavango-Delta oft 1.500 bis 4.000+ US-Dollar. Namibias echte Budgetklasse liegt bei etwa 225 bis 250 €/Tag im Selbstfahrer-Modus. Die Parkgebühren selbst sind in beiden Ländern 2026 tatsächlich ähnlich hoch (beide etwa 17 bis 20 US-Dollar pro Tag); der Unterschied liegt bei Camps, Guiding und internen Flügen, nicht an den Parktoren.",
   },
   {
     q: "Welches Land ist besser für Selbstfahrer geeignet?",
-    a: "Eindeutig Namibia. Botswanas beste Wildgebiete sind ohne ernsthaften 4x4 und Geländeerfahrung oder ein Fly-in-Camp weitgehend unzugänglich. Es ist nicht auf die Art des unabhängigen Roadtrips ausgelegt, für die Namibia bekannt ist.",
+    a: "Eindeutig Namibia. Botswanas beste Wildgebiete sind ohne ernsthaften 4x4 und Geländeerfahrung weitgehend unzugänglich: Die Selbstfahrer-Einfahrt ins Moremi Game Reserve etwa verlangt eine bestätigte DWNP-Campingplatz-Buchung, bevor man durchs Tor gelassen wird, und diese Plätze sind Monate im Voraus ausgebucht. Es ist nicht auf die Art des unabhängigen Roadtrips ausgelegt, für die Namibia bekannt ist.",
+  },
+  {
+    q: "Brauche ich für Namibia oder Botswana ein Visum?",
+    a: "Botswana ist für die meisten westlichen und SADC-Nationalitäten für touristische Aufenthalte von bis zu 90 Tagen visumsfrei. Namibia verlangt in der Regel ein Visum, wobei die meisten Besucher es bei Einreise erhalten oder vorab online beantragen können; die Standardgebühr für das Touristenvisum liegt 2026 bei etwa 30 US-Dollar, ebenfalls gültig für bis zu 90 Tage.",
   },
 ];
 

@@ -615,6 +615,62 @@ export const lodgeTranslationsDe: Record<string, LodgeTranslation> = {
     bestFor: "Reisende, die Komfort nahe Spitzkoppe ohne komplettes Camping wünschen",
     alt: "Erhöhte Chalets zwischen den Granitkuppen der Spitzkoppen Lodge bei Abenddämmerung",
   },
+  "little-kulala": {
+    description:
+      "Ein Wüstenresort im Schlossstil an der D826, etwa 20 km vom Sesriem-Tor entfernt, mit drei Zimmerkategorien, darunter offene Turmzimmer zum Schlafen unter dem Sternenhimmel.",
+    highlights: ["Offene Turmzimmer zum Sternenbeobachten", "Vollausgestattetes Mystique Spa", "Pool und Restaurant im Haus"],
+    bestFor: "Paare, die Resort-Komfort nahe Sossusvlei suchen",
+    alt: "Turmarchitektur im Schlossstil am Le Mirage Resort & Spa, Sossusvlei",
+  },
+  "sossusvlei-desert-lodge": {
+    description:
+      "Eine Lodge mit 45 Zimmern direkt am Parktor von Sesriem, mit einer beleuchteten Wasserloch-Terrasse und der kürzestmöglichen Anfahrt zu Sossusvlei aller Lodges in der Gegend.",
+    highlights: ["Lage direkt am Parktor von Sesriem", "Beleuchtetes Wasserloch, von der Terrasse aus zu beobachten", "Sundowner-Deck und Biergarten"],
+    bestFor: "Reisende, die bei Resort-Komfort die kürzeste Anfahrt zu Sossusvlei wollen",
+    alt: "Die Terrasse am Tor und der Pool der Sossusvlei Lodge, Sesriem",
+  },
+  "kulala-desert-lodge": {
+    description:
+      "Ein Selbstversorger-Camp mit 24 Chalets auf einem privaten Reservat direkt am Sesriem-Tor, etwa 5 km vom Zugang zu Sossusvlei und Deadvlei entfernt, mit Chalets mit Kochnische und einem Pool mit Blick auf die Elim Dune.",
+    highlights: ["5 km vom Parktor Sesriem entfernt", "Selbstversorger-Chalets mit Kochnische", "Pool mit Blick auf die Elim Dune"],
+    bestFor: "Familien, die eine erschwingliche, komfortable Basis direkt am Sossusvlei-Tor suchen",
+    alt: "Reetgedeckte Selbstversorger-Chalets auf rotem Wüstenboden, Desert Quiver Camp, Sossusvlei",
+  },
+  "luna-namib-collection": {
+    description:
+      "Eine Lodge mit Campingplatz etwa 30 bis 45 Autominuten vom Sesriem-Tor entfernt, bekannt für ihre Sternenbeobachtungs-Terrasse, den ganzjährig nutzbaren Pool und die Küche.",
+    highlights: ["Hoch bewertete Terrasse zur Sternenbeobachtung", "Guter Ruf für Essen und Service", "Ganzjährig nutzbarer Pool"],
+    bestFor: "Reisende, die ein gutes Preis-Leistungs-Verhältnis nahe Sossusvlei ohne Ultra-Luxus-Preise suchen",
+    alt: "Die Sternenbeobachtungs-Terrasse und der Pool der Little Sossus Lodge, Sossusvlei",
+  },
+  "damaraland-camp": {
+    description:
+      "Ein Camp zwischen gewaltigen roten Granitfelsen, gelegen zwischen den Flussbetten von Ugab und Huab, etwa 15 km nördlich von Twyfelfontein, mit Zimmern auf erhöhten Plattformen.",
+    highlights: ["Zimmer zwischen riesigen Granitfelsen erbaut", "Sundowner-Bar auf einem Felsvorsprung", "Fahrten zu wüstenangepassten Elefanten und Ausflüge zur Felskunst von Twyfelfontein"],
+    bestFor: "Wüstensafari und Glamping in dramatischer Felslandschaft",
+    alt: "Reetgedeckte Zimmer zwischen riesigen roten Granitfelsen, Mowani Mountain Camp",
+  },
+  "doro-nawas-camp": {
+    description:
+      "Iglu-förmige Steinbungalows, gebaut in Spalten zwischen aufgetürmten Granitfelsen nahe Twyfelfontein, mit Naturfahrten zu wüstenangepassten Elefanten und Felskunst.",
+    highlights: ["Bungalows direkt in Felsformationen gebaut", "Geschwungene Steinarchitektur", "Naturfahrten zu Elefanten und zur Felskunst von Twyfelfontein"],
+    bestFor: "Paare, die einen abgeschiedenen Felscamp-Aufenthalt nahe Twyfelfontein suchen",
+    alt: "Steinbungalows, gebaut in Granitfelsen, Camp Kipwe, Damaraland",
+  },
+  "hoanib-skeleton-coast-camp": {
+    description:
+      "Ein Camp mit sechs Zelten im Hoanib-Tal nahe Sesfontein, geführt als Gemeinschaftsprojekt mit der lokalen Bevölkerung und der Giraffe Conservation Foundation. Es liegt im Landesinneren der weiteren Skeleton-Coast-Region, nicht direkt an der Küste.",
+    highlights: ["Geführte Feldtage zur Giraffenforschung mit ansässigen Forschern", "Tracking von wüstenangepassten Elefanten, Giraffen und Nashörnern", "Netzunabhängiger Zeltluxus, geführt gemeinsam mit der lokalen Bevölkerung"],
+    bestFor: "Fly-in-Wüstensafari mit Fokus auf Naturschutzforschung",
+    alt: "Eine Zeltsuite in der Abenddämmerung im Hoanib-Tal, Hoanib Valley Camp",
+  },
+  "thitaka-river-lodge": {
+    description:
+      "Eine Lodge mit 24 Zimmern am Ufer des Kwando-Flusses, grenzend an den Bwabwata-Nationalpark, geführt von der Gondwana Collection, mit Flussbootfahrten bei Morgen- und Abenddämmerung.",
+    highlights: ["Flussbootfahrten zu Flusspferden, Krokodilen und über 400 Vogelarten", "Geführte Pirschfahrten im Bwabwata-Nationalpark", "Schwesterunterkunft Namushasha River Villa für mehr Luxus"],
+    bestFor: "Flusssafaris und Pirschfahrten im Elefantenkorridor des Bwabwata-Nationalparks",
+    alt: "Der Kwando-Fluss bei Abenddämmerung neben der Namushasha River Lodge, Caprivi",
+  },
 };
 
 type RouteTranslation = Partial<

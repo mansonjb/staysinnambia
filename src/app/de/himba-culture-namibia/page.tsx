@@ -39,19 +39,19 @@ const POPULAR_GUIDES_DE = [
 const PRINCIPLES = [
   {
     title: "Vor dem Fotografieren fragen",
-    text: "Fragen Sie immer eine Person direkt, bevor Sie sie fotografieren, auch an einem Ort, an dem Fotografieren grundsätzlich erlaubt ist. Ein Nicken des Guides ersetzt nicht die Zustimmung der Person im Bild.",
+    text: "Fragen Sie immer eine Person direkt, bevor Sie sie fotografieren, auch an einem Ort, an dem Fotografieren grundsätzlich erlaubt ist. Ein Nicken des Guides ersetzt nicht die Zustimmung der Person im Bild, und von einem Vermittler durchgewunken zu werden, ersetzt nicht das eigene Ja der Person.",
   },
   {
-    title: "Mit Bezahlung rechnen, und wenn möglich direkt bezahlen",
-    text: "Eine Gebühr oder der Kauf von Handwerksarbeiten ist normal und angemessen für einen Besuch: Es ist jemandes Zuhause und Zeit, keine kostenlose Fotogelegenheit. Fragen Sie Ihren Guide, wie die Bezahlung direkt bei der Gemeinschaft ankommt, statt anzunehmen, dass eine Lodge-Gebühr das abdeckt.",
+    title: "Verpflegung mitbringen, kein Bargeld",
+    text: "Bargeld ist Tagesreisen vom nächsten Laden entfernt fast nutzlos und auch kein traditioneller Teil davon, wie die Himba Handel treiben, weshalb es sich schlecht eignet, um eine Gemeinschaft für ihre Zeit zu entschädigen. Der stärkere Standard, dem gemeinschaftlich geführte Guides in Opuwo folgen, ist, vor dem Besuch gemeinsam mit dem Guide an einem Supermarkt zu halten und Grundnahrungsmittel zu kaufen, die der Guide auswählt: Maismehl, Zucker, Speiseöl, Tee oder Kaffee. Rechnen Sie mit etwa N$500 an Lebensmitteln für zwei Besucher, mehr bei größeren Gruppen, und überlassen Sie Ihrem Guide die Einschätzung der richtigen Menge, statt zu knausern.",
   },
   {
     title: "Den Unterschied zwischen einem 'lebenden Museum' und einem echten Dorf kennen",
-    text: "Manche Stopps sind inszenierte Vorführungen, die eigens für den Tourismus eingerichtet wurden, getrennt von dem Ort, an dem die Menschen tatsächlich alltäglich leben. Keines von beidem ist von Natur aus falsch, aber Sie sollten wissen, welches Sie besuchen und was das für die Echtheit der Begegnung bedeutet.",
+    text: "Manche Stopps sind inszenierte Vorführungen, die eigens für den Tourismus eingerichtet wurden, getrennt von dem Ort, an dem die Menschen tatsächlich alltäglich leben. Keines von beidem ist von Natur aus falsch, und ein lebendes Museum kann durchaus eine legitime, der Gemeinschaft gehörende Einkommensquelle sein, aber Sie sollten wissen, welches der beiden Sie besuchen, und Ihren Guide direkt danach fragen, statt es anzunehmen.",
   },
   {
     title: "Der Führung der Gemeinschaft folgen, was geteilt wird",
-    text: "Heilige Feuer, bestimmte Rituale und bestimmte Bereiche eines Gehöfts sind möglicherweise nicht für Besucher gedacht, unabhängig davon, was anderswo angeboten wird. Ein respektvoller Besuch folgt den Grenzen der Gemeinschaft, nicht dem Reiseplan.",
+    text: "Heilige Feuer, bestimmte Rituale und bestimmte Bereiche eines Gehöfts sind möglicherweise nicht für Besucher gedacht, unabhängig davon, was anderswo angeboten wird. Ein respektvoller Besuch folgt den Grenzen der Gemeinschaft, nicht dem Reiseplan, und ein guter Guide sagt Ihnen vorab, was tabu ist, statt es im Moment zu improvisieren.",
   },
 ];
 
@@ -62,15 +62,19 @@ const FAQS = [
   },
   {
     q: "Ist es in Ordnung, als Tourist ein Himba-Dorf zu besuchen?",
-    a: "Es kann sein, wenn respektvoll und über den richtigen Weg: ein Guide mit einer echten Beziehung zur Gemeinschaft, informierte Zustimmung für jede Fotografie, und faire Bezahlung, die bei den besuchten Menschen ankommt statt nur bei einem Vermittler. Es lohnt sich, ehrlich zu sich selbst zu sein, ob ein bestimmter Stopp echter kultureller Austausch oder eine inszenierte Fotogelegenheit ist, und danach zu entscheiden.",
+    a: "Es kann sein, wenn respektvoll und über den richtigen Weg: ein Guide mit einer echten Beziehung zur Gemeinschaft, informierte Zustimmung für jede Fotografie, und Entschädigung, die die Menschen, die Sie besuchen, in einer Form erreicht, die sie tatsächlich wollen, was in der Praxis meist bedeutet: Lebensmittel, die gemeinsam mit Ihrem Guide gekauft werden, statt Bargeld. Es lohnt sich, ehrlich zu sich selbst zu sein, ob ein bestimmter Stopp echter kultureller Austausch oder eine inszenierte Fotogelegenheit ist, und danach zu entscheiden.",
   },
   {
     q: "Was ist der Unterschied zwischen einem 'lebenden Museum' und dem Besuch eines echten Himba-Gehöfts?",
     a: "Ein lebendes Museum ist eine Vorführung, die eigens eingerichtet wurde, um Besuchern traditionelles Himba-Leben zu zeigen, oft getrennt von dem Ort, an dem dieselbe Gemeinschaft tatsächlich alltäglich lebt. Es kann trotzdem eine legitime, gemeinschaftlich geführte Einkommensquelle sein, aber es ist eine andere Erfahrung als ein organischer Besuch eines aktiven Gehöfts, und Anbieter sollten offen sagen, welches der beiden Sie buchen.",
   },
   {
-    q: "Wo in Namibia kann ich Himba-Gemeinschaften besuchen?",
-    a: "Hauptsächlich in und um Kaokoland und die weitere Kunene-Region, in Namibias Nordwesten, erreichbar als Erweiterung ab Damaraland für Reisende mit den zusätzlichen Tagen und, meist, einem 4x4. Es ist ein echter Abstecher, kein Stopp auf der klassischen Route, und braucht daher bewusste Planung statt nur eingeschoben zu werden.",
+    q: "Wo in Namibia kann ich Himba-Gemeinschaften besuchen, und über wen sollte ich buchen?",
+    a: "Hauptsächlich in und um Kaokoland und die weitere Kunene-Region, in Namibias Nordwesten, erreichbar als Erweiterung ab Damaraland für Reisende mit den zusätzlichen Tagen und, meist, einem 4x4. Die Stadt Opuwo ist der praktische Ausgangspunkt: Hier sitzen Guide-Dienste wie das Kaoko Information Centre, geführt von Himba für Himba, wo ein Guide Sie vor dem eigentlichen Besuch zum Einkauf von Vorräten vor Ort mitnimmt. Es ist ein echter Abstecher, kein Stopp auf der klassischen Route, und braucht daher bewusste Planung statt nur eingeschoben zu werden.",
+  },
+  {
+    q: "Was sollte ich für einen Besuch bei einer Himba-Gemeinschaft mitbringen oder kaufen?",
+    a: "Praktische Grundnahrungsmittel statt Bargeld oder westliche Mitbringsel: Maismehl, Zucker, Speiseöl, Tee oder Kaffee sind die Dinge, um die die Gemeinschaften selbst bitten, da sie halbnomadisch leben und diese Güter nicht immer leicht nachzukaufen sind. Der Standard, dem gemeinschaftlich geführte Guides folgen, ist, diese unmittelbar vor dem Besuch gemeinsam an einem Supermarkt in Opuwo zu kaufen, sodass die Gemeinschaft genau sieht, was mitgebracht wird, und der Guide faire Mengen für die Gruppengröße einschätzen kann.",
   },
 ];
 
@@ -120,19 +124,26 @@ export default function HimbaCulturePageDe() {
         </div>
 
         <Reveal className="mt-8 rounded-2xl border border-black/5 bg-sand/20 p-8">
-          <p className="text-[14px] leading-relaxed text-charcoal/70">
+          <h2 className="text-xl font-bold text-charcoal">Unsere Empfehlung</h2>
+          <p className="mt-3 text-[14px] leading-relaxed text-charcoal/70">
             Nichts davon ist ein Grund, Kaokoland oder die Kunene-Region zu meiden: Es ist ein Grund,
             über Anbieter und Guides zu gehen, die echte, dauerhafte Beziehungen zu bestimmten
-            Gemeinschaften pflegen, statt über einen generischen Stopp im Reiseplan. Die meisten
-            Besuche werden als Erweiterung ab{" "}
+            Gemeinschaften pflegen, statt über einen generischen Stopp im Reiseplan. In der Praxis
+            bedeutet das, sich in Opuwo niederzulassen oder darüber zu reisen und einen von Himba
+            geführten Guide-Dienst wie das Kaoko Information Centre zu nutzen, statt einen
+            Dorfbesuch als anonymen Zusatz über einen Reiseschalter an der Küste zu buchen. Die
+            meisten Besuche werden als Erweiterung ab{" "}
             <Link
               href="/de/where-to-stay/damaraland"
               className="font-semibold text-rust hover:text-rust-dark"
             >
               Aufenthalten in Damaraland
             </Link>
-            {" "}organisiert, fragen Sie Ihren Guide also direkt, wie die Bezahlung bei der
-            Gemeinschaft ankommt und was der Besuch tatsächlich beinhaltet, bevor Sie buchen.
+            {" "}organisiert, was mindestens einen zusätzlichen Fahrtag pro Richtung bedeutet,
+            größtenteils auf Schotterpisten. Fragen Sie Ihren Guide direkt, was der Besuch
+            beinhaltet, ob Sie gemeinsam vorab Vorräte kaufen und wie die Zustimmung zur
+            Fotografie am Tag selbst gehandhabt wird, bevor Sie buchen, nicht erst, wenn Sie am
+            Gehöft stehen.
           </p>
         </Reveal>
       </section>

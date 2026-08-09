@@ -26,10 +26,11 @@ export const metadata: Metadata = {
 };
 
 const NOTES = [
-  "Viele Safari-Lodges legen ein Mindestalter (oft 6–8 Jahre) für Pirschfahrten fest: Prüfen Sie das vor der Buchung, nicht erst bei der Ankunft.",
-  "Das Malariarisiko konzentriert sich auf den Norden (Etosha und den Caprivi-Streifen) und ist in der Regenzeit (etwa November bis April) am höchsten; im übrigen Land ist das Risiko größtenteils gering, aber bestätigen Sie die aktuellen Empfehlungen bei einer reisemedizinischen Beratungsstelle.",
-  "Selbstfahrer-Tage sind lang: Planen Sie Pausen ein und halten Sie einzelne Fahrstrecken mit kleinen Kindern unter 4–5 Stunden.",
-  "In Etoshas beleuchteten Wasserloch-Camps können Kinder Tiere sicher von der Lodge aus beobachten, ganz ohne Pirschfahrt.",
+  "Das Mindestalter ist von Lodge zu Lodge unterschiedlich und nicht landesweit einheitlich geregelt: Mushara Bush Camp am östlichen Etosha-Tor nimmt Kinder jeden Alters auf geführten Pirschfahrten mit, während viele andere Camps eine Altersgrenze von etwa 6 bis 8 Jahren (manche sogar bis 12) für gemeinsame Pirschfahrzeuge setzen. Klären Sie die genaue Altersregelung direkt mit der Lodge, die Sie buchen, da sie sich auch zwischen Schwesterunterkünften unterscheiden kann.",
+  "Das Malariarisiko ist real, aber regional begrenzt und nicht überall gleich. Entlang der Flüsse Kunene, Sambesi und Okavango, also im Caprivi-Streifen und im äußersten Nordwesten, besteht es ganzjährig, saisonal, etwa von November bis Juni, auch in Etosha und den übrigen nördlichen Regionen Namibias. Auf der klassischen Route Sossusvlei–Swakopmund–Damaraland weiter im Süden und Westen ist das Risiko meist gering bis nicht vorhanden. Holen Sie vor der Entscheidung über eine Malariaprophylaxe aktuelle, regionsspezifische Informationen bei einer reisemedizinischen Beratungsstelle ein.",
+  "Selbstfahrer-Tage sind lang: Planen Sie Pausen ein und halten Sie einzelne Fahrstrecken mit kleinen Kindern unter 4 bis 5 Stunden. Von Windhoek bis zu den Etosha-Toren sind es rund 4,5 Stunden, und die Schotterpisten in Damaraland können pro Etappe 3 bis 4 Stunden dauern, planen Sie diese also als volle Fahrtage ein und nicht als Lückenfüller zwischen Aktivitäten.",
+  "In Etoshas beleuchteten Wasserloch-Camps, innerhalb des Parks in Okaukuejo und Halali oder auf den angrenzenden privaten Reservaten (Ongava, Onguma), können Kinder abends von der sicheren Lodge aus beobachten, wie Elefanten, Nashörner und Löwen zum Trinken kommen, ganz ohne Pirschfahrt.",
+  "Geführte Wanderungen und kulturelle Besuche, etwa die Felsgravuren von Twyfelfontein oder ein Himba-Dorfbesuch weiter im Norden, eignen sich meist für eine breitere Altersspanne als eine holprige, mehrstündige Pirschfahrt auf Tiersuche. Fragen Sie die Lodge bei der Buchung, welche Aktivitäten für das Alter Ihrer Kinder realistisch sind, nicht erst vor Ort.",
 ];
 
 export default function KidsPageDe() {
@@ -88,6 +89,16 @@ export default function KidsPageDe() {
       <section className="mx-auto max-w-[1400px] px-6 py-8 sm:px-10">
         <Reveal>
           <h2 className="text-2xl font-bold text-charcoal">Lodges, die gut für Familien geeignet sind</h2>
+          <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+            Mushara Lodge liegt nahe dem östlichen Etosha-Tor mit familienfreundlichen Suiten und
+            einer Schwesterunterkunft in der Nähe, falls Sie mehr Platz brauchen. Desert Quiver
+            Camp liegt direkt am Sesriem-Tor mit Selbstversorger-Chalets und Preisen, bei denen
+            Kinder kostenlos übernachten, eine unkomplizierte, günstige Basis für einen
+            Dünen-Tag mit der Familie. Villa Violet ist ein kleines, inhabergeführtes Gästehaus
+            in Windhoek mit Selbstversorger-Option, ein ruhiger Ausgangspunkt vor oder nach der
+            Rundreise. Canyon Lodge, nahe dem Fish River Canyon, ist rustikal, aber komfortabel
+            und eine gute Basis, wenn Wandern oder der Süden Teil Ihrer Route ist.
+          </p>
         </Reveal>
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {familyLodges.map((lodge, i) => (

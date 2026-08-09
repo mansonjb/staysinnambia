@@ -615,6 +615,62 @@ export const lodgeTranslationsFr: Record<string, LodgeTranslation> = {
     bestFor: "Voyageurs voulant du confort près de Spitzkoppe sans camper complètement",
     alt: "Des chalets surélevés parmi les dômes de granit de Spitzkoppen Lodge au crépuscule",
   },
+  "little-kulala": {
+    description:
+      "Un complexe désertique de style château sur la route D826, à environ 20 km de la porte de Sesriem, avec trois catégories de chambres, dont des chambres-tours à ciel ouvert pour dormir à la belle étoile.",
+    highlights: ["Chambres-tours à ciel ouvert pour observer les étoiles", "Spa complet, le Mystique Spa", "Piscine et restaurant sur place"],
+    bestFor: "Couples en quête de confort de resort près de Sossusvlei",
+    alt: "Architecture de tours façon château au Le Mirage Resort & Spa, Sossusvlei",
+  },
+  "sossusvlei-desert-lodge": {
+    description:
+      "Un lodge de 45 chambres directement à la porte du parc de Sesriem, avec une terrasse donnant sur un point d'eau éclairé et le trajet le plus court possible vers Sossusvlei parmi les lodges du secteur.",
+    highlights: ["Situé directement à la porte du parc de Sesriem", "Point d'eau éclairé visible depuis la terrasse", "Terrasse pour l'apéritif au coucher du soleil et jardin-brasserie"],
+    bestFor: "Voyageurs voulant le trajet le plus court vers Sossusvlei avec le confort d'un resort",
+    alt: "La terrasse côté porte du parc et la piscine du Sossusvlei Lodge, Sesriem",
+  },
+  "kulala-desert-lodge": {
+    description:
+      "Un camp en self-catering de 24 chalets sur une réserve privée jouxtant la porte de Sesriem, à environ 5 km de l'accès à Sossusvlei et Deadvlei, avec des chalets équipés d'une kitchenette et une piscine avec vue sur Elim Dune.",
+    highlights: ["À 5 km de la porte du parc de Sesriem", "Chalets en self-catering avec kitchenette", "Piscine avec vue sur Elim Dune"],
+    bestFor: "Familles cherchant une base abordable et confortable directement à la porte de Sossusvlei",
+    alt: "Chalets en chaume en self-catering sur le terrain désertique rouge du Desert Quiver Camp, Sossusvlei",
+  },
+  "luna-namib-collection": {
+    description:
+      "Un lodge avec camping à environ 30 à 45 minutes de route de la porte de Sesriem, réputé pour sa terrasse d'observation des étoiles, sa piscine ouverte toute l'année et sa cuisine.",
+    highlights: ["Terrasse très appréciée pour observer les étoiles", "Solide réputation pour la cuisine et le service", "Piscine ouverte toute l'année"],
+    bestFor: "Voyageurs cherchant un bon rapport qualité-prix près de Sossusvlei sans tarifs ultra-luxe",
+    alt: "La terrasse d'observation des étoiles et la piscine du Little Sossus Lodge, Sossusvlei",
+  },
+  "damaraland-camp": {
+    description:
+      "Un camp construit parmi d'immenses blocs de granit rouge entre les lits des rivières Ugab et Huab, à environ 15 km au nord de Twyfelfontein, avec des chambres sur plateformes surélevées.",
+    highlights: ["Chambres construites parmi d'immenses blocs de granit", "Bar pour l'apéritif du soir sur un surplomb rocheux", "Sorties pour éléphants adaptés au désert et excursions vers l'art rupestre de Twyfelfontein"],
+    bestFor: "Safari désertique et glamping dans un décor spectaculaire de blocs de granit",
+    alt: "Chambres en chaume installées parmi d'immenses blocs de granit rouge à Mowani Mountain Camp",
+  },
+  "doro-nawas-camp": {
+    description:
+      "Des bungalows en pierre en forme d'igloo, construits dans des failles entre des blocs de granit empilés près de Twyfelfontein, avec des sorties nature pour observer les éléphants adaptés au désert et l'art rupestre.",
+    highlights: ["Bungalows construits directement dans les formations rocheuses", "Architecture en pierre aux formes arrondies", "Sorties nature pour éléphants et art rupestre de Twyfelfontein"],
+    bestFor: "Couples en quête d'un séjour isolé parmi les blocs de granit, près de Twyfelfontein",
+    alt: "Bungalows en pierre construits dans des blocs de granit à Camp Kipwe, Damaraland",
+  },
+  "hoanib-skeleton-coast-camp": {
+    description:
+      "Un camp de six tentes dans la vallée de la Hoanib, près de Sesfontein, géré en coentreprise avec la communauté locale et la Giraffe Conservation Foundation. Il se trouve à l'intérieur des terres, dans la région élargie de la Côte des Squelettes, et non sur le littoral lui-même.",
+    highlights: ["Journées de terrain guidées sur la recherche des girafes, avec des chercheurs en résidence", "Tracking d'éléphants, de girafes et de rhinocéros adaptés au désert", "Luxe sous tente hors réseau, géré avec la communauté locale"],
+    bestFor: "Safari faune désertique en avion, avec une dimension recherche et conservation",
+    alt: "Une suite sous tente au crépuscule dans la vallée de la Hoanib, à Hoanib Valley Camp",
+  },
+  "thitaka-river-lodge": {
+    description:
+      "Un lodge riverain de 24 chambres sur le fleuve Kwando, en bordure du parc national de Bwabwata, géré par Gondwana Collection, avec des croisières en bateau à l'aube et au crépuscule.",
+    highlights: ["Croisières en bateau pour observer hippopotames, crocodiles et plus de 400 espèces d'oiseaux", "Safaris en véhicule guidés dans le parc national de Bwabwata", "Propriété sœur Namushasha River Villa pour une option plus luxueuse"],
+    bestFor: "Safaris fluviaux et safaris en véhicule dans le corridor à éléphants du parc national de Bwabwata",
+    alt: "Le fleuve Kwando au crépuscule à côté de Namushasha River Lodge, Caprivi",
+  },
 };
 
 type RouteTranslation = Partial<

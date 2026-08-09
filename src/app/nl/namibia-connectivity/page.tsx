@@ -43,38 +43,42 @@ const POPULAR_GUIDES_NL = [
 const COVERAGE = [
   {
     area: "Windhoek, Swakopmund, Walvis Bay",
-    signal: "Goed 4G, betrouwbaar genoeg voor bellen, kaarten en streaming.",
+    signal: "Goed MTC 4G, betrouwbaar genoeg voor bellen, kaarten en streaming.",
   },
   {
     area: "Etosha (kampen en hoofdwegen)",
-    signal: "Wisselend maar aanwezig: de meeste kampen hebben wifi bij de receptie, ook waar het mobiele signaal zwak is.",
+    signal: "Wisselend maar aanwezig: de meeste kampen (Okaukuejo, Halali, Namutoni) hebben wifi bij de receptie, zelfs waar het mobiele signaal zwak of afwezig is op de omliggende grindlussen.",
   },
   {
     area: "Sossusvlei, Damaraland, Spitzkoppe",
-    signal: "Zwak tot afwezig over lange stukken. Download offline kaarten voordat u de kust verlaat.",
+    signal: "Zwak tot afwezig over lange stukken, vooral buiten de C-wegen. Download offline kaarten voordat u de kust verlaat, niet pas op de D-weg naar Damaraland.",
   },
   {
-    area: "Skeleton Coast, afgelegen Kaokoland",
-    signal: "Reken op helemaal geen bereik voor hele dagen: dit is normaal, geen netwerkstoring.",
+    area: "Skeleton Coast, afgelegen Kaokoland (incl. omweg naar Opuwo)",
+    signal: "Reken op helemaal geen MTC- of TN Mobile-bereik voor hele dagen: dit is normaal, geen netwerkstoring, en geldt ook voor eSIM's die over dezelfde zendmasten lopen.",
   },
 ];
 
 const FAQS = [
   {
     q: "Welk netwerk is het beste voor toeristen in Namibië?",
-    a: "MTC is het dominante netwerk van Namibië en heeft over het algemeen de breedste dekking langs de belangrijkste toeristenroutes en steden; Telecom Namibia (via TN Mobile) is het alternatief. Geen van beide heeft noemenswaardige dekking in de meest afgelegen woestijn- en kuststukken: dat is een beperking van het terrein, geen netwerkkeuze die u kunt oplossen.",
+    a: "MTC is het dominante netwerk van Namibië en heeft over het algemeen de breedste dekking langs de belangrijkste toeristenroutes en steden; Telecom Namibia (via TN Mobile) is het alternatief. Geen van beide heeft noemenswaardige dekking in de meest afgelegen woestijn- en kuststukken, waaronder de Skeleton Coast, de diepe Namib en het grootste deel van Kaokoland: dat is een beperking van terrein en infrastructuur, geen netwerkkeuze die u kunt oplossen door van provider te wisselen.",
+  },
+  {
+    q: "Hoeveel kost een MTC-toeristensimkaart?",
+    a: "MTC verkoopt twee specifieke toeristenpakketten, beide verkrijgbaar bij de kiosk op het vliegveld: een Leisure-pakket van N$349 voor 14 dagen met 10,1GB data plus wat internationaal bel- en sms-tegoed, en een Premium-pakket van N$659 voor 30 dagen met 20,1GB data en meer beltegoed. Een gewone prepaid simkaart met een losse databundel is meestal goedkoper als u het zelf wilt bijladen, maar de toeristenpakketten besparen u de moeite op dag één.",
   },
   {
     q: "Kan ik op het vliegveld een simkaart kopen?",
-    a: "Ja, MTC heeft een kiosk in de aankomsthal van Hosea Kutako International Airport, en dat is de eenvoudigste manier om verbonden te zijn voordat u gaat rijden. Neem uw paspoort mee; voor lokale simregistratie is doorgaans een identiteitsbewijs vereist.",
+    a: "Ja, MTC heeft een kiosk in de aankomsthal van Hosea Kutako International Airport, en dat is de eenvoudigste manier om verbonden te zijn voordat u gaat rijden. Neem uw paspoort mee; voor lokale simregistratie is doorgaans een identiteitsbewijs vereist, en de toeristenpakketten worden ter plekke geregeld.",
   },
   {
-    q: "Werkt eSIM goed in Namibië?",
-    a: "Ja, over het algemeen wel: internationale eSIM-providers maken gebruik van dezelfde MTC- of Telecom Namibia-netwerken als een fysieke simkaart, dus de dekking is identiek. Het voordeel is dat u de fysieke kaartwissel of vliegveldstop overslaat; controleer de Namibië-dekkingskaart van uw specifieke provider voordat u er in afgelegen gebieden op vertrouwt.",
+    q: "Werkt eSIM goed in Namibië, en is het goedkoper dan een lokale simkaart?",
+    a: "Het werkt, maar is zelden goedkoper. Internationale eSIM-providers maken gebruik van dezelfde MTC- of Telecom Namibia-zendmasten als een fysieke simkaart, dus de dekking is identiek, en pakketten beginnen doorgaans rond de $9,50 voor een week data. De adder zit in de prijs per gigabyte: eSIM-data kost vaak twee tot drie keer zoveel als eenzelfde hoeveelheid data in een MTC-prepaidbundel. Waarvoor u eigenlijk betaalt, is gemak, al verbonden landen in plaats van in de rij staan bij de vliegveldkiosk, niet een beter netwerk.",
   },
   {
     q: "Heb ik bereik op de hele zelfrijroute?",
-    a: "Nee, en daar moet u niet op rekenen bij het plannen. Sossusvlei, Damaraland en de Skeleton Coast hebben allemaal lange stukken zonder enig bereik. Download offline Google Maps voor uw route, bewaar uw lodgeboekingen als pdf's, en beschouw connectiviteit als iets van steden en kampen, niet als iets tussen de stops.",
+    a: "Nee, en daar moet u niet op rekenen bij het plannen. Sossusvlei, Damaraland, Spitzkoppe, de Skeleton Coast en het afgelegen Kaokoland hebben allemaal lange stukken, soms hele rijdagen, zonder enig bereik op beide netwerken. Download offline Google Maps voor uw route, bewaar uw lodgeboekingen als pdf's, en beschouw connectiviteit als iets van steden en kampen, niet als iets tussen de stops.",
   },
 ];
 
@@ -121,7 +125,7 @@ export default function ConnectivityPageNl() {
           <h2 className="text-xl font-bold text-charcoal">Voordat u de kust verlaat</h2>
           <ul className="mt-5 space-y-3">
             {[
-              "Koop een MTC-simkaart op het vliegveld, of controleer of uw eSIM-provider Namibië specifiek dekt",
+              "Koop een MTC-simkaart bij de kiosk op vliegveld Hosea Kutako (N$349 voor 14 dagen / 10,1GB, of N$659 voor 30 dagen / 20,1GB), of controleer specifiek of uw eSIM-provider Namibië dekt voordat u er voor data op vertrouwt in plaats van een fysieke simkaart",
               (
                 <>
                   Download offline kaarten voor uw volledige zelfrijroute van tevoren. Onze{" "}

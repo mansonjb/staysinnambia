@@ -42,11 +42,14 @@ const POPULAR_GUIDES_NL = [
 
 const malariaItem = (
   <>
-    Prophylaxie antipaludique si votre itinéraire passe par le nord (Etosha, Caprivi) pendant la
-    saison des pluies : consultez notre{" "}
+    Une prophylaxie antipaludique (doxycycline ou l&apos;association atovaquone-proguanil/Malarone
+    sont les deux options les plus souvent prescrites) si votre itinéraire traverse les régions à
+    risque : Kavango, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa et
+    Zambezi, avec un risque plus élevé pendant la saison des pluies. Consultez notre{" "}
     <Link href="/fr/namibia-safety-and-health" className="font-semibold text-rust hover:text-rust-dark">
       guide sécurité et santé
-    </Link>
+    </Link>{" "}
+    pour le détail région par région, et faites confirmer le médicament avec un médecin de voyage
   </>
 );
 
@@ -56,8 +59,10 @@ const CATEGORIES = [
     items: [
       "Des vêtements en couches : les journées désertiques peuvent dépasser 35 °C alors que les nuits descendent sous 10 °C, parfois proches du gel en hiver (juin à août)",
       "Des vêtements de couleurs neutres pour les game drives (évitez le blanc vif ou le noir, qui montrent la poussière et retiennent la chaleur)",
-      "Un vrai chapeau et des lunettes de soleil : le soleil est implacable, même pendant la saison verte",
+      "Un vrai chapeau à larges bords et des lunettes de soleil polarisantes : le soleil est implacable, même pendant la saison verte",
       "Une veste chaude ou une polaire pour les game drives matinaux et les nuits du désert, même en été",
+      "Un buff ou tour de cou : le vêtement le plus utile sur les pistes en gravier, à la fois masque anti-poussière, protection solaire et chaleur à l'aube",
+      "Un pantalon à séchage rapide et des chaussures fermées plutôt que des sandales dès que vous quittez le bitume : gravier, épines et sable meuble punissent les pieds à découvert",
     ],
   },
   {
@@ -73,9 +78,17 @@ const CATEGORIES = [
     title: "Spécifique à l'autotour",
     items: [
       "Une carte physique, imprimée ou téléchargée hors ligne : consultez notre guide de connectivité pour comprendre pourquoi vous ne pouvez pas compter sur le réseau",
-      "Une trousse à outils de base et un kit de réparation de pneu si votre location n'en inclut pas déjà un",
-      "Des espèces (dollars namibiens ou rands sud-africains) pour les stations-service et les droits d'entrée des parcs dans les zones où les cartes ne fonctionnent pas",
-      "Des sacs anti-poussière pour le matériel photo et l'électronique lors des trajets sur pistes en gravier",
+      "Une trousse à outils de base et un kit de réparation de pneu si votre location n'en inclut pas déjà un, les crevaisons et impacts de pare-brise sur pistes en gravier étant le sinistre le plus fréquent en location",
+      "Des espèces (dollars namibiens ou rands sud-africains) pour les stations-service et les droits d'entrée des parcs (N$280/personne/jour à Etosha et Namib-Naukluft), les terminaux de carte y étant peu fiables",
+      "Des sacs anti-poussière ou des sacs étanches pour le matériel photo et l'électronique lors des trajets sur pistes en gravier : la poussière fine namibienne s'infiltre dans les fermetures éclair, les ports et les montures d'objectif",
+    ],
+  },
+  {
+    title: "Électronique et énergie",
+    items: [
+      "Une lampe frontale avec piles de rechange : de nombreux lodges isolés et camps du désert fonctionnent au générateur ou au solaire sur des plages horaires fixes plutôt que sur un réseau 24h/24, et coupent l'électricité la nuit",
+      "Un adaptateur universel pour les prises namibiennes de type D et M (220V), plus une batterie externe : les créneaux de recharge dans les camps isolés sont limités et partagés",
+      "Un téléphone avec les cartes téléchargées à l'avance pour une utilisation hors ligne, et une carte papier de secours : le réseau mobile disparaît sur de longs tronçons en dehors des villes",
     ],
   },
   {
@@ -91,11 +104,11 @@ const CATEGORIES = [
 const FAQS = [
   {
     q: "Combien d'eau dois-je emporter pour un autotour en Namibie ?",
-    a: "Prévoyez au moins 2 à 5 litres par personne pour tout tronçon isolé, davantage pendant les mois les plus chauds. Ce n'est pas qu'une question de confort : les stations-service et les services sont réellement très espacés, et emporter de l'eau est un conseil standard en cas de panne, pas une exagération.",
+    a: "Prévoyez au moins 2 à 5 litres par personne pour tout tronçon isolé, davantage pendant les mois les plus chauds. Ce n'est pas qu'une question de confort : les stations-service et les services sont réellement très espacés, parfois plus de 250 km sur des tronçons comme la Skeleton Coast, le Kaokoland ou la route vers Fish River Canyon, et emporter de l'eau est un conseil standard en cas de panne, pas une exagération.",
   },
   {
     q: "Faut-il des vêtements chauds dans un pays désertique ?",
-    a: "Oui, et cela surprend beaucoup de voyageurs pour leur premier séjour. Les régions désertiques de Namibie peuvent passer de plus de 35 °C le jour à moins de 10 °C la nuit, et en hiver (juin à août) les nuits peuvent frôler le gel dans des endroits comme Sossusvlei. Les couches ne sont pas facultatives, elles sont indispensables.",
+    a: "Oui, et cela surprend beaucoup de voyageurs pour leur premier séjour. Les régions désertiques de Namibie peuvent passer de plus de 35 °C le jour à moins de 10 °C la nuit, et en hiver (juin à août) les nuits peuvent frôler le gel dans des endroits comme Sossusvlei. Les couches ne sont pas facultatives, elles sont indispensables, et un buff ou tour de cou couvre à la fois la poussière et le froid de l'aube en un seul accessoire.",
   },
   {
     q: "Quelles couleurs porter pendant les game drives ?",
@@ -103,7 +116,11 @@ const FAQS = [
   },
   {
     q: "Faut-il prévoir un traitement antipaludique dans mes bagages ?",
-    a: "Cela dépend de votre itinéraire et de vos dates précises : le risque de paludisme en Namibie se concentre dans le nord (Etosha, Caprivi) et est le plus élevé pendant la saison des pluies (environ de novembre à avril). Consultez notre guide sécurité et santé pour le détail région par région, et faites confirmer votre besoin par un médecin de voyage plutôt que de présumer dans un sens ou dans l'autre.",
+    a: "Cela dépend de votre itinéraire et de vos dates précises : les recommandations du CDC américain signalent un risque de paludisme dans les régions namibiennes de Kavango, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa et Zambezi, le plus élevé pendant la saison des pluies (environ de novembre à avril). La doxycycline et l'association atovaquone-proguanil (Malarone) sont les deux options de prophylaxie les plus couramment recommandées. Consultez notre guide sécurité et santé pour le détail région par région, et faites confirmer le médicament et le dosage par un médecin de voyage plutôt que de présumer dans un sens ou dans l'autre.",
+  },
+  {
+    q: "Quel adaptateur de prise faut-il pour la Namibie ?",
+    a: "La Namibie utilise des prises de type D et M en 220V/50Hz, les mêmes grosses prises rondes à trois broches qu'en Afrique du Sud. Un adaptateur universel couvre les deux. La plupart des chargeurs de téléphone, d'appareil photo et d'ordinateur portable sont bi-tension (repérez la mention « 100-240V » sur l'adaptateur), donc seul le format de la prise compte, pas besoin de convertisseur de tension.",
   },
 ];
 

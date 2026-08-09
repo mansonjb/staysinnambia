@@ -30,25 +30,35 @@ const POINTS = [
     title: "Fly-in in plaats van zelf rijden",
     text: (
       <>
-        Fly-in kampen in het Palmwag Concession-gebied en lodges op de NamibRand Nature Reserve
-        worden vaak per kleine chartervlucht bereikt in plaats van over de weg, waardoor een rit die onze{" "}
+        De topklasse lodges zijn vaak alleen per klein vliegtuig te bereiken, niet over de weg.
+        Fly-in kampen in het Palmwag Concession-gebied en de Hoanib-vallei zijn specifiek gebouwd
+        rond het opsporen van woestijnleeuwen, olifanten en neushoorns, en zijn normaal gesproken
+        alleen bereikbaar per chartervlucht. Lodges op de NamibRand Nature Reserve bij Sossusvlei
+        zijn doorgaans zo&apos;n 45 minuten per vliegtuig, tegenover de ongeveer 5 uur rijden die
+        onze{" "}
         <Link
           href="/nl/namibia-self-drive-guide"
           className="text-rust underline underline-offset-2 hover:text-rust-dark"
         >
           zelfrijgids
         </Link>{" "}
-        op 6 uur zou zetten, wordt teruggebracht tot een vlucht van 45 minuten.
+        noteert voor dezelfde route over grind. Aan het uiterste einde ligt Serra Cafema volledig
+        geïsoleerd aan de Kunene-rivier in de Hartmann-vallei, alleen bereikbaar per klein
+        vliegtuig naar de eigen landingsbaan: oprecht de meest afgelegen lodge van het land.
       </>
     ),
   },
   {
     title: "Privéreservaten, niet alleen privékamers",
-    text: "Luxe in Namibië betekent meestal toegang: een privépoort tot een conservancy, offroad-trackingrechten, of nachtelijke ritten die binnen de nationale parken zelf niet zijn toegestaan.",
+    text: "Luxe in Namibië gaat meestal over toegang, niet over de kwaliteit van het beddengoed. Ongava Reserve, grenzend aan Etosha's Anderson Gate, staat nachtelijke ritten en offroad tracking toe die het nationale park zelf niet toestaat. In Damaraland herbergt de Palmwag Concession een van de grootste nog vrij rondtrekkende populaties zwarte neushoorns ter wereld, en is het een van de weinige plekken in Afrika waar u ze te voet kunt opsporen met een gespecialiseerde gids in plaats van vanuit een voertuig.",
   },
   {
     title: "Minder, maar betere nachten",
-    text: "Een luxe reisroute is vaak korter dan een budget-zelfrijreis: drie of vier kampementen verspreid over 8–10 dagen, elk goed voor twee volle nachten in plaats van een korte tussenstop.",
+    text: "Een luxe reisroute is vaak korter dan een budget-zelfrijreis: drie of vier kampementen verspreid over 8 tot 10 dagen, elk goed voor twee volle nachten in plaats van een korte tussenstop. Shipwreck Lodge aan de Skeleton Coast ontving een Michelin Key in de allereerste Global Michelin Keys Selection van de gids (2025), een nuttige graadmeter voor wat 'de vlucht waard' op dit niveau betekent.",
+  },
+  {
+    title: "Wat de extra kosten daadwerkelijk opleveren",
+    text: "In het topsegment krijgt elke unit doorgaans een eigen gids en vaak een eigen chef-kok, in plaats van een gedeeld gamedrive-voertuig en een vast menu. Het hele Namib-Naukluft-gebied rond Sossusvlei is een International Dark Sky Reserve (Gold Tier sinds 2012), waardoor sterrenkijken bij veel van de lodges een geplande activiteit is, van een dakraam op de kamer tot een open-air slaapplatform, niet alleen een heldere avond die u toevallig opvalt. Een privé-luchtballonvaart bij zonsopgang boven de duinen (Namib Sky Balloon Safaris, ongeveer N$9.900/US$550 per persoon, met een champagneontbijt als afsluiter) is het soort eenmalige uitspatting dat makkelijk is toe te voegen aan een luxe reisroute en lastig te rechtvaardigen bij een budgetreis.",
   },
 ];
 
@@ -72,7 +82,9 @@ export default function LuxuryPageNl() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Een luxe reis door Namibië lijkt minder op een vijfsterrenhotel en meer op volledige,
-          privétoegang tot het landschap. Dit verandert er werkelijk als u meer uitgeeft.
+          privétoegang tot het landschap. Dit verandert er werkelijk als u meer uitgeeft: door
+          welke poorten u kunt rijden, in wiens voertuig u zit, en hoeveel andere mensen ergens in
+          de buurt zijn.
         </p>
       </section>
 

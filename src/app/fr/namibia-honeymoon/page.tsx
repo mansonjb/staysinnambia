@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AvailabilityBadge, CardCTA } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { getLodgeFr } from "@/lib/data.fr";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
@@ -27,6 +28,13 @@ export const metadata: Metadata = {
 };
 
 const HONEYMOON_SLUGS = ["little-kulala", "sossusvlei-desert-lodge", "doro-nawas-camp", "the-olive-exclusive"];
+
+const ROMANTIC_ADD_ONS = [
+  "Un dîner privé dans les dunes : la plupart des lodges du secteur de Sossusvlei dressent une table privée pour une soirée du séjour, sur la terrasse ou à même le sable. Demandez-le au moment de réserver la chambre, pas à l'arrivée, car cela demande du temps de préparation et une réservation de personnel dédiée.",
+  "Les chambres-tours à ciel ouvert du Le Mirage Resort & Spa : ce complexe façon château propose des chambres pensées pour dormir à la belle étoile, et le ciel pur et sans pollution lumineuse du Namib-Naukluft rend presque toutes les nuits propices à l'exercice, alors demandez la nuit avec les meilleures prévisions météo de votre séjour.",
+  "Un lever de soleil en montgolfière au-dessus des dunes : Namib Sky Balloon Safaris décolle de Sesriem la plupart des matins, selon la météo, et se termine par un petit-déjeuner au champagne en plein désert. Comptez environ 3h30 de porte à porte, à réserver bien à l'avance car les places sont limitées.",
+  "Spa et bien-être en couple : Le Mirage dispose d'un spa complet sur place (le Mystique Spa), mais les cartes de soins des lodges désertiques namibiens restent plus réduites que celles d'un spa de resort. Vérifiez ce qui est réellement proposé plutôt que de présumer une carte de soins complète.",
+];
 
 export default function HoneymoonPageFr() {
   const lodges = HONEYMOON_SLUGS.map((slug) => getLodgeFr(slug)).filter(Boolean);
@@ -53,8 +61,12 @@ export default function HoneymoonPageFr() {
           le ciel désertique très pur de la région du Namib-Naukluft fait de l'observation des
           étoiles un rituel presque quotidien, et les autres voyageurs les plus proches se
           trouvent souvent à bonne distance. Voici les quatre lodges vers
-          lesquels nous orienterions une lune de miel en priorité ; pour la liste complète,
-          consultez notre{" "}
+          lesquels nous orienterions une lune de miel en priorité : Le Mirage Resort & Spa et le
+          Sossusvlei Lodge pour les dunes, le Camp Kipwe pour une base nichée dans les blocs de
+          granit près de Twyfelfontein si vous voulez le paysage du Damaraland sans renoncer au
+          romantisme, et The Olive Exclusive, un boutique-hôtel de sept suites à Windhoek avec
+          piscine privée par suite, en escale avant ou après le circuit safari plutôt qu'une étape
+          dessus. Pour la liste complète, consultez notre{" "}
           <Link
             href="/fr/best-romantic-stays"
             className="text-rust underline underline-offset-2 hover:text-rust-dark"
@@ -99,6 +111,30 @@ export default function HoneymoonPageFr() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 pb-12 sm:px-10">
+        <Reveal>
+          <h2 className="text-2xl font-bold text-charcoal">Suppléments à réserver à l&apos;avance</h2>
+        </Reveal>
+        <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <ul className="space-y-3">
+            {ROMANTIC_ADD_ONS.map((n) => (
+              <li key={n} className="flex items-start gap-2 text-[14px] text-charcoal/70">
+                <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                {n}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 border-t border-charcoal/10 pt-5 text-[14px] leading-relaxed text-charcoal/70">
+            <span className="font-semibold text-charcoal">Sur le rythme :</span> une lune de miel
+            fonctionne mieux sur un format plus court qu&apos;un premier circuit en Namibie. Deux
+            lodges de trois à quatre nuits chacun, plutôt que la boucle à cinq étapes sur dix
+            jours que montent souvent les primo-voyageurs, laisse le temps de vraiment ralentir,
+            et permet d&apos;ajouter un dîner privé ou un vol en montgolfière sans que le voyage
+            ressemble à une liste de cases à cocher.
+          </p>
+        </Reveal>
       </section>
     </>
   );

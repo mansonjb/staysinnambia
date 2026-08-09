@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
 
@@ -45,12 +46,19 @@ const SPOTS = [
     href: "/nl/where-to-stay/sossusvlei",
     text: (
       <>
-        De belangrijkste dark-sky-bestemming van Namibië, een International Dark Sky Reserve met
-        Gold-status, een van de weinige plekken ter wereld met die classificatie. Werkelijk geen
-        lichtvervuiling over honderd kilometer in de meeste richtingen. Lodges aan de rand van het
-        reservaat organiseren begeleide astronomiesessies met echte telescopen, niet slechts een
-        deken op het zand. Plan uw bezoek in het droge seizoen (mei–oktober) voor de helderste
-        hemel. Bekijk onze{" "}
+        De belangrijkste dark-sky-bestemming van Namibië. NamibRand werd in 2012 erkend als Gold-tier
+        International Dark Sky Reserve, de strengste van de drie classificaties en destijds pas het
+        tweede Gold-tier reservaat ter wereld. Metingen met een Sky Quality Meter op het reservaat
+        liggen doorgaans boven 21,0 magnitude per vierkante boogseconde, dicht bij het theoretische
+        duisternisplafond van ongeveer 22, en komen overeen met Bortle-klasse 1-2, de donkerste
+        classificatie die astronomen gebruiken. Op een heldere, maanloze nacht ziet u de stofbanen
+        van de Melkweg met het blote oog, samen met de Magelhaense Wolken en soms zodiakaal licht,
+        een zwakke lichtkegel van zonlicht dat wordt weerkaatst door interplanetair stof en die
+        vrijwel nergens anders zichtbaar is waar kunstlicht in de buurt is. Verschillende lodges aan
+        de rand van het reservaat, waaronder Wolwedans en NamibRand Family Hideout, organiseren
+        begeleide astronomiesessies met echte telescopen in plaats van slechts een deken op het
+        zand. Plan uw bezoek in het droge seizoen (mei–september), wanneer de lucht het droogst is
+        en de bewolking het laagst. Bekijk onze{" "}
         <Link href="/nl/best-time-to-visit-namibia" className="font-semibold text-rust hover:text-rust-dark">
           gids voor de beste reistijd
         </Link>
@@ -61,31 +69,39 @@ const SPOTS = [
   {
     place: "Duinen van Sossusvlei",
     href: "/nl/where-to-stay/sossusvlei",
-    text: "Dezelfde heldere woestijnlucht die de nachtelijke hemel uitzonderlijk maakt, zorgt hier ook voor zonsopgangfotografie die tot de beste van Afrika behoort: in het venster van 20 tot 45 minuten na het openen van de poort is de duinkleur het dramatischt, voordat de hittenevel intreedt.",
+    text: "Dezelfde heldere woestijnlucht die de nachtelijke hemel uitzonderlijk maakt, zorgt hier ook voor zonsopgangfotografie die tot de beste van Afrika behoort: in het venster van 20 tot 45 minuten na het openen van de poort is de duinkleur het dramatischt, voordat de hittenevel intreedt. Voor astrofotografie vormen de duinen zelf een indrukwekkende voorgrond voor de Melkweg; loop een stukje weg van het kamplicht en laat uw ogen minstens 15-20 minuten wennen voordat u begint te fotograferen.",
   },
   {
     place: "Spitzkoppe",
     href: "/nl/where-to-stay/spitzkoppe",
-    text: "Granieten koepels die recht uit de vlakke vlaktes oprijzen, vormen een opvallende voorgrond tegen de Melkweg, en het is een van de weinige dark-sky-plekken op de route met dramatische rotssilhouetten in plaats van een vlakke horizon.",
+    text: "Een cluster granieten inselbergs die tot 1.728 m oprijzen, met zo'n 670 m reliëf boven de omringende grindvlakte, ongeveer 180 km van Swakopmund en 280 km van Windhoek. De silhouet tegen de Melkweg behoort tot de meest gefotografeerde voorgronden van Namibië, en in tegenstelling tot NamibRand is het een makkelijke self-drive stop in plaats van een reservaatboeking. De door de gemeenschap beheerde camping telt zo'n 30 eenvoudige, ruim uit elkaar liggende plekken middenin de rotsblokken, dus u kunt fotograferen vanaf uw eigen tentplek zonder enige lichtvervuiling; boek een paar maanden vooruit tijdens het hoogseizoen van juli tot september.",
   },
+];
+
+const GEAR_TIPS = [
+  "Fotografeer rond nieuwe maan: een maanloze hemel is vele malen donkerder dan zelfs bij eerste kwartier, en dat is de belangrijkste factor voor hoeveel van de Melkweg u werkelijk zult zien. Check de maankalender voordat u data vastlegt als sterrenkijken een prioriteit van de reis is.",
+  "Een statief is onmisbaar; een groothoeklens (14-24 mm op full-frame) laat u meer hemel en voorgrond in één opname vangen.",
+  "Gebruik als vertrekpunt het breedste diafragma van uw lens (f/2,8 of sneller indien beschikbaar), ISO 1600-6400, en een sluitertijd korter dan ongeveer 500 gedeeld door de brandpuntsafstand in mm om sterren als punten in plaats van strepen vast te leggen (bijvoorbeeld ~20 seconden bij 24 mm).",
+  "Neem een hoofdlamp met rood-lichtmodus mee om uw nachtzicht te behouden, en een afstandsbediening of de zelfontspanner van uw camera om trillingen door het indrukken van de knop te voorkomen.",
+  "Kom bij uw locatie aan terwijl er nog wat licht is om de opname te componeren en op lensbeslag te controleren, wat snel optreedt zodra de woestijntemperatuur na zonsondergang daalt.",
 ];
 
 const FAQS = [
   {
     q: "Wat maakt de nachtelijke hemel van NamibRand anders dan andere donkere plekken?",
-    a: "NamibRand heeft de Gold-status van International Dark Sky Reserve, de hoogste classificatie die wordt toegekend, verleend aan slechts een klein aantal plekken ter wereld. Die status weerspiegelt zowel de vrijwel volledige afwezigheid van lichtvervuiling als de actieve, voortdurende maatregelen van reservaat- en lodge-exploitanten om dat zo te houden.",
+    a: "NamibRand heeft sinds 2012 de Gold-status van International Dark Sky Reserve, de hoogste van de drie classificaties die worden toegekend door DarkSky International, en het was destijds pas het tweede Gold-tier reservaat ter wereld. Metingen met een Sky Quality Meter op het reservaat liggen doorgaans boven 21 magnitude per vierkante boogseconde tegenover een theoretisch maximum van ongeveer 22, wat overeenkomt met Bortle-klasse 1-2, de donkerste classificatie die astronomen gebruiken. Dat weerspiegelt zowel de vrijwel volledige afwezigheid van kunstlicht als actieve, voortdurende maatregelen van het reservaat en de aangrenzende lodges, waaronder afgeschermde, naar beneden gerichte verlichting, om dat zo te houden.",
   },
   {
     q: "Heb ik speciale apparatuur nodig voor astrofotografie in Namibië?",
-    a: "Een statief en een camera die handmatige lange sluitertijden aankan, brengen u al een heel eind; een groothoeklens helpt voor opnames van de Melkweg. Verschillende lodges bij NamibRand en Sossusvlei organiseren begeleide astronomiesessies met echte telescopen als u meer wilt dan een brede opname van de hemel.",
+    a: "Een statief en een camera die handmatige lange sluitertijden aankan, brengen u al een heel eind; een groothoeklens (14-24 mm equivalent) helpt voor opnames van de Melkweg, samen met een snel diafragma (f/2,8 of ruimer) en een hoofdlamp met rood-lichtstand om uw nachtzicht te behouden. Verschillende lodges bij NamibRand en Sossusvlei, waaronder Wolwedans en NamibRand Family Hideout, organiseren begeleide astronomiesessies met echte telescopen als u meer wilt dan een brede opname van de hemel.",
   },
   {
     q: "Wat is de beste tijd van het jaar om te sterrenkijken in Namibië?",
-    a: "Het droge seizoen (mei–oktober) geeft de helderste, droogste lucht en de minste bewolking. Dezelfde omstandigheden die het tot het beste seizoen voor wildlife-spotten maken, maken het ook tot het beste seizoen om te sterrenkijken. Een maanloze nacht rond nieuwe maan geeft de donkerst mogelijke hemel, de moeite waard om uw reis rond te plannen als dit voor u een prioriteit is.",
+    a: "Het droge seizoen (mei–september) geeft de helderste, droogste lucht en de minste bewolking, wat ook meteen verklaart waarom het samenvalt met het piekseizoen voor wildlife-spotten. Plan binnen dat venster rond de maankalender: een nacht dicht bij nieuwe maan geeft de donkerst mogelijke hemel, terwijl een paar nachten rond volle maan alle behalve de helderste sterren wegspoelt, dus het loont om de maanfase te checken voordat u reisdata vastlegt als sterrenkijken een prioriteit is.",
   },
   {
     q: "Is Sossusvlei of Spitzkoppe beter voor fotografie?",
-    a: "Verschillende onderwerpen, geen kwestie van beter of slechter. Sossusvlei draait om duinkleur en schaal bij zonsopgang; Spitzkoppe draait om dramatische granietsilhouetten bij zonsondergang en na donker. Verschillende reisroutes combineren beide als een overnachting onderweg.",
+    a: "Verschillende onderwerpen, geen kwestie van beter of slechter. Sossusvlei draait om duinkleur en schaal bij zonsopgang; Spitzkoppe, een cluster granieten inselbergs op zo'n 180 km van Swakopmund die oprijzen tot 1.728 m, draait om dramatische rotssilhouetten tegen de Melkweg na donker, met een door de gemeenschap beheerde camping die u middenin de rotsblokken plaatst. Verschillende reisroutes combineren beide als een overnachting onderweg tussen de twee.",
   },
 ];
 
@@ -113,6 +129,13 @@ export default function StargazingPageNl() {
           het land een van de weinige echte dark-sky-bestemmingen ter wereld, geen marketingpraat.
           Hier leest u waar het werkelijk het best is, en waarom.
         </p>
+        <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+          <span className="font-semibold text-charcoal">Onze aanbeveling:</span> als sterrenkijken
+          een echte prioriteit van uw reis is en niet slechts een leuke bijkomstigheid, plan uw data
+          dan eerst rond de maanfase en pas daarna rond het seizoen. Een nacht in het droge seizoen
+          (mei–september) rond nieuwe maan bij NamibRand verslaat een volle-maannacht in elke andere
+          maand.
+        </p>
       </section>
 
       <section className="mx-auto max-w-[1400px] px-6 py-10 sm:px-10">
@@ -136,6 +159,20 @@ export default function StargazingPageNl() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 pb-10 sm:px-10">
+        <Reveal className="rounded-2xl border border-black/5 bg-sand/20 p-8">
+          <h2 className="text-xl font-bold text-charcoal">Timing en apparatuur, in de praktijk</h2>
+          <ul className="mt-5 space-y-3">
+            {GEAR_TIPS.map((tip) => (
+              <li key={tip} className="flex items-start gap-2 text-[14px] leading-relaxed text-charcoal/70">
+                <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                {tip}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-[1400px] px-6 py-16 sm:px-10">

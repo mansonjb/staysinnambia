@@ -26,10 +26,11 @@ export const metadata: Metadata = {
 };
 
 const NOTES = [
-  "Veel safarilodges hanteren een minimumleeftijd (vaak 6–8 jaar) voor gamedrives: controleer dit voor het boeken, niet pas bij aankomst.",
-  "Het malariarisico concentreert zich in het noorden (Etosha en de Caprivi-strook) en is het hoogst in het regenseizoen (ruwweg november tot april); in de rest van het land is het risico grotendeels laag, maar bevestig de actuele richtlijnen bij een reisvaccinatiekliniek.",
-  "Zelfrij-dagen zijn lang: plan rustpauzes in en houd afzonderlijke rijetappes met jonge kinderen onder de 4–5 uur.",
-  "Bij Etosha's verlichte drinkplaats-kampementen kunnen kinderen dieren observeren vanuit de veiligheid van de lodge, zonder dat een gamedrive nodig is.",
+  "Minimumleeftijden verschillen per lodge, niet volgens één landelijke regel: Mushara Bush Camp bij Etosha's oostpoort accepteert kinderen van elke leeftijd op begeleide ritten, terwijl veel andere kampen een ondergrens rond 6-8 jaar hanteren (sommige zelfs 12) voor gedeelde gamedrive-voertuigen. Bevestig het exacte leeftijdsbeleid rechtstreeks bij de lodge die u boekt, want dit kan verschillen tussen zusterpanden.",
+  "Het malariarisico is reëel maar geconcentreerd, niet overal gelijk. Het is het hele jaar door aanwezig langs de Kunene, Zambezi en Okavango rivieren (dus de Caprivi Strip en het verre noordwesten), en seizoensgebonden, ruwweg november tot juni, in Etosha en Namibië's andere noordelijke regio's. Het klassieke Sossusvlei-Swakopmund-Damaraland-circuit verder naar het zuiden en westen kent nauwelijks tot geen risico. Bevestig de actuele, regiospecifieke richtlijnen bij een reisvaccinatiekliniek voordat u beslist over malariapreventie.",
+  "Zelfrij-dagen zijn lang: plan rustpauzes in en houd afzonderlijke rijetappes met jonge kinderen onder de 4-5 uur. De poorten van Etosha liggen ongeveer 4,5 uur van Windhoek en Damaralands grindetappes kunnen elk 3-4 uur duren, dus behandel deze als volledige rijdagen in plaats van ze tussen activiteiten door te proppen.",
+  "Bij Etosha's verlichte waterpoelkampen, binnen het park bij Okaukuejo en Halali, of bij de aangrenzende particuliere reservaten (Ongava, Onguma), kunnen kinderen olifant, neushoorn en leeuw na donker zien drinken vanuit de veiligheid van de lodge, zonder dat een gamedrive nodig is.",
+  "Begeleide wandelingen en culturele bezoeken (de rotstekeningen van Twyfelfontein, een bezoek aan een Himba-dorp verder naar het noorden) zijn doorgaans geschikt voor een breder leeftijdsbereik dan een hobbelige, urenlange gamedrive. Vraag bij het boeken aan de lodge welke activiteiten realistisch zijn voor de specifieke leeftijd van uw kinderen, niet pas ter plekke.",
 ];
 
 export default function KidsPageNl() {
@@ -88,6 +89,16 @@ export default function KidsPageNl() {
       <section className="mx-auto max-w-[1400px] px-6 py-8 sm:px-10">
         <Reveal>
           <h2 className="text-2xl font-bold text-charcoal">Lodges die goed werken voor gezinnen</h2>
+          <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+            Mushara Lodge ligt dicht bij Etosha&apos;s oostpoort met gezinsvriendelijke suites en
+            een zusterpand in de buurt als u meer ruimte nodig heeft. Desert Quiver Camp ligt
+            direct bij de Sesriem-poort met self-catering chalets en gratis verblijf voor
+            kinderen, een eenvoudige, betaalbare uitvalsbasis voor een familiedag bij de duinen.
+            Villa Violet is een kleine, door de eigenaar gerunde guesthouse in Windhoek met een
+            self-catering optie, een rustig begin- of eindpunt voor of na de rondreis. Canyon
+            Lodge, bij de Fish River Canyon, is rustiek maar comfortabel en een goede uitvalsbasis
+            als wandelen of het zuiden deel uitmaakt van uw route.
+          </p>
         </Reveal>
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {familyLodges.map((lodge, i) => (

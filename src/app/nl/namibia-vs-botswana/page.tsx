@@ -44,23 +44,23 @@ const COMPARISON = [
   {
     axis: "Selfdrive",
     namibia:
-      "Echt toegankelijk: een goed wegennet, duidelijke bewegwijzering en een goed ontwikkelde verhuurmarkt maken Namibië een van de makkelijkste Afrikaanse landen om zelf te doorkruisen.",
+      "Echt toegankelijk: een goed wegennet, duidelijke bewegwijzering en een goed ontwikkelde verhuurmarkt maken Namibië een van de makkelijkste Afrikaanse landen om zelf te doorkruisen. Nationale parken zoals Etosha en Namib-Naukluft geven permits en poorttoegang ter plekke, zonder dat u vooraf een kampplek hoeft te boeken om binnen te komen.",
     botswana:
-      "Veel beperkter: de meeste toplocaties voor wildlife (Okavango Delta, Chobe, Moremi) bestaan uit diep zandterrein voor 4x4's, bereikbaar per chartervlucht of stevig offroad rijden, en veel kampen zijn alleen per vliegtuig te bereiken.",
+      "Veel beperkter: selfdrive-toegang tot Moremi Game Reserve vereist een bevestigde campingboeking voordat DWNP (de parkendienst) u door de poort laat, en er bestaan slechts een handvol openbare campings binnenin (Xakanxa, Third Bridge, Moremi, Okuti), vaak maanden van tevoren volgeboekt in het hoogseizoen. Voeg daar diepe Kalahari-zandtracks bij die echte 4x4-ervaring en een lage-versnellingsbak vereisen, en een groot deel van de Okavangodelta zelf is alleen per lichtvliegtuig bereikbaar, wat verklaart waarom de meeste Botswana-bezoekers instappen bij een operator in plaats van zelf te rijden.",
   },
   {
     axis: "Wilddichtheid",
     namibia:
-      "Uitstekend maar meer verspreid: de waterpoelen van Etosha concentreren wildlife goed, maar waarnemingen elders (Damaraland, Kaokoland) zijn wilder en minder gegarandeerd.",
+      "Uitstekend maar meer verspreid: de verlichte waterpoelen van Etosha concentreren wildlife uitzonderlijk goed, vooral in het droge seizoen (ruwweg juni-oktober), maar waarnemingen in Damaraland of Kaokoland zijn wilder en minder gegarandeerd.",
     botswana:
-      "Dichter, klassiekere safari-wildlifebeleving: de Delta en Chobe staan bekend om consequent nabije, frequente waarnemingen, met betrouwbare buffel- en roofdieractiviteit.",
+      "Dichter, klassiekere safari-wildlifebeleving: de Okavangodelta en Chobe, thuisbasis van een van de grootste olifantenpopulaties van Afrika, staan bekend om consequent nabije, frequente waarnemingen, met betrouwbare buffelkuddes en roofdieractiviteit.",
   },
   {
     axis: "Landschap",
     namibia:
-      "Voor veel mensen die voor het eerst gaan de belangrijkste aantrekkingskracht: torenhoge rode duinen, aan de woestijn aangepaste wildlife, een ruige Atlantische kust, nergens anders op het continent in deze vorm te vinden.",
+      "Voor veel mensen die voor het eerst gaan de belangrijkste aantrekkingskracht: torenhoge rode duinen bij Sossusvlei (sommige van de hoogste ter wereld, meer dan 300 meter), aan de woestijn aangepaste wildlife, een ruige Atlantische kust, nergens anders op het continent in deze vorm te vinden.",
     botswana:
-      "Waterrijk en groen: de kanalen en overstromingsvlaktes van de Okavango Delta vormen het tegenovergestelde landschap van Namibiës woestijnen, met vogels spotten en wildlife bij het water (nijlpaard, olifant, krokodil) als het kenmerkende onderdeel.",
+      "Waterrijk en groen: de kanalen en overstromingsvlaktes van de Okavangodelta vormen het tegenovergestelde landschap van Namibiës woestijnen, met vogels spotten en wildlife bij het water (nijlpaard, olifant, krokodil) als het kenmerkende onderdeel.",
   },
   {
     axis: "Typisch prijsniveau",
@@ -76,14 +76,28 @@ const COMPARISON = [
       </>
     ),
     botswana:
-      "Ligt doorgaans hoger: Botswanas high-value, low-volume toerismemodel betekent minder kampen in totaal en minder budgetopties, waarbij fly-in-kampen eerder de norm zijn dan de uitzondering.",
+      "Ligt consequent hoger: gevestigde lodges vragen doorgaans $600-1.500+ per persoon per nacht, en exclusieve fly-in-kampen in de Okavangodelta vaak $1.500-4.000+ in het hoogseizoen, met sommige boven $7.000. Botswanas high-value, low-volume toerismemodel beperkt bewust het aantal kampen, waardoor er nauwelijks iets bestaat van het guesthouse-en-huurauto-budgetniveau dat Namibië wel biedt.",
+  },
+  {
+    axis: "Parkentreekosten",
+    namibia:
+      "Namibia Wildlife Resorts rekent internationale bezoekers N$280/dag (ongeveer $17,50) aan bij toplocaties zoals Etosha, Namib-Naukluft en de Skeleton Coast, plus een aparte voertuigkosten, geldend sinds april 2026.",
+    botswana:
+      "DWNP rekent internationale bezoekers BWP 270/dag (ongeveer $20) bij Chobe en Moremi, en BWP 500/dag bij Central Kalahari, Makgadikgadi en Nxai Pan, plus aparte voertuigkosten, eveneens bijgewerkt in april 2026. De dagelijkse parkkosten zijn in feite vergelijkbaar tussen beide landen; het echte prijsverschil zit in kampen en vluchten, niet in de parkpoorten.",
+  },
+  {
+    axis: "Visum & inreis",
+    namibia:
+      "Vereist voor de meeste nationaliteiten een visum, al kunnen velen dit bij aankomst krijgen of vooraf online aanvragen; vanaf 2026 bedraagt de standaard toeristenvisumvergoeding ongeveer $30, geldig voor verblijven tot 90 dagen.",
+    botswana:
+      "Op papier soepeler: de meeste bezoekers uit Noord-Amerika, Europa, het Gemenebest en de SADC-regio (Namibië inbegrepen) reizen visumvrij binnen voor toerisme, doorgaans voor verblijven tot 90 dagen binnen een periode van 12 maanden.",
   },
 ];
 
 const FAQS = [
   {
     q: "Moet ik Namibië of Botswana bezoeken voor mijn eerste Afrikaanse safari?",
-    a: "Als u zelf wilt rijden, uw eigen tempo wilt bepalen en landschap en aan de woestijn aangepaste wildlife voorop wilt stellen, is Namibië de eenvoudigere en over het algemeen betaalbaardere eerste reis. Als klassieke, dichte wildlifebeleving de prioriteit is en het budget fly-in-kampen toelaat, biedt Botswana dat betrouwbaarder.",
+    a: "Als u zelf wilt rijden, uw eigen tempo wilt bepalen en landschap en aan de woestijn aangepaste wildlife voorop wilt stellen, is Namibië de eenvoudigere en over het algemeen betaalbaardere eerste reis: het wegennet, de bewegwijzering en de verhuurmarkt zijn er klaar voor, en parkpermits worden bij de poort geregeld. Als klassieke, dichte wildlifebeleving de prioriteit is en het budget $600+ per persoon per nacht bij fly-in-kampen toelaat, biedt Botswana dat betrouwbaarder, vooral in de Okavangodelta en Chobe.",
   },
   {
     q: "Kan ik Namibië en Botswana in één reis bezoeken?",
@@ -91,11 +105,15 @@ const FAQS = [
   },
   {
     q: "Is Botswana duurder dan Namibië?",
-    a: "Over het algemeen wel. Botswanas toerismemodel beperkt bewust het aantal kampen om overvolle gebieden te voorkomen, waardoor de prijzen doorgaans hoog blijven. Er is veel minder een echte budgetklasse dan Namibië biedt via selfdrive en guesthouses.",
+    a: "Aanzienlijk, ja. Botswanas high-value, low-volume toerismebeleid beperkt bewust het aantal kampen om gebieden onvol te houden: gevestigde lodges vragen doorgaans $600-1.500+ per persoon per nacht, en de meest exclusieve fly-in-kampen in de Okavangodelta vaak $1.500-4.000+. Namibiës echte budgetklasse ligt rond €225-250/dag bij selfdrive. De parkentreekosten zelf zijn in 2026 in feite vergelijkbaar tussen beide landen (beide rond $17-20/dag); het verschil zit in kampen, gidsen en binnenlandse vluchten, niet in de poortprijzen.",
   },
   {
     q: "Welk land is beter voor selfdrive?",
-    a: "Namibië, zonder twijfel. De beste wildlifegebieden van Botswana zijn grotendeels ontoegankelijk zonder een stevige 4x4 en offroad-ervaring, of een fly-in-kamp. Het land is niet ingericht op het soort onafhankelijke roadtrip waar Namibië bekend om staat.",
+    a: "Namibië, zonder twijfel. De beste wildlifegebieden van Botswana zijn grotendeels ontoegankelijk zonder een stevige 4x4 en offroad-ervaring: selfdrive-toegang tot Moremi Game Reserve vereist bijvoorbeeld een bevestigde DWNP-campingboeking voordat u door de poort mag, en die zijn maanden van tevoren volgeboekt. Het land is niet ingericht op het soort onafhankelijke roadtrip waar Namibië bekend om staat.",
+  },
+  {
+    q: "Heb ik een visum nodig voor Namibië of Botswana?",
+    a: "Botswana is visumvrij voor de meeste Westerse en SADC-nationaliteiten voor toeristische verblijven tot 90 dagen. Namibië vereist over het algemeen een visum, al kunnen de meeste bezoekers dit bij aankomst krijgen of vooraf online aanvragen; de standaard toeristenvisumvergoeding bedraagt vanaf 2026 ongeveer $30, eveneens geldig tot 90 dagen.",
   },
 ];
 

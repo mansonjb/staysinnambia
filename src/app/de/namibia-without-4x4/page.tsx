@@ -25,17 +25,19 @@ export const metadata: Metadata = {
 };
 
 const CAN_2WD = [
-  "Windhoek nach Sossusvlei (Sesriem): Asphalt und gut ausgebauter Schotter",
-  "Windhoek nach Swakopmund über die B1/B2: durchgehend asphaltiert",
-  "Swakopmund zu den wichtigsten Lodges in Damaraland: ausgebauter Schotter, in der Trockenzeit problemlos",
-  "Windhoek zu Etoshas Süd- und Osttoren: größtenteils asphaltiert",
+  "Windhoek nach Sossusvlei (Sesriem) über die B1 und den Remhoogte-Pass (C24, dann D1275/C19): asphaltiert bis Rehoboth, danach gut ausgebauter Schotter auf dem restlichen Weg. Die meisten Autovermietungen empfehlen 2WD-Fahrern genau diese Route.",
+  "Windhoek nach Swakopmund über die B1/B2: durchgehend asphaltiert, keine Schotterstrecke.",
+  "Uis nach Twyfelfontein in Damaraland (C35 bis D2612): eine gut befahrene, generell gut instand gehaltene Schotterstraße, die normale Limousinen bei trockenen Bedingungen problemlos bewältigen, auch wenn das letzte Stück der D2612 sandiger ist als der Rest.",
+  "Windhoek zu Etoshas Südtor (Anderson) bei Okaukuejo: größtenteils asphaltiert, und die Straßen innerhalb von Etosha selbst sind ausgebaut und in der Trockenzeit auch für einen normalen 2WD geeignet.",
+  "Die südliche Anfahrt zu den Aussichtspunkten am Fish River Canyon bei Hobas: Asphalt und gepflegter Schotter, für die Aussichtspunkte selbst ist kein 4x4 nötig.",
 ];
 
 const NEED_4X4 = [
-  "Die letzten rund 5 km weichen Sand vom 2x4-Parkplatz bei Sossusvlei bis zu den Dünen selbst",
-  "Der größte Teil der Skeleton Coast nördlich von Torra Bay",
-  "Abgelegene Pisten im Kaokoveld nördlich von Damaraland",
-  "Einige unwegsamere Conservancy-Straßen zu Gemeinschafts-Campsites abseits der Hauptschotterstrecken",
+  "Die letzten rund 5 km weichen Sand vom 2x4-Parkplatz bei Sossusvlei bis zu den Dünen und zum Deadvlei selbst, mittlerweile für alle Fahrzeuge unabhängig vom Antrieb nur noch per Shuttle erreichbar (siehe unten).",
+  "Der Spreetshoogte-Pass, der steilste Pass Namibias (Steigungen von bis zu etwa 1:4,5), auf der alternativen Panoramaroute nach Sossusvlei: nur mit 4x4 befahrbar, Wohnwagen und Anhänger sind komplett verboten. Nehmen Sie mit einem 2WD stattdessen den sanfteren Remhoogte-Pass.",
+  "Der größte Teil der Skeleton Coast nördlich von Torra Bay sowie markante Lodges im Norden wie die Shipwreck Lodge, die normalerweise mit dem Kleinflugzeug statt über eine Straße erreicht werden.",
+  "Abgelegene Pisten im Kaokoveld nördlich von Damaraland, einschließlich der Routen Richtung Serra Cafema und Hartmann Valley.",
+  "Die D-Straßen in Damaraland und Kaokoland generell: ausgebaut, aber rauer und abgelegener als die C-Straßen, und in der Regenzeit (etwa November bis April) wirklich wetteranfällig, dann können selbst sonst zuverlässige Schotterstrecken schnell schlechter werden.",
 ];
 
 export default function Without4x4PageDe() {
@@ -59,7 +61,7 @@ export default function Without4x4PageDe() {
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Ein weit verbreitetes Missverständnis: Die meisten Etappen einer klassischen
           Namibia-Rundreise lassen sich problemlos mit einer normalen Limousine oder einem
-          Crossover fahren. Die wichtigsten Schotterstraßen des Landes (die „C“- und „D“-Straßen,
+          Crossover fahren. Namibias „C“-Straßen, das Haupt-Schotternetz des Landes,
           ausführlicher erklärt in unserem{" "}
           <Link
             href="/de/namibia-self-drive-guide"
@@ -67,8 +69,10 @@ export default function Without4x4PageDe() {
           >
             Selbstfahrer-Guide
           </Link>
-          ) sind gut ausgebaut und gepflegt. Ein 4x4 ist wirklich nur für eine kleinere Zahl
-          bestimmter Abschnitte notwendig.
+          , sind breit, ausgebaut und gut genug gepflegt, dass die meisten Autovermietungen sie
+          bei angemessenem Tempo für 2WD freigeben. Die raueren „D“-Straßen sind eine andere
+          Geschichte, und ein 4x4 ist wirklich nur für eine kleinere, bestimmte Zahl an
+          Abschnitten notwendig, nicht für die ganze Reise.
         </p>
       </section>
 
@@ -101,9 +105,15 @@ export default function Without4x4PageDe() {
         <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
           <p className="text-[14px] leading-relaxed text-charcoal/70">
             <span className="font-semibold text-charcoal">Ein Mittelweg:</span> Bei Sossusvlei
-            übernimmt der parkeigene Shuttleservice die letzte Sandstrecke, sodass Sie mit einem
-            2WD auf dem öffentlichen Parkplatz parken und trotzdem die Dünen erreichen können,
-            ohne für die ganze Reise einen 4x4 zu mieten.
+            übernimmt ein offizieller Shuttle-/Ausflugsservice die letzte Sandstrecke zu den
+            Dünen und zum Deadvlei, sodass Sie mit einem 2WD auf dem öffentlichen Parkplatz
+            parken und die Dünen trotzdem erreichen, ohne für die ganze Reise einen 4x4 zu
+            mieten. Seit 2026 ist das auch für 4x4-Fahrer nicht mehr optional: Private Fahrzeuge
+            sind auf den letzten rund 5 km nicht mehr zugelassen, und laut offizieller
+            Parkangabe kostet das etwa N$260 pro Erwachsenem und N$130 pro Kind unter 12 Jahren.
+            Abholpunkt und Preise haben sich in den letzten Jahren allerdings schon mehrfach
+            geändert, bestätigen Sie die aktuelle Regelung daher in Sesriem oder bei Ihrer
+            Lodge, bevor Sie losfahren.
           </p>
         </Reveal>
 

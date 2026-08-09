@@ -43,38 +43,42 @@ const POPULAR_GUIDES_NL = [
 const COVERAGE = [
   {
     area: "Windhoek, Swakopmund, Walvis Bay",
-    signal: "Bonne 4G, suffisamment fiable pour les appels, les cartes et le streaming.",
+    signal: "Bonne 4G MTC, suffisamment fiable pour les appels, les cartes et le streaming.",
   },
   {
     area: "Etosha (camps et routes principales)",
-    signal: "Irrégulier mais présent : la plupart des camps ont le wifi à la réception, même là où le signal mobile est faible.",
+    signal: "Irrégulier mais présent : la plupart des camps (Okaukuejo, Halali, Namutoni) ont le wifi à la réception, même là où le signal mobile est faible ou absent sur les boucles de piste alentour.",
   },
   {
     area: "Sossusvlei, Damaraland, Spitzkoppe",
-    signal: "Faible à inexistant sur de longs tronçons. Téléchargez des cartes hors ligne avant de quitter la côte.",
+    signal: "Faible à inexistant sur de longs tronçons, surtout en dehors des routes C. Téléchargez des cartes hors ligne avant de quitter la côte, pas une fois sur la piste D qui mène au Damaraland.",
   },
   {
-    area: "Skeleton Coast, Kaokoland reculé",
-    signal: "Attendez-vous à zéro réseau pendant des journées entières : c'est normal, pas une panne.",
+    area: "Skeleton Coast, Kaokoland reculé (dont le détour par Opuwo)",
+    signal: "Attendez-vous à zéro réseau MTC ou TN Mobile pendant des journées entières : c'est normal, pas une panne, et ça vaut aussi pour les eSIM qui passent par les mêmes antennes.",
   },
 ];
 
 const FAQS = [
   {
     q: "Quel opérateur est le meilleur pour les touristes en Namibie ?",
-    a: "MTC est l'opérateur dominant en Namibie et offre globalement la couverture la plus large le long des principaux itinéraires touristiques et dans les villes ; Telecom Namibia (via TN Mobile) est l'alternative. Aucun des deux n'a de couverture significative dans les zones désertiques et côtières les plus reculées : c'est une limite liée au terrain, pas un choix d'opérateur que vous pourriez corriger.",
+    a: "MTC est l'opérateur dominant en Namibie et offre globalement la couverture la plus large le long des principaux itinéraires touristiques et dans les villes ; Telecom Namibia (via TN Mobile) est l'alternative. Aucun des deux n'a de couverture significative dans les zones désertiques et côtières les plus reculées, y compris la Skeleton Coast, le Namib profond et la majeure partie du Kaokoland : c'est une limite liée au terrain et aux infrastructures, pas un choix d'opérateur que vous pourriez corriger.",
+  },
+  {
+    q: "Combien coûte une carte SIM touriste MTC ?",
+    a: "MTC vend deux forfaits spécifiques aux touristes, tous deux disponibles à son kiosque de l'aéroport : un forfait Leisure à 349 N$ pour 14 jours avec 10,1 Go de données plus un peu de crédit d'appels et de SMS internationaux, et un forfait Premium à 659 N$ pour 30 jours avec 20,1 Go de données et davantage de crédit d'appels. Une simple carte SIM prépayée avec un forfait data séparé revient généralement moins cher si vous êtes à l'aise pour recharger vous-même, mais les forfaits touristes vous évitent cette démarche dès le premier jour.",
   },
   {
     q: "Puis-je acheter une carte SIM à l'aéroport ?",
-    a: "Oui, MTC tient un kiosque dans le hall des arrivées de l'aéroport international Hosea Kutako, et c'est le moyen le plus simple d'être connecté avant de prendre la route. Munissez-vous de votre passeport ; l'enregistrement d'une carte SIM locale exige généralement une pièce d'identité.",
+    a: "Oui, MTC tient un kiosque dans le hall des arrivées de l'aéroport international Hosea Kutako, et c'est le moyen le plus simple d'être connecté avant de prendre la route. Munissez-vous de votre passeport ; l'enregistrement d'une carte SIM locale exige généralement une pièce d'identité, et les forfaits touristes sont activés sur place.",
   },
   {
-    q: "L'eSIM fonctionne-t-elle bien en Namibie ?",
-    a: "Oui, généralement : les fournisseurs d'eSIM internationaux passent par les mêmes réseaux MTC ou Telecom Namibia qu'une carte SIM physique, la couverture est donc identique. L'avantage, c'est d'éviter l'échange physique de carte ou le passage par l'aéroport ; vérifiez la carte de couverture Namibie de votre fournisseur avant de vous y fier dans les zones reculées.",
+    q: "L'eSIM fonctionne-t-elle bien en Namibie, et est-elle moins chère qu'une carte SIM locale ?",
+    a: "Elle fonctionne, mais elle est rarement moins chère. Les fournisseurs d'eSIM internationaux passent par les mêmes antennes MTC ou Telecom Namibia qu'une carte SIM physique, la couverture est donc identique, et les forfaits démarrent en général autour de 9,50 $ pour une semaine de données. Le hic, c'est le prix au gigaoctet : les données en eSIM coûtent souvent deux à trois fois plus cher qu'un forfait prépayé MTC pour le même volume. Ce que vous payez, c'est le confort d'arriver déjà connecté au lieu de faire la queue au kiosque de l'aéroport, pas un meilleur réseau.",
   },
   {
     q: "Aurai-je du réseau sur tout l'itinéraire en autotour ?",
-    a: "Non, et il ne faut pas compter dessus dans la planification. Sossusvlei, le Damaraland et la Skeleton Coast comptent tous de longs tronçons totalement hors réseau. Téléchargez Google Maps hors ligne pour votre itinéraire, enregistrez vos réservations de lodges en PDF, et considérez la connectivité comme un phénomène de villes et de camps, pas d'entre-deux étapes.",
+    a: "Non, et il ne faut pas compter dessus dans la planification. Sossusvlei, le Damaraland, Spitzkoppe, la Skeleton Coast et le Kaokoland reculé comptent tous de longs tronçons, parfois des journées entières de conduite, totalement hors réseau sur les deux opérateurs. Téléchargez Google Maps hors ligne pour votre itinéraire, enregistrez vos réservations de lodges en PDF, et considérez la connectivité comme un phénomène de villes et de camps, pas d'entre-deux étapes.",
   },
 ];
 
@@ -121,7 +125,7 @@ export default function ConnectivityPageFr() {
           <h2 className="text-xl font-bold text-charcoal">Avant de quitter la côte</h2>
           <ul className="mt-5 space-y-3">
             {[
-              "Achetez une carte SIM MTC à l'aéroport, ou vérifiez que votre fournisseur d'eSIM couvre bien la Namibie",
+              "Achetez une carte SIM MTC au kiosque de l'aéroport Hosea Kutako (349 N$ pour 14 jours / 10,1 Go, ou 659 N$ pour 30 jours / 20,1 Go), ou vérifiez que votre fournisseur d'eSIM couvre spécifiquement la Namibie avant de vous y fier plutôt qu'à une carte SIM physique",
               (
                 <>
                   Téléchargez à l'avance des cartes hors ligne pour l'intégralité de votre

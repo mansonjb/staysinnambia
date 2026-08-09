@@ -39,9 +39,9 @@ const FACTORS = [
   {
     axis: "Kosten",
     selfDrive:
-      "Deutlich günstiger: Sie zahlen nicht für einen privaten Guide und ein Fahrzeug, den mit Abstand größten Kostenpunkt einer geführten Reise. Unsere vollständige Kostenaufstellung zeigt die realen Tagessätze.",
+      "Etwa €225–250 pro Person/Tag im Budget-Segment, rund €325/Tag im mittleren Segment: Allein die Miete eines 4x4 kostet etwa N$1.500–2.200 pro Tag (rund €75–110) vor Kraftstoff und Selbstbeteiligung, dazu kommen die Parkgebühren von N$280 pro Person/Tag plus N$620 pro Fahrzeug, die Sie direkt am Tor bezahlen. Die genauen Zahlen je Preisklasse finden Sie in unserer vollständigen Kostenaufstellung.",
     guided:
-      "Durchweg höher, aber oft inklusive Mahlzeiten, Parkgebühren und Aktivitäten, die bei einer Selbstfahrer-Reise sonst separate Kosten wären.",
+      "Ein privater Guide mit Fahrzeug kostet für eine vollständig individuelle Reiseroute meist €700–1.100+ pro Person/Tag, wobei Gruppenreisen mit festen Abfahrtsterminen darunter liegen können. Meist sind Mahlzeiten, Parkgebühren und Aktivitäten schon enthalten, die bei einer Selbstfahrer-Reise separate Kosten wären, der Unterschied auf dem Papier ist also etwas größer als in der Praxis.",
   },
   {
     axis: "Freiheit & Tempo",
@@ -53,21 +53,21 @@ const FACTORS = [
   {
     axis: "Tierbeobachtung",
     selfDrive:
-      "In Etosha wirklich gut, wo Wasserlöcher Wild verlässlich konzentrieren. Schwächer in Gebieten, die Spurenlese-Erfahrung erfordern, etwa bei wüstenangepassten Elefanten oder Nashörnern in Damaraland.",
+      "In Etosha wirklich gut, wo beleuchtete Wasserlöcher bei Okaukuejo und Halali Wild verlässlich konzentrieren, besonders Nashörner und Elefanten nach Einbruch der Dunkelheit in der Trockenzeit. Schwächer in Gebieten, die Spurenlese-Erfahrung erfordern, etwa bei wüstenangepassten Elefanten in der Torra Conservancy in Damaraland oder Spitzmaulnashörnern in der Palmwag Concession, wo unabhängig von der Reiseart ein spezialisierter, lizenzierter Guide nötig ist.",
     guided:
-      "Der geschulte Blick eines Guides für Spuren, Geräusche und Tierverhalten erhöht die Sichtungen spürbar, besonders außerhalb von Etoshas einfacherer wasserlochbasierter Beobachtung.",
+      "Der geschulte Blick eines Guides für Spuren, Geräusche und Tierverhalten erhöht die Sichtungen spürbar, besonders außerhalb von Etoshas einfacherer wasserlochbasierter Beobachtung, und nur so lässt sich Nashorn-Tracking in Palmwag machen oder Wildhunde in Bwabwata zuverlässig finden.",
   },
   {
     axis: "Risiko & Komfort",
     selfDrive:
-      "Reale Risiken, die man ernst nehmen sollte: Fahren auf Schotterstraßen, Wildwechsel nachts auf der Straße, lange Strecken ohne Tankstelle oder Handyempfang. Details dazu in unserem Self-Drive-Guide.",
+      "Reale Risiken, die man ernst nehmen sollte: Fahren auf Schotterstraßen, Wildwechsel nachts auf der Straße, lange Strecken (manchmal über 250 km) ohne Tankstelle oder Handyempfang. Details dazu in unserem Self-Drive-Guide.",
     guided:
       "Geringeres persönliches Risiko (jemand anderes fährt, navigiert und kümmert sich um Pannen), dafür sind Sie an den Zeitplan eines anderen gebunden.",
   },
   {
     axis: "Am besten geeignet für Erstbesucher",
     selfDrive:
-      "Sichere Fahrer, die mit Schotterstraßen und eigener Navigation zurechtkommen, ihr eigenes Tempo bestimmen wollen und mit einem knapperen Budget planen.",
+      "Sichere Fahrer, die mit Schotterstraßen und eigener Navigation zurechtkommen, ihr eigenes Tempo bestimmen wollen und mit einem knapperen Budget planen. Namibias asphaltiertes und ausgebautes C-Straßen-Netz macht das deutlich zugänglicher als in den meisten anderen Safari-Ländern.",
     guided:
       "Reisende, denen Tierbeobachtungen und null Logistik wichtiger sind als Kosten und Flexibilität, oder alle, die sich auf unbekannten Schotterstraßen nicht sicher fühlen.",
   },
@@ -76,19 +76,19 @@ const FACTORS = [
 const FAQS = [
   {
     q: "Ist Selbstfahren oder eine geführte Reise besser für die erste Namibia-Reise?",
-    a: "Keins von beidem ist objektiv besser: Es kommt darauf an, worauf Sie Wert legen. Selbstfahren passt zu sicheren Fahrern, die Tempo und Kosten selbst kontrollieren wollen; eine geführte Reise passt zu Reisenden, denen bestmögliche Tierbeobachtungen wichtiger sind als der Verzicht auf Logistik. Viele Erstbesucher entscheiden sich für eine Mischform: selbst fahren zwischen den Regionen, geführte Pirschfahrten innerhalb der Parks.",
+    a: "Keins von beidem ist objektiv besser: Es kommt darauf an, worauf Sie Wert legen. Selbstfahren passt zu sicheren Fahrern, die Tempo und Kosten selbst kontrollieren wollen, bei etwa €225–325 pro Person/Tag; eine geführte Reise passt zu Reisenden, denen bestmögliche Tierbeobachtungen und null Logistik wichtiger sind, meist €700–1.100+ pro Person/Tag. Unsere Empfehlung für die meisten Erstbesucher: die klassische Runde Etosha–Sossusvlei–Swakopmund selbst fahren, wo das Straßennetz und die Wasserloch-Beobachtung das leicht machen, und nur dort einen geführten Teil ergänzen, wo Spurenlese-Erfahrung wirklich den Unterschied macht, also in Damaraland und Palmwag.",
   },
   {
     q: "Kann ich Selbstfahren und geführte Touren kombinieren?",
-    a: "Ja, das ist ein gängiger und sinnvoller Mittelweg: die Transfers zwischen den Regionen selbst fahren, dann vor Ort in der Lodge geführte Pirschfahrten buchen, besonders in Gebieten wie Damaraland, wo Spurenlese-Erfahrung die Sichtungen wirklich verbessert.",
+    a: "Ja, das ist ein gängiger und sinnvoller Mittelweg: die Transfers zwischen den Regionen selbst fahren, dann vor Ort in der Lodge geführte Pirschfahrten buchen, besonders in Gebieten wie Damaraland und der Palmwag Concession, wo das Tracking von wüstenangepassten Elefanten und Spitzmaulnashörnern wirklich einen spezialisierten Guide erfordert, egal wie sicher Sie selbst fahren.",
   },
   {
     q: "Wie viel teurer ist eine geführte Safari als Selbstfahren?",
-    a: "Der Unterschied ist erheblich: Ein privater Guide mit Fahrzeug ist in der Regel mit Abstand der größte Kostenpunkt im Budget einer Namibia-Reise. Die genauen Zahlen je Preisklasse finden Sie in unserer vollständigen Kostenaufstellung.",
+    a: "Der Unterschied ist erheblich, wenn auch nicht so groß wie die reinen Zahlen vermuten lassen, sobald man bedenkt, was alles enthalten ist: Ein privater Guide mit Fahrzeug allein kostet meist €700–1.100+ pro Person/Tag, gegenüber etwa €225–325 pro Person/Tag beim Selbstfahren, aber geführte Reisen schließen meist Mahlzeiten, Parkgebühren und Aktivitäten ein, die bei einer Selbstfahrer-Route separate Kosten sind. Die genauen Zahlen je Preisklasse finden Sie in unserer vollständigen Kostenaufstellung.",
   },
   {
     q: "Brauche ich Geländefahrerfahrung, um Namibia selbst zu befahren?",
-    a: "Für die klassische Route nicht: Etosha, Sossusvlei und Swakopmund sind für alle machbar, die sich auf Schotterstraßen sicher fühlen, ernsthafte Geländefahrkenntnisse sind nicht nötig. Relevanter wird es in Damaraland und Kaokoland, wo ein 4x4 und etwas Sicherheit auf Schotter mehr zählen.",
+    a: "Für die klassische Route nicht: Etosha, Sossusvlei und Swakopmund sind für alle machbar, die sich auf Schotterstraßen sicher fühlen, ernsthafte Geländefahrkenntnisse sind nicht nötig. Relevanter wird es in Damaraland und Kaokoland, wo ein 4x4 und etwas Sicherheit auf Schotter mehr zählen, und wo allein die Miete eines 4x4 etwa N$1.500–2.200 pro Tag vor Kraftstoff kostet.",
   },
 ];
 

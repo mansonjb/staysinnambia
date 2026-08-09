@@ -42,11 +42,14 @@ const POPULAR_GUIDES_NL = [
 
 const malariaItem = (
   <>
-    Malariaprofylaxe als uw route in het regenseizoen door het noorden voert (Etosha, Caprivi):
-    bekijk onze{" "}
+    Malariaprofylaxe (doxycycline of atovaquon-proguanil/Malarone zijn de twee meest
+    voorgeschreven opties) als uw route door de malariagebieden voert: Kavango, Kunene,
+    Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa en Zambezi, met het hoogste risico
+    in het regenseizoen. Bekijk onze{" "}
     <Link href="/nl/namibia-safety-and-health" className="font-semibold text-rust hover:text-rust-dark">
       veiligheids- en gezondheidsgids
-    </Link>
+    </Link>{" "}
+    voor de regionale uitsplitsing, en laat het specifieke medicijn bevestigen door een reisarts
   </>
 );
 
@@ -56,8 +59,10 @@ const CATEGORIES = [
     items: [
       "Kleding in lagen: woestijndagen kunnen oplopen tot 35°C+, terwijl de temperatuur 's nachts onder de 10°C zakt, in de winter (jun–aug) soms bijna tot het vriespunt",
       "Neutraal gekleurde kleding voor game drives (vermijd fel wit of zwart, dat toont stof en houdt warmte vast)",
-      "Een goede hoed en zonnebril: de zon is meedogenloos, ook in het groene seizoen",
+      "Een goede hoed met brede rand en een gepolariseerde zonnebril: de zon is meedogenloos, ook in het groene seizoen",
       "Een warme jas of fleece voor vroege ochtendlijke game drives en woestijnnachten, zelfs in de zomer",
+      "Een buff of nekwarmer: het meest bruikbare kledingstuk op dagen met grindwegen, dient als stofmasker, zonbescherming en warmte bij zonsopgang in één",
+      "Sneldrogende broeken en dichte schoenen in plaats van sandalen zodra u van het asfalt af bent: grind, doorns en los zand zijn hard voor open schoeisel",
     ],
   },
   {
@@ -73,9 +78,17 @@ const CATEGORIES = [
     title: "Specifiek voor selfdrive",
     items: [
       "Een fysieke, geprinte of offline gedownloade kaart: bekijk onze connectiviteitsgids voor waarom u niet op bereik kunt rekenen",
-      "Een basisgereedschapsset en bandenreparatieset, als uw huurauto die niet al bevat",
-      "Contant geld (Namibische dollar of Zuid-Afrikaanse rand) voor tankstations en parktoegang in gebieden waar kaarten niet werken",
-      "Stofdichte tassen voor camera-apparatuur en elektronica op dagen met grindwegen",
+      "Een basisgereedschapsset en bandenreparatieset, als uw huurauto die niet al bevat, want schade aan banden en voorruit door grindwegen is de meest voorkomende huurautoclaim",
+      "Contant geld (Namibische dollar of Zuid-Afrikaanse rand) voor tankstations en de parktoegang van N$280 per persoon per dag bij Etosha en Namib-Naukluft, waar pinapparaten onbetrouwbaar zijn",
+      "Stofdichte tassen of dry bags voor camera-apparatuur en elektronica op dagen met grindwegen: het fijne Namibische stof dringt door in ritsen, poorten en lensvattingen",
+    ],
+  },
+  {
+    title: "Elektronica & stroom",
+    items: [
+      "Een hoofdlamp met reservebatterijen: veel afgelegen lodges en woestijnkampen draaien op generator of zonne-energie gedurende vaste uren, niet op een 24-uurs stroomnet, en schakelen 's nachts de stroom uit",
+      "Een universele reisstekker voor Namibiës Type D- en M-stopcontacten (220V), plus een powerbank: laadmomenten bij afgelegen kampen zijn beperkt en worden gedeeld",
+      "Een offline werkende telefoon met vooraf gedownloade kaarten, en een papieren back-up: mobiel bereik valt weg over lange stukken buiten de steden",
     ],
   },
   {
@@ -103,7 +116,11 @@ const FAQS = [
   },
   {
     q: "Is malariamedicatie nodig op mijn paklijst?",
-    a: "Dat hangt af van uw specifieke route en reisdata: het malariarisico in Namibië concentreert zich in het noorden (Etosha, Caprivi) en is het hoogst in het regenseizoen (ruwweg november tot april). Bekijk onze veiligheids- en gezondheidsgids voor de regionale uitsplitsing, en laat dit in elk geval bevestigen door een reisarts in plaats van er zomaar van uit te gaan.",
+    a: "Dat hangt af van uw specifieke route en reisdata: actuele CDC-richtlijnen wijzen op malariarisico in de Namibische regio's Kavango, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa en Zambezi, het hoogst in het regenseizoen (ruwweg november tot april). Doxycycline en atovaquon-proguanil (Malarone) zijn de twee meest aanbevolen profylaxeopties. Bekijk onze veiligheids- en gezondheidsgids voor de regionale uitsplitsing, en laat het specifieke medicijn en de dosering bevestigen door een reisarts in plaats van er zomaar van uit te gaan.",
+  },
+  {
+    q: "Welke stekkeradapter heb ik nodig voor Namibië?",
+    a: "Namibië gebruikt Type D- en Type M-stopcontacten op 220V/50Hz, dezelfde grote ronde driepins stekkers als Zuid-Afrika. Eén universele reisadapter dekt beide. De meeste opladers voor telefoon, camera en laptop zijn dual-voltage (let op '100-240V' op de adapter), dus u heeft alleen het juiste stekkertype nodig, geen spanningsomvormer.",
   },
 ];
 

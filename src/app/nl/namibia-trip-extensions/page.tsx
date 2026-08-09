@@ -42,15 +42,21 @@ const POPULAR_GUIDES_NL = [
 const EXTENSIONS = [
   {
     place: "Victoriawatervallen (Zambia/Zimbabwe)",
-    text: "De meest voorkomende Namibië-uitbreiding. Meestal wordt er gevlogen, niet gereden: de meeste reizigers vliegen vanaf Windhoek of vanaf Katima Mulilo in de Caprivi Strip, in plaats van de afstand zelf te rijden. Minimaal 2 nachten waard om zowel de Zambiaanse als de Zimbabwaanse kant van de watervallen te zien.",
+    text: "De meest voorkomende Namibië-uitbreiding, meestal per vlucht in plaats van over de weg. Een directe vlucht van Windhoek naar Victoria Falls airport (VFA) duurt iets meer dan een uur in de lucht, al is de realistische deur-tot-deur-tijd met een overstap eerder een halve dag. Zelf rijden kan, maar is lang: het is ongeveer 1.228 km en een volle 12 uur rijden van Windhoek naar Katima Mulilo aan de oostpunt van de Zambezi Region (voorheen de Caprivi Strip); de meeste zelfrijders splitsen dit over 2 dagen met een overnachting in Rundu, waarna nog een grensovergang en een rit naar de watervallen zelf volgt. Reken eenmaal aangekomen op minimaal 2 nachten om zowel de Zambiaanse als de Zimbabwaanse kant goed te zien, werkelijk verschillende uitzichtpunten op dezelfde watervallen.",
     time: "minimaal +3–4 dagen",
   },
   {
     place: "Chobe National Park & de Okavangodelta (Botswana)",
     text: (
       <>
-        Een natuurlijke aansluiting vanuit onze Caprivi Strip-regio, die direct aan Chobe grenst.
-        Bekijk onze{" "}
+        Een natuurlijke aansluiting vanuit onze Zambezi Region (voorheen de Caprivi Strip), die
+        direct aan Chobe grenst via de grensovergang Ngoma Bridge (dagelijks open van 07:00 tot
+        18:00), zo&apos;n 55 km van Kasane en ongeveer 70 km van Katima Mulilo aan de Namibische
+        kant. Voor de Okavangodelta en Maun steken de meeste zelfrijders in plaats daarvan verder
+        westelijk over bij grensovergang Mohembo (open van 06:00 tot 18:00), ten zuiden van
+        Divundu, om vervolgens zo&apos;n 580 km door de Okavango Panhandle naar Maun te rijden,
+        deels over grind dat in het droge seizoen prima te doen is met een sedan maar na zware
+        regenval zacht kan worden. Bekijk onze{" "}
         <Link href="/nl/namibia-vs-botswana" className="font-semibold text-rust hover:text-rust-dark">
           vergelijking Namibië vs. Botswana
         </Link>{" "}
@@ -62,7 +68,7 @@ const EXTENSIONS = [
   },
   {
     place: "Kaapstad & de Garden Route (Zuid-Afrika)",
-    text: "Meestal wordt dit aan het begin of einde toegevoegd in plaats van halverwege de reis gecombineerd: veel reizigers vliegen voor of na hun Namibië-rondreis naar Kaapstad, en behandelen dit als een apart stedentripje in plaats van een uitbreiding van de zelfrijroute zelf.",
+    text: "Meestal wordt dit aan het begin of einde toegevoegd in plaats van halverwege de reis gecombineerd: veel reizigers vliegen voor of na hun Namibië-rondreis naar Kaapstad, en behandelen dit als een apart stedentripje in plaats van een uitbreiding van de zelfrijroute zelf. Logistiek is het een makkelijke toevoeging: een directe vlucht van Windhoek naar Kaapstad duurt iets meer dan 2 uur, met meerdere vluchten per dag op deze route.",
     time: "+3–5 dagen",
   },
 ];
@@ -70,19 +76,19 @@ const EXTENSIONS = [
 const FAQS = [
   {
     q: "Kan ik van Namibië naar de Victoriawatervallen rijden?",
-    a: "Technisch gezien wel, via de Caprivi Strip en Zambia of Botswana in, maar het is een lange rit van meerdere dagen die de meeste reizigers overslaan ten gunste van een binnenlandse vlucht vanaf Windhoek of Katima Mulilo. Vliegen is de praktische standaardkeuze voor deze specifieke uitbreiding.",
+    a: "Technisch gezien wel, via de Zambezi Region (de voormalige Caprivi Strip) en Zambia of Botswana in, maar het is een werkelijk lange rit van meerdere dagen die de meeste reizigers overslaan ten gunste van een binnenlandse vlucht vanaf Windhoek of Katima Mulilo. Ter referentie: Windhoek naar Katima Mulilo alleen al is ongeveer 1.228 km en 12 uur rijden, meestal gesplitst over 2 dagen met een overnachting in Rundu, en dat is nog vóórdat u een grens bent overgestoken. Vliegen is de praktische standaardkeuze voor deze specifieke uitbreiding, tenzij u toch al door de Zambezi Region rijdt als onderdeel van uw Namibië-route.",
   },
   {
     q: "Heb ik een apart visum nodig voor deze uitbreidingen?",
-    a: "Ja, in alle gevallen: Zambia, Zimbabwe, Botswana en Zuid-Afrika hebben elk hun eigen inreisvereisten, los van die van Namibië (dat zelf op 1 april 2025 overstapte op een verplichte online aanvraag voor het Visa on Arrival). Controleer de vereisten voor uw specifieke nationaliteit en elk land ruim voordat u vluchten boekt, naast onze eigen gids over de Namibië visumvereisten.",
+    a: "Ja, in alle gevallen: Zambia, Zimbabwe, Botswana en Zuid-Afrika hebben elk hun eigen inreisvereisten, los van die van Namibië (dat zelf op 1 april 2025 overstapte op een verplichte online aanvraag voor het Visa on Arrival, en de lijst met in aanmerking komende nationaliteiten sindsdien is blijven bijwerken). Als uw uitbreiding zowel Zambia als Zimbabwe omvat, is het gezamenlijke KAZA UniVisa (rond US$50, 30 dagen geldig in beide landen binnen een periode van 12 maanden) meestal de eenvoudigste optie en dekt het ook dagtrips naar Botswana via de grensovergang Kazungula, al is voor een overnachting in Botswana nog steeds de eigen, aparte inreistoestemming van dat land vereist. Controleer de vereisten voor uw specifieke nationaliteit en elk land ruim voordat u vluchten boekt, naast onze eigen gids over de Namibië visumvereisten.",
   },
   {
     q: "Hoeveel extra dagen moet ik budgetteren voor een uitbreiding naar de Victoriawatervallen?",
-    a: "Minimaal 3–4 dagen in totaal, inclusief reistijd: dat dekt een vlucht heen en terug plus 2 nachten om de watervallen goed te zien vanaf zowel het Zambiaanse als het Zimbabwaanse uitzichtpunt, wat werkelijk verschillende ervaringen zijn.",
+    a: "Minimaal 3–4 dagen in totaal, inclusief reistijd: dat dekt een vlucht heen en terug (iets meer dan een uur in de lucht van Windhoek naar Victoria Falls airport, langer deur-tot-deur met een overstap) plus 2 nachten om de watervallen goed te zien vanaf zowel het Zambiaanse als het Zimbabwaanse uitzichtpunt, wat werkelijk verschillende ervaringen zijn die de extra grensovergang waard zijn.",
   },
   {
     q: "Is het beter om uit te breiden naar Botswana of direct naar de Victoriawatervallen te vliegen?",
-    a: "Dat hangt af van waar u meer van wilt. Botswana verlengt de safari-ervaring met dichtere wildlife-observaties; de Victoriawatervallen zijn een op zichzelf staande bezienswaardigheid met weinig overlap met wat u al in Namibië heeft gezien. Veel langere reizen van 3 weken of meer combineren beide.",
+    a: "Dat hangt af van waar u meer van wilt. Botswana verlengt de safari-ervaring met dichtere wildlife-observaties, met name rond Chobe National Park, bereikbaar vanuit Namibië&apos;s Zambezi Region via de grensovergang Ngoma Bridge; de Victoriawatervallen zijn een op zichzelf staande bezienswaardigheid met weinig overlap met wat u al in Namibië heeft gezien. Veel langere reizen van 3 weken of meer combineren beide: over de weg naar Chobe en vervolgens doorvliegen naar de watervallen.",
   },
 ];
 
@@ -109,6 +115,15 @@ export default function TripExtensionsPageNl() {
           Namibië grenst aan enkele van de grootste hoogtepunten van zuidelijk Afrika. Hier leest u
           hoe reizigers deze daadwerkelijk toevoegen, en wat elke uitbreiding werkelijk aan tijd
           kost.
+        </p>
+        <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+          <span className="font-semibold text-charcoal">Onze aanbeveling:</span> als uw route al
+          eindigt in de Zambezi Region, voegt een korte fly-in-uitbreiding naar de
+          Victoriawatervallen of een dagtrip naar Chobe via de Ngoma-grens relatief weinig extra
+          reistijd toe voor een werkelijk ander landschap. Als uw Namibië-rondreis zich volledig in
+          het zuiden en midden afspeelt (Sossusvlei, Etosha, de kust), is Kaapstad aan het begin of
+          einde van de reis toevoegen logistiek de optie met de minste wrijving, omdat u dan niet
+          hoeft terug te rijden door het hele land om een grens te bereiken.
         </p>
       </section>
 

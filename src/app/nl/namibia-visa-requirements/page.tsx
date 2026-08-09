@@ -43,23 +43,23 @@ const POPULAR_GUIDES_NL = [
 const FAQS = [
   {
     q: "Heb ik een visum nodig voor Namibië?",
-    a: "Dat hangt af van uw nationaliteit. Buurlanden uit de SADC-regio en een aantal andere landen blijven visumvrij voor korte verblijven. De meeste andere nationaliteiten (waaronder de meerderheid van de EU-landen, het VK en de VS) komen in aanmerking voor een Visa on Arrival, maar sinds april 2025 moet dat visum vooraf online worden aangevraagd in plaats van ter plekke op de luchthaven te worden uitgegeven.",
+    a: "Dat hangt af van uw nationaliteit. Namibië houdt ongeveer 55 landen volledig vrijgesteld van visumplicht voor korte toeristische verblijven, waaronder de directe SADC-buurlanden Zuid-Afrika, Botswana, Zambia en Zimbabwe, plus nog eens 18 landen onder wederzijdse visumvrijstellingsovereenkomsten. De meeste andere nationaliteiten, waaronder de meerderheid van de EU-landen, het VK en de VS, komen in aanmerking voor een Visa on Arrival (VoA), maar sinds 1 april 2025 moet dat visum online worden aangevraagd en goedgekeurd vóór vertrek, en niet meer ter plekke op de luchthaven worden uitgegeven.",
   },
   {
-    q: "Wat veranderde er op 1 april 2025?",
-    a: "Namibië schakelde zijn Visa on Arrival-regeling om naar een verplichte online aanvraag voorafgaand aan aankomst. Reizigers die in aanmerking komen voor VOA kunnen niet langer simpelweg in de rij staan bij immigratie en contant betalen: de aanvraag, betaling en goedkeuring vinden nu plaats vóór vertrek, vergelijkbaar met een eTA.",
+    q: "Wat veranderde er op 1 april 2025, en is er sindsdien nog iets veranderd?",
+    a: "Namibië's Ministry of Home Affairs, Immigration, Safety and Security (MHAISS) schakelde de Visa on Arrival-regeling om naar een verplichte online aanvraag vóór aankomst, ingediend via het eServices-portaal. Reizigers die in aanmerking komen voor VoA kunnen niet langer simpelweg in de rij staan bij immigratie en contant betalen: de aanvraag, betaling en goedkeuring vinden nu plaats vóór vertrek, vergelijkbaar met een eTA. Het systeem is sinds de lancering blijven veranderen: MHAISS voegde in oktober 2025 nog eens 36 landen toe aan de lijst voor de online VoA, en het toelatingskader is in 2026 met kleine tussentijdse updates blijven evolueren. Omdat de lijst kan verschuiven, controleert u het beste altijd uw specifieke nationaliteit op het officiële portaal dicht bij uw reisdatum in plaats van te vertrouwen op de lijst van vorig jaar.",
   },
   {
     q: "Hoeveel kost het Namibië Visa on Arrival?",
-    a: "De vergoeding voor het Visa on Arrival bedraagt US$90, online te betalen op het moment van aanvraag. Het visum is 3 maanden geldig vanaf de uitgiftedatum en staat een eenmalig verblijf van maximaal 30 dagen toe.",
+    a: "De gepubliceerde vergoeding is NAD 1.600 (ongeveer US$90 tegen de huidige wisselkoers) voor de meeste niet-Afrikaanse nationaliteiten, en een verlaagd tarief van NAD 1.200 (ongeveer US$65-70) voor onderdanen van andere lidstaten van de Afrikaanse Unie. Het wordt online betaald, in Namibische dollars, op het moment van aanvraag. Het visum is 3 maanden geldig vanaf de uitgiftedatum en staat een verblijf van maximaal 30 dagen per binnenkomst toe.",
   },
   {
     q: "Welke documenten heb ik nodig om aan te vragen?",
-    a: "Een paspoort dat nog minstens 6 maanden geldig is na uw reisdata met minstens 3 lege pagina's, een uitnodigingsbrief of accommodatiebevestiging, en bewijs van voldoende financiële middelen en reis-/medische verzekering voor uw verblijf. Vereisten kunnen veranderen, dus bevestig de actuele lijst via Namibië's officiële immigratiekanalen voordat u een aanvraag indient.",
+    a: "Een paspoort dat nog minstens 6 maanden geldig is na uw reisdata met lege pagina's voor het visum; een korte motivatiebrief met het doel van uw bezoek; een bevestigde accommodatieboeking of uitnodigingsbrief; een bankafschrift of ander bewijs van voldoende financiële middelen voor uw verblijf; en bewijs van reis- of medische verzekering die uw reis dekt. Sommige aanvragers wordt ook gevraagd om bevestiging van een aansluitende of terugvlucht. Vereisten kunnen veranderen, dus bevestig de actuele lijst via Namibië's officiële eServices-immigratieportaal voordat u een aanvraag indient.",
   },
   {
-    q: "Hoe ver van tevoren moet ik aanvragen?",
-    a: "Vraag aan zodra uw reisdata vaststaan. Als nieuw online systeem waren de verwerkingstijden in de vroege uitrol wisselend: houd liever enkele weken speling aan dan pas de week voor vertrek aan te vragen.",
+    q: "Hoe lang duurt de goedkeuring werkelijk?",
+    a: "MHAISS's eigen richtlijnen geven ongeveer 7-10 werkdagen aan voor online aanvragen, al melden onafhankelijke immigratieadviseurs alles van goedkeuring op dezelfde dag tot langere wachttijden tijdens portaalonderhoud of periodes met hoge aanvraagdruk. Beschouw 7-10 werkdagen als de planningsbasis, vraag minstens 2-3 weken voor vertrek aan, en bouw extra speling in als u in het hoogseizoen reist (juli-september), wanneer het aantal aanvragen het hoogst is.",
   },
 ];
 
@@ -84,18 +84,24 @@ export default function VisaPageNl() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Sinds 1 april 2025 wordt Namibië&apos;s Visa on Arrival niet meer aan de grens
-          uitgegeven: u moet het online aanvragen en betalen voordat u vliegt. Veel oudere gidsen
-          beschrijven nog het oude systeem. Hier leest u wat nu geldt, en hoe de vergoeding van $90
-          past in de rest van uw{" "}
+          uitgegeven: het moet online worden aangevraagd, betaald en goedgekeurd via het
+          eServices-portaal van het Ministry of Home Affairs voordat u vliegt. De lijst met landen
+          die in aanmerking komen is sindsdien blijven groeien, met recentelijk 36 extra landen
+          toegevoegd in oktober 2025. Veel oudere gidsen beschrijven nog het systeem van vóór 2025,
+          waarbij u ter plekke op de luchthaven betaalde. Hier leest u wat nu geldt, en hoe de
+          vergoeding van ongeveer $90 past in de rest van uw{" "}
           <Link href="/nl/namibia-trip-cost" className="font-medium text-rust hover:text-rust-dark">
             reisbudget
           </Link>
           .
         </p>
         <p className="mt-4 text-[12px] uppercase tracking-[0.08em] text-charcoal/40">
-          Deze pagina vat publiek gerapporteerde beleidswijzigingen samen en is geen
-          immigratieadvies. Bevestig de actuele vereisten voor uw nationaliteit bij Namibië&apos;s
-          officiële immigratieautoriteit voordat u boekt.
+          Deze pagina vat publiek gerapporteerde beleidswijzigingen en commentaar van
+          immigratieadviseurs samen en is geen immigratieadvies. Regels, kosten en de lijst met
+          landen die in aanmerking komen zijn sinds april 2025 al meerdere keren gewijzigd en
+          kunnen opnieuw veranderen. Bevestig de actuele vereisten voor uw specifieke nationaliteit
+          altijd rechtstreeks bij Namibië&apos;s officiële immigratieautoriteit (MHAISS, via het
+          eServices-portaal) voordat u vluchten boekt of een visumvergoeding betaalt.
         </p>
       </section>
 
@@ -122,10 +128,12 @@ export default function VisaPageNl() {
           <h2 className="text-xl font-bold text-charcoal">Wat u nodig heeft voor de aanvraag</h2>
           <ul className="mt-5 space-y-3">
             {[
-              "Paspoort dat nog minimaal 6 maanden geldig is na uw reisdata, met minstens 3 lege pagina's",
-              "Uitnodigingsbrief of bevestigde accommodatieboeking",
-              "Bewijs van voldoende financiële middelen voor uw verblijf",
-              "Bewijs van reis- of medische verzekering",
+              "Paspoort dat nog minimaal 6 maanden geldig is na uw reisdata, met lege pagina's voor het visum",
+              "Een korte motivatiebrief met het doel van uw bezoek",
+              "Bevestigde accommodatieboeking (of een formele uitnodigingsbrief als u bij contacten verblijft)",
+              "Bankafschrift of ander bewijs van voldoende financiële middelen voor uw verblijf",
+              "Bewijs van reis- of medische verzekering die de reis dekt",
+              "Bevestiging van een aansluitende of terugvlucht, indien tijdens de aanvraag gevraagd",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-[14px] text-charcoal/70">
                 <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
@@ -133,6 +141,12 @@ export default function VisaPageNl() {
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-[13px] leading-relaxed text-charcoal/50">
+            Aanvragen worden ingediend via Namibië&apos;s officiële overheidsportaal op{" "}
+            <span className="font-medium text-charcoal/70">eservices.mhaiss.gov.na</span>, beheerd
+            door het Ministry of Home Affairs, Immigration, Safety and Security. Vermijd
+            derdenpartijsites die een opslag rekenen voor dezelfde aanvraag.
+          </p>
         </Reveal>
       </section>
 

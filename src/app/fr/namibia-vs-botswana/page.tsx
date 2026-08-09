@@ -44,9 +44,9 @@ const COMPARISON = [
   {
     axis: "Autotour",
     namibia:
-      "Vraiment accessible : un bon réseau routier, une signalisation claire et un marché de la location bien établi font de la Namibie l'un des pays africains les plus faciles à parcourir en autotour.",
+      "Vraiment accessible : un bon réseau routier, une signalisation claire et un marché de la location bien établi font de la Namibie l'un des pays africains les plus faciles à parcourir en autotour. Les parcs nationaux comme Etosha et Namib-Naukluft délivrent permis et accès aux portes sur place, sans réservation de camp à l'avance nécessaire juste pour entrer.",
     botswana:
-      "Beaucoup plus limité : la plupart des meilleures zones fauniques (delta de l'Okavango, Chobe, Moremi) sont des terrains de sable profond en 4x4, accessibles en vol charter ou en conduite hors piste sérieuse, et de nombreux camps ne sont accessibles que par avion.",
+      "Beaucoup plus limité : l'entrée en autotour dans la réserve de Moremi nécessite une réservation de camping confirmée avant que le DWNP (le service des parcs) ne laisse passer la porte, et il n'existe qu'une poignée de campings publics à l'intérieur (Xakanxa, Third Bridge, Moremi, Okuti), souvent complets plusieurs mois à l'avance en haute saison. À cela s'ajoutent des pistes de sable profond du Kalahari qui nécessitent une vraie expérience du 4x4 et des rapports courts, et une grande partie du delta de l'Okavango lui-même n'est accessible que par avion léger, ce qui explique pourquoi la plupart des visiteurs du Botswana arrivent avec un opérateur plutôt qu'en autotour.",
   },
   {
     axis: "Densité de la faune",
@@ -78,12 +78,26 @@ const COMPARISON = [
     botswana:
       "Systématiquement plus élevé : le modèle touristique du Botswana, à forte valeur et faible volume, se traduit par moins de camps au total et moins d'options économiques, les camps accessibles uniquement par avion étant la norme plutôt que l'exception.",
   },
+  {
+    axis: "Droits d'entrée des parcs",
+    namibia:
+      "Namibia Wildlife Resorts facture aux visiteurs internationaux 280 N$/jour (environ 17,50 $) dans les parcs premium comme Etosha, Namib-Naukluft et la Skeleton Coast, plus des frais de véhicule séparés, en vigueur depuis avril 2026.",
+    botswana:
+      "Le DWNP facture aux visiteurs internationaux 270 BWP/jour (environ 20 $) à Chobe et Moremi, et 500 BWP/jour au Kalahari central, à Makgadikgadi et à Nxai Pan, plus des frais de véhicule séparés, également mis à jour en avril 2026. Les droits d'entrée quotidiens des parcs sont en fait similaires entre les deux pays ; le véritable écart de coût vient des camps et des vols, pas des portes des parcs.",
+  },
+  {
+    axis: "Visa et entrée",
+    namibia:
+      "Un visa est requis pour la plupart des nationalités, bien que beaucoup puissent l'obtenir à l'arrivée ou en faire la demande en ligne à l'avance ; en 2026, les frais de visa touristique standard s'élèvent à environ 30 $, valable pour des séjours jusqu'à 90 jours.",
+    botswana:
+      "Plus ouvert sur le papier : la plupart des visiteurs d'Amérique du Nord, d'Europe, du Commonwealth et de la région SADC (Namibie incluse) entrent sans visa pour le tourisme, généralement pour des séjours jusqu'à 90 jours sur une période de 12 mois.",
+  },
 ];
 
 const FAQS = [
   {
     q: "Faut-il visiter la Namibie ou le Botswana pour un premier safari en Afrique ?",
-    a: "Si vous souhaitez conduire vous-même, contrôler votre propre rythme et privilégier le paysage et la faune adaptée au désert, la Namibie est le premier voyage le plus simple et généralement le plus abordable. Si l'observation classique et dense de la faune est la priorité et que le budget permet des camps accessibles uniquement par avion, le Botswana offre cela de façon plus fiable.",
+    a: "Si vous souhaitez conduire vous-même, contrôler votre propre rythme et privilégier le paysage et la faune adaptée au désert, la Namibie est le premier voyage le plus simple et généralement le plus abordable : son réseau routier, sa signalisation et son marché de la location sont conçus pour ça, et les permis de parc se gèrent directement à la porte. Si l'observation classique et dense de la faune est la priorité et que le budget permet 600 $+ par personne et par nuit dans des camps accessibles uniquement par avion, le Botswana offre cela de façon plus fiable, en particulier dans le delta de l'Okavango et à Chobe.",
   },
   {
     q: "Puis-je visiter la Namibie et le Botswana en un seul voyage ?",
@@ -91,11 +105,15 @@ const FAQS = [
   },
   {
     q: "Le Botswana est-il plus cher que la Namibie ?",
-    a: "En général, oui. Le modèle touristique du Botswana limite délibérément le nombre de camps pour éviter la surfréquentation des zones, ce qui maintient les prix élevés dans l'ensemble. Il existe beaucoup moins de véritable offre économique que ce que la Namibie propose via l'autotour et les guesthouses.",
+    a: "Nettement, oui. La politique touristique du Botswana, à forte valeur et faible volume, limite délibérément le nombre de camps pour préserver des zones peu fréquentées : les lodges établis tournent généralement entre 600 et 1 500 $+ par personne et par nuit, et les camps les plus exclusifs du delta de l'Okavango accessibles uniquement par avion atteignent souvent 1 500 à 4 000 $+. L'offre réellement économique de la Namibie tourne autour de 225-250 €/jour en autotour. Les droits d'entrée des parcs eux-mêmes sont en fait similaires entre les deux pays en 2026 (environ 17-20 $/jour dans les deux cas) ; l'écart se joue sur les camps, le guidage et les vols intérieurs, pas sur le prix des portes.",
   },
   {
     q: "Quel pays est le meilleur pour l'autotour ?",
-    a: "La Namibie, clairement. Les meilleures zones fauniques du Botswana sont largement inaccessibles sans un 4x4 solide et une expérience de la conduite hors piste, ou sans un camp accessible uniquement par avion. Le pays n'est pas conçu pour le type de road trip indépendant qui fait la réputation de la Namibie.",
+    a: "La Namibie, clairement. Les meilleures zones fauniques du Botswana sont largement inaccessibles sans un 4x4 solide et une expérience de la conduite hors piste : l'entrée en autotour dans la réserve de Moremi, par exemple, nécessite une réservation de camping DWNP confirmée avant de pouvoir franchir la porte, et ces campings se réservent des mois à l'avance. Le pays n'est pas conçu pour le type de road trip indépendant qui fait la réputation de la Namibie.",
+  },
+  {
+    q: "Faut-il un visa pour la Namibie ou le Botswana ?",
+    a: "Le Botswana est sans visa pour la plupart des nationalités occidentales et de la SADC, pour des séjours touristiques jusqu'à 90 jours. La Namibie exige généralement un visa, bien que la plupart des visiteurs puissent l'obtenir à l'arrivée ou en faire la demande en ligne à l'avance ; les frais de visa touristique standard s'élèvent à environ 30 $ en 2026, également valable jusqu'à 90 jours.",
   },
 ];
 

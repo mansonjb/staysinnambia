@@ -30,21 +30,28 @@ const COMPARISON = [
     slug: "etosha",
     style: "Klassische Safari an Wasserlöchern",
     wildlife:
-      "Verlässlich: Elefant, Löwe, Spitzmaulnashorn, große Herden konzentriert um beleuchtete Wasserlöcher",
-    pace: "Strukturierte Pirschfahrten von einer festen Unterkunft aus",
+      "Das verlässlichste der drei Gebiete. Schätzungsweise über 2.000 Elefanten, mehrere Hundert Löwen in rund zwei Dutzend Rudeln und eine der wichtigsten Spitzmaulnashorn-Populationen Afrikas versammeln sich an beleuchteten Wasserlöchern, besonders wenn die Trockenzeit fortschreitet.",
+    pace: "Strukturierte Pirschfahrten von einer festen Unterkunft aus, oder Wasserloch-Beobachtung direkt vom Camp aus",
+    bestMonths:
+      "Juli bis Oktober, wenn die saisonalen Wasserstellen ausgetrocknet sind und sich die Tiere an den permanenten Wasserlöchern sammeln; in der Hauptsaison ist an den belebtesten Stellen mit mehr Besuchern zu rechnen",
   },
   {
     slug: "damaraland",
     style: "Tracking, zu Fuß oder mit dem Fahrzeug",
     wildlife:
-      "Wüstenangepasste Elefanten und, mit einem Spezialguide ab Palmwag, aufgespürte Spitzmaulnashörner, nie garantiert, aber umso lohnender bei Erfolg",
-    pace: "Langsamer, geführt, auf Basis von Conservancies",
+      "Ein völlig anderes Erlebnis: wüstenangepasste Elefanten, die bis zu 700 km weit wandern und tagelang ohne Wasser auskommen, und, mit einem Spezialguide aus der Palmwag Concession, eine der letzten großen frei lebenden Spitzmaulnashorn-Populationen der Welt, zu Fuß aufgespürt. Hier ist nichts so garantiert wie an Etoshas Wasserlöchern: Eine Sichtung zählt gerade deshalb mehr, weil sie nicht inszeniert ist.",
+    pace: "Langsamer, geführt, auf Basis von Conservancies, oft zu Fuß",
+    bestMonths:
+      "Mai bis Oktober (Trockenzeit); nach Regen verteilen sich die Tiere weiträumiger, weshalb die Erfolgschancen beim Tracking außerhalb dieses Zeitraums sinken",
   },
   {
     slug: "caprivi",
     style: "Tierwelt an Fluss und Überschwemmungsebene",
-    wildlife: "Flusspferd, Krokodil, starke Vogelbeobachtung: ein völlig anderes Ökosystem",
+    wildlife:
+      "Flusspferde und Krokodile im Flusssystem von Kwando und Linyanti, große Elefanten- und Büffelherden, die durch den Bwabwata-Nationalpark ziehen, sowie fast 450 registrierte Vogelarten: ein grundlegend anderes Ökosystem als der Wüstenkreis weiter südlich, keine schwächere Version davon.",
     pace: "Bootsausflüge neben Pirschfahrten",
+    bestMonths:
+      "April bis September, wenn die Trockenzeit die Tierwelt entlang der Flüsse und Überschwemmungsebenen konzentriert und die Straßenverhältnisse am besten sind",
   },
 ];
 
@@ -67,15 +74,20 @@ export default function SafariAreasPageDe() {
           Beste Safari-Gebiete in Namibia
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          „Safari" bedeutet in jeder dieser drei Regionen etwas anderes. Sehen Sie sich unseren{" "}
+          „Safari" bedeutet in jeder dieser drei Regionen etwas anderes: In Etosha geht es um
+          Dichte und Verlässlichkeit, in Damaraland um den ganz eigenen Nervenkitzel, frei
+          lebende, wüstenangepasste Arten aufzuspüren, die nirgendwo eingezäunt sind, und der
+          Caprivi-Streifen fühlt sich kaum wie dasselbe Land an, ein Fluss- und
+          Überschwemmungsökosystem, das mit dem Wüstenkreis weiter südlich fast nichts gemein hat.
+          Sehen Sie sich unseren{" "}
           <Link
             href="/de/namibia-wildlife-guide"
             className="font-semibold text-rust hover:text-rust-dark"
           >
             Tierwelt-Guide
           </Link>{" "}
-          an, um zu erfahren, was Sie in jeder erwarten können. Keine ist grundsätzlich besser: sie
-          passen zu unterschiedlichen Prioritäten.
+          an, um zu erfahren, was Sie in jeder Region erwarten können. Keine ist grundsätzlich
+          besser: Sie passen zu unterschiedlichen Prioritäten.
         </p>
       </section>
 
@@ -107,6 +119,12 @@ export default function SafariAreasPageDe() {
                       </dt>
                       <dd className="mt-1 text-[14px] text-charcoal/70">{c.pace}</dd>
                     </div>
+                    <div>
+                      <dt className="text-[11px] uppercase tracking-[0.08em] text-charcoal/40">
+                        Beste Reisemonate
+                      </dt>
+                      <dd className="mt-1 text-[14px] text-charcoal/70">{c.bestMonths}</dd>
+                    </div>
                   </dl>
                   <Link
                     href={`/de/where-to-stay/${region.slug}`}
@@ -120,6 +138,21 @@ export default function SafariAreasPageDe() {
             );
           })}
         </div>
+
+        <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <p className="text-[14px] leading-relaxed text-charcoal/70">
+            <span className="font-semibold text-charcoal">Unsere Empfehlung:</span> Wenn Sie sich
+            nur für ein Gebiet entscheiden können, ist Etosha die sicherere Wahl für eine erste
+            Safari, besonders von August bis Oktober, wenn die Aktivität an den Wasserlöchern
+            ihren Höhepunkt erreicht. Damaraland verdient sich seinen Platz auf einer längeren
+            Reise als die Region, die Geduld mit etwas belohnt, das Etosha nicht bieten kann: frei
+            lebende, wüstenangepasste Tierwelt ohne jeden Zaun in Sicht. Der Caprivi-Streifen lohnt
+            sich nur als Ergänzung, wenn Sie weiter in Botswanas Okavango-Delta oder nach Chobe
+            reisen oder gezielt Vogelbeobachtung und Flusstierwelt suchen: als eigenständiger
+            Stopp auf einer kurzen, rein namibischen Reise ist die rund zwölfstündige Fahrt (die
+            meisten fliegen stattdessen nach Katima Mulilo) kaum zu rechtfertigen.
+          </p>
+        </Reveal>
       </section>
     </>
   );

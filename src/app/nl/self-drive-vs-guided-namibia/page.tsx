@@ -43,9 +43,9 @@ const FACTORS = [
   {
     axis: "Kosten",
     selfDrive:
-      "Aanzienlijk goedkoper: u betaalt niet voor een privégids en voertuig, veruit de grootste kostenpost van een begeleide reis. Bekijk ons volledige kostenoverzicht voor de echte dagbedragen.",
+      "Ruwweg €225-250/persoon/dag budget, ≈€325/dag middenklasse: een 4x4-huurauto alleen al kost ongeveer N$1.500-2.200/dag (≈€75-110) vóór brandstof en eigen risico van de verzekering, plus de N$280/persoon/dag-plus-N$620/voertuig aan parkentreekosten die u rechtstreeks bij de poort betaalt. Bekijk ons volledige kostenoverzicht voor de bedragen per prijsklasse.",
     guided:
-      "Doorgaans hoger, maar vaak inclusief maaltijden, parkkosten en activiteiten die bij een selfdrive-reis anders aparte kosten zouden zijn.",
+      "Een privégids met voertuig kost doorgaans €700-1.100+/persoon/dag voor een volledig op maat gemaakte reisroute, al kunnen groepsreizen met vaste vertrekdata dat bedrag onderbieden. Meestal zijn maaltijden, parkkosten en activiteiten inbegrepen die bij een selfdrive-reis aparte kostenposten zijn, waardoor het headline-verschil het werkelijke verschil enigszins overdrijft.",
   },
   {
     axis: "Vrijheid & tempo",
@@ -57,21 +57,21 @@ const FACTORS = [
   {
     axis: "Wildlife spotten",
     selfDrive:
-      "Echt goed in Etosha, waar waterpoelen wildlife voorspelbaar concentreren. Zwakker in gebieden die trackingvaardigheid vereisen, zoals aan de woestijn aangepaste olifanten of neushoorns in Damaraland.",
+      "Echt goed in Etosha, waar verlichte waterpoelen bij Okaukuejo en Halali wildlife voorspelbaar concentreren, vooral neushoorn en olifant na donker in het droge seizoen. Zwakker in gebieden die trackingvaardigheid vereisen, zoals aan de woestijn aangepaste olifanten in de Torra Conservancy in Damaraland of zwarte neushoorn in de Palmwag Concession, waarvoor ongeacht uw reiswijze altijd een gespecialiseerde, erkende gids nodig is.",
     guided:
-      "Het geoefende oog van een gids voor sporen, geluiden en dierengedrag vergroot de kans op waarnemingen aanzienlijk, vooral buiten Etoshas eenvoudigere waterpoel-observatie.",
+      "Het geoefende oog van een gids voor sporen, geluiden en dierengedrag vergroot de kans op waarnemingen aanzienlijk, vooral buiten Etoshas eenvoudigere waterpoel-observatie, en het is de enige manier om neushoorn te tracken in Palmwag of betrouwbaar wilde honden te vinden in Bwabwata.",
   },
   {
     axis: "Risico & comfort",
     selfDrive:
-      "Reële risico's die serieus genomen moeten worden: rijden op grindwegen, wildlife op de weg 's nachts, lange trajecten zonder brandstof of telefoonbereik. Bekijk onze self-drive-gids voor de details.",
+      "Reële risico's die serieus genomen moeten worden: rijden op grindwegen, wildlife op de weg 's nachts, lange trajecten (soms 250 km of meer) zonder brandstof of telefoonbereik. Bekijk onze self-drive-gids voor de details.",
     guided:
       "Lager persoonlijk risico (iemand anders rijdt, navigeert en handelt pech af), ten koste van het feit dat u aan het schema van een ander vastzit.",
   },
   {
     axis: "Beste optie voor beginners",
     selfDrive:
-      "Zelfverzekerde bestuurders die zich prettig voelen op grindwegen en bij zelf navigeren, die hun eigen tempo willen bepalen en met een krapper budget werken.",
+      "Zelfverzekerde bestuurders die zich prettig voelen op grindwegen en bij zelf navigeren, die hun eigen tempo willen bepalen en met een krapper budget werken. Namibiës geasfalteerde en geëgaliseerde C-wegennet maakt dit werkelijk toegankelijker dan in de meeste andere safarilanden.",
     guided:
       "Reizigers voor wie wildlife-waarnemingen en geen logistiek zwaarder wegen dan kosten en flexibiliteit, of iedereen die zich niet zeker voelt op onbekende grindwegen.",
   },
@@ -80,19 +80,19 @@ const FACTORS = [
 const FAQS = [
   {
     q: "Is selfdrive of een begeleide reis beter voor een eerste Namibië-reis?",
-    a: "Geen van beide is objectief beter: het hangt af van waar u prioriteit aan geeft. Selfdrive past bij zelfverzekerde bestuurders die zelf tempo en kosten willen bepalen; een begeleide reis past bij reizigers die de best mogelijke wildlife-waarnemingen willen zonder logistiek te hoeven regelen. Veel mensen die voor het eerst gaan kiezen voor een hybride vorm: zelf rijden tussen de regio's, begeleide game drives binnen de parken.",
+    a: "Geen van beide is objectief beter: het hangt af van waar u prioriteit aan geeft. Selfdrive past bij zelfverzekerde bestuurders die zelf tempo en kosten willen bepalen, voor ruwweg €225-325/persoon/dag; een begeleide reis past bij reizigers die de best mogelijke wildlife-waarnemingen willen zonder logistiek te hoeven regelen, doorgaans €700-1.100+/persoon/dag. Onze eigen aanbeveling voor de meeste mensen die voor het eerst gaan: zelf rijden op de klassieke Etosha-Sossusvlei-Swakopmund-route, waar het wegennet en de waterpoel-observatie het eenvoudig maken, en alleen een begeleid onderdeel toevoegen waar trackingvaardigheid het resultaat werkelijk verandert, namelijk Damaraland en Palmwag.",
   },
   {
     q: "Kan ik selfdrive en een begeleide reis combineren?",
-    a: "Ja, en dat is een gangbare, verstandige middenweg: zelf rijden voor de transfers tussen de regio's, en vervolgens begeleide game drives boeken zodra u bij een lodge bent, vooral in gebieden zoals Damaraland waar trackingvaardigheid de waarnemingen echt verbetert.",
+    a: "Ja, en dat is een gangbare, verstandige middenweg: zelf rijden voor de transfers tussen de regio's, en vervolgens begeleide game drives boeken zodra u bij een lodge bent, vooral in gebieden zoals Damaraland en de Palmwag Concession, waar het tracken van aan de woestijn aangepaste olifanten en zwarte neushoorn werkelijk een gespecialiseerde gids vereist, ongeacht hoe zelfverzekerd u zelf achter het stuur bent.",
   },
   {
     q: "Hoeveel duurder is een begeleide safari dan selfdrive?",
-    a: "Het verschil is aanzienlijk: een privégids met voertuig is doorgaans de grootste kostenpost in het budget van een Namibië-reis. Bekijk ons volledige kostenoverzicht voor de exacte bedragen per prijsklasse.",
+    a: "Aanzienlijk, al niet zo veel als de headline-bedragen suggereren zodra u meeweegt wat er is inbegrepen: een privégids met voertuig alleen kost doorgaans €700-1.100+/persoon/dag, tegenover ruwweg €225-325/persoon/dag bij selfdrive, maar begeleide reizen bundelen meestal maaltijden, parkkosten en activiteiten die bij een selfdrive-reisroute aparte kostenposten zijn. Bekijk ons volledige kostenoverzicht voor de exacte bedragen per prijsklasse.",
   },
   {
     q: "Heb ik offroad-rijervaring nodig om zelf door Namibië te rijden?",
-    a: "Niet voor de klassieke route: Etosha, Sossusvlei en Swakopmund zijn te doen voor iedereen die zich prettig voelt op grindwegen, zonder dat serieuze offroad-vaardigheid nodig is. Het wordt relevanter in Damaraland en Kaokoland, waar een 4x4 en wat zelfvertrouwen op grind meer gewicht in de schaal leggen.",
+    a: "Niet voor de klassieke route: Etosha, Sossusvlei en Swakopmund zijn te doen voor iedereen die zich prettig voelt op grindwegen, zonder dat serieuze offroad-vaardigheid nodig is. Het wordt relevanter in Damaraland en Kaokoland, waar een 4x4 en wat zelfvertrouwen op grind meer gewicht in de schaal leggen, en waar een 4x4-huurauto zelf al ongeveer N$1.500-2.200/dag kost vóór brandstof.",
   },
 ];
 
