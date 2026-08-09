@@ -25,20 +25,26 @@ const COMPARISON = [
   {
     slug: "etosha",
     style: "Classic waterhole safari",
-    wildlife: "Reliable: elephant, lion, black rhino, large herds concentrated around floodlit waterholes",
-    pace: "Structured game drives from a fixed base",
+    wildlife:
+      "The most reliable of the three. An estimated 2,000+ elephant, several hundred lion across roughly two dozen prides, and one of Africa's most important black rhino populations concentrate around floodlit waterholes, especially as the dry season deepens.",
+    pace: "Structured game drives from a fixed base, or floodlit waterhole viewing without leaving camp",
+    bestMonths: "July–October, when seasonal pools have dried up and animals gather at the permanent waterholes; expect crowds at the busiest ones in peak season",
   },
   {
     slug: "damaraland",
     style: "Tracking, on foot or by vehicle",
-    wildlife: "Desert-adapted elephant and, with a specialist guide out of Palmwag, tracked black rhino, never guaranteed, more rewarding when found",
-    pace: "Slower, guided, conservancy-based",
+    wildlife:
+      "A different proposition entirely: desert-adapted elephant that range up to 700km and go days without drinking, and, with a specialist guide out of the Palmwag Concession, one of the largest free-roaming black rhino populations left on earth, tracked on foot. Nothing here is guaranteed the way Etosha's waterholes are; a find means more precisely because it wasn't scripted.",
+    pace: "Slower, guided, conservancy-based, often on foot",
+    bestMonths: "May–October (dry season); wildlife disperses more widely after rain, so tracking success drops outside this window",
   },
   {
     slug: "caprivi",
     style: "River and floodplain wildlife",
-    wildlife: "Hippo, crocodile, strong birding: a different ecosystem entirely",
+    wildlife:
+      "Hippo and crocodile in the Kwando-Linyanti river system, large elephant and buffalo herds moving through Bwabwata National Park, and close to 450 recorded bird species: a genuinely different ecosystem from the desert circuit further south, not a lesser version of it.",
     pace: "Boat-based excursions alongside game drives",
+    bestMonths: "April–September, when the dry season concentrates wildlife along the rivers and floodplains and driving conditions are at their best",
   },
 ];
 
@@ -61,7 +67,11 @@ export default function SafariAreasPage() {
           Best safari areas in Namibia
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          "Safari" means something different in each of these three regions. See our{" "}
+          "Safari" means something different in each of these three regions: Etosha is about
+          density and reliability, Damaraland is about the specific thrill of tracking
+          desert-adapted species that aren't fenced in anywhere, and the Caprivi Strip is barely
+          the same country, a river and floodplain ecosystem that shares almost nothing with the
+          desert circuit further south. See our{" "}
           <Link
             href="/namibia-wildlife-guide"
             className="font-semibold text-rust hover:text-rust-dark"
@@ -100,6 +110,12 @@ export default function SafariAreasPage() {
                       </dt>
                       <dd className="mt-1 text-[14px] text-charcoal/70">{c.pace}</dd>
                     </div>
+                    <div>
+                      <dt className="text-[11px] uppercase tracking-[0.08em] text-charcoal/40">
+                        Best months
+                      </dt>
+                      <dd className="mt-1 text-[14px] text-charcoal/70">{c.bestMonths}</dd>
+                    </div>
                   </dl>
                   <Link
                     href={`/where-to-stay/${region.slug}`}
@@ -113,6 +129,20 @@ export default function SafariAreasPage() {
             );
           })}
         </div>
+
+        <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <p className="text-[14px] leading-relaxed text-charcoal/70">
+            <span className="font-semibold text-charcoal">Our recommendation:</span> if you can
+            only pick one, Etosha is the safer bet for a first safari, especially August–October,
+            when waterhole activity peaks. Damaraland earns its place on a longer trip as the
+            region that rewards patience with something Etosha can't offer: free-roaming
+            desert-adapted wildlife with no fence in sight. The Caprivi Strip is worth adding only
+            if you're continuing on into Botswana's Okavango Delta or Chobe, or specifically
+            chasing birding and river wildlife: as a standalone stop on a short Namibia-only trip,
+            the roughly 12-hour drive (most people fly to Katima Mulilo instead) is hard to
+            justify.
+          </p>
+        </Reveal>
       </section>
     </>
   );

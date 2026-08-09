@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AvailabilityBadge, CardCTA } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
+import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
 import { getLodge } from "@/lib/data";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
@@ -23,6 +24,13 @@ export const metadata: Metadata = {
 };
 
 const HONEYMOON_SLUGS = ["little-kulala", "sossusvlei-desert-lodge", "doro-nawas-camp", "the-olive-exclusive"];
+
+const ROMANTIC_ADD_ONS = [
+  "A private dune dinner: most Sossusvlei-area lodges will lay a private table for one night of a stay, on the deck or out on the sand. Request it when you book the room, not on arrival, since it needs setup time and a specific staff booking.",
+  "Little Kulala's rooftop star-bed: each of its eleven suites has one, and the lodge sits inside the Namib-Naukluft's International Dark Sky Reserve (Gold Tier since 2012), so ask for the clearest-forecast night of your stay rather than a fixed date.",
+  "A hot-air balloon sunrise over the dunes: Namib Sky Balloon Safaris flies out of Sesriem most mornings, weather permitting, ending in a champagne breakfast in the desert. It's a roughly 3.5-hour outing door to door, worth booking well ahead since spots are limited.",
+  "Couples spa and wellness: Little Kulala lists on-site wellness and yoga, but menus at Namibia's desert lodges are smaller than a resort spa. Confirm what's actually on offer rather than assuming a full treatment list.",
+];
 
 export default function HoneymoonPage() {
   const lodges = HONEYMOON_SLUGS.map((slug) => getLodge(slug)).filter(Boolean);
@@ -47,8 +55,14 @@ export default function HoneymoonPage() {
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Namibia&apos;s space and silence make it a genuinely romantic destination: private
           plunge pools and rooftop star-bed sleep-outs are standard at lodges like Little Kulala,
-          and the nearest other guests are often a real distance away. These four are where
-          we&apos;d point a honeymoon first; for the full shortlist, see our{" "}
+          whose eleven suites sit inside the Namib-Naukluft&apos;s International Dark Sky Reserve
+          (Gold Tier since 2012), and the nearest other guests are often a real distance away.
+          These four are where we&apos;d point a honeymoon first: Little Kulala and Sossusvlei
+          Desert Lodge for the dunes, Doro Nawas Camp for a hilltop base near Twyfelfontein if you
+          want Damaraland&apos;s landscape without giving up romance, and The Olive Exclusive, a
+          seven-suite Windhoek boutique hotel with a private plunge pool per suite, as a bookend
+          night before or after the safari circuit rather than a stop on it. For the full
+          shortlist, see our{" "}
           <Link
             href="/best-romantic-stays"
             className="text-rust underline underline-offset-2 hover:text-rust-dark"
@@ -93,6 +107,29 @@ export default function HoneymoonPage() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 pb-12 sm:px-10">
+        <Reveal>
+          <h2 className="text-2xl font-bold text-charcoal">Add-ons worth booking ahead</h2>
+        </Reveal>
+        <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <ul className="space-y-3">
+            {ROMANTIC_ADD_ONS.map((n) => (
+              <li key={n} className="flex items-start gap-2 text-[14px] text-charcoal/70">
+                <MetaIcon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                {n}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 border-t border-charcoal/10 pt-5 text-[14px] leading-relaxed text-charcoal/70">
+            <span className="font-semibold text-charcoal">On pacing:</span> a honeymoon works
+            better shorter than a first-time circuit. Two lodges at three to four nights each,
+            rather than the five-stop, ten-day loop first-timers often build, is enough time to
+            actually slow down, and it leaves room to add a private dinner or a balloon flight
+            without the trip feeling like a checklist.
+          </p>
+        </Reveal>
       </section>
     </>
   );

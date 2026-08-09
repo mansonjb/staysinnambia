@@ -24,21 +24,21 @@ const COMPARISON = [
   {
     axis: "Self-drive",
     namibia:
-      "Genuinely accessible: a good road network, clear signage, and a well-established rental market make Namibia one of the easiest African countries to self-drive.",
+      "Genuinely accessible: a good road network, clear signage, and a well-established rental market make Namibia one of the easiest African countries to self-drive. National parks like Etosha and Namib-Naukluft issue permits and gate access on the spot, no advance camp booking required just to enter.",
     botswana:
-      "Much more limited: most of the best wildlife areas (Okavango Delta, Chobe, Moremi) are deep-sand 4x4 terrain reached by charter flight or serious off-road driving, and many camps are fly-in only.",
+      "Much more limited: self-drive entry to Moremi Game Reserve requires a confirmed campsite booking before DWNP (the parks department) will let you through the gate, and only a handful of public campsites exist inside it (Xakanxa, Third Bridge, Moremi, Okuti), often booked out months ahead in peak season. Add deep Kalahari sand tracks that need real 4x4 experience and low-range gearing, and much of the Okavango Delta itself is reachable only by light aircraft, which is why most Botswana visitors fly in with an operator rather than self-drive.",
   },
   {
     axis: "Wildlife density",
     namibia:
-      "Excellent but more spread out: Etosha's waterholes concentrate game well, but sightings elsewhere (Damaraland, Kaokoland) are wilder and less guaranteed.",
+      "Excellent but more spread out: Etosha's floodlit waterholes concentrate game exceptionally well, especially in the dry season (roughly Jun–Oct), but sightings in Damaraland or Kaokoland are wilder and less guaranteed.",
     botswana:
-      "Denser, more classic safari game viewing: the Delta and Chobe are known for consistently close, frequent sightings, including reliable buffalo and predator activity.",
+      "Denser, more classic safari game viewing: the Okavango Delta and Chobe, home to one of Africa's largest elephant populations, are known for consistently close, frequent sightings, including reliable buffalo herds and predator activity.",
   },
   {
     axis: "Landscape",
     namibia:
-      "The main draw for many first-timers: towering red dunes, desert-adapted wildlife, a rugged Atlantic coastline, found nowhere else on the continent in this form.",
+      "The main draw for many first-timers: towering red dunes at Sossusvlei (some of the tallest on Earth, over 300 metres), desert-adapted wildlife, a rugged Atlantic coastline, found nowhere else on the continent in this form.",
     botswana:
       "Water-based and green: the Okavango Delta's channels and floodplains are the opposite landscape from Namibia's deserts, with birding and water-wildlife (hippo, elephant, crocodile) as the signature experience.",
   },
@@ -56,14 +56,28 @@ const COMPARISON = [
       </>
     ),
     botswana:
-      "Runs consistently higher: Botswana's high-value, low-volume tourism model means fewer camps overall and fewer budget options, with fly-in camps as the norm rather than the exception.",
+      "Runs consistently higher: established lodges commonly run $600–1,500+ per person per night, and exclusive Okavango Delta fly-in camps often $1,500–4,000+ in high season, with some over $7,000. Botswana's high-value, low-volume tourism model deliberately caps camp numbers, so there's little of the guesthouse-and-rental-car budget tier Namibia has.",
+  },
+  {
+    axis: "Park entry fees",
+    namibia:
+      "Namibia Wildlife Resorts charges international visitors N$280/day (about $17.50) at premium parks like Etosha, Namib-Naukluft, and the Skeleton Coast, plus a separate per-vehicle fee, current since April 2026.",
+    botswana:
+      "DWNP charges international visitors BWP 270/day (about $20) at Chobe and Moremi, and BWP 500/day at Central Kalahari, Makgadikgadi, and Nxai Pan, plus separate vehicle fees, also updated April 2026. Day-to-day park fees are actually similar between the two countries; the real cost gap comes from camps and flights, not park gates.",
+  },
+  {
+    axis: "Visa & entry",
+    namibia:
+      "Requires a visa for most nationalities, though many can get one on arrival or apply online in advance; as of 2026 the standard tourist visa fee is around $30, valid for stays up to 90 days.",
+    botswana:
+      "More open on paper: most visitors from North America, Europe, the Commonwealth, and the SADC region (Namibia included) enter visa-free for tourism, typically for stays up to 90 days within a 12-month period.",
   },
 ];
 
 const FAQS = [
   {
     q: "Should I visit Namibia or Botswana for my first African safari?",
-    a: "If you want to self-drive, control your own pace, and prioritise landscape and desert-adapted wildlife, Namibia is the easier and generally more affordable first trip. If classic, dense wildlife viewing is the priority and budget allows for fly-in camps, Botswana delivers that more reliably.",
+    a: "If you want to self-drive, control your own pace, and prioritise landscape and desert-adapted wildlife, Namibia is the easier and generally more affordable first trip: its road network, signage, and rental market are built for it, and park permits are handled at the gate. If classic, dense wildlife viewing is the priority and your budget allows for $600+ per person per night at fly-in camps, Botswana delivers that more reliably, especially in the Okavango Delta and Chobe.",
   },
   {
     q: "Can I visit both Namibia and Botswana in one trip?",
@@ -71,11 +85,15 @@ const FAQS = [
   },
   {
     q: "Is Botswana more expensive than Namibia?",
-    a: "Generally yes. Botswana's tourism model deliberately limits camp numbers to keep areas uncrowded, which keeps prices high across the board. There's much less of a true budget tier than Namibia has via self-drive and guesthouses.",
+    a: "Substantially, yes. Botswana's high-value, low-volume tourism policy deliberately limits camp numbers to keep areas uncrowded: established lodges commonly run $600–1,500+ per person per night, and the most exclusive Okavango Delta fly-in camps often $1,500–4,000+. Namibia's genuine budget tier runs roughly €225–250/day self-drive. Park entry fees themselves are actually similar between the two countries in 2026 (both around $17–20/day); the gap is in camps, guiding, and internal flights, not gate prices.",
   },
   {
     q: "Which country is better for self-drive?",
-    a: "Namibia, clearly. Botswana's best wildlife areas are largely inaccessible without a serious 4x4 and off-road experience, or a fly-in camp. It's not set up for the kind of independent road-tripping Namibia is known for.",
+    a: "Namibia, clearly. Botswana's best wildlife areas are largely inaccessible without a serious 4x4 and off-road experience: self-drive entry to Moremi Game Reserve, for example, requires a confirmed DWNP campsite booking before you're allowed through the gate, and those book out months ahead. It's not set up for the kind of independent road-tripping Namibia is known for.",
+  },
+  {
+    q: "Do I need a visa for Namibia or Botswana?",
+    a: "Botswana is visa-free for most Western and SADC nationalities for tourist stays of up to 90 days. Namibia generally requires a visa, though most visitors can get one on arrival or apply online in advance; the standard tourist visa fee as of 2026 is around $30, also valid for up to 90 days.",
   },
 ];
 

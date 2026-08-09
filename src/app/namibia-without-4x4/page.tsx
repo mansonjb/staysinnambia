@@ -22,17 +22,19 @@ export const metadata: Metadata = {
 };
 
 const CAN_2WD = [
-  "Windhoek to Sossusvlei (Sesriem): tar and well-graded gravel",
-  "Windhoek to Swakopmund via the B1/B2: fully tarred",
-  "Swakopmund to Damaraland's main lodges: graded gravel, fine in the dry season",
-  "Windhoek to Etosha's southern and eastern gates: tar most of the way",
+  "Windhoek to Sossusvlei (Sesriem) via the B1 and the Remhoogte Pass (C24, then D1275/C19): tar to Rehoboth, then well-graded gravel the rest of the way. This is the route most rental agencies point 2WD drivers toward.",
+  "Windhoek to Swakopmund via the B1/B2: fully tarred, no gravel driving at all.",
+  "Uis to Twyfelfontein in Damaraland (C35 to D2612): a well-touristed, generally good-condition gravel road that normal sedans handle in dry conditions, though the D2612's final stretch runs sandier than the rest.",
+  "Windhoek to Etosha's southern gate (Anderson) near Okaukuejo: tar most of the way, and the roads inside Etosha itself are graded and suitable for a standard 2WD in the dry season.",
+  "The southern run to Fish River Canyon's rim viewpoints near Hobas: tar and maintained gravel, with no 4x4 needed for the viewpoints themselves.",
 ];
 
 const NEED_4X4 = [
-  "The final ~5km of soft sand from the Sossusvlei 2x4 car park to the dunes themselves",
-  "Most of the Skeleton Coast north of Torra Bay",
-  "Remote Kaokoveld tracks north of Damaraland",
-  "Some rougher conservancy roads to community campsites off the main gravel routes",
+  "The final ~5km of soft sand from the Sossusvlei 2x4 car park to the dunes and Deadvlei themselves, now shuttle-only for all vehicles regardless of drivetrain (see below).",
+  "Spreetshoogte Pass, the steepest pass in Namibia (gradients as steep as roughly 1:4.5), on the alternate scenic route into Sossusvlei: 4x4-only, and caravans and trailers are barred outright. Take the gentler Remhoogte Pass instead if you're in a 2WD.",
+  "Most of the Skeleton Coast north of Torra Bay, plus the standout northern lodges (Hoanib Skeleton Coast Camp, Shipwreck Lodge), which are normally reached by light aircraft rather than any road at all.",
+  "Remote Kaokoveld tracks north of Damaraland, including the routes toward Serra Cafema and the Hartmann Valley.",
+  "Damaraland and Kaokoland's D-roads generally: graded but rougher and more remote than the C-roads, and genuinely rain-affected in the wet season (roughly November to April), when even usually-fine gravel routes can deteriorate fast.",
 ];
 
 export default function Without4x4Page() {
@@ -55,16 +57,17 @@ export default function Without4x4Page() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           A common misconception: most of a classic Namibia circuit is drivable in a normal
-          sedan or crossover. The country&apos;s main gravel roads (the &quot;C&quot; and
-          &quot;D&quot; roads, broken down in more detail in our{" "}
+          sedan or crossover. Namibia&apos;s &quot;C&quot; roads, the country&apos;s main gravel
+          network (broken down in more detail in our{" "}
           <Link
             href="/namibia-self-drive-guide"
             className="font-semibold text-rust hover:text-rust-dark"
           >
             self-drive guide
           </Link>
-          ) are well-graded and maintained. A 4x4 genuinely matters for a smaller set of specific
-          stretches.
+          ), are wide, graded and maintained well enough that most rental agencies rate them for
+          2WD at a sensible speed. The rougher &quot;D&quot; roads are a different story, and a
+          4x4 genuinely matters for a smaller, specific set of stretches, not the whole trip.
         </p>
       </section>
 
@@ -97,9 +100,13 @@ export default function Without4x4Page() {
         <Reveal className="mt-6 rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
           <p className="text-[14px] leading-relaxed text-charcoal/70">
             <span className="font-semibold text-charcoal">A middle path:</span> at Sossusvlei,
-            the park&apos;s own shuttle service covers the final soft-sand stretch, so you can
-            park a 2WD at the public car park and still reach the dunes without renting a 4x4
-            for the whole trip.
+            an official shuttle/excursion service covers the final soft-sand stretch to the dunes
+            and Deadvlei, so you can park a 2WD at the public car park and still reach them
+            without renting a 4x4 for the whole trip. As of 2026 that&apos;s no longer optional
+            even for 4x4 drivers: private vehicles are barred from the final ~5km, and the
+            park&apos;s own guidance quotes roughly N$260 per adult and N$130 per child under 12,
+            though the pickup point and pricing have both shifted more than once in recent years,
+            so confirm the current arrangement at Sesriem or with your lodge before you go.
           </p>
         </Reveal>
 

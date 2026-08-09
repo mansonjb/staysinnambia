@@ -22,11 +22,14 @@ export const metadata: Metadata = {
 
 const malariaItem = (
   <>
-    Malaria prophylaxis if your route includes the north (Etosha, Caprivi) in the rainy season:
-    see our{" "}
+    Malaria prophylaxis (doxycycline or atovaquone-proguanil/Malarone are the two most commonly
+    prescribed options) if your route includes the malaria-risk regions: Kavango, Kunene,
+    Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa and Zambezi, and highest risk in
+    the rainy season. See our{" "}
     <Link href="/namibia-safety-and-health" className="font-semibold text-rust hover:text-rust-dark">
       safety and health guide
-    </Link>
+    </Link>{" "}
+    for the region-by-region breakdown, and confirm the specific drug with a travel doctor
   </>
 );
 
@@ -36,8 +39,10 @@ const CATEGORIES = [
     items: [
       "Layers: desert days can hit 35°C+ while nights drop below 10°C, sometimes near freezing in winter (Jun–Aug)",
       "Neutral-coloured clothing for game drives (avoid bright white or black, which shows dust and heat)",
-      "A proper hat and sunglasses: the sun is relentless, even in the green season",
+      "A proper wide-brimmed hat and polarised sunglasses: the sun is relentless, even in the green season",
       "A warm jacket or fleece for early-morning game drives and desert nights, even in summer",
+      "A buff or neck gaiter: the single most useful piece of clothing on gravel-road days, doubling as dust mask, sun protection and warmth at dawn",
+      "Quick-dry trousers and closed-toe shoes over sandals for anything off tarmac: gravel, thorns and loose sand punish open footwear",
     ],
   },
   {
@@ -53,9 +58,17 @@ const CATEGORIES = [
     title: "Self-drive specific",
     items: [
       "A physical, printed or downloaded offline map: see our connectivity guide for why you can't rely on signal",
-      "A basic tool kit and tyre repair kit if your rental doesn't already include one",
-      "Cash (Namibian dollars or South African rand) for fuel stations and park entry fees in areas where cards fail",
-      "Dust-proof bags for camera gear and electronics on gravel-road days",
+      "A basic tool kit and tyre repair kit if your rental doesn't already include one, since gravel-road tyre and windscreen damage is the most common rental claim",
+      "Cash (Namibian dollars or South African rand) for fuel stations and the N$280/person/day park entry fees at Etosha and Namib-Naukluft, where card machines are unreliable",
+      "Dust-proof bags or dry bags for camera gear and electronics on gravel-road days: Namibia's fine dust gets into zips, ports and lens mounts",
+    ],
+  },
+  {
+    title: "Electronics & power",
+    items: [
+      "A headlamp with spare batteries: many remote lodges and desert camps run on generator or solar power for set hours rather than a 24-hour grid, and cut electricity overnight",
+      "A universal travel adapter for Namibia's Type D and M sockets (220V), plus a power bank: charging windows at remote camps are limited and shared",
+      "An offline-capable phone with maps downloaded in advance, and a paper backup: mobile signal disappears for long stretches outside towns",
     ],
   },
   {
@@ -71,11 +84,11 @@ const CATEGORIES = [
 const FAQS = [
   {
     q: "How much water should I carry on a Namibia self-drive?",
-    a: "Aim for at least 2-5 litres per person for any remote stretch, more in the hottest months. This isn't just a comfort measure: fuel stations and services are genuinely far apart, and carrying water is standard advice for a breakdown scenario, not an exaggeration.",
+    a: "Aim for at least 2-5 litres per person for any remote stretch, more in the hottest months. This isn't just a comfort measure: fuel stations and services are genuinely far apart, sometimes over 250km on stretches like the Skeleton Coast, Kaokoland or the road to Fish River Canyon, and carrying water is standard advice for a breakdown scenario, not an exaggeration.",
   },
   {
     q: "Do I need warm clothes for a desert country?",
-    a: "Yes, and it surprises a lot of first-timers. Namibia's desert regions can swing from 35°C+ in the day to under 10°C at night, and winter (June–August) nights can approach freezing in places like Sossusvlei. Layers are non-negotiable, not optional.",
+    a: "Yes, and it surprises a lot of first-timers. Namibia's desert regions can swing from 35°C+ in the day to under 10°C at night, and winter (June–August) nights can approach freezing in places like Sossusvlei. Layers are non-negotiable, not optional, and a buff or neck gaiter covers both the dust and the dawn chill in one item.",
   },
   {
     q: "What colours should I wear on game drives?",
@@ -83,7 +96,11 @@ const FAQS = [
   },
   {
     q: "Is malaria medication necessary for my packing list?",
-    a: "It depends on your specific route and dates: malaria risk in Namibia is concentrated in the north (Etosha, Caprivi) and highest in the rainy season (roughly November to April). See our safety and health guide for the region-by-region breakdown, and confirm with a travel doctor rather than assuming either way.",
+    a: "It depends on your specific route and dates: current CDC guidance flags malaria risk across Namibia's Kavango, Kunene, Ohangwena, Omaheke, Omusati, Oshana, Oshikoto, Otjozondjupa and Zambezi regions, highest in the rainy season (roughly November to April). Doxycycline and atovaquone-proguanil (Malarone) are the two most commonly recommended prophylaxis options. See our safety and health guide for the region-by-region breakdown, and confirm the specific drug and dosing with a travel doctor rather than assuming either way.",
+  },
+  {
+    q: "What plug adapter do I need for Namibia?",
+    a: "Namibia uses Type D and Type M sockets at 220V/50Hz, the same large round three-pin plugs as South Africa. A universal travel adapter covers both. Most phone, camera and laptop chargers are dual-voltage (look for \"100-240V\" printed on the adapter), so you'll only need the plug shape, not a voltage converter.",
   },
 ];
 

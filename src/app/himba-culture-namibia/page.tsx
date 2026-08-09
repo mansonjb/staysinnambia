@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const PRINCIPLES = [
   {
     title: "Ask before you photograph",
-    text: "Always ask an individual directly before photographing them, even in a setting where photography is broadly permitted. A nod from a guide isn't the same as consent from the person in the frame.",
+    text: "Always ask an individual directly before photographing them, even in a setting where photography is broadly permitted. A nod from a guide isn't the same as consent from the person in the frame, and being waved through by an intermediary doesn't substitute for the person's own yes.",
   },
   {
-    title: "Expect to pay, and pay directly where possible",
-    text: "A fee or purchase of crafts is normal and appropriate for a visit: this is someone's home and time, not a free photo opportunity. Ask your guide how payment reaches the community directly rather than assuming a lodge fee covers it.",
+    title: "Bring supplies, not cash",
+    text: "Cash is close to useless days from the nearest shop and isn't a traditional part of how the Himba transact, so it's a poor way to compensate a community for its time. The stronger norm, followed by community-run guides in Opuwo, is to stop at a supermarket with your guide before the visit and buy staples the guide selects: maize meal, sugar, cooking oil, tea or coffee. Budget roughly N$500 worth of food for two visitors, more for a larger group, and let your guide judge the right amount rather than skimping.",
   },
   {
     title: "Know the difference between a 'living museum' and a real village",
-    text: "Some stops are staged demonstrations set up specifically for tourism, distinct from where people actually live day to day. Neither is inherently wrong, but you should know which one you're visiting and what that means for how genuine the interaction is.",
+    text: "Some stops are staged demonstrations set up specifically for tourism, distinct from where people actually live day to day. Neither is inherently wrong, and a living museum can still be a legitimate, community-owned source of income, but you should know which one you're visiting and ask your guide directly rather than assume.",
   },
   {
     title: "Follow the community's lead on what's shared",
-    text: "Sacred fires, certain rituals, and specific areas of a homestead may not be for visitors regardless of what's offered elsewhere. A respectful visit follows the community's boundaries, not the itinerary's.",
+    text: "Sacred fires, certain rituals, and specific areas of a homestead may not be for visitors regardless of what's offered elsewhere. A respectful visit follows the community's boundaries, not the itinerary's, and a good guide will tell you what's off-limits before you arrive, not improvise in the moment.",
   },
 ];
 
@@ -46,15 +46,19 @@ const FAQS = [
   },
   {
     q: "Is it okay to visit a Himba village as a tourist?",
-    a: "It can be, done respectfully and through a proper channel: a guide with a genuine community relationship, informed consent for any photography, and fair payment that reaches the people you're visiting rather than only an intermediary. It's worth being honest with yourself about whether a given stop is genuine cultural exchange or a staged photo opportunity, and choosing accordingly.",
+    a: "It can be, done respectfully and through a proper channel: a guide with a genuine community relationship, informed consent for any photography, and compensation that reaches the people you're visiting in a form they actually want, which in practice usually means food staples bought together with your guide rather than cash. It's worth being honest with yourself about whether a given stop is genuine cultural exchange or a staged photo opportunity, and choosing accordingly.",
   },
   {
     q: "What's the difference between a 'living museum' and visiting a real Himba homestead?",
     a: "A living museum is a demonstration set up specifically to show visitors traditional Himba life, often distinct from where the same community actually lives day to day. It can still be a legitimate, community-run source of income, but it's a different experience from an organic visit to a working homestead, and operators should be upfront about which one you're booking.",
   },
   {
-    q: "Where in Namibia can I visit Himba communities?",
-    a: "Mainly in and around Kaokoland and the wider Kunene region, in Namibia's northwest, reachable as an extension from Damaraland for travellers with the extra days and, usually, a 4x4. It's a genuine detour, not a stop on the classic circuit, so it needs deliberate planning rather than being squeezed in.",
+    q: "Where in Namibia can I visit Himba communities, and who should I book through?",
+    a: "Mainly in and around Kaokoland and the wider Kunene region, in Namibia's northwest, reachable as an extension from Damaraland for travellers with the extra days and, usually, a 4x4. The town of Opuwo is the practical hub: it's home to guide services such as the Kaoko Information Centre, run by Himba people for the Himba, where a guide will take you to buy provisions locally before the visit itself. It's a genuine detour, not a stop on the classic circuit, so it needs deliberate planning rather than being squeezed in.",
+  },
+  {
+    q: "What should I bring or buy for a Himba community visit?",
+    a: "Practical food staples rather than cash or western trinkets: maize meal, sugar, cooking oil, tea or coffee are the items communities themselves ask for, since they're semi-nomadic and these goods aren't always easy to restock. The norm followed by community-run guides is to buy these together at a supermarket in Opuwo immediately before the visit, so the community sees exactly what's being brought and the guide can judge fair quantities for the size of the group.",
   },
 ];
 
@@ -104,19 +108,24 @@ export default function HimbaCulturePage() {
         </div>
 
         <Reveal className="mt-8 rounded-2xl border border-black/5 bg-sand/20 p-8">
-          <p className="text-[14px] leading-relaxed text-charcoal/70">
+          <h2 className="text-xl font-bold text-charcoal">Our recommendation</h2>
+          <p className="mt-3 text-[14px] leading-relaxed text-charcoal/70">
             None of this is a reason to avoid Kaokoland or the Kunene region: it&apos;s a reason to
             go through operators and guides who have real, ongoing relationships with specific
-            communities, rather than a generic stop added to an itinerary. Most visits are arranged
-            as an extension from{" "}
+            communities, rather than a generic stop added to an itinerary. In practice, that means
+            basing yourself in or routing through Opuwo and using a Himba-run guide service such as
+            the Kaoko Information Centre rather than booking a village stop as an anonymous add-on
+            through a coastal tour desk. Most visits are arranged as an extension from{" "}
             <Link
               href="/where-to-stay/damaraland"
               className="font-semibold text-rust hover:text-rust-dark"
             >
               Damaraland stays
             </Link>
-            , so ask your guide directly how payment reaches the community and what the visit will
-            actually involve before you book.
+            , adding at least a day each way of driving, much of it on gravel. Ask your guide
+            directly what the visit will involve, whether you&apos;ll buy provisions together
+            beforehand, and how photography consent works on the day, before you book rather than
+            once you&apos;re standing at the homestead.
           </p>
         </Reveal>
       </section>

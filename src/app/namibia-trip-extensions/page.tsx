@@ -22,14 +22,20 @@ export const metadata: Metadata = {
 const EXTENSIONS = [
   {
     place: "Victoria Falls (Zambia/Zimbabwe)",
-    text: "The most common Namibia add-on. Usually flown, not driven: most travellers fly from Windhoek or from the Caprivi Strip's Katima Mulilo rather than self-driving the distance. Worth a minimum of 2 nights to see both the Zambian and Zimbabwean sides of the falls.",
+    text: "The most common Namibia add-on, and usually flown rather than driven. A direct flight from Windhoek to Victoria Falls airport (VFA) runs a little over an hour in the air, though realistic door-to-door time with a connection is closer to half a day. Self-driving is possible but long: it's roughly 1,228km and a full 12 hours of driving from Windhoek to Katima Mulilo at the eastern tip of the Zambezi Region (most self-drivers split it over 2 days, overnighting in Rundu), then a further border crossing and drive to the falls themselves. Once there, budget a minimum of 2 nights to properly see both the Zambian and Zimbabwean sides, which are genuinely different viewpoints of the same falls.",
     time: "+3–4 days minimum",
   },
   {
     place: "Chobe National Park & the Okavango Delta (Botswana)",
     text: (
       <>
-        A natural link from our Caprivi Strip region, which borders Chobe directly. See our{" "}
+        A natural link from our Zambezi Region (formerly Caprivi Strip), which borders Chobe
+        directly across the Ngoma Bridge border post (open 07:00–18:00 daily), roughly 55km from
+        Kasane and about 70km from Katima Mulilo on the Namibian side. For the Okavango Delta and
+        Maun, most self-drivers instead cross further west at Mohembo border post (open
+        06:00–18:00), south of Divundu, then continue around 580km to Maun through the Okavango
+        Panhandle, partly on gravel that&apos;s manageable in a sedan in the dry season but can
+        get soft after heavy rain. See our{" "}
         <Link href="/namibia-vs-botswana" className="font-semibold text-rust hover:text-rust-dark">
           Namibia vs Botswana comparison
         </Link>{" "}
@@ -41,7 +47,7 @@ const EXTENSIONS = [
   },
   {
     place: "Cape Town & the Garden Route (South Africa)",
-    text: "Usually bookended rather than combined mid-trip: many travellers fly into or out of Cape Town before or after their Namibia loop, treating it as a separate city stay rather than an extension of the self-drive itself.",
+    text: "Usually bookended rather than combined mid-trip: many travellers fly into or out of Cape Town before or after their Namibia loop, treating it as a separate city stay rather than an extension of the self-drive itself. It's an easy add-on logistically: a direct flight from Windhoek to Cape Town takes a little over 2 hours, with several flights a day on the route.",
     time: "+3–5 days",
   },
 ];
@@ -49,19 +55,19 @@ const EXTENSIONS = [
 const FAQS = [
   {
     q: "Can I drive from Namibia to Victoria Falls?",
-    a: "Technically yes via the Caprivi Strip and into Zambia or Botswana, but it's a long, multi-day drive most travellers skip in favour of a domestic flight from Windhoek or Katima Mulilo. Flying is the practical default for this specific extension.",
+    a: "Technically yes, via the Zambezi Region (the old Caprivi Strip) and across into Zambia or Botswana, but it's a genuinely long, multi-day drive most travellers skip in favour of a domestic flight from Windhoek or Katima Mulilo. As a reference point, Windhoek to Katima Mulilo alone is roughly 1,228km and 12 hours of driving, usually split over 2 days with an overnight in Rundu, and that's before you've crossed a border. Flying is the practical default for this specific extension unless you're already road-tripping the Zambezi Region as part of your Namibia route.",
   },
   {
     q: "Do I need a separate visa for these extensions?",
-    a: "Yes, in every case: Zambia, Zimbabwe, Botswana and South Africa each have their own entry requirements, separate from Namibia's (which itself moved to a mandatory online Visa on Arrival application on 1 April 2025). Check requirements for your specific nationality and each country well before booking flights, alongside our own Namibia visa requirements guide.",
+    a: "Yes, in every case: Zambia, Zimbabwe, Botswana and South Africa each have their own entry requirements, separate from Namibia's (which itself moved to a mandatory online Visa on Arrival application on 1 April 2025, and has continued to update its eligible-nationality list since). If your extension covers both Zambia and Zimbabwe, the joint KAZA UniVisa (around US$50, valid for 30 days across both countries within a 12-month period) is usually the simplest option and also covers day trips into Botswana via the Kazungula border post, though an overnight stay in Botswana requires that country's own separate entry permission. Check requirements for your specific nationality and each country well before booking flights, alongside our own Namibia visa requirements guide.",
   },
   {
     q: "How many extra days should I budget for a Victoria Falls extension?",
-    a: "A minimum of 3–4 days total, including travel: that covers a flight each way plus 2 nights to properly see the falls from both the Zambian and Zimbabwean viewpoints, which are genuinely different experiences.",
+    a: "A minimum of 3–4 days total, including travel: that covers a flight each way (a little over an hour in the air from Windhoek to Victoria Falls airport, longer door-to-door with a connection) plus 2 nights to properly see the falls from both the Zambian and Zimbabwean viewpoints, which are genuinely different experiences worth the extra border crossing.",
   },
   {
     q: "Is it better to extend into Botswana or fly straight to Victoria Falls?",
-    a: "Depends on what you want more of. Botswana extends the safari experience with denser wildlife viewing; Victoria Falls is a standalone landmark with little overlap with what you've already seen in Namibia. Many longer, 3-week-plus trips do both.",
+    a: "Depends on what you want more of. Botswana extends the safari experience with denser wildlife viewing, particularly around Chobe National Park, reached from Namibia's Zambezi Region via the Ngoma Bridge border post; Victoria Falls is a standalone landmark with little overlap with what you've already seen in Namibia. Many longer, 3-week-plus trips do both, crossing into Chobe by road and then flying on to the falls.",
   },
 ];
 
@@ -87,6 +93,15 @@ export default function TripExtensionsPage() {
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Namibia borders some of Southern Africa&apos;s biggest highlights. Here&apos;s how
           travellers actually add them on, and what each one really costs in time.
+        </p>
+        <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+          <span className="font-semibold text-charcoal">Our recommendation:</span> if your route
+          already ends in the Zambezi Region, a short fly-in extension to Victoria Falls or a
+          Chobe day trip across the Ngoma border adds relatively little extra travel time for a
+          genuinely different landscape. If your Namibia loop is entirely in the south and centre
+          (Sossusvlei, Etosha, the coast), tacking on Cape Town at either end of the trip is the
+          lower-friction option logistically, since it doesn&apos;t require backtracking across the
+          country to reach a border.
         </p>
       </section>
 

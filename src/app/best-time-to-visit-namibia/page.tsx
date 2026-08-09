@@ -26,35 +26,50 @@ const SEASONS = [
     name: "Dry season",
     months: "May – October",
     summary:
-      "The classic safari window, and Namibia's clearest, driest air of the year. Vegetation thins out and animals concentrate around waterholes, making game viewing at its most reliable, especially in Etosha.",
+      "The classic safari window. Rain essentially stops from May, vegetation thins fast, and animals lose their scattered water sources, so they funnel into a handful of permanent waterholes. In Etosha that means predictable sightings at pans like Okaukuejo, Halali, Klein Namutoni and Rietfontein, sometimes within sight of camp. July is Namibia's driest month on record; June and July are also the coldest, with desert-interior nights regularly falling to 5°C or below (frost is possible on the gravel plains around Sossusvlei and in the Khomas Hochland), while days stay a crisp, comfortable 22–25°C.",
     tradeoffs: [
-      "Best wildlife viewing of the year, particularly July–October",
-      "Cool, dry days and cold desert nights (pack layers)",
-      "Peak season pricing and the most other travellers on the road",
+      "Peak game viewing runs August–October, as thirst forces animals to concentrate at fewer and fewer waterholes",
+      "Cold, sometimes near-freezing desert nights May–August: pack a proper down layer, not just a fleece",
+      "Peak-season lodge rates and the fullest camps of the year, especially July–September; book Etosha's national park camps 6–9 months out",
     ],
   },
   {
     name: "Green season",
     months: "November – April",
     summary:
-      "Namibia turns lush and green after the rains, with dramatic skies and strong birding, but wildlife spreads out away from waterholes, making sightings less concentrated.",
+      "The rains arrive in scattered November thunderstorms and build to a peak in January–March, when Windhoek averages around 150mm of rain in its wettest month alone against roughly 0.5mm in dry-season June. Dust settles, the desert turns green almost overnight, and this is when Palearctic migrant birds (waders, kites, European bee-eaters) are present alongside residents, making it the strongest birding window of the year. The trade-off: with water everywhere, wildlife has no reason to gather at waterholes, so sightings in Etosha are more scattered and require more driving.",
     tradeoffs: [
-      "Best birding of the year, with migratory species present",
-      "Landscapes and photography light are at their most dramatic",
-      "Wildlife is more dispersed and some roads can be affected by rain",
+      "Best birding of the year, December–March, with migratory species present alongside residents",
+      "Dramatic cloud-and-light photography and calving season for antelope (impala, springbok) in December–January",
+      "Wildlife disperses away from waterholes, and unsealed roads in the Zambezi Region and parts of Kaokoland can be temporarily cut by rain",
     ],
   },
   {
     name: "Shoulder months",
-    months: "April–May & October–November",
+    months: "April–May & September–October",
     summary:
-      "A reasonable middle ground: fewer crowds than peak dry season, with landscapes not yet fully dried out (April–May) or just starting to green up (October–November).",
+      "The best value-for-conditions trade in Namibia. April–May: the rains have just stopped, landscapes are still green from the wet season but the crowds and heat haven't arrived, and roads have mostly dried out. September–October: still fully dry season game viewing, arguably the best of the year as October pushes remaining water sources to their limit, but before the January price reset and with noticeably lighter camps than August. The catch is October heat: desert regions like Sossusvlei and the Kaokoveld regularly hit 35–38°C by mid-afternoon, which is why some guides half-jokingly call it the toughest month to be outdoors.",
     tradeoffs: [
-      "Lighter crowds than July–September",
-      "Weather is generally comfortable and predictable",
-      "October can bring real heat in the desert regions before the rains break",
+      "April–May: green scenery, drying roads, and rates well below peak dry season",
+      "September–October: dry-season game viewing quality without August's crowd levels",
+      "October brings real heat before the rains break; plan game drives for early morning and late afternoon",
     ],
   },
+];
+
+const MONTHS = [
+  { m: "Jan", temp: "32–34° / 17–19°", rain: "Wet season builds", note: "Hot, humid, frequent afternoon storms; landscapes lush" },
+  { m: "Feb", temp: "31–33° / 17–19°", rain: "Wettest month", note: "Windhoek averages ~154mm; peak green season and birding" },
+  { m: "Mar", temp: "30–32° / 16–18°", rain: "Rain tapering", note: "Still humid, landscapes at their greenest" },
+  { m: "Apr", temp: "28–30° / 13–15°", rain: "Rain mostly stops", note: "Underrated shoulder month: green, drying roads, few crowds" },
+  { m: "May", temp: "25–27° / 8–10°", rain: "Near zero", note: "Dry season begins; vegetation starts thinning" },
+  { m: "Jun", temp: "22–24° / 5–7°", rain: "Driest stretch", note: "Coldest nights of the year; clearest skies for stargazing" },
+  { m: "Jul", temp: "22–24° / 5–7°", rain: "Driest month", note: "Peak air clarity; game concentration builds at waterholes" },
+  { m: "Aug", temp: "25–27° / 8–10°", rain: "Effectively none", note: "Peak tourist season; book Etosha camps well ahead" },
+  { m: "Sep", temp: "29–32° / 11–14°", rain: "Effectively none", note: "Excellent, less crowded game viewing before the October heat" },
+  { m: "Oct", temp: "33–36° / 16–18°", rain: "Last dry month", note: "Best waterhole action of the year, but genuinely hot by afternoon" },
+  { m: "Nov", temp: "33–35° / 18–19°", rain: "First storms", note: "Rains begin; wildlife starts dispersing, migrant birds arrive" },
+  { m: "Dec", temp: "31–33° / 17–19°", rain: "Green season starts", note: "Hot and humid; busy with regional holiday travel to the coast" },
 ];
 
 export default function BestTimePage() {
@@ -92,6 +107,13 @@ export default function BestTimePage() {
           </Link>
           , or avoiding crowds. Here&apos;s the honest trade-off for each part of the year.
         </p>
+        <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+          <span className="font-semibold text-charcoal">Our recommendation:</span> if this is a
+          first trip built around game viewing, aim for September or early October. You get
+          dry-season conditions at their most concentrated, before the true heat and the August
+          crowds both peak. If wide-open green landscapes and birding matter more than guaranteed
+          sightings, February and March deliver both, at the cost of more driving between animals.
+        </p>
       </section>
 
       <section className="mx-auto max-w-[1400px] px-6 py-12 sm:px-10">
@@ -118,6 +140,40 @@ export default function BestTimePage() {
                   ))}
                 </ul>
               </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 pb-16 sm:px-10">
+        <Reveal>
+          <h2 className="text-2xl font-bold tracking-tight text-charcoal sm:text-3xl">
+            Month by month
+          </h2>
+          <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+            Daytime highs / overnight lows shown are central and southern Namibia averages
+            (Windhoek area). The Namib&apos;s desert interior and Etosha&apos;s pans run several
+            degrees hotter by afternoon in the shoulder months, and colder overnight in June and
+            July.
+          </p>
+        </Reveal>
+        <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          {MONTHS.map((mo, i) => (
+            <Reveal
+              key={mo.m}
+              delay={i * 30}
+              className="rounded-2xl border border-black/5 bg-white p-5 shadow-sm"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-sm font-bold uppercase tracking-[0.1em] text-charcoal">
+                  {mo.m}
+                </h3>
+                <span className="text-[11px] font-medium text-rust">{mo.temp}C</span>
+              </div>
+              <p className="mt-2 text-[11px] uppercase tracking-[0.08em] text-charcoal/40">
+                {mo.rain}
+              </p>
+              <p className="mt-2 text-[12.5px] leading-snug text-charcoal/60">{mo.note}</p>
             </Reveal>
           ))}
         </div>

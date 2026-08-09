@@ -23,10 +23,11 @@ export const metadata: Metadata = {
 };
 
 const NOTES = [
-  "Many safari lodges set a minimum age (often 6–8) for game drives: check before booking, not on arrival.",
-  "Malaria risk is concentrated in the north (Etosha and the Caprivi Strip) and highest in the rainy season (roughly November to April); most of the rest of the country is low-risk, but confirm current guidance with a travel clinic.",
-  "Self-drive days are long: plan rest stops and keep individual driving legs under 4–5 hours with young children.",
-  "Etosha's floodlit waterhole camps let kids watch wildlife from the safety of the lodge, without a game drive required.",
+  "Minimum ages vary by lodge, not by a single national rule: Mushara Bush Camp near Etosha's eastern gate accepts children of any age on guided drives, while many other camps set a floor around 6–8 (some as high as 12) for shared game-drive vehicles. Confirm the exact age policy directly with the lodge you're booking, since it can change between sister properties.",
+  "Malaria risk is real but concentrated, not uniform. It's present year-round along the Kunene, Zambezi and Okavango rivers (so the Caprivi Strip and the far northwest), and seasonally, roughly November to June, across Etosha and Namibia's other northern regions. Most of the classic Sossusvlei–Swakopmund–Damaraland circuit further south and west carries little to no risk. Confirm current, region-specific guidance with a travel clinic before you decide on antimalarials.",
+  "Self-drive days are long: plan rest stops and keep individual driving legs under 4–5 hours with young children. Etosha's gates sit roughly 4.5 hours from Windhoek and Damaraland's gravel legs can run 3–4 hours each, so treat those as full driving days rather than squeezing them around activities.",
+  "Etosha's floodlit waterhole camps, inside the park at Okaukuejo and Halali, or on the private reserves bordering it (Ongava, Onguma), let kids watch elephant, rhino and lion come to drink after dark from the safety of the lodge, with no game drive required.",
+  "Guided walks and cultural visits (Twyfelfontein's rock engravings, a Himba village visit further north) tend to suit a wider age range than a bumpy multi-hour game-tracking drive. Ask the lodge which of its activities are realistic for your kids' specific ages when you book, not once you're there.",
 ];
 
 export default function KidsPage() {
@@ -85,6 +86,15 @@ export default function KidsPage() {
       <section className="mx-auto max-w-[1400px] px-6 py-8 sm:px-10">
         <Reveal>
           <h2 className="text-2xl font-bold text-charcoal">Lodges that work well for families</h2>
+          <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
+            Mushara Lodge sits close to Etosha&apos;s eastern gate with family-friendly suites and
+            a sister property nearby if you need more space. Kulala Desert Lodge shares its private
+            reserve with Little Kulala at a more accessible price tier, so kids still get a private
+            gate into Namib-Naukluft Park. Villa Violet is a small, owner-run Windhoek guesthouse
+            with a self-catering option, a low-key bookend before or after the circuit. Canyon
+            Lodge, near Fish River Canyon, is rustic-but-comfortable and a good base if hiking or
+            the south is part of your route.
+          </p>
         </Reveal>
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {familyLodges.map((lodge, i) => (

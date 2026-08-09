@@ -23,8 +23,8 @@ const FACTORS = [
   {
     axis: "Cost",
     selfDrive:
-      "Significantly cheaper: you're not paying for a private guide and vehicle, the single biggest line item in a guided trip. See our full cost breakdown for real per-day figures.",
-    guided: "Higher across the board, but often includes meals, park fees and activities that would otherwise be separate costs on a self-drive trip.",
+      "Roughly €225–250/person/day budget, ≈€325/day mid-range: a 4x4 rental alone runs about N$1,500–2,200/day (≈€75–110) before fuel and insurance excess, plus the N$280/person/day-plus-N$620/vehicle park entry fees you pay directly at the gate. See our full cost breakdown for the tier-by-tier figures.",
+    guided: "A private guide and vehicle typically runs €700–1,100+/person/day for a fully custom itinerary, though set-departure small-group tours can undercut that. It usually bundles meals, park fees and activities that are separate line items on a self-drive trip, so the headline gap overstates the real difference somewhat.",
   },
   {
     axis: "Freedom & pace",
@@ -35,19 +35,19 @@ const FACTORS = [
   {
     axis: "Wildlife spotting",
     selfDrive:
-      "Genuinely good in Etosha, where waterholes concentrate game predictably. Weaker in areas requiring tracking skill, like desert-adapted elephant or rhino in Damaraland.",
-    guided: "A trained guide's eye for tracks, sounds and animal behaviour meaningfully increases sightings, especially outside Etosha's easier waterhole-based viewing.",
+      "Genuinely good in Etosha, where floodlit waterholes at Okaukuejo and Halali concentrate game predictably, especially rhino and elephant after dark in the dry season. Weaker in areas requiring tracking skill, like desert-adapted elephant around Damaraland Camp or black rhino in the Palmwag Concession, which require a specialist licensed guide regardless of how you travel.",
+    guided: "A trained guide's eye for tracks, sounds and animal behaviour meaningfully increases sightings, especially outside Etosha's easier waterhole-based viewing, and it's the only way to do rhino tracking in Palmwag or reliably find wild dog in Bwabwata.",
   },
   {
     axis: "Risk & comfort",
     selfDrive:
-      "Real risks worth taking seriously: gravel-road driving, night-time wildlife on roads, long stretches with no fuel or phone signal. See our self-drive guide for the specifics.",
+      "Real risks worth taking seriously: gravel-road driving, night-time wildlife on roads, long stretches (sometimes 250km+) with no fuel or phone signal. See our self-drive guide for the specifics.",
     guided: "Lower personal risk (someone else is driving, navigating and handling breakdowns) at the cost of being on someone else's schedule.",
   },
   {
     axis: "Best first-timer fit",
     selfDrive:
-      "Confident drivers comfortable with gravel roads and self-navigation, who want to set their own pace and are working with a tighter budget.",
+      "Confident drivers comfortable with gravel roads and self-navigation, who want to set their own pace and are working with a tighter budget. Namibia's tarred and graded C-road network makes this genuinely more approachable than most safari countries.",
     guided: "Travellers prioritising wildlife sightings and zero logistics over cost and flexibility, or anyone not confident driving unfamiliar gravel roads.",
   },
 ];
@@ -55,19 +55,19 @@ const FACTORS = [
 const FAQS = [
   {
     q: "Is self-drive or guided better for a first-time Namibia trip?",
-    a: "Neither is objectively better: it depends on what you're optimising for. Self-drive suits confident drivers who want control of pace and cost; guided suits travellers who want the best possible wildlife sightings and no logistics to manage. Many first-timers do a hybrid: self-drive between regions, guided game drives inside the parks.",
+    a: "Neither is objectively better: it depends on what you're optimising for. Self-drive suits confident drivers who want control of pace and cost, at roughly €225–325/person/day; guided suits travellers who want the best possible wildlife sightings and no logistics to manage, typically €700–1,100+/person/day. Our own recommendation for most first-timers: self-drive the classic Etosha–Sossusvlei–Swakopmund loop, where the road network and waterhole viewing make it easy, and add a guided component only where tracking skill genuinely changes the outcome, namely Damaraland and Palmwag.",
   },
   {
     q: "Can I do a hybrid of self-drive and guided?",
-    a: "Yes, and it's a common, sensible middle ground: self-drive the transfers between regions, then book guided game drives once you're at a lodge, particularly in areas like Damaraland where tracking skill genuinely improves sightings.",
+    a: "Yes, and it's a common, sensible middle ground: self-drive the transfers between regions, then book guided game drives once you're at a lodge, particularly in areas like Damaraland and the Palmwag Concession, where desert-adapted elephant and black rhino tracking genuinely require a specialist guide regardless of how confident a driver you are.",
   },
   {
     q: "How much more does a guided safari cost than self-drive?",
-    a: "The gap is substantial: a private guide and vehicle is typically the single biggest line item in a Namibia trip budget. See our full trip cost breakdown for the actual tier-by-tier numbers.",
+    a: "Substantially, though not as much as the headline numbers suggest once you account for what's bundled: a private guide and vehicle alone typically runs €700–1,100+/person/day, versus roughly €225–325/person/day self-drive, but guided trips usually fold in meals, park fees and activities that are separate costs on a self-drive itinerary. See our full trip cost breakdown for the tier-by-tier numbers.",
   },
   {
     q: "Do I need off-road driving experience to self-drive Namibia?",
-    a: "Not for the classic route: Etosha, Sossusvlei and Swakopmund are manageable for anyone comfortable on gravel roads, with no serious off-road skill required. It becomes more relevant in Damaraland and Kaokoland, where a 4x4 and some gravel-driving confidence matter more.",
+    a: "Not for the classic route: Etosha, Sossusvlei and Swakopmund are manageable for anyone comfortable on gravel roads, with no serious off-road skill required. It becomes more relevant in Damaraland and Kaokoland, where a 4x4 and some gravel-driving confidence matter more, and where a 4x4 rental itself runs roughly N$1,500–2,200/day before fuel.",
   },
 ];
 

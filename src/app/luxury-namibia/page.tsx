@@ -26,25 +26,34 @@ const POINTS = [
     title: "Fly-in over self-drive",
     text: (
       <>
-        The top lodges (Hoanib Skeleton Coast Camp, Sossusvlei Desert Lodge) are often reached by
-        light aircraft rather than road, cutting what our{" "}
+        The top lodges are often reached by light aircraft rather than road. Hoanib Skeleton
+        Coast Camp, eight tented villas in the Palmwag Concession built around desert lion and
+        elephant tracking, is fly-in only. Sossusvlei Desert Lodge, &Beyond&apos;s flagship on
+        the NamibRand Nature Reserve, is around 45 minutes by air rather than the roughly 5-hour
+        drive our{" "}
         <Link
           href="/namibia-self-drive-guide"
           className="text-rust underline underline-offset-2 hover:text-rust-dark"
         >
           self-drive guide
         </Link>{" "}
-        would clock as a 6-hour drive down to a 45-minute flight.
+        clocks for the equivalent gravel route. At the far end, Serra Cafema sits alone on the
+        Kunene River in the Hartmann Valley, reachable only by light aircraft to its own airstrip:
+        genuinely the most remote lodge in the country.
       </>
     ),
   },
   {
     title: "Private reserves, not just private rooms",
-    text: "Luxury in Namibia usually means access: a private conservancy gate, off-road tracking rights, or night drives that aren't permitted inside the national parks themselves.",
+    text: "Luxury in Namibia usually means access, not thread count. Ongava Reserve, bordering Etosha's Anderson Gate, allows night drives and off-road tracking the national park itself doesn't permit. In Damaraland, the Palmwag Concession holds one of the largest free-roaming black rhino populations left on earth, and is one of the only places in Africa where you can track them on foot with a specialist guide rather than from a vehicle.",
   },
   {
     title: "Fewer, better nights",
-    text: "A luxury itinerary is often shorter than a budget self-drive: three or four camps over 8–10 days, each earning two full nights rather than a quick stopover.",
+    text: "A luxury itinerary is often shorter than a budget self-drive: three or four camps over 8–10 days, each earning two full nights rather than a quick stopover. Shipwreck Lodge on the Skeleton Coast received a Michelin Key in the guide's inaugural Global Michelin Keys Selection (2025), a useful marker for what \"worth the flight\" means at this level.",
+  },
+  {
+    title: "What the extra spend actually buys",
+    text: "At the top tier, each unit typically comes with its own guide and often a dedicated chef, rather than a shared game-drive vehicle and a set menu. Sossusvlei Desert Lodge and Little Kulala both sit inside the Namib-Naukluft area's International Dark Sky Reserve (Gold Tier since 2012), so stargazing is a scheduled activity, from an in-room skylight, a private rooftop star-bed, or an on-site observatory, not just a clear night you happen to notice. A private hot-air balloon sunrise over the dunes (Namib Sky Balloon Safaris, roughly N$9,900/US$550 per person, ending in a champagne breakfast) is the kind of one-off splurge that's easy to add to a luxury itinerary and hard to justify on a budget one.",
   },
 ];
 
@@ -68,7 +77,9 @@ export default function LuxuryPage() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           A luxury Namibia trip looks less like a five-star hotel and more like total, private
-          access to landscape. Here&apos;s what actually changes when you spend more.
+          access to landscape. Here&apos;s what actually changes when you spend more: which gates
+          you can drive through, whose vehicle you&apos;re in, and how many other people are
+          anywhere near you.
         </p>
       </section>
 

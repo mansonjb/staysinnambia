@@ -23,38 +23,42 @@ export const metadata: Metadata = {
 const COVERAGE = [
   {
     area: "Windhoek, Swakopmund, Walvis Bay",
-    signal: "Good 4G, reliable enough for calls, maps and streaming.",
+    signal: "Good MTC 4G, reliable enough for calls, maps and streaming.",
   },
   {
     area: "Etosha (camps and main roads)",
-    signal: "Patchy but present: most camps have Wi-Fi at reception even where mobile signal is weak.",
+    signal: "Patchy but present: most camps (Okaukuejo, Halali, Namutoni) have Wi-Fi at reception even where mobile signal is weak or absent on the surrounding gravel loops.",
   },
   {
     area: "Sossusvlei, Damaraland, Spitzkoppe",
-    signal: "Weak to none for long stretches. Download offline maps before you leave the coast.",
+    signal: "Weak to none for long stretches, especially off the C-roads. Download offline maps before you leave the coast, not once you're on the D-road into Damaraland.",
   },
   {
-    area: "Skeleton Coast, remote Kaokoland",
-    signal: "Expect no signal at all for entire days: this is normal, not a network fault.",
+    area: "Skeleton Coast, remote Kaokoland (incl. Opuwo detour)",
+    signal: "Expect no MTC or TN Mobile signal at all for entire days: this is normal, not a network fault, and applies to eSIMs routed onto the same towers too.",
   },
 ];
 
 const FAQS = [
   {
     q: "Which network is best for tourists in Namibia?",
-    a: "MTC is Namibia's dominant network and generally has the widest coverage along the main tourist routes and towns; Telecom Namibia (via TN Mobile) is the alternative. Neither has meaningful coverage in the most remote desert and coastal stretches: that's a terrain limitation, not a network choice you can fix.",
+    a: "MTC is Namibia's dominant network and generally has the widest coverage along the main tourist routes and towns; Telecom Namibia (via TN Mobile) is the alternative. Neither has meaningful coverage in the most remote desert and coastal stretches, including the Skeleton Coast, the deep Namib, and most of Kaokoland: that's a terrain and infrastructure limitation, not a network choice you can fix by switching providers.",
+  },
+  {
+    q: "How much does an MTC tourist SIM cost?",
+    a: "MTC sells two tourist-specific packages, both available at their airport kiosk: a Leisure package at N$349 for 14 days with 10.1GB of data plus some international call and SMS credit, and a Premium package at N$659 for 30 days with 20.1GB of data and more call credit. A plain prepaid SIM with a separate data bundle is usually cheaper if you're comfortable topping up yourself, but the tourist packages save you the hassle on day one.",
   },
   {
     q: "Can I buy a SIM card at the airport?",
-    a: "Yes, MTC has a kiosk in the arrivals area at Hosea Kutako International Airport, and it's the simplest way to get connected before you start driving. Bring your passport; local SIM registration typically requires ID.",
+    a: "Yes, MTC has a kiosk in the arrivals area at Hosea Kutako International Airport, and it's the simplest way to get connected before you start driving. Bring your passport; local SIM registration typically requires ID, and the tourist packages are set up on the spot.",
   },
   {
-    q: "Does eSIM work well in Namibia?",
-    a: "Yes, generally: international eSIM providers route onto the same MTC or Telecom Namibia networks as a physical SIM, so coverage is identical. The advantage is skipping the physical swap or airport stop; check your specific provider's Namibia coverage map before relying on it in remote regions.",
+    q: "Does eSIM work well in Namibia, and is it cheaper than a local SIM?",
+    a: "It works, but it's rarely cheaper. International eSIM providers route onto the same MTC or Telecom Namibia towers as a physical SIM, so coverage is identical, and plans typically start around $9.50 for a week of data. The catch is price per gigabyte: eSIM data commonly costs two to three times what an MTC prepaid bundle charges for the same volume. The trade you're paying for is convenience, landing already connected instead of queuing at the airport kiosk, not a better network.",
   },
   {
     q: "Will I have signal for the whole self-drive route?",
-    a: "No, and you shouldn't plan around having it. Sossusvlei, Damaraland and the Skeleton Coast all have long stretches with no signal at all. Download offline Google Maps for your route, save your lodge bookings as PDFs, and treat connectivity as a town-and-camp thing, not a between-stops thing.",
+    a: "No, and you shouldn't plan around having it. Sossusvlei, Damaraland, Spitzkoppe, the Skeleton Coast and remote Kaokoland all have long stretches, sometimes entire days of driving, with no signal at all on either network. Download offline Google Maps for your route, save your lodge bookings as PDFs, and treat connectivity as a town-and-camp thing, not a between-stops thing.",
   },
 ];
 
@@ -101,7 +105,7 @@ export default function ConnectivityPage() {
           <h2 className="text-xl font-bold text-charcoal">Before you leave the coast</h2>
           <ul className="mt-5 space-y-3">
             {[
-              "Buy an MTC SIM at the airport, or confirm your eSIM provider covers Namibia specifically",
+              "Buy an MTC SIM at the Hosea Kutako airport kiosk (N$349 for 14 days / 10.1GB, or N$659 for 30 days / 20.1GB), or confirm your eSIM provider covers Namibia specifically before relying on it for data over a physical SIM",
               (
                 <>
                   Download offline maps for your full self-drive route in advance. Our{" "}
