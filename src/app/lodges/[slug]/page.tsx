@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AffiliateClickLink } from "@/components/affiliate-click-link";
 import { AvailabilityBadge, CardCTA, PriceTierBadge } from "@/components/card-arrow";
 import { breadcrumbJsonLd, JsonLd, lodgingBusinessJsonLd } from "@/components/json-ld";
 import { LogoMark } from "@/components/logo-mark";
@@ -126,9 +127,14 @@ export default async function LodgePage({
                 >
                   More stays in {region.name}
                 </Link>
-                <a href="#availability">
+                <AffiliateClickLink
+                  href="#availability"
+                  hotelName={lodge.name}
+                  hotelSlug={lodge.slug}
+                  region={lodge.region}
+                >
                   <AvailabilityBadge />
-                </a>
+                </AffiliateClickLink>
                 <PriceTierBadge tier={lodge.priceTier} />
               </div>
             )}
