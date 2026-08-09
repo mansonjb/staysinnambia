@@ -13,7 +13,7 @@ const DESCRIPTION = "Etosha, Damaraland and Caprivi compared: which Namibian saf
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/best-safari-areas", languages: { en: "/best-safari-areas", de: "/de/best-safari-areas", nl: "/nl/best-safari-areas" } },
+  alternates: { canonical: "/best-safari-areas", languages: { en: "/best-safari-areas", de: "/de/best-safari-areas", nl: "/nl/best-safari-areas", fr: "/fr/best-safari-areas" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

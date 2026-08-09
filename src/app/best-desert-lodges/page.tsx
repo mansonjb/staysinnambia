@@ -8,7 +8,7 @@ const DESCRIPTION = "The best desert lodges across the Namib dune belt and beyon
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/best-desert-lodges", languages: { en: "/best-desert-lodges", de: "/de/best-desert-lodges", nl: "/nl/best-desert-lodges" } },
+  alternates: { canonical: "/best-desert-lodges", languages: { en: "/best-desert-lodges", de: "/de/best-desert-lodges", nl: "/nl/best-desert-lodges", fr: "/fr/best-desert-lodges" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

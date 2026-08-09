@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/namibia-stargazing-photography",
-    languages: { en: "/namibia-stargazing-photography", de: "/de/namibia-stargazing-photography", nl: "/nl/namibia-stargazing-photography" },
+    languages: { en: "/namibia-stargazing-photography", de: "/de/namibia-stargazing-photography", nl: "/nl/namibia-stargazing-photography", fr: "/fr/namibia-stargazing-photography" },
   },
   openGraph: {
     title: TITLE,

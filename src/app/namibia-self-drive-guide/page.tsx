@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Namibia Self-Drive Guide",
   description:
     "What self-driving Namibia actually involves: road types, fuel-stop planning, rental insurance gotchas, and why night driving is the one rule everyone repeats.",
-  alternates: { canonical: "/namibia-self-drive-guide", languages: { en: "/namibia-self-drive-guide", de: "/de/namibia-self-drive-guide", nl: "/nl/namibia-self-drive-guide" } },
+  alternates: { canonical: "/namibia-self-drive-guide", languages: { en: "/namibia-self-drive-guide", de: "/de/namibia-self-drive-guide", nl: "/nl/namibia-self-drive-guide", fr: "/fr/namibia-self-drive-guide" } },
   openGraph: {
     title: "Namibia Self-Drive Guide",
     description:

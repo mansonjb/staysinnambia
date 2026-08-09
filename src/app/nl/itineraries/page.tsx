@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/nl/itineraries",
-    languages: { en: "/itineraries", de: "/de/itineraries", nl: "/nl/itineraries" },
+    languages: { en: "/itineraries", de: "/de/itineraries", nl: "/nl/itineraries", fr: "/fr/itineraries" },
   },
   openGraph: {
     title: TITLE,

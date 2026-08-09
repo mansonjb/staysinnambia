@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/namibia-connectivity",
       de: "/de/namibia-connectivity",
-      nl: "/nl/namibia-connectivity",
+      nl: "/nl/namibia-connectivity", fr: "/fr/namibia-connectivity",
     },
   },
   openGraph: {

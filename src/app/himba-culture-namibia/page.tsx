@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Visiting Himba Communities",
   description:
     "Who the Himba are, where they live, and how to visit respectfully: the real difference between a staged 'living museum' stop and community-run tourism.",
-  alternates: { canonical: "/himba-culture-namibia", languages: { en: "/himba-culture-namibia", de: "/de/himba-culture-namibia", nl: "/nl/himba-culture-namibia" } },
+  alternates: { canonical: "/himba-culture-namibia", languages: { en: "/himba-culture-namibia", de: "/de/himba-culture-namibia", nl: "/nl/himba-culture-namibia", fr: "/fr/himba-culture-namibia" } },
   openGraph: {
     title: "Visiting Himba Communities",
     description:

@@ -8,7 +8,7 @@ const DESCRIPTION = "Canvas comfort without giving up a proper bed and bathroom:
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/namibia-glamping", languages: { en: "/namibia-glamping", de: "/de/namibia-glamping", nl: "/nl/namibia-glamping" } },
+  alternates: { canonical: "/namibia-glamping", languages: { en: "/namibia-glamping", de: "/de/namibia-glamping", nl: "/nl/namibia-glamping", fr: "/fr/namibia-glamping" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

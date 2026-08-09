@@ -8,7 +8,7 @@ const DESCRIPTION = "Working homesteads turned into quiet, unpretentious guestho
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/namibia-farm-stays", languages: { en: "/namibia-farm-stays", de: "/de/namibia-farm-stays", nl: "/nl/namibia-farm-stays" } },
+  alternates: { canonical: "/namibia-farm-stays", languages: { en: "/namibia-farm-stays", de: "/de/namibia-farm-stays", nl: "/nl/namibia-farm-stays", fr: "/fr/namibia-farm-stays" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

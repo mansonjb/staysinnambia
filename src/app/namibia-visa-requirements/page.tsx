@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Namibia Visa Requirements",
   description:
     "What changed in April 2025: Namibia's new online Visa-on-Arrival system, who still needs one, the $90 fee, and what documents to bring.",
-  alternates: { canonical: "/namibia-visa-requirements", languages: { en: "/namibia-visa-requirements", de: "/de/namibia-visa-requirements", nl: "/nl/namibia-visa-requirements" } },
+  alternates: { canonical: "/namibia-visa-requirements", languages: { en: "/namibia-visa-requirements", de: "/de/namibia-visa-requirements", nl: "/nl/namibia-visa-requirements", fr: "/fr/namibia-visa-requirements" } },
   openGraph: {
     title: "Namibia Visa Requirements",
     description:

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/best-lodges-in-namibia",
-    languages: { en: "/best-lodges-in-namibia", de: "/de/best-lodges-in-namibia", nl: "/nl/best-lodges-in-namibia" },
+    languages: { en: "/best-lodges-in-namibia", de: "/de/best-lodges-in-namibia", nl: "/nl/best-lodges-in-namibia", fr: "/fr/best-lodges-in-namibia" },
   },
   openGraph: {
     title: TITLE,

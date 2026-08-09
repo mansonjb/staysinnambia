@@ -27,7 +27,7 @@ export async function generateMetadata({
     description: route.description,
     alternates: {
       canonical: `/de/itineraries/${route.slug}`,
-      languages: { en: `/itineraries/${route.slug}`, de: `/de/itineraries/${route.slug}`, nl: `/nl/itineraries/${route.slug}` },
+      languages: { en: `/itineraries/${route.slug}`, de: `/de/itineraries/${route.slug}`, nl: `/nl/itineraries/${route.slug}`, fr: `/fr/itineraries/${route.slug}` },
     },
     openGraph: {
       title: `${route.days}-Tage-Reiseroute Namibia`,

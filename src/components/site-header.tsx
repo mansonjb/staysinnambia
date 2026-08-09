@@ -27,16 +27,25 @@ const NAV_LINKS_NL = [
   { label: "Gidsen", href: "/guides" },
 ];
 
+const NAV_LINKS_FR = [
+  { label: "Où séjourner", href: "/where-to-stay/namibia" },
+  { label: "Lodges", href: "/best-lodges-in-namibia" },
+  { label: "Itinéraires", href: "/itineraries" },
+  { label: "Guides", href: "/guides" },
+];
+
 const NAV_LINKS: Record<string, typeof NAV_LINKS_EN> = {
   en: NAV_LINKS_EN,
   de: NAV_LINKS_DE,
   nl: NAV_LINKS_NL,
+  fr: NAV_LINKS_FR,
 };
 
 const CTA_LABEL: Record<string, string> = {
   en: "Where to Stay",
   de: "Unterkünfte finden",
   nl: "Vind een verblijf",
+  fr: "Trouver un hébergement",
 };
 
 function LanguageSwitcher({

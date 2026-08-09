@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/nl/where-to-stay/namibia",
-    languages: { en: "/where-to-stay/namibia", de: "/de/where-to-stay/namibia", nl: "/nl/where-to-stay/namibia" },
+    languages: { en: "/where-to-stay/namibia", de: "/de/where-to-stay/namibia", nl: "/nl/where-to-stay/namibia", fr: "/fr/where-to-stay/namibia" },
   },
   openGraph: {
     title: TITLE,

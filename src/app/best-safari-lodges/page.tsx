@@ -8,7 +8,7 @@ const DESCRIPTION = "The best safari lodges near Etosha and beyond: waterhole fr
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/best-safari-lodges", languages: { en: "/best-safari-lodges", de: "/de/best-safari-lodges", nl: "/nl/best-safari-lodges" } },
+  alternates: { canonical: "/best-safari-lodges", languages: { en: "/best-safari-lodges", de: "/de/best-safari-lodges", nl: "/nl/best-safari-lodges", fr: "/fr/best-safari-lodges" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

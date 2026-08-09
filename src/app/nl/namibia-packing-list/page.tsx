@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/namibia-packing-list",
       de: "/de/namibia-packing-list",
-      nl: "/nl/namibia-packing-list",
+      nl: "/nl/namibia-packing-list", fr: "/fr/namibia-packing-list",
     },
   },
   openGraph: {

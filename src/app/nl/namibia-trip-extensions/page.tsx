@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/namibia-trip-extensions",
       de: "/de/namibia-trip-extensions",
-      nl: "/nl/namibia-trip-extensions",
+      nl: "/nl/namibia-trip-extensions", fr: "/fr/namibia-trip-extensions",
     },
   },
   openGraph: {

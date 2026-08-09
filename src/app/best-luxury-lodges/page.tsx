@@ -8,7 +8,7 @@ const DESCRIPTION = "Namibia's most design-led, highest-service lodges: no price
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/best-luxury-lodges", languages: { en: "/best-luxury-lodges", de: "/de/best-luxury-lodges", nl: "/nl/best-luxury-lodges" } },
+  alternates: { canonical: "/best-luxury-lodges", languages: { en: "/best-luxury-lodges", de: "/de/best-luxury-lodges", nl: "/nl/best-luxury-lodges", fr: "/fr/best-luxury-lodges" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

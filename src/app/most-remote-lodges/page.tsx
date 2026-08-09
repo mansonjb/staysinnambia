@@ -8,7 +8,7 @@ const DESCRIPTION = "A night somewhere with no other guests for a hundred kilome
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/most-remote-lodges", languages: { en: "/most-remote-lodges", de: "/de/most-remote-lodges", nl: "/nl/most-remote-lodges" } },
+  alternates: { canonical: "/most-remote-lodges", languages: { en: "/most-remote-lodges", de: "/de/most-remote-lodges", nl: "/nl/most-remote-lodges", fr: "/fr/most-remote-lodges" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

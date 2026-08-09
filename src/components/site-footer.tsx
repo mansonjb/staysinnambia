@@ -194,22 +194,88 @@ const COLUMNS_NL = [
   },
 ];
 
+const COLUMNS_FR = [
+  {
+    title: "Régions",
+    links: [
+      { label: "Etosha", href: "/where-to-stay/etosha" },
+      { label: "Sossusvlei", href: "/where-to-stay/sossusvlei" },
+      { label: "Swakopmund", href: "/where-to-stay/swakopmund" },
+      { label: "Damaraland", href: "/where-to-stay/damaraland" },
+      { label: "Skeleton Coast", href: "/where-to-stay/skeleton-coast" },
+      { label: "Windhoek", href: "/where-to-stay/windhoek" },
+      { label: "Fish River Canyon", href: "/where-to-stay/fish-river-canyon" },
+      { label: "Caprivi Strip", href: "/where-to-stay/caprivi" },
+      { label: "Spitzkoppe", href: "/where-to-stay/spitzkoppe" },
+    ],
+  },
+  {
+    title: "Lodges",
+    links: [
+      { label: "Meilleurs lodges de Namibie", href: "/best-lodges-in-namibia" },
+      { label: "Meilleurs lodges de luxe", href: "/best-luxury-lodges" },
+      { label: "Meilleurs lodges safari", href: "/best-safari-lodges" },
+      { label: "Meilleurs lodges du désert", href: "/best-desert-lodges" },
+      { label: "Meilleurs lodges familiaux", href: "/best-family-lodges" },
+    ],
+  },
+  {
+    title: "Itinéraires",
+    links: [
+      { label: "Namibie en 7 jours", href: "/itineraries/7-days" },
+      { label: "Namibie en 10 jours", href: "/itineraries/10-days" },
+      { label: "Namibie en 14 jours", href: "/itineraries/14-days" },
+      { label: "Guide autotour Namibie", href: "/namibia-self-drive-guide" },
+      { label: "Namibie sans 4x4", href: "/namibia-without-4x4" },
+    ],
+  },
+  {
+    title: "Préparer son voyage",
+    links: [
+      { label: "Conditions de visa", href: "/namibia-visa-requirements" },
+      { label: "Sécurité & santé", href: "/namibia-safety-and-health" },
+      { label: "Budget du voyage", href: "/namibia-trip-cost" },
+      { label: "Autotour ou circuit guidé", href: "/self-drive-vs-guided-namibia" },
+      { label: "Namibie vs Botswana", href: "/namibia-vs-botswana" },
+      { label: "Connectivité & eSIM", href: "/namibia-connectivity" },
+      { label: "Liste de bagages", href: "/namibia-packing-list" },
+      { label: "Prolonger son voyage", href: "/namibia-trip-extensions" },
+      { label: "Culture Himba", href: "/himba-culture-namibia" },
+    ],
+  },
+  {
+    title: "Autres guides",
+    links: [
+      { label: "Namibie en famille", href: "/namibia-with-kids" },
+      { label: "Lune de miel en Namibie", href: "/namibia-honeymoon" },
+      { label: "Namibie de luxe", href: "/luxury-namibia" },
+      { label: "Meilleure période", href: "/best-time-to-visit-namibia" },
+      { label: "Meilleures zones safari", href: "/best-safari-areas" },
+      { label: "Guide de la faune", href: "/namibia-wildlife-guide" },
+      { label: "Observation des étoiles & photo", href: "/namibia-stargazing-photography" },
+    ],
+  },
+];
+
 const COLUMNS: Record<string, typeof COLUMNS_EN> = {
   en: COLUMNS_EN,
   de: COLUMNS_DE,
   nl: COLUMNS_NL,
+  fr: COLUMNS_FR,
 };
 
 const TAGLINE: Record<string, string> = {
   en: "Independent guides to Namibia's lodges, camps and hotels. We earn a commission when you book through our recommendations. It never affects what we recommend.",
   de: "Unabhängige Guides zu Namibias Lodges, Camps und Hotels. Wir erhalten eine Provision, wenn Sie über unsere Empfehlungen buchen. Das beeinflusst nie, was wir empfehlen.",
   nl: "Onafhankelijke gidsen over Namibië's lodges, kampen en hotels. Wij ontvangen een commissie wanneer u boekt via onze aanbevelingen. Dat beïnvloedt nooit wat wij aanbevelen.",
+  fr: "Guides indépendants sur les lodges, camps et hôtels de Namibie. Nous touchons une commission quand vous réservez via nos recommandations. Cela n'influence jamais ce que nous recommandons.",
 };
 
 const ABOUT_LABEL: Record<string, string> = {
   en: "How this site works",
   de: "So funktioniert diese Seite",
   nl: "Hoe deze site werkt",
+  fr: "Comment fonctionne ce site",
 };
 
 export function SiteFooter() {

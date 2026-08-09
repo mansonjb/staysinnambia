@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Namibia Packing List",
   description:
     "What Namibia's heat, dust and huge day-night temperature swings actually demand: a practical packing list for a self-drive trip.",
-  alternates: { canonical: "/namibia-packing-list", languages: { en: "/namibia-packing-list", de: "/de/namibia-packing-list", nl: "/nl/namibia-packing-list" } },
+  alternates: { canonical: "/namibia-packing-list", languages: { en: "/namibia-packing-list", de: "/de/namibia-packing-list", nl: "/nl/namibia-packing-list", fr: "/fr/namibia-packing-list" } },
   openGraph: {
     title: "Namibia Packing List",
     description:

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Namibia Wildlife Guide",
   description:
     "Namibia's wildlife checklist by region: desert-adapted elephants, black rhino, Etosha's waterhole species, and the coastal wildlife most itineraries miss.",
-  alternates: { canonical: "/namibia-wildlife-guide", languages: { en: "/namibia-wildlife-guide", de: "/de/namibia-wildlife-guide", nl: "/nl/namibia-wildlife-guide" } },
+  alternates: { canonical: "/namibia-wildlife-guide", languages: { en: "/namibia-wildlife-guide", de: "/de/namibia-wildlife-guide", nl: "/nl/namibia-wildlife-guide", fr: "/fr/namibia-wildlife-guide" } },
   openGraph: {
     title: "Namibia Wildlife Guide",
     description:
