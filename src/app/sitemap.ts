@@ -2,17 +2,19 @@ import type { MetadataRoute } from "next";
 import { lodges, regions, selfDriveRoutes } from "@/lib/data";
 import { SITE_URL } from "@/lib/site";
 
-/** Builds the reciprocal en/de/nl/fr hreflang block from a single EN-style path. */
+/** Builds the reciprocal en/de/nl/fr/it hreflang block from a single EN-style path. */
 function withLocales(enPath: string) {
   const dePath = enPath === "/" ? "/de" : `/de${enPath}`;
   const nlPath = enPath === "/" ? "/nl" : `/nl${enPath}`;
   const frPath = enPath === "/" ? "/fr" : `/fr${enPath}`;
+  const itPath = enPath === "/" ? "/it" : `/it${enPath}`;
   return {
     languages: {
       en: `${SITE_URL}${enPath}`,
       de: `${SITE_URL}${dePath}`,
       nl: `${SITE_URL}${nlPath}`,
       fr: `${SITE_URL}${frPath}`,
+      it: `${SITE_URL}${itPath}`,
     },
   };
 }
@@ -100,7 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: withLocales(`/itineraries/${r.slug}`),
   }));
 
-  function localizedStaticRoutes(locale: "de" | "nl" | "fr", priorityScale: number): MetadataRoute.Sitemap {
+  function localizedStaticRoutes(locale: "de" | "nl" | "fr" | "it", priorityScale: number): MetadataRoute.Sitemap {
     return [
       { url: `${SITE_URL}/${locale}`, changeFrequency: "weekly", priority: 0.95, alternates: withLocales("/") },
       { url: `${SITE_URL}/${locale}/about`, changeFrequency: "monthly", priority: 0.4, alternates: withLocales("/about") },
@@ -131,7 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
   }
 
-  function localizedGuideRoutes(locale: "de" | "nl" | "fr", priorityScale: number): MetadataRoute.Sitemap {
+  function localizedGuideRoutes(locale: "de" | "nl" | "fr" | "it", priorityScale: number): MetadataRoute.Sitemap {
     return GUIDE_SLUGS.map((g) => ({
       url: `${SITE_URL}/${locale}/${g.slug}`,
       changeFrequency: g.changeFrequency,
@@ -140,7 +142,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   }
 
-  function localizedRegionRoutes(locale: "de" | "nl" | "fr", priorityScale: number): MetadataRoute.Sitemap {
+  function localizedRegionRoutes(locale: "de" | "nl" | "fr" | "it", priorityScale: number): MetadataRoute.Sitemap {
     return regions.map((r) => ({
       url: `${SITE_URL}/${locale}/where-to-stay/${r.slug}`,
       changeFrequency: "weekly",
@@ -149,7 +151,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   }
 
-  function localizedLodgeRoutes(locale: "de" | "nl" | "fr", priorityScale: number): MetadataRoute.Sitemap {
+  function localizedLodgeRoutes(locale: "de" | "nl" | "fr" | "it", priorityScale: number): MetadataRoute.Sitemap {
     return lodges.map((l) => ({
       url: `${SITE_URL}/${locale}/lodges/${l.slug}`,
       changeFrequency: "monthly",
@@ -158,7 +160,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   }
 
-  function localizedItineraryRoutes(locale: "de" | "nl" | "fr", priorityScale: number): MetadataRoute.Sitemap {
+  function localizedItineraryRoutes(locale: "de" | "nl" | "fr" | "it", priorityScale: number): MetadataRoute.Sitemap {
     return selfDriveRoutes.map((r) => ({
       url: `${SITE_URL}/${locale}/itineraries/${r.slug}`,
       changeFrequency: "monthly",
@@ -188,5 +190,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...localizedRegionRoutes("fr", 0.9),
     ...localizedLodgeRoutes("fr", 0.9),
     ...localizedItineraryRoutes("fr", 0.9),
+    ...localizedStaticRoutes("it", 0.9),
+    ...localizedGuideRoutes("it", 0.9),
+    ...localizedRegionRoutes("it", 0.9),
+    ...localizedLodgeRoutes("it", 0.9),
+    ...localizedItineraryRoutes("it", 0.9),
   ];
 }

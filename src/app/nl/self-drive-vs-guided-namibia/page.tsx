@@ -18,6 +18,7 @@ export const metadata: Metadata = {
       en: "/self-drive-vs-guided-namibia",
       de: "/de/self-drive-vs-guided-namibia",
       nl: "/nl/self-drive-vs-guided-namibia", fr: "/fr/self-drive-vs-guided-namibia",
+        it: "/it/self-drive-vs-guided-namibia",
     },
   },
   openGraph: {

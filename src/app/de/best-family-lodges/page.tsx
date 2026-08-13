@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/best-family-lodges",
-    languages: { en: "/best-family-lodges", de: "/de/best-family-lodges", nl: "/nl/best-family-lodges", fr: "/fr/best-family-lodges" },
+    languages: { en: "/best-family-lodges", de: "/de/best-family-lodges", nl: "/nl/best-family-lodges", fr: "/fr/best-family-lodges", it: "/it/best-family-lodges" },
   },
   openGraph: {
     title: TITLE,

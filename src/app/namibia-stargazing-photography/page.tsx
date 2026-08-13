@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Namibia Stargazing Guide",
   description:
     "Where Namibia's night skies are darkest, and what actually makes them different: NamibRand's Gold-tier Dark Sky Reserve, dune photography light, and where to sleep under it.",
-  alternates: { canonical: "/namibia-stargazing-photography", languages: { en: "/namibia-stargazing-photography", de: "/de/namibia-stargazing-photography", nl: "/nl/namibia-stargazing-photography", fr: "/fr/namibia-stargazing-photography" } },
+  alternates: { canonical: "/namibia-stargazing-photography", languages: { en: "/namibia-stargazing-photography", de: "/de/namibia-stargazing-photography", nl: "/nl/namibia-stargazing-photography", fr: "/fr/namibia-stargazing-photography", it: "/it/namibia-stargazing-photography" } },
   openGraph: {
     title: "Namibia Stargazing Guide",
     description:

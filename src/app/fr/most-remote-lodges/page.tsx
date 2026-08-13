@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/fr/most-remote-lodges",
-    languages: { en: "/most-remote-lodges", de: "/de/most-remote-lodges", nl: "/nl/most-remote-lodges", fr: "/fr/most-remote-lodges" },
+    languages: { en: "/most-remote-lodges", de: "/de/most-remote-lodges", nl: "/nl/most-remote-lodges", fr: "/fr/most-remote-lodges", it: "/it/most-remote-lodges" },
   },
   openGraph: {
     title: TITLE,

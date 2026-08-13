@@ -13,7 +13,7 @@ const DESCRIPTION = "Every planning guide on Namibia Stays: lodges, itineraries,
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/guides", languages: { en: "/guides", de: "/de/guides", nl: "/nl/guides", fr: "/fr/guides" } },
+  alternates: { canonical: "/guides", languages: { en: "/guides", de: "/de/guides", nl: "/nl/guides", fr: "/fr/guides", it: "/it/guides" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       en: "/namibia-visa-requirements",
       de: "/de/namibia-visa-requirements",
       nl: "/nl/namibia-visa-requirements", fr: "/fr/namibia-visa-requirements",
+        it: "/it/namibia-visa-requirements",
     },
   },
   openGraph: {

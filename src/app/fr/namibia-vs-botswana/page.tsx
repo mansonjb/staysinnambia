@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       en: "/namibia-vs-botswana",
       de: "/de/namibia-vs-botswana",
       nl: "/nl/namibia-vs-botswana", fr: "/fr/namibia-vs-botswana",
+        it: "/it/namibia-vs-botswana",
     },
   },
   openGraph: {

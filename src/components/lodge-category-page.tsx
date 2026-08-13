@@ -8,6 +8,7 @@ import { Reveal } from "@/components/reveal";
 import { getLodgesByCategory, type Lodge, type LodgeCategory } from "@/lib/data";
 import { getLodgesByCategoryDe } from "@/lib/data.de";
 import { getLodgesByCategoryFr } from "@/lib/data.fr";
+import { getLodgesByCategoryIt } from "@/lib/data.it";
 import { getLodgesByCategoryNl } from "@/lib/data.nl";
 import type { Locale } from "@/lib/i18n";
 import { withLocale } from "@/lib/i18n";
@@ -38,6 +39,12 @@ const STRINGS = {
     availability: "Vérifier les disponibilités",
     empty: "Nous ajoutons encore des lodges à cette catégorie. Revenez bientôt.",
   },
+  it: {
+    eyebrow: "Lodge",
+    viewLodge: "Vedi il lodge",
+    availability: "Verifica disponibilità",
+    empty: "Stiamo ancora aggiungendo lodge a questa categoria. Torna presto a trovarci.",
+  },
 };
 
 export function LodgeCategoryPage({
@@ -60,7 +67,9 @@ export function LodgeCategoryPage({
         ? getLodgesByCategoryNl(category)
         : locale === "fr"
           ? getLodgesByCategoryFr(category)
-          : getLodgesByCategory(category);
+          : locale === "it"
+            ? getLodgesByCategoryIt(category)
+            : getLodgesByCategory(category);
   const t = STRINGS[locale];
   const lodgesHubHref = withLocale("/best-lodges-in-namibia", locale);
 

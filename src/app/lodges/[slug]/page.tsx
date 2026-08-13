@@ -32,7 +32,7 @@ export async function generateMetadata({
     description: lodge.description,
     alternates: {
       canonical: `/lodges/${lodge.slug}`,
-      languages: { en: `/lodges/${lodge.slug}`, de: `/de/lodges/${lodge.slug}`, nl: `/nl/lodges/${lodge.slug}`, fr: `/fr/lodges/${lodge.slug}` },
+      languages: { en: `/lodges/${lodge.slug}`, de: `/de/lodges/${lodge.slug}`, nl: `/nl/lodges/${lodge.slug}`, fr: `/fr/lodges/${lodge.slug}`, it: `/it/lodges/${lodge.slug}` },
     },
     openGraph: {
       title,

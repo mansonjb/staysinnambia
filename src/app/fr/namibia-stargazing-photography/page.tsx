@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       en: "/namibia-stargazing-photography",
       de: "/de/namibia-stargazing-photography",
       nl: "/nl/namibia-stargazing-photography", fr: "/fr/namibia-stargazing-photography",
+        it: "/it/namibia-stargazing-photography",
     },
   },
   openGraph: {

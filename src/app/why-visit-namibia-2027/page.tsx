@@ -21,6 +21,7 @@ export const metadata: Metadata = {
       de: "/de/why-visit-namibia-2027",
       nl: "/nl/why-visit-namibia-2027",
       fr: "/fr/why-visit-namibia-2027",
+      it: "/it/why-visit-namibia-2027",
     },
   },
   openGraph: {

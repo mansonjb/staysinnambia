@@ -40,6 +40,7 @@ export async function generateMetadata({
         de: `/de/where-to-stay/${region.slug}`,
         nl: `/nl/where-to-stay/${region.slug}`,
         fr: `/fr/where-to-stay/${region.slug}`,
+        it: `/it/where-to-stay/${region.slug}`,
       },
     },
     openGraph: {

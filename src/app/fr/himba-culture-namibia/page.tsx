@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       en: "/himba-culture-namibia",
       de: "/de/himba-culture-namibia",
       nl: "/nl/himba-culture-namibia", fr: "/fr/himba-culture-namibia",
+        it: "/it/himba-culture-namibia",
     },
   },
   openGraph: {

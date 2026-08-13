@@ -15,7 +15,7 @@ const DESCRIPTION = "The most romantic lodges and camps for a Namibia honeymoon:
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/namibia-honeymoon", languages: { en: "/namibia-honeymoon", de: "/de/namibia-honeymoon", nl: "/nl/namibia-honeymoon", fr: "/fr/namibia-honeymoon" } },
+  alternates: { canonical: "/namibia-honeymoon", languages: { en: "/namibia-honeymoon", de: "/de/namibia-honeymoon", nl: "/nl/namibia-honeymoon", fr: "/fr/namibia-honeymoon", it: "/it/namibia-honeymoon" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

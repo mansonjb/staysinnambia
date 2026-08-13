@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/namibia-vs-botswana",
-    languages: { en: "/namibia-vs-botswana", de: "/de/namibia-vs-botswana", nl: "/nl/namibia-vs-botswana", fr: "/fr/namibia-vs-botswana" },
+    languages: { en: "/namibia-vs-botswana", de: "/de/namibia-vs-botswana", nl: "/nl/namibia-vs-botswana", fr: "/fr/namibia-vs-botswana", it: "/it/namibia-vs-botswana" },
   },
   openGraph: {
     title: TITLE,

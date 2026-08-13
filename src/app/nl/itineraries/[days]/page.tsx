@@ -32,6 +32,7 @@ export async function generateMetadata({
         de: `/de/itineraries/${route.slug}`,
         nl: `/nl/itineraries/${route.slug}`,
         fr: `/fr/itineraries/${route.slug}`,
+        it: `/it/itineraries/${route.slug}`,
       },
     },
     openGraph: {

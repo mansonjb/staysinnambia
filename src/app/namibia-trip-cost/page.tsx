@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Namibia Trip Cost Guide",
   description:
     "Realistic per-person, per-day cost ranges for a Namibia trip across budget, mid-range and luxury tiers, plus what self-drive saves you over a guided safari.",
-  alternates: { canonical: "/namibia-trip-cost", languages: { en: "/namibia-trip-cost", de: "/de/namibia-trip-cost", nl: "/nl/namibia-trip-cost", fr: "/fr/namibia-trip-cost" } },
+  alternates: { canonical: "/namibia-trip-cost", languages: { en: "/namibia-trip-cost", de: "/de/namibia-trip-cost", nl: "/nl/namibia-trip-cost", fr: "/fr/namibia-trip-cost", it: "/it/namibia-trip-cost" } },
   openGraph: {
     title: "Namibia Trip Cost Guide",
     description:

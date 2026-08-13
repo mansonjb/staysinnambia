@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Extending Your Namibia Trip",
   description:
     "Namibia pairs naturally with a handful of neighbouring highlights: here's how travellers actually extend their trip, and what each add-on costs in extra time.",
-  alternates: { canonical: "/namibia-trip-extensions", languages: { en: "/namibia-trip-extensions", de: "/de/namibia-trip-extensions", nl: "/nl/namibia-trip-extensions", fr: "/fr/namibia-trip-extensions" } },
+  alternates: { canonical: "/namibia-trip-extensions", languages: { en: "/namibia-trip-extensions", de: "/de/namibia-trip-extensions", nl: "/nl/namibia-trip-extensions", fr: "/fr/namibia-trip-extensions", it: "/it/namibia-trip-extensions" } },
   openGraph: {
     title: "Extending Your Namibia Trip",
     description:

@@ -13,7 +13,7 @@ const DESCRIPTION = "Elke gids op Namibia Stays: lodges, reisroutes, reistijd en
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/nl/guides", languages: { en: "/guides", de: "/de/guides", nl: "/nl/guides", fr: "/fr/guides" } },
+  alternates: { canonical: "/nl/guides", languages: { en: "/guides", de: "/de/guides", nl: "/nl/guides", fr: "/fr/guides", it: "/it/guides" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

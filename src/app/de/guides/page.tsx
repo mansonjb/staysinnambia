@@ -13,7 +13,7 @@ const DESCRIPTION = "Jeder Ratgeber auf Namibia Stays: Lodges, Reiserouten, Reis
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/de/guides", languages: { en: "/guides", de: "/de/guides", nl: "/nl/guides", fr: "/fr/guides" } },
+  alternates: { canonical: "/de/guides", languages: { en: "/guides", de: "/de/guides", nl: "/nl/guides", fr: "/fr/guides", it: "/it/guides" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

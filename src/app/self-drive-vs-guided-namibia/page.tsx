@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Self-Drive vs Guided Safari",
   description:
     "Cost, freedom, risk and comfort: the honest trade-offs between self-driving Namibia and booking a guided safari, not a sales pitch for either.",
-  alternates: { canonical: "/self-drive-vs-guided-namibia", languages: { en: "/self-drive-vs-guided-namibia", de: "/de/self-drive-vs-guided-namibia", nl: "/nl/self-drive-vs-guided-namibia", fr: "/fr/self-drive-vs-guided-namibia" } },
+  alternates: { canonical: "/self-drive-vs-guided-namibia", languages: { en: "/self-drive-vs-guided-namibia", de: "/de/self-drive-vs-guided-namibia", nl: "/nl/self-drive-vs-guided-namibia", fr: "/fr/self-drive-vs-guided-namibia", it: "/it/self-drive-vs-guided-namibia" } },
   openGraph: {
     title: "Self-Drive vs Guided Safari",
     description:

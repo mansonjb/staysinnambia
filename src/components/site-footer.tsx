@@ -258,11 +258,76 @@ const COLUMNS_FR = [
   },
 ];
 
+const COLUMNS_IT = [
+  {
+    title: "Regioni",
+    links: [
+      { label: "Etosha", href: "/where-to-stay/etosha" },
+      { label: "Sossusvlei", href: "/where-to-stay/sossusvlei" },
+      { label: "Swakopmund", href: "/where-to-stay/swakopmund" },
+      { label: "Damaraland", href: "/where-to-stay/damaraland" },
+      { label: "Skeleton Coast", href: "/where-to-stay/skeleton-coast" },
+      { label: "Windhoek", href: "/where-to-stay/windhoek" },
+      { label: "Fish River Canyon", href: "/where-to-stay/fish-river-canyon" },
+      { label: "Caprivi Strip", href: "/where-to-stay/caprivi" },
+      { label: "Spitzkoppe", href: "/where-to-stay/spitzkoppe" },
+    ],
+  },
+  {
+    title: "Lodge",
+    links: [
+      { label: "Migliori lodge in Namibia", href: "/best-lodges-in-namibia" },
+      { label: "Migliori lodge di lusso", href: "/best-luxury-lodges" },
+      { label: "Migliori lodge safari", href: "/best-safari-lodges" },
+      { label: "Migliori lodge nel deserto", href: "/best-desert-lodges" },
+      { label: "Migliori lodge per famiglie", href: "/best-family-lodges" },
+    ],
+  },
+  {
+    title: "Itinerari",
+    links: [
+      { label: "Namibia in 7 giorni", href: "/itineraries/7-days" },
+      { label: "Namibia in 10 giorni", href: "/itineraries/10-days" },
+      { label: "Namibia in 14 giorni", href: "/itineraries/14-days" },
+      { label: "Guida all'autotour in Namibia", href: "/namibia-self-drive-guide" },
+      { label: "Namibia senza 4x4", href: "/namibia-without-4x4" },
+    ],
+  },
+  {
+    title: "Pianificazione del viaggio",
+    links: [
+      { label: "Requisiti visto", href: "/namibia-visa-requirements" },
+      { label: "Sicurezza e salute", href: "/namibia-safety-and-health" },
+      { label: "Costo del viaggio", href: "/namibia-trip-cost" },
+      { label: "Autotour o viaggio guidato", href: "/self-drive-vs-guided-namibia" },
+      { label: "Namibia vs Botswana", href: "/namibia-vs-botswana" },
+      { label: "Connettività ed eSIM", href: "/namibia-connectivity" },
+      { label: "Lista bagagli", href: "/namibia-packing-list" },
+      { label: "Estensioni del viaggio", href: "/namibia-trip-extensions" },
+      { label: "Cultura Himba", href: "/himba-culture-namibia" },
+    ],
+  },
+  {
+    title: "Altre guide",
+    links: [
+      { label: "Perché visitare la Namibia nel 2027", href: "/why-visit-namibia-2027" },
+      { label: "Namibia con i bambini", href: "/namibia-with-kids" },
+      { label: "Luna di miele in Namibia", href: "/namibia-honeymoon" },
+      { label: "Namibia di lusso", href: "/luxury-namibia" },
+      { label: "Periodo migliore per visitarla", href: "/best-time-to-visit-namibia" },
+      { label: "Migliori zone safari", href: "/best-safari-areas" },
+      { label: "Guida alla fauna selvatica", href: "/namibia-wildlife-guide" },
+      { label: "Osservazione delle stelle e fotografia", href: "/namibia-stargazing-photography" },
+    ],
+  },
+];
+
 const COLUMNS: Record<string, typeof COLUMNS_EN> = {
   en: COLUMNS_EN,
   de: COLUMNS_DE,
   nl: COLUMNS_NL,
   fr: COLUMNS_FR,
+  it: COLUMNS_IT,
 };
 
 const TAGLINE: Record<string, string> = {
@@ -270,6 +335,7 @@ const TAGLINE: Record<string, string> = {
   de: "Unabhängige Guides zu Namibias Lodges, Camps und Hotels. Wir erhalten eine Provision, wenn Sie über unsere Empfehlungen buchen. Das beeinflusst nie, was wir empfehlen.",
   nl: "Onafhankelijke gidsen over Namibië's lodges, kampen en hotels. Wij ontvangen een commissie wanneer u boekt via onze aanbevelingen. Dat beïnvloedt nooit wat wij aanbevelen.",
   fr: "Guides indépendants sur les lodges, camps et hôtels de Namibie. Nous touchons une commission quand vous réservez via nos recommandations. Cela n'influence jamais ce que nous recommandons.",
+  it: "Guide indipendenti sui lodge, campi e hotel della Namibia. Riceviamo una commissione quando prenoti tramite i nostri consigli. Questo non influenza mai ciò che consigliamo.",
 };
 
 const ABOUT_LABEL: Record<string, string> = {
@@ -277,6 +343,7 @@ const ABOUT_LABEL: Record<string, string> = {
   de: "So funktioniert diese Seite",
   nl: "Hoe deze site werkt",
   fr: "Comment fonctionne ce site",
+  it: "Come funziona questo sito",
 };
 
 export function SiteFooter() {
