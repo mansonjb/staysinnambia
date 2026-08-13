@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const SEASONS = [
   {
     name: "Stagione secca",
-    months: "Maggio – ottobre",
+    months: "Maggio - ottobre",
     summary:
       "La classica finestra da safari. Le piogge si fermano praticamente da maggio, la vegetazione si dirada rapidamente e gli animali perdono le loro fonti d'acqua sparse, così si concentrano su una manciata di pozze permanenti. A Etosha questo significa avvistamenti prevedibili presso pan come Okaukuejo, Halali, Klein Namutoni e Rietfontein, a volte a vista dal campo. Luglio è il mese più secco mai registrato in Namibia; giugno e luglio sono anche i più freddi, con notti nell'entroterra desertico che scendono regolarmente a 5°C o meno (la brina è possibile sulle pianure ghiaiose intorno a Sossusvlei e nello Khomas Hochland), mentre le giornate restano piacevoli, tra 22 e 25°C.",
     tradeoffs: [
@@ -43,7 +43,7 @@ const SEASONS = [
   },
   {
     name: "Stagione verde",
-    months: "Novembre – aprile",
+    months: "Novembre - aprile",
     summary:
       "Le piogge arrivano sotto forma di temporali sparsi già a novembre e raggiungono il picco tra gennaio e marzo, quando a Windhoek cadono in media circa 150 mm di pioggia nel mese più piovoso, contro circa 0,5 mm nel secco giugno. La polvere si deposita, il deserto rinverdisce quasi da un giorno all'altro, ed è il periodo in cui gli uccelli migratori paleartici (limicoli, nibbi, gruccioni europei) sono presenti insieme alle specie residenti, il che lo rende la finestra migliore dell'anno per il birdwatching. Il rovescio della medaglia: con l'acqua ovunque, la fauna non ha motivo di radunarsi presso le pozze, quindi gli avvistamenti a Etosha sono più dispersi e richiedono più spostamenti.",
     tradeoffs: [
@@ -66,18 +66,18 @@ const SEASONS = [
 ];
 
 const MONTHS = [
-  { m: "Gen", temp: "32–34° / 17–19°", rain: "La stagione delle piogge si intensifica", note: "Caldo, umido, frequenti temporali pomeridiani; paesaggi rigogliosi" },
-  { m: "Feb", temp: "31–33° / 17–19°", rain: "Mese più piovoso", note: "A Windhoek cadono in media ~154mm; picco della stagione verde e del birdwatching" },
-  { m: "Mar", temp: "30–32° / 16–18°", rain: "Piogge in calo", note: "Ancora umido, paesaggi al massimo del verde" },
-  { m: "Apr", temp: "28–30° / 13–15°", rain: "Le piogge si fermano quasi del tutto", note: "Mese di transizione sottovalutato: verde, strade in asciugatura, poca folla" },
-  { m: "Mag", temp: "25–27° / 8–10°", rain: "Quasi nulle", note: "Inizia la stagione secca; la vegetazione comincia a diradarsi" },
-  { m: "Giu", temp: "22–24° / 5–7°", rain: "Periodo più secco", note: "Notti più fredde dell'anno; cieli più tersi per l'osservazione delle stelle" },
-  { m: "Lug", temp: "22–24° / 5–7°", rain: "Mese più secco", note: "Massima limpidezza dell'aria; la concentrazione di fauna alle pozze aumenta" },
-  { m: "Ago", temp: "25–27° / 8–10°", rain: "Praticamente nulle", note: "Alta stagione turistica; prenotate i campi di Etosha con largo anticipo" },
-  { m: "Set", temp: "29–32° / 11–14°", rain: "Praticamente nulle", note: "Osservazione eccellente e meno affollata prima del caldo di ottobre" },
-  { m: "Ott", temp: "33–36° / 16–18°", rain: "Ultimo mese secco", note: "Migliore attività alle pozze d'acqua dell'anno, ma davvero caldo nel pomeriggio" },
-  { m: "Nov", temp: "33–35° / 18–19°", rain: "Primi temporali", note: "Iniziano le piogge; la fauna comincia a disperdersi, arrivano gli uccelli migratori" },
-  { m: "Dic", temp: "31–33° / 17–19°", rain: "Inizia la stagione verde", note: "Caldo e umido; molto trafficato per le vacanze regionali verso la costa" },
+  { m: "Gen", temp: "32-34° / 17-19°", rain: "La stagione delle piogge si intensifica", note: "Caldo, umido, frequenti temporali pomeridiani; paesaggi rigogliosi" },
+  { m: "Feb", temp: "31-33° / 17-19°", rain: "Mese più piovoso", note: "A Windhoek cadono in media ~154mm; picco della stagione verde e del birdwatching" },
+  { m: "Mar", temp: "30-32° / 16-18°", rain: "Piogge in calo", note: "Ancora umido, paesaggi al massimo del verde" },
+  { m: "Apr", temp: "28-30° / 13-15°", rain: "Le piogge si fermano quasi del tutto", note: "Mese di transizione sottovalutato: verde, strade in asciugatura, poca folla" },
+  { m: "Mag", temp: "25-27° / 8-10°", rain: "Quasi nulle", note: "Inizia la stagione secca; la vegetazione comincia a diradarsi" },
+  { m: "Giu", temp: "22-24° / 5-7°", rain: "Periodo più secco", note: "Notti più fredde dell'anno; cieli più tersi per l'osservazione delle stelle" },
+  { m: "Lug", temp: "22-24° / 5-7°", rain: "Mese più secco", note: "Massima limpidezza dell'aria; la concentrazione di fauna alle pozze aumenta" },
+  { m: "Ago", temp: "25-27° / 8-10°", rain: "Praticamente nulle", note: "Alta stagione turistica; prenotate i campi di Etosha con largo anticipo" },
+  { m: "Set", temp: "29-32° / 11-14°", rain: "Praticamente nulle", note: "Osservazione eccellente e meno affollata prima del caldo di ottobre" },
+  { m: "Ott", temp: "33-36° / 16-18°", rain: "Ultimo mese secco", note: "Migliore attività alle pozze d'acqua dell'anno, ma davvero caldo nel pomeriggio" },
+  { m: "Nov", temp: "33-35° / 18-19°", rain: "Primi temporali", note: "Iniziano le piogge; la fauna comincia a disperdersi, arrivano gli uccelli migratori" },
+  { m: "Dic", temp: "31-33° / 17-19°", rain: "Inizia la stagione verde", note: "Caldo e umido; molto trafficato per le vacanze regionali verso la costa" },
 ];
 
 export default function BestTimePageIt() {
