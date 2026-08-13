@@ -671,6 +671,167 @@ export const lodgeTranslationsDe: Record<string, LodgeTranslation> = {
     bestFor: "Flusssafaris und Pirschfahrten im Elefantenkorridor des Bwabwata-Nationalparks",
     alt: "Der Kwando-Fluss bei Abenddämmerung neben der Namushasha River Lodge, Caprivi",
   },
+  "etosha-village": {
+    description:
+      "Eine dorfartig angelegte Lodge mit Campingplatz in einheimischem Mopanewald, 2 km vom Andersson Gate des Etosha bei Okaukuejo entfernt, mit reetgedeckten Bungalows, die wie ein traditionelles Dorf angeordnet sind.",
+    highlights: ["2 km vom Andersson Gate entfernt", "Büffetrestaurant sowie Selbstverpflegungs- und Campingoptionen", "Frei umherziehende Kudus, Oryx-Antilopen und Giraffen auf dem Gelände"],
+    bestFor: "Reisende mit kleinem bis mittlerem Budget, die eine erschwingliche Basis direkt am Parktor suchen",
+    alt: "Reetgedeckte, dorfartig angelegte Bungalows im Etosha Village, nahe dem Andersson Gate",
+  },
+  "safarihoek-lodge": {
+    description:
+      "Eine Lodge mit 11 Chalets auf einer erhöhten Holzplattform im Etosha Heights Private Reserve nahe Kamanjab, südwestlich des Parks, mit Blick auf ein Wasserloch und einem aktiven Nashorn-Monitoring-Programm.",
+    highlights: ["Erhöhte Plattform-Lodge über einem Wasserloch", "Nur 11 Chalets, klein und exklusiv", "Spitzmaulnashorn- und Breitmaulnashorn-Tracking als Teil der Naturschutzarbeit des Reservats"],
+    bestFor: "Reisende, die eine exklusive, abgelegene Luxusbasis südwestlich des Etosha suchen",
+    alt: "Ein Chalet auf einer erhöhten Holzplattform mit Blick auf ein Wasserloch, Safarihoek Lodge",
+  },
+  "elegant-desert-camp": {
+    description:
+      "Ein Boutique-Camp mit 10 Zelten auf einem felsigen Granitvorsprung in den Tsaris-Bergen außerhalb von Sesriem, mit Pool und Sundowner-Deck am Felsrand, Frühstück inklusive.",
+    highlights: ["Pool und Sundowner-Deck am Felsrand mit Bergblick", "Nur 10 geräumige Zelte mit eigenem Bad und privater Terrasse", "Restaurant und Bar, Frühstück inklusive"],
+    bestFor: "Reisende, die ein Boutique-Zeltcamp-Erlebnis mit dramatischer Bergkulisse suchen",
+    alt: "Ein Zelt mit privater Terrasse auf einem Felsvorsprung, The Elegant Desert Camp, Sossusvlei",
+  },
+  "twyfelfontein-country-lodge": {
+    description:
+      "Eine Lodge mit 56 Zimmern, in die Sandsteinfelsen des Aba-Huab-Tals gebaut, 3 km von der UNESCO-Felsgravurenstätte Twyfelfontein entfernt, mit Pool und Restaurant.",
+    highlights: ["3 km von der UNESCO-Weltkulturerbestätte Twyfelfontein entfernt", "56 Zimmer, die größte Kapazität in der Gegend", "Außenpool und Sonnenterrasse, in den Fels gebaut"],
+    bestFor: "Familien und Gruppen, die zu einem erschwinglichen Preis leichten Zugang zur Felskunst von Twyfelfontein suchen",
+    alt: "Lodge-Gebäude, in Sandsteinfelsen gebaut, Twyfelfontein Country Lodge, Damaraland",
+  },
+  "vingerklip-lodge": {
+    description:
+      "Eine Lodge im Ugab-Tal nahe Khorixas, am Fuß des Vingerklip errichtet, einem freistehenden, 35 m hohen Sandsteinpfeiler, bekannt für ihr Restaurant Eagle's Nest auf dem Felsplateau, das über einen Treppenaufstieg erreichbar ist.",
+    highlights: ["Liegt am Fuß des Vingerklip, einer der meistfotografierten Felsformationen Damaralands", "Restaurant Eagle's Nest auf dem Felsplateau für Abendessen bei Sonnenuntergang", "Zwei Pools und Wanderwege hinauf zum Aussichtspunkt"],
+    bestFor: "Reisende, die einen landschaftlich reizvollen Aufenthalt an einem markanten Wahrzeichen in Damaraland suchen",
+    alt: "Lodgezimmer mit dem Sandsteinpfeiler Vingerklip im Hintergrund, Damaraland",
+  },
+  "palmwag-lodge": {
+    description:
+      "Eine eingezäunte Lodge mit Pool und reetgedeckten Chalets am südlichen Zugang zur Palmwag Concession, eine Basis für die Suche nach wüstenangepassten Elefanten und Spitzmaulnashörnern.",
+    highlights: ["Basis für Tracking wüstenangepasster Elefanten und Spitzmaulnashörner in der Palmwag Concession", "Ganzjährig nutzbarer Außenpool, Garten und Restaurant", "Familienzimmer und Kinderspielplatz"],
+    bestFor: "Familien und individuell Reisende, die eine gut erreichbare Basis am Tor zum Wüstenelefanten-Land des Kaokoveld suchen",
+    alt: "Reetgedeckte Chalets und Pool der Palmwag Lodge, Zugang zur Palmwag Concession",
+  },
+  "khowarib-lodge": {
+    description:
+      "Eine Lodge mit 14 auf Stelzen errichteten Zeltchalets direkt am Hoanib-Fluss in der Khowarib-Schlucht nahe Sesfontein, mit Blick auf die Schluchtwände.",
+    highlights: ["Lage am Hoanib-Fluss, mit Blick auf die Felswände der Khowarib-Schlucht", "14 Zeltchalets auf Stelzen mit eigenem Bad", "Pool und Garten, Frühstücksbüffet inklusive"],
+    bestFor: "Reisende, die einen landschaftlich reizvollen Stopp am Hoanib-Fluss ohne Fly-in-Preise suchen",
+    alt: "Auf Stelzen errichtete Zeltchalets über dem Flussbett des Hoanib, Khowarib Lodge",
+  },
+  "okahirongo-elephant-lodge": {
+    description:
+      "Eine Boutique-Lodge mit 9 Suiten am Hoarusib-Fluss in Purros, geführt unter der Marke Abercrombie & Kent Sanctuary, mit Pool und gehobenem Restaurant.",
+    highlights: ["Die einzige gehobene Unterkunft in Purros, am Hoarusib-Fluss gelegen", "Boutique-Format mit 9 Suiten, Pool und internationaler Küche", "Geführte Besuche in Himba-Dörfern als Signature-Aktivität"],
+    bestFor: "Flitterwöchner und Luxusreisende, die eine intime Lodge im abgelegenen Purros suchen",
+    alt: "Eine Boutique-Suite mit Blick auf den Hoarusib-Fluss, Okahirongo Elephant Lodge, Purros",
+  },
+  "strand-hotel-swakopmund": {
+    description:
+      "Ein 4-Sterne-Hotel mit 125 Zimmern auf der historischen Mole in Swakopmund, auf drei Seiten vom Atlantik umgeben, mit mehreren Restaurants und dem Atlantic Spa. Namibias bekannteste Luxusadresse an der Küste.",
+    highlights: ["Panoramablick auf den Ozean aus den meisten der 125 Zimmer", "Hauseigenes Atlantic Spa mit Dampfbädern und einer Garten-Paarsuite", "Mehrere Restaurants, vom klassischen Speisesaal bis zum Feinkostladen"],
+    bestFor: "Reisende, die einen ikonischen Vollservice-Aufenthalt direkt am Meer im Herzen von Swakopmund suchen",
+    alt: "Die Fassade des Strand Hotel Swakopmund direkt am Meer, auf der Mole",
+  },
+  "secret-garden-guesthouse": {
+    description:
+      "Ein Gästehaus mit 10 Zimmern im historischen Zentrum von Swakopmund, um einen gepflegten Garten mit Sonnenterrasse angelegt, etwa 250 m vom Meer und der Jetty entfernt.",
+    highlights: ["Zentrale Lage im historischen Swakopmund, 5 Gehminuten zur Jetty", "Gartenhof als Herzstück der Anlage", "Frühstück im Speisesaal oder unter Palmen im Garten"],
+    bestFor: "Paare oder kleine Gruppen, die einen ruhigen, persönlichen Gästehaus-Aufenthalt nahe dem Stadtzentrum suchen",
+    alt: "Der gepflegte Gartenhof des The Secret Garden Guesthouse, Swakopmund",
+  },
+  "bismarck-2": {
+    description:
+      "Eine Selbstversorger-Apartmentanlage an der Ecke Bismarck Street und Sam Nujoma Avenue im Zentrum von Swakopmund, etwa 300 m vom Palm Beach entfernt, mit Einheiten aus zwei Schlafzimmern und zwei Bädern.",
+    highlights: ["Zentralste Lage, alles in einem Häuserblock erreichbar", "Vollausgestattete Küche, zwei Schlafzimmer, zwei Bäder", "Balkon mit Blick über die Stadt"],
+    bestFor: "Budgetbewusste Reisende oder Familien, die eine Selbstversorger-Basis mitten in der Stadt suchen",
+    alt: "Ein Balkon der Selbstversorger-Apartments Bismarck 2, Zentrum von Swakopmund",
+  },
+  "hilton-windhoek": {
+    description:
+      "Ein zeitgenössisches 15-stöckiges Hotel im Zentrum von Windhoek, mit hauseigenem Casino, Fitnesscenter, Spa sowie Pool und Bar auf dem Dach, ausgerichtet auf Geschäftsreisende und Konferenzgäste.",
+    highlights: ["Zentrale Lage, fußläufig zum Zoo Park und zur National Art Gallery", "Hauseigenes Casino, Fitnesscenter, Spa und Rooftop-Pool mit Bar", "Mehrere Restaurants im Haus"],
+    bestFor: "Geschäftsreisende und Konferenzteilnehmer, die ein internationales Vollservice-Kettenhotel mitten in der Stadt suchen",
+    alt: "Der Rooftop-Pool und die Bar im Hilton Windhoek",
+  },
+  "chameleon-backpackers": {
+    description:
+      "Eine seit 1995 bestehende Budgetunterkunft im nördlichen Zentrum Windhoeks, vom Schlafsaal bis zum privaten Zimmer mit eigenem Bad, wenige Gehminuten von Geschäften und Restaurants entfernt.",
+    highlights: ["Außenpool, Garten, Gemeinschaftslounge und hauseigene Bar", "Kontinentales Frühstück inklusive, dazu eine kostenlose Stadtführung", "Zimmer von Schlafsälen bis zu privaten Zimmern und Familienzimmern"],
+    bestFor: "Budgetreisende, Backpacker und Overlander, die vor oder nach einer Namibia-Reise eine gesellige Basis suchen",
+    alt: "Der Garten- und Poolbereich des Chameleon Backpackers & Guesthouse, Windhoek",
+  },
+  "etango-ranch-guest-farm": {
+    description:
+      "Eine eingezäunte, aktiv bewirtschaftete Gästefarm in Voigtland, etwa 4 km vom Hosea Kutako International Airport entfernt, auf deren Gelände frei umherziehende Oryx-Antilopen, Kudus, Bergzebras und Kuhantilopen zu sehen sind.",
+    highlights: ["5 bis 10 Fahrminuten zum Flughafen, Shuttle wird angeboten", "Farmatmosphäre mit sichtbarer Wildtierpopulation und Pool", "Ideal für frühe Abflüge oder späte Ankünfte"],
+    bestFor: "Reisende, die vor einem frühen Abflug oder nach einer späten Ankunft einen komfortablen, unkomplizierten Aufenthalt suchen",
+    alt: "Frei umherziehende Oryx-Antilopen auf dem Gelände der Etango Ranch Guest Farm, nahe dem Flughafen Windhoek",
+  },
+  "fish-river-lodge": {
+    description:
+      "Die einzige Lodge direkt am westlichen Rand des Fish River Canyon, mit 20 Chalets aus Stein und Glas, raumhohen Fenstern und Terrassen mit Canyon-Blick.",
+    highlights: ["Die einzige Unterkunft mit Zimmern direkt am Canyonrand", "Zeitgenössische Chalets aus Stein und Glas mit Terrassen zum Canyon", "Geführte Wanderungen und Fahrten am Fuß des Canyons"],
+    bestFor: "Reisende, die morgens direkt in den Canyon blicken möchten",
+    alt: "Ein Chalet aus Stein und Glas am Rand des Fish River Canyon, Fish River Lodge",
+  },
+  "gondwana-canyon-roadhouse": {
+    description:
+      "Eine Unterkunft der Gondwana Collection nahe dem Hobas-seitigen Tor des Canyons, im Stil einer amerikanischen Roadhouse-Raststätte gestaltet, mit Oldtimern verteilt im Garten sowie Hotelzimmern und einem Campingplatz.",
+    highlights: ["Oldtimer- und Roadhouse-Thema, ungewöhnlich für die Region", "Von allen Gondwana-Unterkünften am nächsten am Haupteingang des Canyons", "Hotelzimmer und Campingplatz, größere Preisspanne als benachbarte Lodges"],
+    bestFor: "Roadtrip-Reisende, die einen originellen, günstigeren Aufenthalt direkt am Canyontor suchen",
+    alt: "Oldtimer im Garten der Canyon Roadhouse, Fish River Canyon",
+  },
+  "gondwana-canyon-village": {
+    description:
+      "Eine Unterkunft der Gondwana Collection mit 42 Chalets aus Stein und Reet, angeordnet um ein zentrales Restaurant, eine Bar und einen Pool, gelegen im Gondwana Nature Park etwa 20 km vom Canyon entfernt.",
+    highlights: ["42 Chalets in Hufeisenform um Pool und Restaurant angeordnet", "Sundowner-Fahrten und Wanderwege direkt am Haus", "Größer und familienfreundlicher als die Boutique-Camps der Umgebung"],
+    bestFor: "Familien oder Gruppen, die eine größere, geselligere Unterkunft nahe dem Canyon suchen",
+    alt: "Chalets aus Stein und Reet rund um den Pool, Canyon Village, Fish River Canyon",
+  },
+  "mount-canyon-guest-farm": {
+    description:
+      "Eine von den Eigentümern selbst geführte, aktiv bewirtschaftete Gästefarm an der Straße Keetmanshoop-Grunau, etwa eine Autostunde vom Fish River Canyon entfernt, mit einem eigenen privaten Canyon auf dem Gelände und Pirschfahrten bei Sonnenuntergang.",
+    highlights: ["Eigentümergeführte Farm, unabhängig von den größeren Unterkunftsgruppen der Region", "Eigener privater Canyon und Pirschfahrt direkt auf dem Gelände", "Gelobt für persönliche, familiäre Gastfreundschaft"],
+    bestFor: "Budgetreisende, die einen authentischen Farmaufenthalt auf dem Weg zum oder vom Canyon suchen",
+    alt: "Das Farmhaus und der private Canyon der Mount Canyon Guest Farm",
+  },
+  "camp-kwando": {
+    description:
+      "Ein kleines, familiengeführtes Camp mit 6 erhöhten Chalets aus Holz und Segeltuch am Kwando-Fluss, zwischen den Nationalparks Bwabwata und Mudumu, mit Pool und Restaurant am Fluss.",
+    highlights: ["Nur 6 Chalets, familiär und persönlich geführt", "Pool und Flussterrasse mit Blick über die Kwando-Überschwemmungsebene", "Basis für Pirschfahrten in Bwabwata und Mudumu sowie Bootstouren auf dem Kwando"],
+    bestFor: "Reisende, die ein kleines, hoch bewertetes Camp am Fluss statt einer großen Lodge suchen",
+    alt: "Ein erhöhtes Chalet aus Holz und Segeltuch über dem Kwando-Fluss, Camp Kwando",
+  },
+  "zambezi-mubala-lodge": {
+    description:
+      "Eine Lodge der Gondwana Collection mit 21 Bungalows aus Ziegel und Reet, direkt am Sambesi gelegen, etwa 40 km östlich von Katima Mulilo, mit Restaurant, Bar und Pool.",
+    highlights: ["Liegt direkt am Sambesi, anders als die Camps am Kwando-Fluss in der Region", "21 Bungalows, darunter Familieneinheiten für 4 Personen", "Restaurant, Bar, Pool und Kunsthandwerksladen"],
+    bestFor: "Familien und Paare, die eine verlässliche Lodge im mittleren Preissegment direkt am Sambesi suchen",
+    alt: "Bungalows aus Ziegel und Reet am Sambesi, Zambezi Mubala Lodge",
+  },
+  "protea-zambezi-river-lodge": {
+    description:
+      "Ein Vollservice-Stadthotel mit 42 Zimmern am Sambesi in Katima Mulilo, Teil von Marriotts Protea-Marke, mit Mietwagenservice und einem Tourenschalter, der Tagesausflüge zu den Victoriafällen und nach Chobe organisiert.",
+    highlights: ["Das einzige international gebrandete Hotel der Region", "Vollservice-Anlaufstelle mit Mietwagenverleih und Tourenschalter", "Organisierte Tagesausflüge zu den Victoriafällen, nach Chobe und Sambia"],
+    bestFor: "Reisende, die eine verlässliche Basis in der Stadt mit einfacher Logistik für grenzüberschreitende Tagesausflüge suchen",
+    alt: "Die Flussterrasse des Protea Hotel by Marriott Zambezi River Lodge, Katima Mulilo",
+  },
+  "hohenstein-lodge": {
+    description:
+      "Eine Boutique-Lodge mit 14 halb freistehenden Steinbungalows, in Granitblöcke am Fuß des höchsten Gipfels des Erongo-Gebirges gebaut, etwa eine Autostunde von Spitzkoppe entfernt, mit eigenem Netz markierter Wanderwege.",
+    highlights: ["Steinbungalows direkt in den Fels gebaut, jeweils mit privater Terrasse", "Kostenlose Fahrradnutzung und markierte Wanderwege durch die Erongo-Hügel", "Solarbetrieben, Restaurant mit Blick über die Gärten"],
+    bestFor: "Reisende, die eine ruhige, designbewusste Berglodge im weiteren Granitland des Erongo suchen",
+    alt: "Steinbungalows, in Granitblöcke gebaut, Hohenstein Lodge, Erongo-Gebirge",
+  },
+  "achab-chalets": {
+    description:
+      "Eine private Naturschutzfarm am Fuß des Gamgamichab-Gebirges nahe Usakos, umgewandelt in ein Schutzgebiet für Hartmann-Bergzebras und endemische Vogelarten, mit Selbstversorger-Ökohütten und Glamping-Zelten.",
+    highlights: ["Private Naturschutzfarm mit Hartmann-Bergzebras und endemischen Vogelarten", "Selbstversorger-Ökohütten und Glamping-Zelte mit Kochnische", "Familienfreundlicher Campingplatz mit eigenen Sanitäranlagen"],
+    bestFor: "Selbstversorger-Reisende und Familien, die einen budgetfreundlichen Aufenthalt auf einer Wildtierfarm nahe Spitzkoppe suchen",
+    alt: "Eine Selbstversorger-Ökohütte auf der Wildtierfarm Achab Chalets, nahe Spitzkoppe",
+  },
 };
 
 type RouteTranslation = Partial<

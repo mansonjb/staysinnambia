@@ -715,7 +715,7 @@ export const lodges: Lodge[] = [
     bestFor: "Travellers prioritising community tourism, photographers",
     categories: ["safari"],
     image: "/images/lodges/grootberg-lodge.jpg",
-    alt: "View over the valley from a room at Grootberg Lodge, Damaraland",
+    alt: "View over the valley from the pool deck at Grootberg Lodge, Damaraland",
     priceTier: 2,
   },
   {
@@ -759,7 +759,7 @@ export const lodges: Lodge[] = [
     operator: "Natural Selection",
     categories: ["luxury", "safari", "remote", "glamping"],
     image: "/images/lodges/hoanib-skeleton-coast-camp.jpg",
-    alt: "A tented suite at dusk in the Hoanib Valley at Hoanib Valley Camp",
+    alt: "The pool deck overlooking the Hoanib Valley mountains at Hoanib Valley Camp",
     priceTier: 4,
   },
   {
@@ -802,7 +802,7 @@ export const lodges: Lodge[] = [
     bestFor: "Couples, a luxury bookend before or after a safari circuit",
     categories: ["luxury", "romantic"],
     image: "/images/lodges/the-olive-exclusive.jpg",
-    alt: "Suites overlooking Windhoek at dusk from The Olive Exclusive",
+    alt: "A private plunge pool deck among olive trees at The Olive Exclusive",
     priceTier: 4,
   },
   {
@@ -831,7 +831,7 @@ export const lodges: Lodge[] = [
     operator: "Gondwana Collection",
     categories: ["desert", "family", "remote"],
     image: "/images/lodges/canyon-lodge.jpg",
-    alt: "A guest room built among granite boulders at Canyon Lodge, Fish River Canyon",
+    alt: "The pool set among giant granite boulders at Canyon Lodge, Fish River Canyon",
     priceTier: 2,
   },
   {
@@ -859,7 +859,7 @@ export const lodges: Lodge[] = [
     bestFor: "Travellers wanting comfort near Spitzkoppe without full camping",
     categories: ["desert"],
     image: "/images/lodges/spitzkoppen-lodge.jpg",
-    alt: "Elevated chalets among the granite domes of Spitzkoppen Lodge at dusk",
+    alt: "The rock-set pool and main lodge among the granite domes of Spitzkoppen Lodge",
     priceTier: 2,
   },
   {
@@ -917,7 +917,7 @@ export const lodges: Lodge[] = [
     bestFor: "Travellers wanting an exclusive, remote luxury base southwest of Etosha",
     categories: ["luxury", "safari", "remote"],
     image: "/images/lodges/safarihoek-lodge.jpg",
-    alt: "An elevated wooden platform chalet overlooking a waterhole at Safarihoek Lodge",
+    alt: "The pool deck at Safarihoek Lodge overlooking the surrounding plains at dusk",
     priceTier: 4,
   },
   {
@@ -987,7 +987,7 @@ export const lodges: Lodge[] = [
     bestFor: "Travellers wanting a scenic Hoanib River stop without fly-in pricing",
     categories: ["desert", "remote", "family"],
     image: "/images/lodges/khowarib-lodge.jpg",
-    alt: "Stilted tented chalets over the Hoanib riverbed at Khowarib Lodge",
+    alt: "The pool at Khowarib Lodge with the Khowarib Gorge mountains behind",
     priceTier: 2,
   },
   {
@@ -1002,7 +1002,7 @@ export const lodges: Lodge[] = [
     operator: "Abercrombie & Kent",
     categories: ["luxury", "romantic", "remote"],
     image: "/images/lodges/okahirongo-elephant-lodge.jpg",
-    alt: "A boutique suite overlooking the Hoarusib River at Okahirongo Elephant Lodge, Purros",
+    alt: "The infinity pool and desert mountain view at Okahirongo Elephant Lodge, Purros",
     priceTier: 3,
   },
   {
@@ -1087,7 +1087,7 @@ export const lodges: Lodge[] = [
     bestFor: "Travellers needing a comfortable, low-hassle stay for an early departure or late arrival flight",
     categories: ["farm", "family"],
     image: "/images/lodges/etango-ranch-guest-farm.jpg",
-    alt: "Free-roaming oryx on the grounds of Etango Ranch Guest Farm, near Windhoek's airport",
+    alt: "Sunset over the hills at Etango Ranch Guest Farm, near Windhoek's airport",
     priceTier: 2,
   },
   {
@@ -1101,7 +1101,7 @@ export const lodges: Lodge[] = [
     bestFor: "Travellers who want to wake up looking straight into the canyon",
     categories: ["luxury", "romantic", "remote"],
     image: "/images/lodges/fish-river-lodge.jpg",
-    alt: "A stone-and-glass chalet on the rim of Fish River Canyon at Fish River Lodge",
+    alt: "The infinity pool on the rim of Fish River Canyon at Fish River Lodge",
     priceTier: 3,
   },
   {
@@ -1159,7 +1159,7 @@ export const lodges: Lodge[] = [
     bestFor: "Travellers wanting a small, highly-rated riverside camp rather than a big lodge",
     categories: ["safari", "family", "remote"],
     image: "/images/lodges/camp-kwando.jpg",
-    alt: "An elevated wood-and-canvas chalet over the Kwando River at Camp Kwando",
+    alt: "The pool deck overlooking the Kwando River floodplain at Camp Kwando",
     priceTier: 2,
   },
   {

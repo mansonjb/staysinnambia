@@ -671,6 +671,167 @@ export const lodgeTranslationsNl: Record<string, LodgeTranslation> = {
     bestFor: "Riviersafari's en gamedrives langs de olifantencorridor in Bwabwata National Park",
     alt: "De Kwando-rivier bij schemering naast Namushasha River Lodge, Caprivi",
   },
+  "etosha-village": {
+    description:
+      "Een lodge en camping in dorpsstijl, gelegen in inheems mopanewoud op 2 km van Etosha's Andersson Gate bij Okaukuejo, met rieten bungalows gerangschikt als een traditioneel dorp.",
+    highlights: ["2 km van de Andersson Gate", "Buffetdiner plus self-catering en kampeermogelijkheden", "Vrij rondlopende koedoes, orixen en giraffen op het terrein"],
+    bestFor: "Reizigers met een budget tot middenklasse-budget die een betaalbare uitvalsbasis vlak bij de parkpoort willen",
+    alt: "Rieten bungalows in dorpsstijl bij Etosha Village, nabij Andersson Gate",
+  },
+  "safarihoek-lodge": {
+    description:
+      "Een lodge met 11 chalets op een verhoogd houten platform in het Etosha Heights Private Reserve nabij Kamanjab, ten zuidwesten van het park, met uitzicht op een drinkplaats en een actief monitoringprogramma voor neushoorns.",
+    highlights: ["Lodge op een verhoogd platform met uitzicht op een drinkplaats", "Slechts 11 chalets, klein en exclusief", "Tracking van zwarte en witte neushoorns als onderdeel van het natuurbehoudswerk van het reservaat"],
+    bestFor: "Reizigers die een exclusieve, afgelegen luxebasis ten zuidwesten van Etosha willen",
+    alt: "Een chalet op een verhoogd houten platform met uitzicht op een drinkplaats bij Safarihoek Lodge",
+  },
+  "elegant-desert-camp": {
+    description:
+      "Een boetiekkamp met 10 tenten op een rotsachtige granietuitloper in de Tsarisbergen net buiten Sesriem, met een zwembad en sundowner-dek op de rand van de rots, ontbijt inbegrepen.",
+    highlights: ["Zwembad en sundowner-dek op een rotsuitloper met uitzicht over de bergen", "Slechts 10 ruime tenten met eigen badkamer en privéterras", "Restaurant en bar, ontbijt inbegrepen"],
+    bestFor: "Reizigers die een boetiek-tentenkamp met spectaculair uitzicht op de bergen zoeken",
+    alt: "Een tent met privéterras op een rotsuitloper bij The Elegant Desert Camp, Sossusvlei",
+  },
+  "twyfelfontein-country-lodge": {
+    description:
+      "Een lodge met 56 kamers, gebouwd tegen de zandstenen rotswanden van de Aba-Huabvallei, op 3 km van de UNESCO-rotskunstlocatie Twyfelfontein, met zwembad en restaurant.",
+    highlights: ["3 km van de UNESCO-werelderfgoedlocatie met rotskunst van Twyfelfontein", "56 kamers, de grootste capaciteit in de omgeving", "Buitenzwembad en zonneterras tegen de rotswand gebouwd"],
+    bestFor: "Gezinnen en groepen die gemakkelijk toegang willen tot de rotskunst van Twyfelfontein voor een toegankelijke prijs",
+    alt: "Lodgegebouwen tegen zandstenen rotswanden bij Twyfelfontein Country Lodge, Damaraland",
+  },
+  "vingerklip-lodge": {
+    description:
+      "Een lodge in de Ugabvallei nabij Khorixas, gebouwd aan de voet van de Vingerklip, een vrijstaande zandstenen pilaar van 35 meter, bekend om het Eagle's Nest-restaurant op de rots, bereikbaar via een trap.",
+    highlights: ["Ligt onder de Vingerklip, een van de meest gefotografeerde rotsformaties van Damaraland", "Eagle's Nest-restaurant op de rots voor dineren bij zonsondergang", "Twee zwembaden en wandelroutes naar het uitkijkpunt"],
+    bestFor: "Reizigers die een pittoresk verblijf bij een herkenningspunt in Damaraland zoeken",
+    alt: "Lodgekamers met de zandstenen pilaar Vingerklip op de achtergrond, Damaraland",
+  },
+  "palmwag-lodge": {
+    description:
+      "Een omheinde lodge met zwembad en rieten chalets bij de zuidelijke toegangspoort van de Palmwag Concession, een uitvalsbasis voor tracking van woestijnolifanten en zwarte neushoorns.",
+    highlights: ["Uitvalsbasis voor tracking van woestijnolifanten en zwarte neushoorns in de Palmwag Concession", "Het hele jaar geopend buitenzwembad, tuin en restaurant", "Familiekamers en een speeltuin voor kinderen"],
+    bestFor: "Gezinnen en zelfstandige reizigers die een toegankelijke uitvalsbasis willen bij de poort naar het olifantengebied van Kaokoveld",
+    alt: "Rieten chalets en zwembad bij Palmwag Lodge, poort naar de Palmwag Concession",
+  },
+  "khowarib-lodge": {
+    description:
+      "Een lodge met 14 op palen gebouwde tentchalets, direct aan de Hoanib-rivier in de Khowarib-kloof nabij Sesfontein, met uitzicht op de rotswanden van de kloof.",
+    highlights: ["Ligging aan de Hoanib-rivier, met uitzicht op de rotswanden van de Khowarib-kloof", "14 tentchalets op palen met eigen badkamer", "Zwembad en tuin, buffetontbijt inbegrepen"],
+    bestFor: "Reizigers die een schilderachtige stop aan de Hoanib-rivier willen zonder fly-in-prijzen",
+    alt: "Tentchalets op palen boven de rivierbedding van de Hoanib bij Khowarib Lodge",
+  },
+  "okahirongo-elephant-lodge": {
+    description:
+      "Een boetieklodge met 9 suites aan de Hoarusib-rivier in Purros, gerund onder het Abercrombie & Kent Sanctuary-merk, met zwembad en fine-diningrestaurant.",
+    highlights: ["De enige gespecialiseerde accommodatie in Purros, aan de Hoarusib-rivier", "Kleinschalige boetiekopzet met 9 suites, zwembad en restaurant met internationale keuken", "Begeleide bezoeken aan Himba-dorpen als kenmerkende activiteit"],
+    bestFor: "Wittebroodsweken-gasten en luxereizigers die een intieme lodge in het afgelegen Purros willen",
+    alt: "Een boetieksuite met uitzicht op de Hoarusib-rivier bij Okahirongo Elephant Lodge, Purros",
+  },
+  "strand-hotel-swakopmund": {
+    description:
+      "Een 4-sterrenhotel met 125 kamers op de historische Mole in Swakopmund, aan drie kanten omringd door de Atlantische Oceaan, met meerdere restaurants en de Atlantic Spa. Namibiës bekendste luxeadres aan zee.",
+    highlights: ["Panoramisch zeezicht vanuit de meeste van de 125 kamers", "Eigen Atlantic Spa met stoomruimtes en een tuinsuite voor stellen", "Meerdere eetgelegenheden, van formeel restaurant tot delicatessenzaak"],
+    bestFor: "Reizigers die een iconisch full-service verblijf aan zee willen, in het hart van Swakopmund",
+    alt: "De gevel aan zee van Strand Hotel Swakopmund op de Mole",
+  },
+  "secret-garden-guesthouse": {
+    description:
+      "Een guesthouse met 10 kamers in het centrum van het oude Swakopmund, gebouwd rond een aangelegde tuin met zonneterras, op zo'n 250 meter van zee en de Jetty.",
+    highlights: ["Centrale ligging in oud Swakopmund, 5 minuten lopen naar de Jetty", "Ligging rond een tuinplaats", "Ontbijt geserveerd in de eetkamer of onder de palmen in de tuin"],
+    bestFor: "Stellen of kleine groepen die een rustig, persoonlijk verblijf in een guesthouse dicht bij het centrum willen",
+    alt: "De aangelegde tuinplaats bij The Secret Garden Guesthouse, Swakopmund",
+  },
+  "bismarck-2": {
+    description:
+      "Een self-catering appartementencomplex op de hoek van Bismarck Street en Sam Nujoma Avenue in het centrum van Swakopmund, zo'n 300 meter van Palm Beach, met units van 2 slaapkamers en 2 badkamers.",
+    highlights: ["Zeer centrale ligging, alles op loopafstand", "Volledig ingerichte keuken en indeling met 2 slaapkamers en 2 badkamers", "Balkon met uitzicht over de stad"],
+    bestFor: "Budgetbewuste reizigers of gezinnen die een self-catering uitvalsbasis midden in de stad willen",
+    alt: "Het balkon van een self-catering appartement bij Bismarck 2, centrum Swakopmund",
+  },
+  "hilton-windhoek": {
+    description:
+      "Een eigentijds hotel van 15 verdiepingen in het centrum van Windhoek, met een eigen casino, fitnesscentrum, spa en een zwembad met bar op het dak, gericht op zakenreizigers en congresgangers.",
+    highlights: ["Centrale ligging, op loopafstand van Zoo Park en de National Art Gallery", "Eigen casino, fitnesscentrum, spa en zwembad/bar op het dak", "Meerdere eetgelegenheden"],
+    bestFor: "Zakenreizigers en congresgangers die een full-service internationaal kettinghotel in het centrum willen",
+    alt: "Het zwembad en de bar op het dak van Hilton Windhoek",
+  },
+  "chameleon-backpackers": {
+    description:
+      "Een al lang bestaande budgetaccommodatie in Noord-Windhoek Centraal, geopend in 1995, met een aanbod van slaapzaalbedden tot privékamers met eigen badkamer, op enkele minuten lopen van winkels en restaurants.",
+    highlights: ["Buitenzwembad, tuin, gemeenschappelijke lounge en eigen bar", "Continentaal ontbijt inbegrepen, plus een gratis stadswandeling", "Kamers variëren van slaapzalen tot privé- en familiekamers"],
+    bestFor: "Budgetreizigers, backpackers en overlanders die een gezellige uitvalsbasis willen voor of na een reis door Namibië",
+    alt: "De tuin en het zwembad bij Chameleon Backpackers & Guesthouse, Windhoek",
+  },
+  "etango-ranch-guest-farm": {
+    description:
+      "Een omheinde werkende gastenboerderij in Voigtland, zo'n 4 km van Hosea Kutako International Airport, waar vrij rondlopende orixen, koedoes, bergzebra's en hartenbeesten op het terrein te zien zijn.",
+    highlights: ["5 tot 10 minuten rijden naar het vliegveld, shuttle beschikbaar", "Boerderij-sfeer met zichtbare wildlife en een zwembad", "Ideaal gelegen voor vroege vertrek- of late aankomstvluchten"],
+    bestFor: "Reizigers die een comfortabel, zorgeloos verblijf zoeken bij een vroege vertrek- of late aankomstvlucht",
+    alt: "Vrij rondlopende orixen op het terrein van Etango Ranch Guest Farm, nabij het vliegveld van Windhoek",
+  },
+  "fish-river-lodge": {
+    description:
+      "De enige lodge die direct aan de westrand van Fish River Canyon is gebouwd, met 20 chalets van steen en glas, voorzien van vloer-tot-plafondramen en terrassen met uitzicht op de kloof.",
+    highlights: ["De enige accommodatie met kamers pal op de rand van de kloof", "Eigentijdse chalets van steen en glas met terras en uitzicht op de kloof", "Begeleide wandelingen en ritten langs de bodem van de kloof"],
+    bestFor: "Reizigers die wakker willen worden met direct uitzicht op de kloof",
+    alt: "Een chalet van steen en glas op de rand van Fish River Canyon bij Fish River Lodge",
+  },
+  "gondwana-canyon-roadhouse": {
+    description:
+      "Een Gondwana Collection-verblijf nabij de Hobas-poort van de kloof, opgezet rond een thema van een klassiek Amerikaans roadhouse, met verspreid door de tuin oldtimers, en zowel hotelkamers als een camping.",
+    highlights: ["Thema met oldtimers en roadhouse-sfeer, ongebruikelijk voor de regio", "Van alle Gondwana-verblijven het dichtst bij de hoofdingang van de kloof", "Hotelkamers en een camping, een breder budgetbereik dan andere lodges in de buurt"],
+    bestFor: "Roadtrippers die een origineel, budgetvriendelijker verblijf vlak bij de poort van de kloof willen",
+    alt: "Oldtimers in de tuin bij Canyon Roadhouse, Fish River Canyon",
+  },
+  "gondwana-canyon-village": {
+    description:
+      "Een Gondwana Collection-verblijf met 42 chalets van steen en riet, gerangschikt rond een centraal restaurant, bar en zwembad, gelegen in het Gondwana Nature Park op zo'n 19 km van de kloof.",
+    highlights: ["42 chalets in een hoefijzervorm rond een centraal zwembad en restaurant", "Sundowner-ritten en wandelpaden op het terrein", "Groter en meer op gezinnen gericht dan de boetiekkampen in de omgeving"],
+    bestFor: "Gezinnen of groepen die een groter, gezelliger verblijf nabij de kloof willen",
+    alt: "Chalets van steen en riet rond het zwembad bij Canyon Village, Fish River Canyon",
+  },
+  "mount-canyon-guest-farm": {
+    description:
+      "Een door de eigenaar gerunde werkende gastenboerderij aan de weg Keetmanshoop-Grunau, ongeveer een uur rijden van Fish River Canyon, met een eigen privékloof op het terrein en gamedrives bij zonsondergang.",
+    highlights: ["Door de eigenaar gerunde werkboerderij, onafhankelijk van de grotere groepen in het kloofgebied", "Eigen privékloof en gamedrive op het terrein", "Geroemd om de persoonlijke, familiaire gastvrijheid"],
+    bestFor: "Budgetreizigers die een authentieke boerderijstop onderweg naar of van de kloof willen",
+    alt: "Het boerderijhuis en de privékloof bij Mount Canyon Guest Farm",
+  },
+  "camp-kwando": {
+    description:
+      "Een klein, familiegerund kamp met 6 verhoogde chalets van hout en canvas aan de Kwando-rivier, tussen Bwabwata en Mudumu National Parks, met zwembad en restaurant aan de rivier.",
+    highlights: ["Slechts 6 chalets, een intieme, familiaire schaal", "Zwembad en dek aan de rivier met uitzicht over de overstromingsvlakte van de Kwando", "Uitvalsbasis voor gamedrives in Bwabwata en Mudumu, en boottochten op de Kwando"],
+    bestFor: "Reizigers die liever een klein, hooggewaardeerd kamp aan de rivier willen dan een grote lodge",
+    alt: "Een verhoogd chalet van hout en canvas boven de Kwando-rivier bij Camp Kwando",
+  },
+  "zambezi-mubala-lodge": {
+    description:
+      "Een Gondwana Collection-lodge met 21 bungalows van baksteen en riet, direct aan de Zambezi-rivier zelf, zo'n 40 km ten oosten van Katima Mulilo, met restaurant, bar en zwembad.",
+    highlights: ["Ligt aan de Zambezi-rivier zelf, in tegenstelling tot de kampen aan de Kwando-rivier in de regio", "21 bungalows, waaronder familie-units met 4 bedden", "Restaurant, bar, zwembad en curiowinkel"],
+    bestFor: "Gezinnen en stellen die een betrouwbare lodge in het middensegment direct aan de Zambezi willen",
+    alt: "Bungalows van baksteen en riet aan de Zambezi-rivier bij Zambezi Mubala Lodge",
+  },
+  "protea-zambezi-river-lodge": {
+    description:
+      "Een full-service stadshotel met 42 kamers aan de Zambezi-rivier in Katima Mulilo, onderdeel van het Protea-merk van Marriott, met autoverhuur en een tourdesk voor dagtochten naar de Victoriawatervallen en Chobe.",
+    highlights: ["Het enige internationaal bekende hotel in de regio", "Full-service logistiek knooppunt met autoverhuur en tourdesk", "Georganiseerde dagtochten naar de Victoriawatervallen, Chobe en Zambia"],
+    bestFor: "Reizigers die een betrouwbare uitvalsbasis in de stad willen met eenvoudige logistiek voor grensoverschrijdende dagtochten",
+    alt: "Het terras aan de rivier van Protea Hotel by Marriott Zambezi River Lodge, Katima Mulilo",
+  },
+  "hohenstein-lodge": {
+    description:
+      "Een boetieklodge met 14 twee-onder-een-kap stenen bungalows, gebouwd tussen granietrotsen aan de voet van de hoogste piek van de Erongobergen, ongeveer een uur rijden van Spitzkoppe, met een eigen netwerk van gemarkeerde wandelpaden.",
+    highlights: ["Stenen bungalows rechtstreeks gebouwd in de rots, elk met eigen terras", "Gratis fietsgebruik en gemarkeerde wandelpaden door de Erongoheuvels", "Werkt op zonne-energie, restaurant met uitzicht over de tuinen"],
+    bestFor: "Reizigers die een rustige, designbewuste berglodge willen in het bredere granietgebied van Erongo",
+    alt: "Stenen bungalows gebouwd tussen granietrotsen bij Hohenstein Lodge, Erongobergen",
+  },
+  "achab-chalets": {
+    description:
+      "Een particuliere natuurbehoudsboerderij aan de voet van de Gamgamichab-bergen nabij Usakos, omgevormd tot een wildreservaat voor Hartmann-zebra's en endemische vogels, met self-catering eco-cabins en glampingtenten.",
+    highlights: ["Particuliere natuurbehoudsboerderij met Hartmann-zebra's en endemische vogelsoorten", "Self-catering eco-cabins en glampingtenten met kitchenette", "Gezinsvriendelijke camping met eigen sanitair"],
+    bestFor: "Self-catering reizigers en gezinnen die een budgetvriendelijk verblijf op een wildboerderij nabij Spitzkoppe willen",
+    alt: "Een self-catering eco-cabin op de wildboerderij bij Achab Chalets, nabij Spitzkoppe",
+  },
 };
 
 type RouteTranslation = Partial<

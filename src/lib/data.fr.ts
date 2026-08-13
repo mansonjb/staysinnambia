@@ -671,6 +671,167 @@ export const lodgeTranslationsFr: Record<string, LodgeTranslation> = {
     bestFor: "Safaris fluviaux et safaris en véhicule dans le corridor à éléphants du parc national de Bwabwata",
     alt: "Le fleuve Kwando au crépuscule à côté de Namushasha River Lodge, Caprivi",
   },
+  "etosha-village": {
+    description:
+      "Un lodge de style village avec camping, en pleine forêt de mopane indigène, à 2 km de la porte Andersson d'Etosha près d'Okaukuejo, avec des bungalows en chaume disposés comme un village traditionnel.",
+    highlights: ["À 2 km de la porte Andersson", "Restauration en buffet, avec options self-catering et camping", "Koudous, oryx et girafes en liberté sur le domaine"],
+    bestFor: "Voyageurs à petit ou moyen budget cherchant une base abordable directement à la porte du parc",
+    alt: "Bungalows en chaume de style village à Etosha Village, près de la porte Andersson",
+  },
+  "safarihoek-lodge": {
+    description:
+      "Un lodge de 11 chalets sur une plateforme en bois surélevée, dans la réserve privée d'Etosha Heights près de Kamanjab, au sud-ouest du parc, avec vue sur un point d'eau et un programme actif de suivi des rhinocéros.",
+    highlights: ["Lodge sur plateforme surélevée dominant un point d'eau", "Seulement 11 chalets, petit et exclusif", "Tracking de rhinocéros noirs et blancs dans le cadre du travail de conservation de la réserve"],
+    bestFor: "Voyageurs en quête d'une base de luxe exclusive et isolée au sud-ouest d'Etosha",
+    alt: "Un chalet sur plateforme en bois surélevée surplombant un point d'eau à Safarihoek Lodge",
+  },
+  "elegant-desert-camp": {
+    description:
+      "Un camp-boutique de 10 tentes sur un éperon rocheux de granit dans les monts Tsaris, à l'extérieur de Sesriem, avec une piscine en surplomb et une terrasse pour l'apéritif au coucher du soleil, petit-déjeuner inclus.",
+    highlights: ["Piscine et terrasse pour l'apéritif au coucher du soleil sur un éperon montagneux", "Seulement 10 tentes spacieuses avec salle de bain et terrasse privées", "Restaurant et bar avec petit-déjeuner inclus"],
+    bestFor: "Voyageurs voulant une expérience de camp-boutique sous tente avec des vues spectaculaires sur les montagnes",
+    alt: "Une tente en toile avec terrasse privée sur un éperon rocheux à The Elegant Desert Camp, Sossusvlei",
+  },
+  "twyfelfontein-country-lodge": {
+    description:
+      "Un lodge de 56 chambres construit dans les falaises de grès de la vallée de l'Aba-Huab, à 3 km du site UNESCO des gravures rupestres de Twyfelfontein, avec piscine et restaurant.",
+    highlights: ["À 3 km du site UNESCO des gravures rupestres de Twyfelfontein", "56 chambres, la plus grande capacité de la région", "Piscine extérieure et terrasse ensoleillée construites à flanc de falaise"],
+    bestFor: "Familles et groupes voulant un accès facile aux gravures rupestres de Twyfelfontein à prix accessible",
+    alt: "Bâtiments du lodge construits dans les falaises de grès à Twyfelfontein Country Lodge, Damaraland",
+  },
+  "vingerklip-lodge": {
+    description:
+      "Un lodge dans la vallée de l'Ugab près de Khorixas, construit au pied du Vingerklip, un pilier de grès isolé de 35 m, connu pour son restaurant Eagle's Nest perché en haut d'une falaise, accessible par un escalier.",
+    highlights: ["Situé au pied du Vingerklip, l'une des formations rocheuses les plus photographiées du Damaraland", "Restaurant Eagle's Nest en haut de la falaise pour dîner au coucher du soleil", "Deux piscines et sentiers de randonnée jusqu'au point de vue"],
+    bestFor: "Voyageurs voulant un séjour pittoresque au Damaraland, centré sur un site emblématique",
+    alt: "Chambres du lodge avec le pilier de grès du Vingerklip en arrière-plan, Damaraland",
+  },
+  "palmwag-lodge": {
+    description:
+      "Un lodge clôturé avec piscine et chalets en chaume, à l'entrée sud de la concession de Palmwag, une base pour le tracking d'éléphants adaptés au désert et de rhinocéros noirs.",
+    highlights: ["Base pour le tracking d'éléphants adaptés au désert et de rhinocéros noirs dans la concession de Palmwag", "Piscine extérieure ouverte toute l'année, jardin et restaurant", "Chambres familiales et aire de jeux pour enfants"],
+    bestFor: "Familles et voyageurs indépendants cherchant une base accessible à l'entrée du pays des éléphants du désert du Kaokoveld",
+    alt: "Chalets en chaume et piscine à Palmwag Lodge, porte d'entrée de la concession de Palmwag",
+  },
+  "khowarib-lodge": {
+    description:
+      "Un lodge de 14 chalets-tentes sur pilotis, directement sur la rivière Hoanib dans les gorges de Khowarib près de Sesfontein, face aux falaises de la gorge.",
+    highlights: ["Situé en bord de rivière sur la Hoanib, face aux falaises de la gorge de Khowarib", "14 chalets-tentes sur pilotis avec salle de bain privée", "Piscine et jardin, petit-déjeuner buffet inclus"],
+    bestFor: "Voyageurs voulant une étape pittoresque sur la rivière Hoanib sans les tarifs des lodges accessibles en avion",
+    alt: "Chalets-tentes sur pilotis au-dessus du lit de la rivière Hoanib à Khowarib Lodge",
+  },
+  "okahirongo-elephant-lodge": {
+    description:
+      "Un lodge-boutique de 9 suites sur la rivière Hoarusib à Purros, géré sous la marque Abercrombie & Kent Sanctuary, avec piscine et restaurant gastronomique.",
+    highlights: ["Le seul hébergement spécialisé à Purros, sur la rivière Hoarusib", "Format boutique de 9 suites avec piscine et restaurant de cuisine internationale", "Visites guidées de villages himba comme activité phare"],
+    bestFor: "Jeunes mariés et voyageurs de luxe cherchant un lodge intimiste dans le Purros reculé",
+    alt: "Une suite boutique avec vue sur la rivière Hoarusib à Okahirongo Elephant Lodge, Purros",
+  },
+  "strand-hotel-swakopmund": {
+    description:
+      "Un hôtel 4 étoiles de 125 chambres sur la jetée historique (la Mole) de Swakopmund, entouré par l'Atlantique sur trois côtés, avec plusieurs restaurants et l'Atlantic Spa. L'adresse balnéaire de luxe la plus connue de Namibie.",
+    highlights: ["Vue panoramique sur l'océan depuis la plupart des 125 chambres", "Atlantic Spa sur place avec hammams et suite jardin pour couples", "Plusieurs lieux de restauration, du restaurant gastronomique à l'épicerie fine"],
+    bestFor: "Voyageurs cherchant un séjour emblématique et tout confort en front de mer, en plein cœur de Swakopmund",
+    alt: "La façade en front de mer du Strand Hotel Swakopmund, sur la Mole",
+  },
+  "secret-garden-guesthouse": {
+    description:
+      "Une maison d'hôtes de 10 chambres dans le centre du vieux Swakopmund, organisée autour d'un jardin paysager avec terrasse ensoleillée, à environ 250 m de l'océan et de la jetée.",
+    highlights: ["Emplacement central dans le vieux Swakopmund, à 5 minutes à pied de la jetée", "Cadre de jardin intérieur paysager", "Petit-déjeuner servi dans la salle à manger ou au jardin, sous les palmiers"],
+    bestFor: "Couples ou petits groupes cherchant un séjour calme et personnalisé en maison d'hôtes, près du centre-ville",
+    alt: "Le jardin paysager intérieur à The Secret Garden Guesthouse, Swakopmund",
+  },
+  "bismarck-2": {
+    description:
+      "Une résidence d'appartements en self-catering à l'angle de Bismarck Street et Sam Nujoma Avenue, en plein centre de Swakopmund, à environ 300 m de Palm Beach, avec des unités de 2 chambres et 2 salles de bain.",
+    highlights: ["Emplacement en plein centre, tout est à un pâté de maisons", "Cuisine complète et disposition 2 chambres / 2 salles de bain", "Balcon avec vue sur la ville"],
+    bestFor: "Voyageurs soucieux de leur budget ou familles cherchant une base en self-catering en plein centre-ville",
+    alt: "Un balcon d'appartement en self-catering à Bismarck 2, centre de Swakopmund",
+  },
+  "hilton-windhoek": {
+    description:
+      "Un hôtel contemporain de 15 étages en plein centre de Windhoek, avec casino, salle de sport, spa et piscine-bar sur le toit, plutôt orienté voyageurs d'affaires et congressistes.",
+    highlights: ["Emplacement central, à distance de marche du Zoo Park et de la National Art Gallery", "Casino, salle de sport, spa et piscine-bar sur le toit sur place", "Plusieurs lieux de restauration"],
+    bestFor: "Voyageurs d'affaires et congressistes cherchant un hôtel de chaîne internationale tout confort en centre-ville",
+    alt: "La piscine et le bar sur le toit du Hilton Windhoek",
+  },
+  "chameleon-backpackers": {
+    description:
+      "Un établissement économique bien établi dans North Windhoek Central, fondé en 1995, avec un choix allant du lit en dortoir à la chambre privée avec salle de bain, à quelques minutes à pied des commerces et restaurants.",
+    highlights: ["Piscine extérieure, jardin, salon commun et bar sur place", "Petit-déjeuner continental inclus, plus une visite guidée gratuite de la ville", "Chambres allant du dortoir à la chambre privée ou familiale"],
+    bestFor: "Voyageurs à petit budget, routards et overlanders cherchant une base conviviale avant ou après un voyage en Namibie",
+    alt: "Le jardin et la piscine de Chameleon Backpackers & Guesthouse, Windhoek",
+  },
+  "etango-ranch-guest-farm": {
+    description:
+      "Une ferme d'hôtes en activité et clôturée à Voigtland, à environ 4 km de l'aéroport international Hosea Kutako, avec oryx, koudous, zèbres de montagne et bubales visibles en liberté sur la propriété.",
+    highlights: ["À 5-10 minutes de route de l'aéroport, navette proposée", "Cadre de ferme avec faune visible et piscine", "Idéalement placée pour un vol matinal ou une arrivée tardive"],
+    bestFor: "Voyageurs ayant besoin d'un séjour confortable et sans tracas avant un vol matinal ou après une arrivée tardive",
+    alt: "Des oryx en liberté sur le domaine d'Etango Ranch Guest Farm, près de l'aéroport de Windhoek",
+  },
+  "fish-river-lodge": {
+    description:
+      "Le seul lodge construit directement sur le bord ouest de Fish River Canyon, avec 20 chalets en pierre et verre, baies vitrées du sol au plafond et terrasses avec vue sur le canyon.",
+    highlights: ["Le seul hébergement avec des chambres perchées sur le bord même du canyon", "Chalets contemporains en pierre et verre avec terrasse vue canyon", "Randonnées et sorties guidées le long du fond du canyon"],
+    bestFor: "Voyageurs voulant se réveiller les yeux plongés dans le canyon",
+    alt: "Un chalet en pierre et verre sur le bord de Fish River Canyon à Fish River Lodge",
+  },
+  "gondwana-canyon-roadhouse": {
+    description:
+      "Une propriété Gondwana Collection près de la porte côté Hobas du canyon, construite autour d'un thème rétro de relais routier américain, avec des voitures anciennes disséminées dans le jardin, et à la fois des chambres d'hôtel et un camping.",
+    highlights: ["Thème rétro voitures anciennes et relais routier, inhabituel dans la région", "La propriété Gondwana la plus proche de l'entrée principale du canyon", "Chambres d'hôtel et camping, une gamme de budgets plus large que les lodges voisins"],
+    bestFor: "Road-trippers cherchant un séjour original et plus abordable, juste à côté de la porte du canyon",
+    alt: "Des voitures anciennes dans le jardin de Canyon Roadhouse, Fish River Canyon",
+  },
+  "gondwana-canyon-village": {
+    description:
+      "Une propriété Gondwana Collection de 42 chalets en pierre et chaume, disposés autour d'un restaurant, d'un bar et d'une piscine centraux, dans le Gondwana Nature Park à environ 20 km du canyon.",
+    highlights: ["42 chalets en fer à cheval autour d'un pôle central piscine-restaurant", "Sorties au coucher du soleil et sentiers de randonnée sur place", "Plus grand et plus convivial que les camps-boutiques du secteur"],
+    bestFor: "Familles ou groupes cherchant une propriété plus grande et conviviale près du canyon",
+    alt: "Chalets en pierre et chaume autour de la piscine à Canyon Village, Fish River Canyon",
+  },
+  "mount-canyon-guest-farm": {
+    description:
+      "Une ferme d'hôtes en activité, gérée par ses propriétaires, sur la route Keetmanshoop-Grunau, à environ une heure de route de Fish River Canyon, avec son propre canyon privé sur la ferme et des safaris en véhicule au coucher du soleil.",
+    highlights: ["Ferme en activité gérée par ses propriétaires, indépendante des grands groupes du secteur du canyon", "Son propre canyon privé et un safari en véhicule sur la propriété", "Réputée pour son hospitalité familiale et personnalisée"],
+    bestFor: "Voyageurs à petit budget cherchant une étape authentique en ferme, sur la route depuis ou vers le canyon",
+    alt: "La ferme et le canyon privé de Mount Canyon Guest Farm",
+  },
+  "camp-kwando": {
+    description:
+      "Un petit camp familial de 6 chalets surélevés en bois et toile, sur la rivière Kwando, entre les parcs nationaux de Bwabwata et Mudumu, avec piscine et restaurant en bord de rivière.",
+    highlights: ["Seulement 6 chalets, une échelle intime et familiale", "Piscine et terrasse en bord de rivière avec vue sur la plaine inondable de la Kwando", "Base pour les safaris en véhicule dans Bwabwata et Mudumu, et les croisières sur la Kwando"],
+    bestFor: "Voyageurs cherchant un petit camp riverain très bien noté plutôt qu'un grand lodge",
+    alt: "Un chalet surélevé en bois et toile au-dessus de la rivière Kwando à Camp Kwando",
+  },
+  "zambezi-mubala-lodge": {
+    description:
+      "Un lodge Gondwana Collection de 21 bungalows en brique et chaume, directement sur le fleuve Zambèze, à environ 40 km à l'est de Katima Mulilo, avec restaurant, bar et piscine.",
+    highlights: ["Situé directement sur le fleuve Zambèze, à la différence des camps de la région sur la rivière Kwando", "21 bungalows, dont des unités familiales de 4 lits", "Restaurant, bar, piscine et boutique de curiosités"],
+    bestFor: "Familles et couples cherchant un lodge fiable de milieu de gamme directement sur le Zambèze",
+    alt: "Bungalows en brique et chaume sur le fleuve Zambèze à Zambezi Mubala Lodge",
+  },
+  "protea-zambezi-river-lodge": {
+    description:
+      "Un hôtel urbain tout confort de 42 chambres sur le fleuve Zambèze à Katima Mulilo, appartenant à la marque Protea de Marriott, avec location de voitures et un comptoir d'excursions organisant des sorties d'une journée aux chutes Victoria et à Chobe.",
+    highlights: ["Le seul hôtel de marque internationale de la région", "Pôle logistique tout confort avec location de voitures et comptoir d'excursions", "Excursions d'une journée organisées vers les chutes Victoria, Chobe et la Zambie"],
+    bestFor: "Voyageurs cherchant une base fiable en ville, avec une logistique facile pour des excursions transfrontalières d'une journée",
+    alt: "La terrasse en bord de rivière du Protea Hotel by Marriott Zambezi River Lodge, Katima Mulilo",
+  },
+  "hohenstein-lodge": {
+    description:
+      "Un lodge-boutique de 14 bungalows jumelés en pierre, construits dans les blocs de granit au pied du plus haut sommet des monts Erongo, à environ une heure de route de Spitzkoppe, avec son propre réseau de sentiers de randonnée balisés.",
+    highlights: ["Bungalows en pierre construits directement dans la roche, chacun avec terrasse privée", "Vélos gratuits et sentiers de randonnée balisés dans les collines de l'Erongo", "Alimenté à l'énergie solaire, restaurant avec vue sur les jardins"],
+    bestFor: "Voyageurs cherchant une base tranquille et soignée en lodge de montagne, dans le vaste pays granitique de l'Erongo",
+    alt: "Bungalows en pierre construits dans les blocs de granit à Hohenstein Lodge, monts Erongo",
+  },
+  "achab-chalets": {
+    description:
+      "Une ferme de conservation privée au pied des montagnes Gamgamichab près d'Usakos, transformée en sanctuaire pour les zèbres de Hartmann et les oiseaux endémiques, avec éco-cabanes en self-catering et tentes de glamping.",
+    highlights: ["Ferme de conservation privée avec zèbres de Hartmann et espèces d'oiseaux endémiques", "Éco-cabanes en self-catering et tentes de glamping avec kitchenette", "Option de camping familial avec sanitaires privés"],
+    bestFor: "Voyageurs en self-catering et familles cherchant un séjour en ferme sauvage abordable près de Spitzkoppe",
+    alt: "Une éco-cabane en self-catering sur la ferme sauvage d'Achab Chalets, près de Spitzkoppe",
+  },
 };
 
 type RouteTranslation = Partial<

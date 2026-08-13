@@ -12,15 +12,22 @@
  *   node scripts/fetch-lodge-photos-apify.mjs            all lodges
  *   node scripts/fetch-lodge-photos-apify.mjs --filter ongava-lodge,little-kulala
  *   node scripts/fetch-lodge-photos-apify.mjs --dry      preview only, no download
+ *
+ * Quality-pick mode: fetch multiple candidate photos per lodge (from the top-matched
+ * place's own photo gallery) into scripts/photo-candidates/<slug>-N.jpg for visual
+ * review, without touching the live public/images file. Then finalize the pick:
+ *   node scripts/fetch-lodge-photos-apify.mjs --candidates 5 --filter ongava-lodge
+ *   node scripts/fetch-lodge-photos-apify.mjs --finalize ongava-lodge 3
  */
 import sharp from "sharp";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const IMG_DIR = path.join(ROOT, "public", "images", "lodges");
+const CANDIDATES_DIR = path.join(ROOT, "scripts", "photo-candidates");
 const OUT = path.join(ROOT, "scripts", "lodge-photo-results.json");
 const ACTOR = "compass~crawler-google-places";
 
@@ -29,6 +36,14 @@ const DRY = argv.includes("--dry");
 const filterArg = (() => {
   const i = argv.indexOf("--filter");
   return i >= 0 && argv[i + 1] ? argv[i + 1].split(",").map((s) => s.trim()) : null;
+})();
+const candidatesArg = (() => {
+  const i = argv.indexOf("--candidates");
+  return i >= 0 && argv[i + 1] ? parseInt(argv[i + 1], 10) : null;
+})();
+const finalizeArg = (() => {
+  const i = argv.indexOf("--finalize");
+  return i >= 0 && argv[i + 1] && argv[i + 2] ? { slug: argv[i + 1], index: parseInt(argv[i + 2], 10) } : null;
 })();
 
 const LODGES = [
@@ -90,6 +105,7 @@ async function runActor(searchString, token) {
   const input = {
     searchStringsArray: [searchString],
     maxCrawledPlacesPerSearch: 3,
+    maxImages: 8,
     language: "en",
     skipClosedPlaces: true,
     scrapePlaceDetailPage: true,
@@ -128,10 +144,55 @@ async function downloadPhoto(imageUrl, outPath) {
 
 async function main() {
   await mkdir(IMG_DIR, { recursive: true });
+
+  if (finalizeArg) {
+    const src = path.join(CANDIDATES_DIR, `${finalizeArg.slug}-${finalizeArg.index}.jpg`);
+    const dest = path.join(IMG_DIR, `${finalizeArg.slug}.jpg`);
+    await copyFile(src, dest);
+    console.log(`Finalized ${finalizeArg.slug}: candidate #${finalizeArg.index} -> ${dest}`);
+    return;
+  }
+
   const token = await loadToken();
 
   let work = LODGES;
   if (filterArg) work = LODGES.filter((l) => filterArg.includes(l.slug));
+
+  if (candidatesArg) {
+    await mkdir(CANDIDATES_DIR, { recursive: true });
+    for (const lodge of work) {
+      const searchString = `${lodge.name}, ${lodge.region}, Namibia`;
+      console.log(`\n${lodge.slug}: searching "${searchString}"`);
+      let raw;
+      try {
+        raw = await runActor(searchString, token);
+      } catch (e) {
+        console.error(`  ! ${e.message}`);
+        continue;
+      }
+      const candidates = raw.map(normalize);
+      if (!candidates.length) {
+        console.log("  no results");
+        continue;
+      }
+      const best = candidates[0];
+      const pool = [best.imageUrl, ...best.imageUrls].filter(Boolean);
+      const unique = [...new Set(pool)].slice(0, candidatesArg);
+      console.log(`  best match: "${best.name}" — downloading ${unique.length} candidate photo(s)`);
+      for (let i = 0; i < unique.length; i++) {
+        const outPath = path.join(CANDIDATES_DIR, `${lodge.slug}-${i + 1}.jpg`);
+        try {
+          await downloadPhoto(unique[i], outPath);
+          console.log(`    saved candidate ${i + 1}: ${outPath}`);
+        } catch (e) {
+          console.error(`    ! candidate ${i + 1} failed: ${e.message}`);
+        }
+      }
+      await new Promise((r) => setTimeout(r, 200));
+    }
+    console.log("\nDone. Review candidates in scripts/photo-candidates/, then run --finalize <slug> <index>.");
+    return;
+  }
 
   const results = [];
   for (const lodge of work) {

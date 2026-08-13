@@ -121,6 +121,7 @@ const COLUMNS_DE = [
   {
     title: "Weitere Ratgeber",
     links: [
+      { label: "Warum Namibia 2027 besuchen", href: "/why-visit-namibia-2027" },
       { label: "Namibia mit Kindern", href: "/namibia-with-kids" },
       { label: "Namibia Flitterwochen", href: "/namibia-honeymoon" },
       { label: "Luxus-Namibia", href: "/luxury-namibia" },
@@ -184,6 +185,7 @@ const COLUMNS_NL = [
   {
     title: "Meer Gidsen",
     links: [
+      { label: "Waarom Namibië bezoeken in 2027", href: "/why-visit-namibia-2027" },
       { label: "Namibië met Kinderen", href: "/namibia-with-kids" },
       { label: "Namibië Huwelijksreis", href: "/namibia-honeymoon" },
       { label: "Luxe Namibië", href: "/luxury-namibia" },
@@ -247,6 +249,7 @@ const COLUMNS_FR = [
   {
     title: "Autres guides",
     links: [
+      { label: "Pourquoi visiter la Namibie en 2027", href: "/why-visit-namibia-2027" },
       { label: "Namibie en famille", href: "/namibia-with-kids" },
       { label: "Lune de miel en Namibie", href: "/namibia-honeymoon" },
       { label: "Namibie de luxe", href: "/luxury-namibia" },

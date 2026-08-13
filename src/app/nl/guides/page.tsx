@@ -39,6 +39,7 @@ const POPULAR_GUIDES = [
 ];
 
 const PRACTICAL_GUIDES = [
+  { title: "Waarom Namibië bezoeken in 2027", href: "/nl/why-visit-namibia-2027" },
   { title: "Zelf rijden vs. begeleide safari", href: "/nl/self-drive-vs-guided-namibia" },
   { title: "Namibië vs. Botswana", href: "/nl/namibia-vs-botswana" },
   { title: "Simkaarten, eSIM & connectiviteit", href: "/nl/namibia-connectivity" },
