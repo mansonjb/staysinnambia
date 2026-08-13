@@ -63,7 +63,7 @@ const SAFETY_POINTS = [
           href="/it/namibia-self-drive-guide"
           className="font-medium text-rust hover:text-rust-dark"
         >
-          guida all'autotour
+          guida all&apos;autotour
         </Link>{" "}
         per i dettagli.
       </>

@@ -40,7 +40,7 @@ export default function AboutPageIt() {
           Come è costruito Namibia Stays
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          Non siamo un'agenzia di viaggi e non abbiamo soggiornato personalmente in ogni lodge
+          Non siamo un&apos;agenzia di viaggi e non abbiamo soggiornato personalmente in ogni lodge
           presente su questo sito. Ecco esattamente cosa facciamo invece, così sapete cosa state
           leggendo.
         </p>
@@ -68,7 +68,7 @@ export default function AboutPageIt() {
               tariffe in tempo reale, rimandiamo al nostro partner per le prenotazioni, Stay22,
               invece di mostrare su questo sito un numero che potrebbe già essere superato nel
               momento in cui lo leggete. I contrassegni €&ndash;€€€€ che vedrete sulle schede dei
-              lodge indicano una fascia di prezzo generale, basata sul modo in cui l'operatore
+              lodge indicano una fascia di prezzo generale, basata sul modo in cui l&apos;operatore
               posiziona la struttura, non una tariffa in tempo reale: verificate presso il lodge o
               su Stay22 il costo effettivo della prenotazione.
             </p>
@@ -84,7 +84,7 @@ export default function AboutPageIt() {
           <Reveal delay={180} className="rounded-2xl border border-black/5 bg-white p-7 shadow-sm">
             <h2 className="text-lg font-bold text-charcoal">Mantenere le informazioni aggiornate</h2>
             <p className="mt-3 text-[14px] leading-relaxed text-charcoal/70">
-              Le norme che riguardano i viaggi in Namibia cambiano: tariffe d'ingresso ai parchi,
+              Le norme che riguardano i viaggi in Namibia cambiano: tariffe d&apos;ingresso ai parchi,
               requisiti di accesso, condizioni delle strade, permessi per le escursioni. Quando
               aggiorniamo una pagina per un cambiamento reale, lo indichiamo nella pagina stessa,
               con la data. Preferiamo segnalare un elemento come soggetto a variazioni piuttosto

@@ -51,7 +51,7 @@ export default function BestLodgesPageIt() {
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
           Senza prezzi. Senza recensioni false. Ogni lodge qui sotto è una struttura reale,
-          riconoscibile e attualmente in attività, scelta per la sua posizione, per l'accompagnamento
+          riconoscibile e attualmente in attività, scelta per la sua posizione, per l&apos;accompagnamento
           offerto o per come viene gestita, non per chi ci paga di più.
         </p>
       </section>

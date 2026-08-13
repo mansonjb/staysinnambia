@@ -84,10 +84,10 @@ export default function VisaPageIt() {
           Requisiti per il visto in Namibia
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          Dal 1° aprile 2025, il visto all'arrivo in Namibia non viene più rilasciato alla
+          Dal 1° aprile 2025, il visto all&apos;arrivo in Namibia non viene più rilasciato alla
           frontiera: va richiesto, pagato e approvato online tramite il portale eServices del
-          ministero dell'Interno prima di partire. L'elenco delle nazionalità idonee ha continuato
-          ad ampliarsi da allora, più di recente con 36 paesi aggiunti nell'ottobre 2025. Molte
+          ministero dell&apos;Interno prima di partire. L&apos;elenco delle nazionalità idonee ha continuato
+          ad ampliarsi da allora, più di recente con 36 paesi aggiunti nell&apos;ottobre 2025. Molte
           guide più datate descrivono ancora il vecchio sistema di pagamento in aeroporto prima del
           2025. Ecco cosa vale ora, e come la tassa di circa 90 $ si inserisce nel resto del tuo{" "}
           <Link href="/it/namibia-trip-cost" className="font-medium text-rust hover:text-rust-dark">
@@ -98,9 +98,9 @@ export default function VisaPageIt() {
         <p className="mt-4 max-w-2xl text-[12px] uppercase tracking-[0.08em] text-charcoal/40">
           Questa pagina riassume cambiamenti di policy resi pubblici e commenti di consulenti in
           materia di immigrazione, e non costituisce un parere in materia di immigrazione. Regole,
-          tasse ed elenchi di nazionalità idonee sono cambiati più volte dall'aprile 2025 e possono
+          tasse ed elenchi di nazionalità idonee sono cambiati più volte dall&apos;aprile 2025 e possono
           cambiare ancora. Verifica sempre i requisiti attuali per la tua nazionalità direttamente
-          presso l'autorità ufficiale dell'immigrazione namibiana (il MHAISS, tramite il suo
+          presso l&apos;autorità ufficiale dell&apos;immigrazione namibiana (il MHAISS, tramite il suo
           portale eServices) prima di prenotare voli o pagare qualsiasi tassa per il visto.
         </p>
       </section>
@@ -143,9 +143,9 @@ export default function VisaPageIt() {
           </ul>
           <p className="mt-6 text-[13px] leading-relaxed text-charcoal/50">
             Le domande si presentano tramite il portale ufficiale del governo namibiano,
-            all'indirizzo{" "}
+            all&apos;indirizzo{" "}
             <span className="font-medium text-charcoal/70">eservices.mhaiss.gov.na</span>, gestito
-            dal ministero dell'Interno, Immigrazione, Sicurezza e Protezione. Evita i siti di terzi
+            dal ministero dell&apos;Interno, Immigrazione, Sicurezza e Protezione. Evita i siti di terzi
             che applicano un sovrapprezzo per la stessa procedura.
           </p>
         </Reveal>

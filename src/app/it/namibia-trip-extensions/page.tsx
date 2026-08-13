@@ -121,10 +121,10 @@ export default function TripExtensionsPageIt() {
         <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-charcoal/60">
           <span className="font-semibold text-charcoal">Il nostro consiglio:</span> se il tuo
           itinerario termina già nella regione dello Zambesi, una breve estensione in aereo verso
-          le Cascate Vittoria o un'escursione giornaliera a Chobe attraverso il confine di Ngoma
+          le Cascate Vittoria o un&apos;escursione giornaliera a Chobe attraverso il confine di Ngoma
           aggiunge relativamente poco tempo di viaggio extra per un paesaggio realmente diverso. Se
           il tuo giro namibiano si limita al sud e al centro (Sossusvlei, Etosha, la costa),
-          aggiungere Città del Capo all'inizio o alla fine del viaggio è l'opzione meno impegnativa
+          aggiungere Città del Capo all&apos;inizio o alla fine del viaggio è l&apos;opzione meno impegnativa
           dal punto di vista logistico, poiché evita di attraversare tutto il paese a ritroso per
           raggiungere un confine.
         </p>

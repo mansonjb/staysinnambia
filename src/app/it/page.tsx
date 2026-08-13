@@ -267,7 +267,7 @@ export default function HomeIt() {
             </h2>
             <p className="mt-3 max-w-lg text-sm leading-relaxed text-charcoal/60">
               Ogni indicatore corrisponde a un soggiorno reale e prenotabile, offerto dal nostro
-              partner di prenotazione Stay22. Rimpicciolisci da Windhoek per vedere l'intero
+              partner di prenotazione Stay22. Rimpicciolisci da Windhoek per vedere l&apos;intero
               paese, oppure vai direttamente a una regione qui sotto.
             </p>
           </Reveal>

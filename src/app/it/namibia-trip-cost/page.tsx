@@ -144,7 +144,7 @@ export default function TripCostPageIt() {
             href="/it/namibia-visa-requirements"
             className="font-medium text-rust hover:text-rust-dark"
           >
-            tassa per il visto all'arrivo
+            tassa per il visto all&apos;arrivo
           </Link>{" "}
           che la maggior parte delle nazionalità ora paga online in anticipo.
         </p>
@@ -166,7 +166,7 @@ export default function TripCostPageIt() {
         </div>
         <p className="mt-6 text-[12px] uppercase tracking-[0.08em] text-charcoal/40">
           Solo stime, a persona e al giorno. Il costo effettivo varia in base alla stagione, alla
-          dimensione del gruppo e all'itinerario. Esclusi i voli internazionali.
+          dimensione del gruppo e all&apos;itinerario. Esclusi i voli internazionali.
         </p>
       </section>
 

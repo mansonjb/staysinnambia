@@ -129,10 +129,10 @@ export default function SelfDriveGuidePageIt() {
           Guida
         </span>
         <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-charcoal sm:text-5xl">
-          Guida all'autotour in Namibia
+          Guida all&apos;autotour in Namibia
         </h1>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-charcoal/70">
-          L'autotour è il modo in cui la maggior parte dei viaggiatori indipendenti scopre la
+          L&apos;autotour è il modo in cui la maggior parte dei viaggiatori indipendenti scopre la
           Namibia. La rete stradale è davvero buona, ma le distanze, il fondo delle strade e le
           clausole nascoste delle assicurazioni di noleggio spesso sorprendono. Ecco cosa
           pianificare davvero, incluso quanto si risparmia rispetto a un{" "}
