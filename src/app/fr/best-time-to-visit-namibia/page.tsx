@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       en: "/best-time-to-visit-namibia",
       de: "/de/best-time-to-visit-namibia",
       nl: "/nl/best-time-to-visit-namibia", fr: "/fr/best-time-to-visit-namibia",
+        it: "/it/best-time-to-visit-namibia",
     },
   },
   openGraph: {

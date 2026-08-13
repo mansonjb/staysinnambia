@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/nl/namibia-glamping",
-    languages: { en: "/namibia-glamping", de: "/de/namibia-glamping", nl: "/nl/namibia-glamping", fr: "/fr/namibia-glamping" },
+    languages: { en: "/namibia-glamping", de: "/de/namibia-glamping", nl: "/nl/namibia-glamping", fr: "/fr/namibia-glamping", it: "/it/namibia-glamping" },
   },
   openGraph: {
     title: TITLE,

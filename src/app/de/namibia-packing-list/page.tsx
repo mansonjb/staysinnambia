@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/namibia-packing-list",
-    languages: { en: "/namibia-packing-list", de: "/de/namibia-packing-list", nl: "/nl/namibia-packing-list", fr: "/fr/namibia-packing-list" },
+    languages: { en: "/namibia-packing-list", de: "/de/namibia-packing-list", nl: "/nl/namibia-packing-list", fr: "/fr/namibia-packing-list", it: "/it/namibia-packing-list" },
   },
   openGraph: {
     title: TITLE,

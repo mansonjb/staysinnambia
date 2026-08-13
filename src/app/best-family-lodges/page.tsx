@@ -8,7 +8,7 @@ const DESCRIPTION = "Family-friendly lodges across Namibia, chosen for space, ea
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/best-family-lodges", languages: { en: "/best-family-lodges", de: "/de/best-family-lodges", nl: "/nl/best-family-lodges", fr: "/fr/best-family-lodges" } },
+  alternates: { canonical: "/best-family-lodges", languages: { en: "/best-family-lodges", de: "/de/best-family-lodges", nl: "/nl/best-family-lodges", fr: "/fr/best-family-lodges", it: "/it/best-family-lodges" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

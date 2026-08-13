@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Namibia SIM Cards & eSIM Guide",
   description:
     "Which network to use, where you'll actually have signal, and where you genuinely won't: a practical connectivity guide for self-driving Namibia.",
-  alternates: { canonical: "/namibia-connectivity", languages: { en: "/namibia-connectivity", de: "/de/namibia-connectivity", nl: "/nl/namibia-connectivity", fr: "/fr/namibia-connectivity" } },
+  alternates: { canonical: "/namibia-connectivity", languages: { en: "/namibia-connectivity", de: "/de/namibia-connectivity", nl: "/nl/namibia-connectivity", fr: "/fr/namibia-connectivity", it: "/it/namibia-connectivity" } },
   openGraph: {
     title: "Namibia SIM Cards & eSIM Guide",
     description:

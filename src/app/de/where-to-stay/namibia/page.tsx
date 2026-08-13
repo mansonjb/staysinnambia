@@ -16,7 +16,7 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/de/where-to-stay/namibia", languages: { en: "/where-to-stay/namibia", de: "/de/where-to-stay/namibia", nl: "/nl/where-to-stay/namibia", fr: "/fr/where-to-stay/namibia" } },
+  alternates: { canonical: "/de/where-to-stay/namibia", languages: { en: "/where-to-stay/namibia", de: "/de/where-to-stay/namibia", nl: "/nl/where-to-stay/namibia", fr: "/fr/where-to-stay/namibia", it: "/it/where-to-stay/namibia" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

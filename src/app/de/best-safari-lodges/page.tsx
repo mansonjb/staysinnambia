@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/best-safari-lodges",
-    languages: { en: "/best-safari-lodges", de: "/de/best-safari-lodges", nl: "/nl/best-safari-lodges", fr: "/fr/best-safari-lodges" },
+    languages: { en: "/best-safari-lodges", de: "/de/best-safari-lodges", nl: "/nl/best-safari-lodges", fr: "/fr/best-safari-lodges", it: "/it/best-safari-lodges" },
   },
   openGraph: {
     title: TITLE,

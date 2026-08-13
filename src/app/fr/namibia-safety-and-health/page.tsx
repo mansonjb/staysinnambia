@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       en: "/namibia-safety-and-health",
       de: "/de/namibia-safety-and-health",
       nl: "/nl/namibia-safety-and-health", fr: "/fr/namibia-safety-and-health",
+        it: "/it/namibia-safety-and-health",
     },
   },
   openGraph: {

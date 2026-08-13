@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/best-luxury-lodges",
-    languages: { en: "/best-luxury-lodges", de: "/de/best-luxury-lodges", nl: "/nl/best-luxury-lodges", fr: "/fr/best-luxury-lodges" },
+    languages: { en: "/best-luxury-lodges", de: "/de/best-luxury-lodges", nl: "/nl/best-luxury-lodges", fr: "/fr/best-luxury-lodges", it: "/it/best-luxury-lodges" },
   },
   openGraph: {
     title: TITLE,

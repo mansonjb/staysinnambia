@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       en: "/namibia-packing-list",
       de: "/de/namibia-packing-list",
       nl: "/nl/namibia-packing-list", fr: "/fr/namibia-packing-list",
+        it: "/it/namibia-packing-list",
     },
   },
   openGraph: {

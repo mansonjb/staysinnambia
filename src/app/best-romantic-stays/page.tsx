@@ -8,7 +8,7 @@ const DESCRIPTION = "Private decks, sleep-outs and lodges built for two: Namibia
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/best-romantic-stays", languages: { en: "/best-romantic-stays", de: "/de/best-romantic-stays", nl: "/nl/best-romantic-stays", fr: "/fr/best-romantic-stays" } },
+  alternates: { canonical: "/best-romantic-stays", languages: { en: "/best-romantic-stays", de: "/de/best-romantic-stays", nl: "/nl/best-romantic-stays", fr: "/fr/best-romantic-stays", it: "/it/best-romantic-stays" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

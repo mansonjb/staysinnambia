@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Namibia vs Botswana",
   description:
     "Namibia and Botswana get paired in the same guidebooks for a reason: here's the honest difference for a first African safari trip.",
-  alternates: { canonical: "/namibia-vs-botswana", languages: { en: "/namibia-vs-botswana", de: "/de/namibia-vs-botswana", nl: "/nl/namibia-vs-botswana", fr: "/fr/namibia-vs-botswana" } },
+  alternates: { canonical: "/namibia-vs-botswana", languages: { en: "/namibia-vs-botswana", de: "/de/namibia-vs-botswana", nl: "/nl/namibia-vs-botswana", fr: "/fr/namibia-vs-botswana", it: "/it/namibia-vs-botswana" } },
   openGraph: {
     title: "Namibia vs Botswana",
     description:

@@ -13,7 +13,7 @@ const DESCRIPTION = "What a luxury Namibia trip actually looks like: fly-in circ
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/luxury-namibia", languages: { en: "/luxury-namibia", de: "/de/luxury-namibia", nl: "/nl/luxury-namibia", fr: "/fr/luxury-namibia" } },
+  alternates: { canonical: "/luxury-namibia", languages: { en: "/luxury-namibia", de: "/de/luxury-namibia", nl: "/nl/luxury-namibia", fr: "/fr/luxury-namibia", it: "/it/luxury-namibia" } },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

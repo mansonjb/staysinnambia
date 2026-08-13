@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/himba-culture-namibia",
-    languages: { en: "/himba-culture-namibia", de: "/de/himba-culture-namibia", nl: "/nl/himba-culture-namibia", fr: "/fr/himba-culture-namibia" },
+    languages: { en: "/himba-culture-namibia", de: "/de/himba-culture-namibia", nl: "/nl/himba-culture-namibia", fr: "/fr/himba-culture-namibia", it: "/it/himba-culture-namibia" },
   },
   openGraph: {
     title: TITLE,

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: "/de/namibia-farm-stays",
-    languages: { en: "/namibia-farm-stays", de: "/de/namibia-farm-stays", nl: "/nl/namibia-farm-stays", fr: "/fr/namibia-farm-stays" },
+    languages: { en: "/namibia-farm-stays", de: "/de/namibia-farm-stays", nl: "/nl/namibia-farm-stays", fr: "/fr/namibia-farm-stays", it: "/it/namibia-farm-stays" },
   },
   openGraph: {
     title: TITLE,

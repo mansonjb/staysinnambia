@@ -29,7 +29,7 @@ export async function generateMetadata({
     description: region.description,
     alternates: {
       canonical: `/where-to-stay/${region.slug}`,
-      languages: { en: `/where-to-stay/${region.slug}`, de: `/de/where-to-stay/${region.slug}`, nl: `/nl/where-to-stay/${region.slug}`, fr: `/fr/where-to-stay/${region.slug}` },
+      languages: { en: `/where-to-stay/${region.slug}`, de: `/de/where-to-stay/${region.slug}`, nl: `/nl/where-to-stay/${region.slug}`, fr: `/fr/where-to-stay/${region.slug}`, it: `/it/where-to-stay/${region.slug}` },
     },
     openGraph: {
       title: `Where to Stay in ${region.name}`,
