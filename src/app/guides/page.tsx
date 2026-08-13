@@ -27,6 +27,7 @@ const REGION_GUIDES = regions.map((r) => ({
 }));
 
 const PRACTICAL_GUIDES = [
+  { title: "Why Visit Namibia in 2027", href: "/why-visit-namibia-2027" },
   { title: "Self-Drive vs Guided Safari", href: "/self-drive-vs-guided-namibia" },
   { title: "Namibia vs Botswana", href: "/namibia-vs-botswana" },
   { title: "SIM Cards, eSIM & Connectivity", href: "/namibia-connectivity" },

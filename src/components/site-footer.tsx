@@ -57,6 +57,7 @@ const COLUMNS_EN = [
   {
     title: "More Guides",
     links: [
+      { label: "Why Visit Namibia in 2027", href: "/why-visit-namibia-2027" },
       { label: "Namibia with Kids", href: "/namibia-with-kids" },
       { label: "Namibia Honeymoon", href: "/namibia-honeymoon" },
       { label: "Luxury Namibia", href: "/luxury-namibia" },
