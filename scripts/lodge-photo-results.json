@@ -1,82 +1,12 @@
 [
   {
-    "slug": "little-kulala",
-    "name": "Le Mirage Resort & Spa",
-    "region": "Sossusvlei",
+    "slug": "zambezi-mubala-lodge",
+    "name": "Zambezi Mubala Lodge bungalow",
+    "region": "Katima Mulilo",
     "status": "downloaded",
-    "matchedName": "Le Mirage Desert Lodge & Spa",
-    "matchedAddress": "District road C27, Sesriem, Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Mirage%20Desert%20Lodge%20%26%20Spa&query_place_id=ChIJP_0S3w-HchwR2zXib_uHuFQ",
-    "localPath": "/images/lodges/little-kulala.jpg"
-  },
-  {
-    "slug": "sossusvlei-desert-lodge",
-    "name": "Sossusvlei Lodge",
-    "region": "Sesriem",
-    "status": "downloaded",
-    "matchedName": "Sossusvlei Lodge",
-    "matchedAddress": "D826, Sesriem, Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Sossusvlei%20Lodge&query_place_id=ChIJC2x-jYmKchwRAWYMU7dOvDY",
-    "localPath": "/images/lodges/sossusvlei-desert-lodge.jpg"
-  },
-  {
-    "slug": "kulala-desert-lodge",
-    "name": "Desert Quiver Camp",
-    "region": "Sesriem",
-    "status": "downloaded",
-    "matchedName": "Desert Quiver Camp",
-    "matchedAddress": "On D826 / C27, Sossusvlei, Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Desert%20Quiver%20Camp&query_place_id=ChIJZa13YqiLchwRuKAxIxpIxgY",
-    "localPath": "/images/lodges/kulala-desert-lodge.jpg"
-  },
-  {
-    "slug": "damaraland-camp",
-    "name": "Mowani Mountain Camp",
-    "region": "Twyfelfontein",
-    "status": "downloaded",
-    "matchedName": "Mowani Mountain Camp",
-    "matchedAddress": "D2612, Damaraland, Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Mowani%20Mountain%20Camp&query_place_id=ChIJXRa_BN8siRsRIQF-65z3bdQ",
-    "localPath": "/images/lodges/damaraland-camp.jpg"
-  },
-  {
-    "slug": "doro-nawas-camp",
-    "name": "Camp Kipwe",
-    "region": "Twyfelfontein",
-    "status": "downloaded",
-    "matchedName": "Camp Kipwe",
-    "matchedAddress": "D2612, Damaraland, Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Camp%20Kipwe&query_place_id=ChIJ-0o0bqwtiRsRvMpD6ssIAvc",
-    "localPath": "/images/lodges/doro-nawas-camp.jpg"
-  },
-  {
-    "slug": "hoanib-skeleton-coast-camp",
-    "name": "Hoanib Valley Camp",
-    "region": "Sesfontein",
-    "status": "downloaded",
-    "matchedName": "Hoanib Valley Camp",
-    "matchedAddress": "Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Hoanib%20Valley%20Camp&query_place_id=ChIJ6XslTRNLhRsR7p1DeKsRlwY",
-    "localPath": "/images/lodges/hoanib-skeleton-coast-camp.jpg"
-  },
-  {
-    "slug": "thitaka-river-lodge",
-    "name": "Namushasha River Lodge",
-    "region": "Caprivi Strip",
-    "status": "downloaded",
-    "matchedName": "Namushasha River Lodge, Gondwana Collection Namibia",
-    "matchedAddress": "20 km South Of Kongola, Road C49, Kongola, Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Namushasha%20River%20Lodge%2C%20Gondwana%20Collection%20Namibia&query_place_id=ChIJxxAFKwQsWBkRomtaOyq9v6U",
-    "localPath": "/images/lodges/thitaka-river-lodge.jpg"
-  },
-  {
-    "slug": "luna-namib-collection",
-    "name": "Little Sossus Lodge",
-    "region": "Sossusvlei",
-    "status": "downloaded",
-    "matchedName": "Little Sossus Lodge",
-    "matchedAddress": "Sossusvlei, Namibia",
-    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Little%20Sossus%20Lodge&query_place_id=ChIJOVPh0iObchwRusCEWhz1Jw0",
-    "localPath": "/images/lodges/luna-namib-collection.jpg"
+    "matchedName": "Zambezi Mubala Lodge - Gondwana Collection Namibia",
+    "matchedAddress": "D3508, Kalimbeza, Katima Mulilo, Namibia",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Zambezi%20Mubala%20Lodge%20-%20Gondwana%20Collection%20Namibia&query_place_id=ChIJYaBKBkpAWhkRPF_XfNQr6sg",
+    "localPath": "/images/lodges/zambezi-mubala-lodge.jpg"
   }
 ]
