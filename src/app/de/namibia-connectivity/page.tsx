@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
+import { EsimWidget } from "@/components/esim-widget";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
@@ -141,6 +142,19 @@ export default function ConnectivityPageDe() {
               </li>
             ))}
           </ul>
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 py-10 sm:px-10">
+        <Reveal className="rounded-2xl border border-black/5 bg-white p-8 shadow-sm">
+          <h2 className="text-xl font-bold text-charcoal">Namibia-eSIM buchen</h2>
+          <p className="mt-2 max-w-2xl text-[14px] leading-relaxed text-charcoal/70">
+            Damit Sie schon bei der Ankunft verbunden sind, ohne am Flughafen-Kiosk anzustehen:
+            Vergleichen und kaufen Sie unten direkt eine eSIM.
+          </p>
+          <div className="mt-6">
+            <EsimWidget locale="de" />
+          </div>
         </Reveal>
       </section>
 

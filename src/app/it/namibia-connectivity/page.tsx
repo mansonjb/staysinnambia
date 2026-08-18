@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { breadcrumbJsonLd, faqJsonLd, JsonLd } from "@/components/json-ld";
+import { EsimWidget } from "@/components/esim-widget";
 import { LogoMark } from "@/components/logo-mark";
 import { MetaIcon } from "@/components/meta-icon";
 import { Reveal } from "@/components/reveal";
@@ -146,6 +147,19 @@ export default function ConnectivityPageIt() {
               </li>
             ))}
           </ul>
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 py-10 sm:px-10">
+        <Reveal className="rounded-2xl border border-black/5 bg-white p-8 shadow-sm">
+          <h2 className="text-xl font-bold text-charcoal">Prenota una eSIM per la Namibia</h2>
+          <p className="mt-2 max-w-2xl text-[14px] leading-relaxed text-charcoal/70">
+            Per arrivare già connessi senza fare la fila al chiosco dell&apos;aeroporto,
+            confronta e acquista una eSIM direttamente qui sotto.
+          </p>
+          <div className="mt-6">
+            <EsimWidget locale="it" />
+          </div>
         </Reveal>
       </section>
 
