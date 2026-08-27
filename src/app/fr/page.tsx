@@ -98,7 +98,7 @@ export default function HomeFr() {
             </h1>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
               Des recommandations indépendantes de lodges, camps de safari et séjours
-              inoubliables, dans neuf des régions les plus extraordinaires du pays, désignée par
+              inoubliables, dans dix des régions les plus extraordinaires du pays, désignée par
               Lonely Planet comme l'une des meilleures destinations de 2026, pour ses éléphants
               adaptés au désert et son tourisme axé sur la conservation.
             </p>
@@ -202,7 +202,7 @@ export default function HomeFr() {
           <div>
             <SectionEyebrow label="Choisissez une région" />
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
-              Neuf régions, un pays extraordinaire
+              Dix régions, un pays extraordinaire
             </h2>
           </div>
         </Reveal>

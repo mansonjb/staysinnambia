@@ -405,7 +405,7 @@ export default async function RegionPageIt({
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-[15px] leading-relaxed text-ivory/80">
             Esplora ogni soggiorno che consigliamo sulla mappa qui sopra, oppure torna indietro
-            per scoprire tutte e nove le regioni.
+            per scoprire tutte e dieci le regioni.
           </p>
           <Link
             href="/it/where-to-stay/namibia"

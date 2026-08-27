@@ -90,6 +90,11 @@ const LODGES = [
   { slug: "protea-zambezi-river-lodge", name: "Protea Hotel by Marriott Zambezi River Lodge", region: "Katima Mulilo" },
   { slug: "hohenstein-lodge", name: "Hohenstein Lodge", region: "Usakos" },
   { slug: "achab-chalets", name: "Achab Chalets", region: "Usakos" },
+  { slug: "luderitz-nest-hotel", name: "Luderitz Nest Hotel", region: "Luderitz, Namibia" },
+  { slug: "kairos-cottage", name: "Kairos Cottage", region: "Luderitz, Namibia" },
+  { slug: "cormorant-house", name: "The Cormorant House", region: "Luderitz, Namibia" },
+  { slug: "alte-villa", name: "Alte Villa Boutique Hotel", region: "Luderitz, Namibia" },
+  { slug: "island-cottage-guesthouse", name: "Island Cottage Guesthouse", region: "Luderitz, Namibia" },
 ];
 
 async function loadToken() {

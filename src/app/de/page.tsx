@@ -95,7 +95,7 @@ export default function HomeDe() {
             </h1>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
               Unabhängige Empfehlungen für Lodges, Safari-Camps und unvergessliche Unterkünfte in
-              neun der außergewöhnlichsten Regionen des Landes, von Lonely Planet 2026 unter die
+              zehn der außergewöhnlichsten Regionen des Landes, von Lonely Planet 2026 unter die
               Top-Reiseziele gewählt, wegen seiner wüstenangepassten Elefanten und
               naturschutzorientierten Tourismus.
             </p>
@@ -198,7 +198,7 @@ export default function HomeDe() {
           <div>
             <SectionEyebrow label="Region wählen" />
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
-              Neun Regionen, ein außergewöhnliches Land
+              Zehn Regionen, ein außergewöhnliches Land
             </h2>
           </div>
         </Reveal>

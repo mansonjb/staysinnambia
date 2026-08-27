@@ -397,7 +397,7 @@ export default async function RegionPageDe({
             Bereit, {region.name} zu entdecken?
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-[15px] leading-relaxed text-ivory/80">
-            Durchsuchen Sie jede Unterkunft auf der Karte oben, oder sehen Sie sich alle neun
+            Durchsuchen Sie jede Unterkunft auf der Karte oben, oder sehen Sie sich alle zehn
             Regionen an.
           </p>
           <Link

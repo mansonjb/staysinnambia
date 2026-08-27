@@ -526,6 +526,72 @@ export const regionTranslationsDe: Record<string, RegionTranslation> = {
       },
     ],
   },
+  luderitz: {
+    description:
+      "Ein windgepeitschter deutscher Kolonialhafen am kalten Atlantik, zehn Minuten von der sandverschluckten Geisterstadt Kolmanskop entfernt.",
+    quickAnswer:
+      "Lüderitz ist Namibias seltsamster Abstecher: ein Keil bayerischer und Jugendstil-Architektur (das auf einem Hügel gelegene Goerke Haus, die zweitürmige Felsenkirche), gestrandet an einem eiskalten, nebelverhangenen Abschnitt des Atlantiks, wo die Wüste auf das Meer trifft. Der Ort wurde 1883 als Handelsposten gegründet und dann fast über Nacht durch den Diamantenrausch von 1908 verwandelt, der Kolmanskop hervorbrachte, die Minenstadt zehn Minuten landeinwärts, die heute langsam von Dünen verschluckt wird, die durch ihre verlassenen Zimmer wandern. Die meisten Besucher nehmen für ein bis zwei Nächte Quartier in der Stadt, besichtigen Kolmanskop bei Öffnung und verbringen den Rest ihrer Zeit in den kolonialen Straßen, am Hafen und bei der Kap-Pelzrobben-Kolonie draußen bei Diaz Point.",
+    bestFor: "Geisterstädte, koloniale Architektur, ein echter Küstenabstecher",
+    avoidIf: "Sie Wind und Kälte nicht mögen: Dies ist Namibias nebligste und windigste Küste, selbst im Sommer",
+    recommendedStay: "1–2 Nächte",
+    driveFromWindhoek: "~8 Stunden",
+    alt: "Sand füllt ein verlassenes Zimmer in einem Kolonialhaus in der Geisterstadt Kolmanskop bei Lüderitz",
+    pros: [
+      "Kolmanskop ist eine der fotogensten Geisterstädte der Erde, zehn Minuten von der Stadt entfernt",
+      "Deutsche Kolonialarchitektur (Goerke Haus, Felsenkirche), die es sonst nirgendwo in Namibia gibt",
+      "Kaltwasser-Austern, Kajakfahren mit Kap-Pelzrobben und eine von Flamingos gesäumte Lagune in der Stadt",
+    ],
+    cons: [
+      "Durchgehend windig und neblig, selbst im namibischen Sommer: Packen Sie echte Schichten ein",
+      "Ein echter Abstecher: Die Straße Richtung Süden von der Hauptroute fügt in jede Richtung einen vollen Fahrtag hinzu",
+      "Sehr begrenztes Unterkunftsangebot: Früh buchen, wenn in der Nebensaison Reisegruppen durchkommen",
+    ],
+    nearby: [
+      "Fish River Canyon (einen Tag für die Fahrt nach Süden einplanen)",
+      "Aus (Tor-Ort mit wilden Wüstenpferden)",
+      "Kolmanskop-Geisterstadt (10 Minuten entfernt)",
+    ],
+    faqs: [
+      {
+        q: "Wie viel kostet ein Besuch von Kolmanskop?",
+        a: "Der reguläre Eintritt kostet N$230 pro Erwachsenem und N$90 pro Kind und beinhaltet eine geführte Tour: Montag bis Samstag finden zwei Touren um 09:30 und 11:00 Uhr statt, sonntags und an Feiertagen eine einzelne Tour um 10:00 Uhr. Dieses Ticket erlaubt den Aufenthalt bis 13:00 Uhr. Ein separater Tagespass deckt Sonnenaufgang bis Sonnenuntergang ab (etwa 06:00–19:00 Uhr) für Fotografen, die das leere frühe oder späte Licht wollen. Bestätigen Sie die aktuellen Preise vor der Reise, da sich die Gebühren in dieser Region schon einmal geändert haben.",
+      },
+      {
+        q: "Brauche ich eine besondere Genehmigung, um Kolmanskop zu besuchen?",
+        a: "Nein, für die Geisterstadt selbst ist keine separate behördliche Genehmigung nötig: Sie funktioniert als kostenpflichtige, geführte Besucherstätte am Rand des gesperrten Sperrgebiets (Diamantengebiet). Das weit größere Sperrgebiet jenseits von Kolmanskop bleibt ohne eine von NAMDEB ausgestellte Genehmigung tabu, was für Tagesbesucher aber keine Rolle spielt.",
+      },
+      {
+        q: "Wie weit ist Lüderitz von Windhoek entfernt?",
+        a: "Etwa 720 km, ungefähr 8 Stunden Fahrzeit über die B1 südlich nach Keetmanshoop und die B4 westwärts, oder über Aus. Es ist der längste einzelne Abstecher auf einer klassischen Namibia-Reiseroute, weshalb die meisten Reisenden ihn mit dem Fish River Canyon kombinieren, statt ihn allein zu besuchen.",
+      },
+      {
+        q: "Lohnt sich der Abstecher nach Lüderitz von der Hauptroute durch Namibia?",
+        a: "Wenn Sie sich für Geisterstädte und Kolonialgeschichte interessieren, ja: Nichts anderes in Namibia sieht aus wie Kolmanskop oder Lüderitz' deutsche Jugendstil-Straßen. Wenn Ihre Reise auf Tierwelt und Dünen ausgerichtet ist, ist es die erste Region, die sich aus Zeitgründen streichen lässt, da sie rund zwei zusätzliche Fahrtage hinzufügt, ohne Safari- oder Sossusvlei-artige Landschaft zu bieten.",
+      },
+      {
+        q: "Wann ist die beste Zeit für einen Besuch von Lüderitz?",
+        a: "Juni bis November bringt spürbar weniger Nebel und Wind als der Rest des Jahres, wobei eine gewisse Brise vom kalten Benguelastrom hier fast das ganze Jahr über konstant weht, unabhängig von der Saison. Packen Sie immer eine richtige winddichte Schicht ein, egal wann Sie reisen.",
+      },
+    ],
+    knownFor: [
+      "Kolmanskop-Geisterstadt",
+      "Deutsche Kolonialarchitektur",
+      "Kalte Atlantik-Austern",
+      "Kap-Pelzrobben-Kolonien",
+    ],
+    dayPlans: [
+      {
+        nights: 1,
+        verdict: "Reicht für Kolmanskop, nicht für die Stadt",
+        text: "Eine Nacht deckt eine Vormittagstour durch Kolmanskop und einen Nachmittag zu Fuß durch Lüderitz' koloniale Straßen und den Hafen ab, lässt aber keine Zeit für einen Bootsausflug zur Robbenkolonie oder ein richtiges Austern-Abendessen.",
+      },
+      {
+        nights: 2,
+        verdict: "Die richtige Länge für den vollen Abstecher",
+        text: "Zwei Nächte fügen einen Boots- oder Kajakausflug zur Kap-Pelzrobben-Kolonie bei Diaz Point hinzu, Zeit an der Flamingo-Lagune in der Stadt und einen Teller lokaler Austern, ohne dass es zwischen Kolmanskop und der Rückfahrt nach Norden gehetzt wirkt.",
+      },
+    ],
+  },
 };
 
 type LodgeTranslation = Partial<Pick<Lodge, "description" | "highlights" | "bestFor" | "alt">>;
@@ -831,6 +897,41 @@ export const lodgeTranslationsDe: Record<string, LodgeTranslation> = {
     highlights: ["Private Naturschutzfarm mit Hartmann-Bergzebras und endemischen Vogelarten", "Selbstversorger-Ökohütten und Glamping-Zelte mit Kochnische", "Familienfreundlicher Campingplatz mit eigenen Sanitäranlagen"],
     bestFor: "Selbstversorger-Reisende und Familien, die einen budgetfreundlichen Aufenthalt auf einer Wildtierfarm nahe Spitzkoppe suchen",
     alt: "Eine Selbstversorger-Ökohütte auf der Wildtierfarm Achab Chalets, nahe Spitzkoppe",
+  },
+  "luderitz-nest-hotel": {
+    description:
+      "Das einzige echte Strandhotel in Lüderitz, mit Meerblick aus jedem Zimmer, einem privaten Gezeitenstrand mit Steg und einem Dachdeck mit direktem Blick über den Atlantik.",
+    highlights: ["Das einzige Strandhotel in Lüderitz, Meerblick aus jedem Zimmer", "Privater Gezeitenstrand mit Steg", "Dachdeck und hauseigenes Spa"],
+    bestFor: "Reisende, die die komfortabelste Vollservice-Basis in der Stadt möchten",
+    alt: "Die Meeresterrasse des Lüderitz Nest Hotel mit Blick über den Atlantik",
+  },
+  "kairos-cottage": {
+    description:
+      "Ein restauriertes Gästehaus im Herzen von Lüderitz' Kolonialviertel, einen kurzen Spaziergang vom Goerke Haus und der Felsenkirche entfernt, mit individuell eingerichteten Zimmern und einer kleinen Frühstücksterrasse.",
+    highlights: ["Fußläufig zu Goerke Haus und Felsenkirche", "Individuell eingerichtete Zimmer in einem restaurierten Kolonialgebäude", "Frühstücksterrasse im Stadtzentrum"],
+    bestFor: "Reisende, die mitten in Lüderitz' kolonialem Straßenbild wohnen möchten, statt eine Fahrt davon entfernt",
+    alt: "Ein Gästezimmer im Kairos Cottage im kolonialen Stadtzentrum von Lüderitz",
+  },
+  "cormorant-house": {
+    description:
+      "Ein kleines, hoch bewertetes Gästehaus ein paar Straßen vom Hafen entfernt, bekannt für persönlichen Service und durchgehend eine der bestbewerteten Unterkünfte der Stadt.",
+    highlights: ["Durchgehend das bestbewertete Gästehaus in Lüderitz", "Persönlicher Service im kleinen Rahmen durch die ansässigen Gastgeber", "Wenige Gehminuten vom Hafen entfernt"],
+    bestFor: "Reisende, denen Service und Komfort wichtiger sind als Resort-Einrichtungen",
+    alt: "Die Gästelounge im Gästehaus The Cormorant House in Lüderitz",
+  },
+  "alte-villa": {
+    description:
+      "Ein restauriertes historisches Gebäude, umgebaut zum Boutique-Hotel, eines von Lüderitz' ursprünglichen Jugendstilhäusern, mit erhaltenen Details aus der Epoche und dem Service eines kleinen Hotels.",
+    highlights: ["Ein restauriertes historisches Jugendstilgebäude", "Boutique-Größe mit aufmerksamem Service", "Historische architektonische Details im gesamten Haus"],
+    bestFor: "Reisende, die Lüderitz' koloniale Architektur als Teil des Aufenthalts selbst erleben möchten",
+    alt: "Die restaurierte Jugendstilfassade des Alte Villa Boutique Hotel in Lüderitz",
+  },
+  "island-cottage-guesthouse": {
+    description:
+      "Ein familiengeführtes Gästehaus, bekannt für sein Frühstück und den persönlichen Empfang, in einer ruhigen Wohnstraße, kurz mit dem Auto sowohl vom Hafen als auch von der Abzweigung nach Kolmanskop entfernt.",
+    highlights: ["Geschätztes Frühstück und persönlicher, familiärer Empfang", "Ruhige Wohnstraße abseits des Hafentrubels", "Kurze Fahrt zur Abzweigung nach Kolmanskop"],
+    bestFor: "Reisende, die eine ruhigere, heimelige Basis für einen auf Kolmanskop ausgerichteten Aufenthalt möchten",
+    alt: "Die Frühstücksterrasse im Island Cottage Guesthouse in Lüderitz",
   },
 };
 

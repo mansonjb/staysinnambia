@@ -102,7 +102,7 @@ export default function Home() {
             </h1>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
               Independent recommendations for lodges, safari camps and unforgettable places to
-              stay, across nine of the country&apos;s most extraordinary regions, named one of
+              stay, across ten of the country&apos;s most extraordinary regions, named one of
               Lonely Planet&apos;s top places to visit in 2026, for its desert-adapted elephants
               and conservation-led tourism.
             </p>
@@ -249,7 +249,7 @@ export default function Home() {
           <div>
             <SectionEyebrow label="Choose a Region" />
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
-              Nine regions, one extraordinary country
+              Ten regions, one extraordinary country
             </h2>
           </div>
         </Reveal>

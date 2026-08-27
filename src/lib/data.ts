@@ -564,6 +564,78 @@ export const regions: Region[] = [
       },
     ],
   },
+  {
+    slug: "luderitz",
+    name: "Lüderitz",
+    description:
+      "A wind-scoured German colonial port on the cold Atlantic, ten minutes from the sand-swallowed ghost town of Kolmanskop.",
+    quickAnswer:
+      "Lüderitz is Namibia's strangest detour: a wedge of Bavarian and Art Nouveau architecture (the hilltop Goerke Haus, the twin-spired Felsenkirche) stranded on a freezing, fog-bound stretch of the Atlantic where the desert meets the sea. It was founded in 1883 as a trading post, then transformed almost overnight by the 1908 diamond rush that built Kolmanskop, the mining town ten minutes inland now being slowly swallowed by dunes drifting through its abandoned rooms. Most visitors base themselves in town for one or two nights, tour Kolmanskop at opening, and spend the rest of their time on the colonial streets, the harbour, and the Cape fur seal colony out at Diaz Point.",
+    bestFor: "Ghost towns, colonial architecture, a genuine coastal detour",
+    avoidIf: "You dislike wind and cold: this is Namibia's foggiest, windiest coastline, even in summer",
+    recommendedStay: "1–2 nights",
+    driveFromWindhoek: "~8 hours",
+    lat: -26.6481,
+    lng: 15.1594,
+    image:
+      "https://images.unsplash.com/photo-1751783900648-82abbcb0a991?q=80&w=1600&auto=format&fit=crop",
+    alt: "Sand fills an abandoned room inside a colonial house at Kolmanskop ghost town near Lüderitz",
+    pros: [
+      "Kolmanskop is one of the most photogenic ghost towns on earth, ten minutes from town",
+      "German colonial architecture (Goerke Haus, Felsenkirche) found nowhere else in Namibia",
+      "Cold-water oysters, kayaking with Cape fur seals, and a flamingo-lined lagoon in town",
+    ],
+    cons: [
+      "Consistently windy and foggy, even in the Namibian summer: pack real layers",
+      "A genuine detour: the road south from the main circuit adds a full day of driving each way",
+      "Very limited accommodation: book early when tour groups pass through in shoulder season",
+    ],
+    nearby: [
+      "Fish River Canyon (add a day for the drive south)",
+      "Aus (gateway town with feral desert horses)",
+      "Kolmanskop ghost town (10 minutes away)",
+    ],
+    faqs: [
+      {
+        q: "How much does it cost to visit Kolmanskop?",
+        a: "Standard entry is N$230 per adult and N$90 per child, and includes a guided tour: two run Monday to Saturday at 09h30 and 11h00, with a single Sunday/public-holiday tour at 10h00. That ticket lets you stay until 13h00. A separate day pass covers sunrise to sunset (roughly 06h00–19h00) for photographers who want the empty early or late light. Confirm current pricing before you go, since fees in this area have moved before.",
+      },
+      {
+        q: "Do I need a special permit to visit Kolmanskop?",
+        a: "No separate government permit is needed for the ghost town itself: it operates as a paid, guided visitor site at the edge of the restricted Sperrgebiet (diamond area). The much larger Sperrgebiet beyond Kolmanskop stays off-limits without a NAMDEB-issued permit, which isn't something day visitors need to worry about.",
+      },
+      {
+        q: "How far is Lüderitz from Windhoek?",
+        a: "Around 720km, roughly 8 hours of driving via the B1 south to Keetmanshoop and the B4 west, or via Aus. It's the longest single detour on a standard Namibia itinerary, which is why most travellers pair it with Fish River Canyon rather than visiting it alone.",
+      },
+      {
+        q: "Is Lüderitz worth the detour from the main Namibia circuit?",
+        a: "If ghost towns and colonial history interest you, yes: nothing else in Namibia looks like Kolmanskop or Lüderitz's German Art Nouveau streets. If your trip is built around wildlife and dunes, it's the first region worth cutting for time, since it adds roughly two days of driving without adding safari or Sossusvlei-style scenery.",
+      },
+      {
+        q: "When's the best time to visit Lüderitz?",
+        a: "June to November brings noticeably less fog and wind than the rest of the year, though some breeze off the cold Benguela Current is a near-constant here regardless of season. Pack a proper windproof layer whenever you go.",
+      },
+    ],
+    knownFor: [
+      "Kolmanskop ghost town",
+      "German colonial architecture",
+      "Cold Atlantic oysters",
+      "Cape fur seal colonies",
+    ],
+    dayPlans: [
+      {
+        nights: 1,
+        verdict: "Enough for Kolmanskop, not the town",
+        text: "One night covers a morning tour of Kolmanskop and an afternoon walking Lüderitz's colonial streets and harbour, but doesn't leave time for a boat trip out to the seal colony or a proper oyster dinner.",
+      },
+      {
+        nights: 2,
+        verdict: "The right amount for the full detour",
+        text: "Two nights adds a boat or kayak trip out to the Cape fur seal colony at Diaz Point, time at the flamingo lagoon in town, and a plate of local oysters, without feeling rushed between Kolmanskop and the drive back north.",
+      },
+    ],
+  },
 ];
 
 export function getRegion(slug: string) {
@@ -1219,6 +1291,76 @@ export const lodges: Lodge[] = [
     image: "/images/lodges/achab-chalets.jpg",
     alt: "A self-catering eco-cabin on the wildlife farm at Achab Chalets, near Spitzkoppe",
     priceTier: 1,
+  },
+  {
+    slug: "luderitz-nest-hotel",
+    name: "Lüderitz Nest Hotel",
+    region: "Lüderitz",
+    regionSlug: "luderitz",
+    description:
+      "The only true beachfront hotel in Lüderitz, with sea views from every room, a private tidal beach and jetty, and a rooftop deck looking straight out over the Atlantic.",
+    highlights: ["The only beachfront hotel in Lüderitz, sea view from every room", "Private tidal beach and jetty", "Rooftop deck and on-site spa"],
+    bestFor: "Travellers wanting the most comfortable, full-service base in town",
+    categories: ["luxury", "romantic"],
+    image: "/images/lodges/luderitz-nest-hotel.jpg",
+    alt: "The oceanfront terrace of Lüderitz Nest Hotel overlooking the Atlantic",
+    priceTier: 4,
+  },
+  {
+    slug: "kairos-cottage",
+    name: "Kairos Cottage",
+    region: "Lüderitz",
+    regionSlug: "luderitz",
+    description:
+      "A restored guesthouse in the heart of Lüderitz's colonial quarter, a short walk from the Goerke Haus and Felsenkirche, with individually decorated rooms and a small breakfast terrace.",
+    highlights: ["Walking distance to Goerke Haus and Felsenkirche", "Individually decorated rooms in a restored colonial building", "Breakfast terrace in the town centre"],
+    bestFor: "Travellers who want to be inside Lüderitz's colonial streetscape rather than a drive from it",
+    categories: ["romantic", "family"],
+    image: "/images/lodges/kairos-cottage.jpg",
+    alt: "A guest room at Kairos Cottage in Lüderitz's colonial town centre",
+    priceTier: 2,
+  },
+  {
+    slug: "cormorant-house",
+    name: "The Cormorant House",
+    region: "Lüderitz",
+    regionSlug: "luderitz",
+    description:
+      "A small, highly-rated guesthouse a few streets back from the harbour, known for personal service and consistently one of the best-reviewed stays in town.",
+    highlights: ["Consistently the top-rated guesthouse in Lüderitz", "Personal, small-scale service from resident hosts", "A few minutes' walk from the harbour"],
+    bestFor: "Travellers prioritising service and comfort over resort-style facilities",
+    categories: ["romantic", "family"],
+    image: "/images/lodges/cormorant-house.jpg",
+    alt: "The guest lounge at The Cormorant House guesthouse in Lüderitz",
+    priceTier: 2,
+  },
+  {
+    slug: "alte-villa",
+    name: "Alte Villa Boutique Hotel",
+    region: "Lüderitz",
+    regionSlug: "luderitz",
+    description:
+      "A restored heritage building turned boutique hotel, one of Lüderitz's original Art Nouveau homes, with period detail intact behind a small-hotel level of service.",
+    highlights: ["A restored Art Nouveau heritage building", "Boutique scale with attentive service", "Period architectural detail throughout"],
+    bestFor: "Travellers wanting Lüderitz's colonial architecture as part of the stay itself",
+    categories: ["luxury", "romantic"],
+    image: "/images/lodges/alte-villa.jpg",
+    alt: "The restored Art Nouveau facade of Alte Villa Boutique Hotel in Lüderitz",
+    priceTier: 3,
+  },
+  {
+    slug: "island-cottage-guesthouse",
+    name: "Island Cottage Guesthouse",
+    region: "Lüderitz",
+    regionSlug: "luderitz",
+    description:
+      "A family-run guesthouse known for its breakfast and personal welcome, in a quiet residential street a short drive from both the harbour and the Kolmanskop turnoff.",
+    highlights: ["Well-regarded breakfast and personal, family-run welcome", "Quiet residential street away from the harbour bustle", "Short drive to the Kolmanskop turnoff"],
+    bestFor: "Travellers wanting a quieter, home-like base for a Kolmanskop-focused stay",
+    categories: ["family", "remote"],
+    image: "/images/lodges/island-cottage-guesthouse.jpg",
+    alt: "The breakfast terrace at Island Cottage Guesthouse in Lüderitz",
+    priceTier: 2,
   },
 ];
 

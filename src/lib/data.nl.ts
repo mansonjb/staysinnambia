@@ -526,6 +526,67 @@ export const regionTranslationsNl: Record<string, RegionTranslation> = {
       },
     ],
   },
+  luderitz: {
+    description:
+      "Een door de wind geteisterde Duits-koloniale havenstad aan de koude Atlantische Oceaan, tien minuten van het door zand verzwolgen spookstadje Kolmanskop.",
+    quickAnswer:
+      "Lüderitz is Namibiës vreemdste omweg: een wig Beierse en Art Nouveau-architectuur (het op een heuvel gelegen Goerke Haus, de tweetorenige Felsenkirche) gestrand op een ijzig, met mist omgeven stuk Atlantische kust waar de woestijn de zee raakt. De stad werd in 1883 gesticht als handelspost, en daarna vrijwel van de ene op de andere dag getransformeerd door de diamantroes van 1908 die Kolmanskop opbouwde, het mijnstadje tien minuten landinwaarts dat nu langzaam wordt verzwolgen door duinen die door de verlaten kamers waaien. De meeste bezoekers nemen één of twee nachten in de stad als uitvalsbasis, bezoeken Kolmanskop bij openingstijd, en brengen de rest van hun tijd door op de koloniale straten, bij de haven, en bij de Kaapse pelsrobbenkolonie bij Diaz Point.",
+    bestFor: "Spookstadjes, koloniale architectuur, een echte kustomweg",
+    avoidIf: "U een hekel heeft aan wind en kou: dit is Namibiës mistigste, winderigste kustlijn, zelfs in de zomer",
+    recommendedStay: "1–2 nachten",
+    driveFromWindhoek: "~8 uur",
+    alt: "Zand vult een verlaten kamer in een koloniaal huis bij het spookstadje Kolmanskop nabij Lüderitz",
+    pros: [
+      "Kolmanskop is een van de meest fotogenieke spookstadjes ter wereld, tien minuten van de stad",
+      "Duits-koloniale architectuur (Goerke Haus, Felsenkirche) die nergens anders in Namibië te vinden is",
+      "Koudwateroesters, kajakken tussen Kaapse pelsrobben, en een met flamingo's omzoomde lagune in de stad",
+    ],
+    cons: [
+      "Consequent winderig en mistig, zelfs in de Namibische zomer: pak echte laagjeskleding in",
+      "Een echte omweg: de weg naar het zuiden vanaf de hoofdroute voegt een volledige rijdag toe in elke richting",
+      "Zeer beperkte accommodatie: boek vroeg wanneer touroperators langskomen in het tussenseizoen",
+    ],
+    nearby: [
+      "Fish River Canyon (voeg een dag toe voor de rit naar het zuiden)",
+      "Aus (poortstadje met wilde woestijnpaarden)",
+      "Kolmanskop spookstadje (10 minuten verderop)",
+    ],
+    faqs: [
+      {
+        q: "Hoeveel kost een bezoek aan Kolmanskop?",
+        a: "De standaard toegangsprijs is N$230 per volwassene en N$90 per kind, inclusief een begeleide tour: twee tours op maandag tot en met zaterdag om 09u30 en 11u00, en één zondag-/feestdagtour om 10u00. Met dat ticket kunt u tot 13u00 blijven. Een apart dagpas dekt zonsopgang tot zonsondergang (ongeveer 06u00-19u00) voor fotografen die het lege ochtend- of avondlicht willen. Bevestig de actuele prijzen voordat u gaat, aangezien de tarieven in dit gebied eerder zijn gewijzigd.",
+      },
+      {
+        q: "Heb ik een speciale vergunning nodig om Kolmanskop te bezoeken?",
+        a: "Nee, voor het spookstadje zelf is geen aparte overheidsvergunning nodig: het functioneert als een betaalde, begeleide bezoekerslocatie aan de rand van het afgesloten Sperrgebiet (diamantgebied). Het veel grotere Sperrgebiet voorbij Kolmanskop blijft zonder een door NAMDEB uitgegeven vergunning ontoegankelijk, iets waar dagbezoekers zich niet druk over hoeven te maken.",
+      },
+      {
+        q: "Hoe ver ligt Lüderitz van Windhoek?",
+        a: "Ongeveer 720 km, ruwweg 8 uur rijden via de B1 zuidwaarts naar Keetmanshoop en de B4 westwaarts, of via Aus. Het is de langste losstaande omweg op een standaard Namibiëroute, waarom de meeste reizigers hem combineren met Fish River Canyon in plaats van hem alleen te bezoeken.",
+      },
+      {
+        q: "Is Lüderitz de omweg vanaf de hoofdroute door Namibië waard?",
+        a: "Als spookstadjes en koloniale geschiedenis u interesseren, zeker: niets anders in Namibië lijkt op Kolmanskop of de Duitse Art Nouveau-straten van Lüderitz. Als uw reis is opgebouwd rond wildlife en duinen, is dit de eerste regio die het overwegen waard is te schrappen om tijd te besparen, aangezien hij ongeveer twee dagen extra rijden toevoegt zonder safari- of Sossusvlei-achtige landschappen toe te voegen.",
+      },
+      {
+        q: "Wat is de beste tijd om Lüderitz te bezoeken?",
+        a: "Juni tot november brengt merkbaar minder mist en wind dan de rest van het jaar, hoewel enige wind vanaf de koude Benguelastroom hier vrijwel het hele jaar door constant aanwezig is, ongeacht het seizoen. Pak sowieso een fatsoenlijke windbestendige laag in, wanneer u ook gaat.",
+      },
+    ],
+    knownFor: ["Kolmanskop spookstadje", "Duits-koloniale architectuur", "Koude Atlantische oesters", "Kolonies Kaapse pelsrobben"],
+    dayPlans: [
+      {
+        nights: 1,
+        verdict: "Genoeg voor Kolmanskop, niet voor de stad",
+        text: "Eén nacht dekt een ochtendtour door Kolmanskop en een middag wandelen door de koloniale straten en de haven van Lüderitz, maar laat geen tijd over voor een boottocht naar de zeehondenkolonie of een fatsoenlijk oesterdiner.",
+      },
+      {
+        nights: 2,
+        verdict: "De juiste lengte voor de volledige omweg",
+        text: "Twee nachten voegen een boot- of kajaktocht toe naar de Kaapse pelsrobbenkolonie bij Diaz Point, tijd bij de flamingolagune in de stad, en een bord lokale oesters, zonder dat het gehaast aanvoelt tussen Kolmanskop en de rit terug naar het noorden.",
+      },
+    ],
+  },
 };
 
 type LodgeTranslation = Partial<Pick<Lodge, "description" | "highlights" | "bestFor" | "alt">>;
@@ -831,6 +892,41 @@ export const lodgeTranslationsNl: Record<string, LodgeTranslation> = {
     highlights: ["Particuliere natuurbehoudsboerderij met Hartmann-zebra's en endemische vogelsoorten", "Self-catering eco-cabins en glampingtenten met kitchenette", "Gezinsvriendelijke camping met eigen sanitair"],
     bestFor: "Self-catering reizigers en gezinnen die een budgetvriendelijk verblijf op een wildboerderij nabij Spitzkoppe willen",
     alt: "Een self-catering eco-cabin op de wildboerderij bij Achab Chalets, nabij Spitzkoppe",
+  },
+  "luderitz-nest-hotel": {
+    description:
+      "Het enige echte strandhotel van Lüderitz, met zeezicht vanuit elke kamer, een eigen getijdenstrand en steiger, en een dakterras met rechtstreeks uitzicht over de Atlantische Oceaan.",
+    highlights: ["Het enige strandhotel van Lüderitz, zeezicht vanuit elke kamer", "Eigen getijdenstrand en steiger", "Dakterras en spa op het terrein"],
+    bestFor: "Reizigers die de comfortabelste, full-service uitvalsbasis in de stad willen",
+    alt: "Het terras aan zee van Lüderitz Nest Hotel met uitzicht over de Atlantische Oceaan",
+  },
+  "kairos-cottage": {
+    description:
+      "Een gerestaureerde guesthouse in het hart van de koloniale wijk van Lüderitz, op korte loopafstand van het Goerke Haus en de Felsenkirche, met individueel ingerichte kamers en een klein ontbijtterras.",
+    highlights: ["Loopafstand tot het Goerke Haus en de Felsenkirche", "Individueel ingerichte kamers in een gerestaureerd koloniaal gebouw", "Ontbijtterras in het centrum van de stad"],
+    bestFor: "Reizigers die middenin het koloniale straatbeeld van Lüderitz willen zitten in plaats van er een eind vandaan",
+    alt: "Een gastenkamer bij Kairos Cottage in het koloniale centrum van Lüderitz",
+  },
+  "cormorant-house": {
+    description:
+      "Een kleine, hooggewaardeerde guesthouse enkele straten van de haven vandaan, bekend om de persoonlijke service en consequent een van de best beoordeelde verblijven in de stad.",
+    highlights: ["Consequent de best beoordeelde guesthouse van Lüderitz", "Persoonlijke, kleinschalige service van de residente gastheren", "Enkele minuten lopen van de haven"],
+    bestFor: "Reizigers die service en comfort belangrijker vinden dan resortachtige voorzieningen",
+    alt: "De gastenlounge bij The Cormorant House guesthouse in Lüderitz",
+  },
+  "alte-villa": {
+    description:
+      "Een gerestaureerd erfgoedgebouw omgevormd tot boetiekhotel, een van de oorspronkelijke Art Nouveau-woningen van Lüderitz, met intact gebleven periode-details en de service van een klein hotel.",
+    highlights: ["Een gerestaureerd Art Nouveau erfgoedgebouw", "Boetiekschaal met attente service", "Architecturale periode-details door het hele pand"],
+    bestFor: "Reizigers die de koloniale architectuur van Lüderitz onderdeel willen laten zijn van het verblijf zelf",
+    alt: "De gerestaureerde Art Nouveau-gevel van Alte Villa Boutique Hotel in Lüderitz",
+  },
+  "island-cottage-guesthouse": {
+    description:
+      "Een familiegerunde guesthouse bekend om het ontbijt en de persoonlijke ontvangst, in een rustige woonstraat op korte rijafstand van zowel de haven als de afslag naar Kolmanskop.",
+    highlights: ["Goed beoordeeld ontbijt en persoonlijke, familiaire ontvangst", "Rustige woonstraat, weg van de drukte bij de haven", "Korte rit naar de afslag naar Kolmanskop"],
+    bestFor: "Reizigers die een rustigere, huiselijke uitvalsbasis willen voor een verblijf gericht op Kolmanskop",
+    alt: "Het ontbijtterras bij Island Cottage Guesthouse in Lüderitz",
   },
 };
 

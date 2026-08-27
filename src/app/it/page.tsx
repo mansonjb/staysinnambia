@@ -97,7 +97,7 @@ export default function HomeIt() {
               .
             </h1>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
-              Consigli indipendenti su lodge, campi safari e soggiorni indimenticabili, in nove
+              Consigli indipendenti su lodge, campi safari e soggiorni indimenticabili, in dieci
               delle regioni più straordinarie del paese, nominata da Lonely Planet una delle
               migliori destinazioni del 2026, per i suoi elefanti adattati al deserto e il
               turismo orientato alla conservazione.
@@ -201,7 +201,7 @@ export default function HomeIt() {
           <div>
             <SectionEyebrow label="Scegli una regione" />
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
-              Nove regioni, un paese straordinario
+              Dieci regioni, un paese straordinario
             </h2>
           </div>
         </Reveal>

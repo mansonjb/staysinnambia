@@ -389,7 +389,7 @@ export default async function RegionPage({
             Ready to explore {region.name}?
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-[15px] leading-relaxed text-ivory/80">
-            Browse every stay we recommend on the map above, or head back to see all nine
+            Browse every stay we recommend on the map above, or head back to see all ten
             regions.
           </p>
           <Link

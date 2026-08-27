@@ -403,7 +403,7 @@ export default async function RegionPageNl({
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-[15px] leading-relaxed text-ivory/80">
             Bekijk elk verblijf dat we aanbevelen op de kaart hierboven, of ga terug om alle
-            negen regio's te zien.
+            tien regio's te zien.
           </p>
           <Link
             href="/nl/where-to-stay/namibia"

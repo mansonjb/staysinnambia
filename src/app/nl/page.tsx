@@ -98,7 +98,7 @@ export default function HomeNl() {
             </h1>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-charcoal/70">
               Onafhankelijke aanbevelingen voor lodges, safarikampen en onvergetelijke verblijven
-              in negen van de meest buitengewone regio's van het land, door Lonely Planet 2026
+              in tien van de meest buitengewone regio's van het land, door Lonely Planet 2026
               uitgeroepen tot een van de topbestemmingen, vanwege de aan de woestijn aangepaste
               olifanten en natuurbehoud-gerichte toerisme.
             </p>
@@ -201,7 +201,7 @@ export default function HomeNl() {
           <div>
             <SectionEyebrow label="Kies een regio" />
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
-              Negen regio's, één buitengewoon land
+              Tien regio's, één buitengewoon land
             </h2>
           </div>
         </Reveal>

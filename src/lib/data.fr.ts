@@ -526,6 +526,73 @@ export const regionTranslationsFr: Record<string, RegionTranslation> = {
       },
     ],
   },
+  luderitz: {
+    description:
+      "Un port colonial allemand balayé par le vent sur l'Atlantique froid, à dix minutes de Kolmanskop, la ville fantôme engloutie par le sable.",
+    quickAnswer:
+      "Lüderitz est le détour le plus insolite de Namibie : un fragment d'architecture bavaroise et Art nouveau (le Goerke Haus perché sur sa colline, la Felsenkirche à double clocher) échoué sur un tronçon glacial et embrumé de l'Atlantique, là où le désert rencontre la mer. Fondée en 1883 comme comptoir commercial, la ville a été transformée presque du jour au lendemain par la ruée vers le diamant de 1908, à l'origine de Kolmanskop, la ville minière à dix minutes à l'intérieur des terres, aujourd'hui lentement engloutie par des dunes qui s'infiltrent dans ses pièces abandonnées. La plupart des visiteurs s'installent en ville pour une ou deux nuits, visitent Kolmanskop à l'ouverture, et passent le reste de leur temps dans les rues coloniales, sur le port, et à la colonie d'otaries à fourrure du Cap de Diaz Point.",
+    bestFor: "Villes fantômes, architecture coloniale, un vrai détour côtier",
+    avoidIf:
+      "Vous n'aimez pas le vent et le froid : c'est le littoral le plus venteux et le plus embrumé de Namibie, même en été",
+    recommendedStay: "1 à 2 nuits",
+    driveFromWindhoek: "environ 8h",
+    alt: "Le sable envahit une pièce abandonnée dans une maison coloniale de la ville fantôme de Kolmanskop, près de Lüderitz",
+    pros: [
+      "Kolmanskop est l'une des villes fantômes les plus photogéniques au monde, à dix minutes du centre-ville",
+      "Une architecture coloniale allemande (Goerke Haus, Felsenkirche) que l'on ne trouve nulle part ailleurs en Namibie",
+      "Des huîtres d'eau froide, du kayak parmi les otaries à fourrure du Cap, et une lagune bordée de flamants en pleine ville",
+    ],
+    cons: [
+      "Constamment venteux et embrumé, même en plein été namibien : prévoyez de vraies couches chaudes",
+      "Un vrai détour : la route vers le sud depuis le circuit principal ajoute une journée entière de route dans chaque sens",
+      "Un hébergement très limité : réservez tôt lorsque des groupes organisés passent en intersaison",
+    ],
+    nearby: [
+      "Fish River Canyon (ajoutez une journée pour la route vers le sud)",
+      "Aus (ville-porte avec ses chevaux sauvages du désert)",
+      "Ville fantôme de Kolmanskop (à 10 minutes)",
+    ],
+    faqs: [
+      {
+        q: "Combien coûte la visite de Kolmanskop ?",
+        a: "L'entrée standard coûte N$230 par adulte et N$90 par enfant, et comprend une visite guidée : deux visites ont lieu du lundi au samedi à 09h30 et 11h00, avec une seule visite le dimanche et les jours fériés à 10h00. Ce billet permet de rester jusqu'à 13h00. Un pass journée séparé couvre du lever au coucher du soleil (environ 06h00-19h00) pour les photographes qui souhaitent profiter de la lumière calme du matin ou du soir. Confirmez les tarifs en vigueur avant de partir, car les prix ont déjà changé dans cette région.",
+      },
+      {
+        q: "Faut-il un permis spécial pour visiter Kolmanskop ?",
+        a: "Non, aucun permis gouvernemental séparé n'est nécessaire pour la ville fantôme elle-même : elle fonctionne comme un site payant et guidé, en bordure du Sperrgebiet (la zone diamantifère réglementée). Le Sperrgebiet, bien plus vaste, qui s'étend au-delà de Kolmanskop, reste interdit d'accès sans permis délivré par NAMDEB, ce qui ne concerne pas les visiteurs à la journée.",
+      },
+      {
+        q: "À quelle distance se trouve Lüderitz de Windhoek ?",
+        a: "Environ 720 km, soit à peu près 8h de route par la B1 vers le sud jusqu'à Keetmanshoop puis la B4 vers l'ouest, ou en passant par Aus. C'est le plus long détour d'un itinéraire namibien classique, raison pour laquelle la plupart des voyageurs le combinent avec Fish River Canyon plutôt que de le visiter seul.",
+      },
+      {
+        q: "Lüderitz vaut-elle le détour depuis le circuit principal de Namibie ?",
+        a: "Si les villes fantômes et l'histoire coloniale vous intéressent, oui : rien d'autre en Namibie ne ressemble à Kolmanskop ou aux rues Art nouveau allemandes de Lüderitz. Si votre voyage est construit autour de la faune et des dunes, c'est la première région à envisager de couper pour gagner du temps, puisqu'elle ajoute environ deux jours de route sans ajouter de safari ni de paysages façon Sossusvlei.",
+      },
+      {
+        q: "Quelle est la meilleure période pour visiter Lüderitz ?",
+        a: "De juin à novembre, la brume et le vent sont nettement moins présents que le reste de l'année, même si une certaine brise venue du courant froid de Benguela est quasiment constante ici, quelle que soit la saison. Prévoyez une vraie couche coupe-vent, quelle que soit la période de votre venue.",
+      },
+    ],
+    knownFor: [
+      "Ville fantôme de Kolmanskop",
+      "Architecture coloniale allemande",
+      "Huîtres de l'Atlantique froid",
+      "Colonies d'otaries à fourrure du Cap",
+    ],
+    dayPlans: [
+      {
+        nights: 1,
+        verdict: "Suffisant pour Kolmanskop, pas pour la ville",
+        text: "Une nuit permet une visite matinale de Kolmanskop et une après-midi à parcourir à pied les rues coloniales et le port de Lüderitz, mais ne laisse pas le temps pour une sortie en bateau vers la colonie d'otaries ni pour un vrai dîner aux huîtres.",
+      },
+      {
+        nights: 2,
+        verdict: "La bonne durée pour le détour complet",
+        text: "Deux nuits permettent d'ajouter une sortie en bateau ou en kayak vers la colonie d'otaries à fourrure du Cap de Diaz Point, du temps à la lagune aux flamants en ville, et une assiette d'huîtres locales, sans se sentir pressé entre Kolmanskop et la route du retour vers le nord.",
+      },
+    ],
+  },
 };
 
 type LodgeTranslation = Partial<Pick<Lodge, "description" | "highlights" | "bestFor" | "alt">>;
@@ -831,6 +898,41 @@ export const lodgeTranslationsFr: Record<string, LodgeTranslation> = {
     highlights: ["Ferme de conservation privée avec zèbres de Hartmann et espèces d'oiseaux endémiques", "Éco-cabanes en self-catering et tentes de glamping avec kitchenette", "Option de camping familial avec sanitaires privés"],
     bestFor: "Voyageurs en self-catering et familles cherchant un séjour en ferme sauvage abordable près de Spitzkoppe",
     alt: "Une éco-cabane en self-catering sur la ferme sauvage d'Achab Chalets, près de Spitzkoppe",
+  },
+  "luderitz-nest-hotel": {
+    description:
+      "Le seul véritable hôtel en front de mer à Lüderitz, avec vue sur l'océan depuis chaque chambre, une plage à marée et une jetée privées, et une terrasse sur le toit donnant directement sur l'Atlantique.",
+    highlights: ["Le seul hôtel en front de mer à Lüderitz, vue sur l'océan depuis chaque chambre", "Plage à marée et jetée privées", "Terrasse sur le toit et spa sur place"],
+    bestFor: "Voyageurs cherchant la base la plus confortable et la plus complète en ville",
+    alt: "La terrasse en front de mer du Lüderitz Nest Hotel, avec vue sur l'Atlantique",
+  },
+  "kairos-cottage": {
+    description:
+      "Une maison d'hôtes restaurée en plein cœur du quartier colonial de Lüderitz, à quelques pas du Goerke Haus et de la Felsenkirche, avec des chambres décorées individuellement et une petite terrasse pour le petit-déjeuner.",
+    highlights: ["À distance de marche du Goerke Haus et de la Felsenkirche", "Chambres décorées individuellement dans un bâtiment colonial restauré", "Terrasse pour le petit-déjeuner en plein centre-ville"],
+    bestFor: "Voyageurs voulant être au cœur des rues coloniales de Lüderitz plutôt qu'à distance de voiture",
+    alt: "Une chambre d'hôtes à Kairos Cottage, dans le centre-ville colonial de Lüderitz",
+  },
+  "cormorant-house": {
+    description:
+      "Une petite maison d'hôtes très bien notée, à quelques rues du port, réputée pour son service personnalisé et régulièrement l'un des séjours les mieux notés de la ville.",
+    highlights: ["Régulièrement la maison d'hôtes la mieux notée de Lüderitz", "Service personnalisé et à petite échelle par les hôtes résidents", "À quelques minutes à pied du port"],
+    bestFor: "Voyageurs privilégiant le service et le confort plutôt que les installations façon resort",
+    alt: "Le salon des hôtes à la maison d'hôtes The Cormorant House, à Lüderitz",
+  },
+  "alte-villa": {
+    description:
+      "Un bâtiment patrimonial restauré, transformé en hôtel-boutique, l'une des maisons Art nouveau d'origine de Lüderitz, avec des détails d'époque intacts et un service à l'échelle d'un petit hôtel.",
+    highlights: ["Un bâtiment patrimonial Art nouveau restauré", "Échelle boutique avec un service attentif", "Des détails architecturaux d'époque partout dans la propriété"],
+    bestFor: "Voyageurs voulant que l'architecture coloniale de Lüderitz fasse partie intégrante du séjour",
+    alt: "La façade Art nouveau restaurée de l'Alte Villa Boutique Hotel, à Lüderitz",
+  },
+  "island-cottage-guesthouse": {
+    description:
+      "Une maison d'hôtes familiale réputée pour son petit-déjeuner et son accueil personnalisé, dans une rue résidentielle tranquille à quelques minutes en voiture du port et de l'embranchement vers Kolmanskop.",
+    highlights: ["Petit-déjeuner très apprécié et accueil familial personnalisé", "Rue résidentielle tranquille, loin de l'agitation du port", "Courte distance en voiture jusqu'à l'embranchement vers Kolmanskop"],
+    bestFor: "Voyageurs cherchant une base plus calme et chaleureuse pour un séjour centré sur Kolmanskop",
+    alt: "La terrasse du petit-déjeuner à Island Cottage Guesthouse, à Lüderitz",
   },
 };
 
