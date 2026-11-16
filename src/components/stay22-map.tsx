@@ -1,4 +1,6 @@
-const STAY22_AID = "6a6d1d818b07e110fe9e5539";
+// Stay22 affiliate id (aid) = account handle, attributes map bookings to us.
+// NOT the letmeallez lmaID (that 24-hex stays in the layout script).
+const STAY22_AID = "eijeanbaptistemanson";
 
 export function Stay22Map({
   lat,
