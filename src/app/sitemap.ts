@@ -72,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: "namibia-packing-list", changeFrequency: "monthly", priority: 0.6 },
     { slug: "self-drive-vs-guided-namibia", changeFrequency: "monthly", priority: 0.7 },
     { slug: "why-visit-namibia-2027", changeFrequency: "monthly", priority: 0.7 },
+    { slug: "namibia-cricket-world-cup-2027", changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const guideRoutes: MetadataRoute.Sitemap = GUIDE_SLUGS.map((g) => ({

@@ -933,6 +933,48 @@ export const lodgeTranslationsDe: Record<string, LodgeTranslation> = {
     bestFor: "Reisende, die eine ruhigere, heimelige Basis für einen auf Kolmanskop ausgerichteten Aufenthalt möchten",
     alt: "Die Frühstücksterrasse im Island Cottage Guesthouse in Lüderitz",
   },
+  "hilton-garden-inn-windhoek": {
+    description:
+      "Namibias erstes Hilton Garden Inn, eröffnet im März 2024 im Zentrum von Windhoek, mit 174 Zimmern, Außenpool, Fitnessstudio, Grillrestaurant und Bar.",
+    highlights: ["174 Zimmer in einem modernen internationalen Kettenhotel, eröffnet im März 2024", "Außenpool, Fitnessstudio und Pekuta Grill & Bar", "Zentrale Lage an der Rev. Michael Scott Street"],
+    bestFor: "Reisende, die ein modernes, verlässliches Kettenhotel im Zentrum von Windhoek suchen",
+    alt: "Die Außenansicht des Hilton Garden Inn Windhoek in der Abenddämmerung",
+  },
+  "avani-windhoek": {
+    description:
+      "Ein Hotel mit Casino und 173 Zimmern an der Independence Avenue im Stadtzentrum (früher das Kalahari Sands), mit Infinity-Pool auf dem Dach im 15. Stock, zwei Restaurants und neun Veranstaltungsräumen.",
+    highlights: ["Infinity-Pool auf dem Dach im 15. Stock", "Hauseigenes Casino, Dunes-Buffet und Stratos Restaurant", "Flughafentransfer auf Anfrage, rund 35 Minuten von Hosea Kutako entfernt"],
+    bestFor: "Geschäfts- und Veranstaltungsreisende, die ein zentrales Kettenhotel mit Vollservice suchen",
+    alt: "Der Dachpool und die Terrasse des Avani Windhoek Hotel & Casino, dahinter die Stadt",
+  },
+  "moevenpick-windhoek": {
+    description:
+      "Ein Fünf-Sterne-Hotel von Accor mit 130 Zimmern (früher das Safari Court) an der Auas Road im Viertel Suiderhof, mit Pool und Poolbar, Spa, zwei Restaurants und 13 Tagungsräumen.",
+    highlights: ["130 Zimmer, Fünf-Sterne-Haus, von Accor geführt", "Pool und Poolbar, Spa, Restaurant Mirage und De Luca's Pizzeria", "Rund 25 Minuten vom Flughafen Hosea Kutako entfernt, mit kostenpflichtigem Shuttle"],
+    bestFor: "Reisende, die ein Fünf-Sterne-Kettenhotel mit Vollservice im Süden der Stadt suchen",
+    alt: "Der Gartenpool des Mövenpick Hotel Windhoek",
+  },
+  "mercure-windhoek": {
+    description:
+      "Ein Drei-Sterne-Hotel von Accor mit 98 Zimmern an derselben Ecke von Auas Road und Aviation Road wie das Mövenpick, mit Pool, Fitnessstudio und Spa, einem Steak- und Rippchenrestaurant und großzügigen Konferenzräumen.",
+    highlights: ["98 Zimmer, von Accor geführt", "Pool, Fitnessstudio und Spa, dazu der Nomad Steak & Rib Room", "Konferenz- und Hochzeitsräume, kostenpflichtiger Flughafenshuttle"],
+    bestFor: "Reisende, die ein preislich mittleres Kettenhotel im Süden der Stadt suchen",
+    alt: "Der überdachte Eingang des Mercure Hotel Windhoek in der Abenddämmerung",
+  },
+  "protea-furstenhof-windhoek": {
+    description:
+      "Ein kleines Protea-Hotel von Marriott mit rund 30 Zimmern an der Frans Indongo Street, etwa fünf Gehminuten vom Stadtzentrum entfernt, mit Außenpool und Dachterrasse.",
+    highlights: ["Marriotts Marke Protea, ein kleines Hotel mit rund 30 Zimmern", "Außenpool und Dachterrasse", "Kostenlose Parkplätze und ein kostenpflichtiger Flughafenshuttle"],
+    bestFor: "Reisende, die ein kleines, zentral gelegenes Kettenhotel statt eines großen Hochhauses suchen",
+    alt: "Die Dachterrasse des Protea Hotel by Marriott Windhoek Furstenhof, dahinter die Skyline der Stadt",
+  },
+  "windhoek-country-club-resort": {
+    description:
+      "Ein Haus von Legacy Hotels & Resorts mit 152 Zimmern neben einem 18-Loch-Golfplatz am westlichen Stadtrand, mit Casino, Außenpool und mehreren gastronomischen Angeboten.",
+    highlights: ["18-Loch-Golfplatz auf dem Gelände", "Desert Jewel Casino und Restaurant Kokerboom", "Außenpool und Shuttleservice über die Concierge"],
+    bestFor: "Reisende, die ein Resort-Hotel mit Golf und Casino innerhalb der Stadtgrenzen suchen",
+    alt: "Der Wasserlauf und die Terrasse des Windhoek Country Club Resort",
+  },
 };
 
 type RouteTranslation = Partial<

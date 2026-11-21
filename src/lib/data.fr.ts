@@ -934,6 +934,48 @@ export const lodgeTranslationsFr: Record<string, LodgeTranslation> = {
     bestFor: "Voyageurs cherchant une base plus calme et chaleureuse pour un séjour centré sur Kolmanskop",
     alt: "La terrasse du petit-déjeuner à Island Cottage Guesthouse, à Lüderitz",
   },
+  "hilton-garden-inn-windhoek": {
+    description:
+      "Le premier Hilton Garden Inn de Namibie, ouvert en mars 2024 en plein centre de Windhoek, avec 174 chambres, une piscine extérieure, une salle de sport, un restaurant-grill et un bar.",
+    highlights: ["174 chambres dans un hôtel de chaîne internationale moderne, ouvert en mars 2024", "Piscine extérieure, salle de sport et Pekuta Grill & Bar", "Emplacement central, sur Rev. Michael Scott Street"],
+    bestFor: "Voyageurs cherchant un hôtel de chaîne moderne et fiable en centre-ville de Windhoek",
+    alt: "La façade du Hilton Garden Inn Windhoek au crépuscule",
+  },
+  "avani-windhoek": {
+    description:
+      "Un hôtel-casino de 173 chambres sur Independence Avenue, en centre-ville (ancien Kalahari Sands), avec une piscine à débordement sur le toit au 15e étage, deux restaurants et neuf salles de réunion.",
+    highlights: ["Piscine à débordement sur le toit, au 15e étage", "Casino, buffet Dunes et restaurant Stratos sur place", "Navette aéroport sur demande, à environ 35 minutes de Hosea Kutako"],
+    bestFor: "Voyageurs d'affaires et d'événements cherchant un hôtel de chaîne central, tout confort",
+    alt: "La piscine et la terrasse sur le toit de l'Avani Windhoek Hotel & Casino, avec la ville en toile de fond",
+  },
+  "moevenpick-windhoek": {
+    description:
+      "Un hôtel Accor cinq étoiles de 130 chambres (ancien Safari Court) sur Auas Road, dans le quartier de Suiderhof, avec piscine et bar de piscine, spa, deux restaurants et 13 salles de réunion.",
+    highlights: ["130 chambres, cinq étoiles, géré par Accor", "Piscine et bar de piscine, spa, restaurant Mirage et De Luca's Pizzeria", "À environ 25 minutes de l'aéroport Hosea Kutako, avec navette payante"],
+    bestFor: "Voyageurs cherchant un hôtel de chaîne cinq étoiles tout confort au sud de la ville",
+    alt: "La piscine dans le jardin du Mövenpick Hotel Windhoek",
+  },
+  "mercure-windhoek": {
+    description:
+      "Un hôtel Accor trois étoiles de 98 chambres, au même angle d'Auas Road et d'Aviation Road que le Mövenpick, avec piscine, salle de sport et spa, un restaurant de steaks et de travers de porc, et de vastes espaces de conférence.",
+    highlights: ["98 chambres, géré par Accor", "Piscine, salle de sport et spa, ainsi que le Nomad Steak & Rib Room", "Espaces de conférence et de réception de mariage, navette aéroport payante"],
+    bestFor: "Voyageurs cherchant un hôtel de chaîne de gamme intermédiaire au sud de la ville",
+    alt: "L'entrée couverte du Mercure Hotel Windhoek au crépuscule",
+  },
+  "protea-furstenhof-windhoek": {
+    description:
+      "Un petit hôtel Protea de Marriott d'environ 30 chambres sur Frans Indongo Street, à cinq minutes à pied du centre-ville, avec piscine extérieure et terrasse sur le toit.",
+    highlights: ["La marque Protea de Marriott, un petit hôtel d'environ 30 chambres", "Piscine extérieure et terrasse sur le toit", "Parking gratuit et navette aéroport payante"],
+    bestFor: "Voyageurs cherchant un petit hôtel de chaîne central plutôt qu'une grande tour",
+    alt: "La terrasse sur le toit du Protea Hotel by Marriott Windhoek Furstenhof, avec la silhouette de la ville derrière",
+  },
+  "windhoek-country-club-resort": {
+    description:
+      "Un établissement Legacy Hotels & Resorts de 152 chambres, au bord d'un golf de 18 trous à la lisière ouest de la ville, avec casino, piscine extérieure et plusieurs options de restauration.",
+    highlights: ["Golf de 18 trous sur place", "Desert Jewel Casino et restaurant Kokerboom", "Piscine extérieure et navettes du concierge"],
+    bestFor: "Voyageurs cherchant un hôtel de type resort avec golf et casino dans les limites de la ville",
+    alt: "Le bassin d'eau et la terrasse du Windhoek Country Club Resort",
+  },
 };
 
 type RouteTranslation = Partial<

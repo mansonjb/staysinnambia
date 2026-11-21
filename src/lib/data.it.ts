@@ -933,6 +933,48 @@ export const lodgeTranslationsIt: Record<string, LodgeTranslation> = {
     bestFor: "Viaggiatori in cerca di una base più tranquilla e familiare per un soggiorno incentrato su Kolmanskop",
     alt: "La terrazza per la colazione a Island Cottage Guesthouse, Lüderitz",
   },
+  "hilton-garden-inn-windhoek": {
+    description:
+      "Il primo Hilton Garden Inn della Namibia, inaugurato a marzo 2024 nel centro di Windhoek, con 174 camere, piscina esterna, palestra, un ristorante grill e un bar.",
+    highlights: ["174 camere in un hotel moderno di una catena internazionale, aperto a marzo 2024", "Piscina esterna, palestra e Pekuta Grill & Bar", "Posizione centrale su Rev. Michael Scott Street"],
+    bestFor: "Viaggiatori in cerca di un hotel di catena moderno e affidabile nel centro di Windhoek",
+    alt: "L'esterno dell'Hilton Garden Inn Windhoek al crepuscolo",
+  },
+  "avani-windhoek": {
+    description:
+      "Un hotel con casinò di 173 camere su Independence Avenue, in centro città (ex Kalahari Sands), con piscina a sfioro sul tetto al 15° piano, due ristoranti e nove sale per riunioni.",
+    highlights: ["Piscina a sfioro sul tetto al 15° piano", "Casinò interno, buffet Dunes e ristorante Stratos", "Transfer dall'aeroporto su richiesta, a circa 35 minuti da Hosea Kutako"],
+    bestFor: "Viaggiatori d'affari e per eventi in cerca di un hotel di catena a servizio completo in posizione centrale",
+    alt: "La piscina e la terrazza sul tetto dell'Avani Windhoek Hotel & Casino, con la città sullo sfondo",
+  },
+  "moevenpick-windhoek": {
+    description:
+      "Un hotel Accor a cinque stelle con 130 camere (ex Safari Court) su Auas Road, nella zona di Suiderhof, con piscina e pool bar, una spa, due ristoranti e 13 sale riunioni.",
+    highlights: ["130 camere, cinque stelle, gestito da Accor", "Piscina e pool bar, spa, ristorante Mirage e De Luca's Pizzeria", "A circa 25 minuti dall'aeroporto Hosea Kutako, con navetta a pagamento"],
+    bestFor: "Viaggiatori in cerca di un hotel di catena a cinque stelle e a servizio completo sul lato sud della città",
+    alt: "La piscina nel giardino del Mövenpick Hotel Windhoek",
+  },
+  "mercure-windhoek": {
+    description:
+      "Un hotel Accor a tre stelle con 98 camere, sullo stesso angolo tra Auas Road e Aviation Road del Mövenpick, con piscina, palestra e spa, un ristorante di carne e costine e ampi spazi congressuali.",
+    highlights: ["98 camere, gestito da Accor", "Piscina, palestra e spa, più il Nomad Steak & Rib Room", "Spazi per conferenze e matrimoni, navetta aeroportuale a pagamento"],
+    bestFor: "Viaggiatori in cerca di un hotel di catena di fascia media sul lato sud della città",
+    alt: "L'ingresso coperto del Mercure Hotel Windhoek al crepuscolo",
+  },
+  "protea-furstenhof-windhoek": {
+    description:
+      "Un piccolo hotel Protea di Marriott con circa 30 camere su Frans Indongo Street, a circa cinque minuti a piedi dal centro città, con piscina esterna e terrazza sul tetto.",
+    highlights: ["Il marchio Protea di Marriott, un piccolo hotel di circa 30 camere", "Piscina esterna e terrazza sul tetto", "Parcheggio gratuito e navetta aeroportuale a pagamento"],
+    bestFor: "Viaggiatori che preferiscono un piccolo hotel di catena in posizione centrale a una grande torre",
+    alt: "La terrazza sul tetto del Protea Hotel by Marriott Windhoek Furstenhof, con lo skyline della città alle spalle",
+  },
+  "windhoek-country-club-resort": {
+    description:
+      "Una struttura Legacy Hotels & Resorts con 152 camere accanto a un campo da golf a 18 buche, sul margine occidentale della città, con casinò, piscina esterna e diverse opzioni per mangiare.",
+    highlights: ["Campo da golf a 18 buche in loco", "Desert Jewel Casino e ristorante Kokerboom", "Piscina esterna e navette del concierge"],
+    bestFor: "Viaggiatori in cerca di un hotel in stile resort con golf e casinò entro i confini della città",
+    alt: "La fontana e la terrazza del Windhoek Country Club Resort",
+  },
 };
 
 type RouteTranslation = Partial<

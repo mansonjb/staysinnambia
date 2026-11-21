@@ -58,6 +58,7 @@ const COLUMNS_EN = [
     title: "More Guides",
     links: [
       { label: "Why Visit Namibia in 2027", href: "/why-visit-namibia-2027" },
+      { label: "Cricket World Cup 2027", href: "/namibia-cricket-world-cup-2027" },
       { label: "Namibia with Kids", href: "/namibia-with-kids" },
       { label: "Namibia Honeymoon", href: "/namibia-honeymoon" },
       { label: "Luxury Namibia", href: "/luxury-namibia" },
@@ -122,6 +123,7 @@ const COLUMNS_DE = [
     title: "Weitere Ratgeber",
     links: [
       { label: "Warum Namibia 2027 besuchen", href: "/why-visit-namibia-2027" },
+      { label: "Cricket-WM 2027", href: "/namibia-cricket-world-cup-2027" },
       { label: "Namibia mit Kindern", href: "/namibia-with-kids" },
       { label: "Namibia Flitterwochen", href: "/namibia-honeymoon" },
       { label: "Luxus-Namibia", href: "/luxury-namibia" },
@@ -186,6 +188,7 @@ const COLUMNS_NL = [
     title: "Meer Gidsen",
     links: [
       { label: "Waarom Namibië bezoeken in 2027", href: "/why-visit-namibia-2027" },
+      { label: "WK cricket 2027", href: "/namibia-cricket-world-cup-2027" },
       { label: "Namibië met Kinderen", href: "/namibia-with-kids" },
       { label: "Namibië Huwelijksreis", href: "/namibia-honeymoon" },
       { label: "Luxe Namibië", href: "/luxury-namibia" },
@@ -250,6 +253,7 @@ const COLUMNS_FR = [
     title: "Autres guides",
     links: [
       { label: "Pourquoi visiter la Namibie en 2027", href: "/why-visit-namibia-2027" },
+      { label: "Coupe du monde de cricket 2027", href: "/namibia-cricket-world-cup-2027" },
       { label: "Namibie en famille", href: "/namibia-with-kids" },
       { label: "Lune de miel en Namibie", href: "/namibia-honeymoon" },
       { label: "Namibie de luxe", href: "/luxury-namibia" },
@@ -314,6 +318,7 @@ const COLUMNS_IT = [
     title: "Altre guide",
     links: [
       { label: "Perché visitare la Namibia nel 2027", href: "/why-visit-namibia-2027" },
+      { label: "Mondiali di cricket 2027", href: "/namibia-cricket-world-cup-2027" },
       { label: "Namibia con i bambini", href: "/namibia-with-kids" },
       { label: "Luna di miele in Namibia", href: "/namibia-honeymoon" },
       { label: "Namibia di lusso", href: "/luxury-namibia" },

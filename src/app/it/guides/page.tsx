@@ -40,6 +40,7 @@ const POPULAR_GUIDES = [
 
 const PRACTICAL_GUIDES = [
   { title: "Perché visitare la Namibia nel 2027", href: "/it/why-visit-namibia-2027" },
+  { title: "Mondiali di cricket 2027 in Namibia", href: "/it/namibia-cricket-world-cup-2027" },
   { title: "Self-drive vs. safari guidato", href: "/it/self-drive-vs-guided-namibia" },
   { title: "Namibia vs. Botswana", href: "/it/namibia-vs-botswana" },
   { title: "SIM, eSIM e connettività", href: "/it/namibia-connectivity" },

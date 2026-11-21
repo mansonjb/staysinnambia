@@ -95,6 +95,12 @@ const LODGES = [
   { slug: "cormorant-house", name: "The Cormorant House", region: "Luderitz, Namibia" },
   { slug: "alte-villa", name: "Alte Villa Boutique Hotel", region: "Luderitz, Namibia" },
   { slug: "island-cottage-guesthouse", name: "Island Cottage Guesthouse", region: "Luderitz, Namibia" },
+  { slug: "hilton-garden-inn-windhoek", name: "Hilton Garden Inn Windhoek", region: "Windhoek, Namibia" },
+  { slug: "avani-windhoek", name: "Avani Windhoek Hotel & Casino", region: "Windhoek, Namibia" },
+  { slug: "moevenpick-windhoek", name: "Mövenpick Hotel Windhoek", region: "Windhoek, Namibia" },
+  { slug: "mercure-windhoek", name: "Mercure Hotel Windhoek", region: "Windhoek, Namibia" },
+  { slug: "protea-furstenhof-windhoek", name: "Protea Hotel by Marriott Windhoek Furstenhof", region: "Windhoek, Namibia" },
+  { slug: "windhoek-country-club-resort", name: "Windhoek Country Club Resort", region: "Windhoek, Namibia" },
 ];
 
 async function loadToken() {
